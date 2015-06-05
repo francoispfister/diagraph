@@ -1,12 +1,46 @@
+# Directories #
+build/
+bin/
+target/
+# OS Files #
 *.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package Files #
 *.jar
 *.war
 *.ear
-
+*.db
+########################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+.svn*
+.svn/**
+# Thumbnails
+._*
+######################
+# Eclipse
+######################
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+# External tool builders
+.externalToolBuilders/
+# Locally stored "Eclipse launch configurations"
+*.launch
+# PDT-specific
+.buildpath
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
