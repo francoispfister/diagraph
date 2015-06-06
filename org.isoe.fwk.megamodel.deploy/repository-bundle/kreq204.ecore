@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kreq204" nsURI="http://kreq204" nsPrefix="_kreq204">
+  <eClassifiers xsi:type="ecore:EClass" name="PartofR">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="init1" lowerBound="1" upperBound="-1"
+        eType="#//Repository" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="init2" lowerBound="1" upperBound="-1"
+        eType="#//TestCase" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="init4" lowerBound="1" upperBound="-1"
+        eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="init3" lowerBound="1" upperBound="-1"
+        eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Repository">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=requirementRepository"/>
+      <details key="kref=containsAllRequirements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirementRepository"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsAllRequirements"
+        upperBound="-1" eType="#//Requirement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TestCase" eSuperTypes="#//SoSEngineeringObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=verify"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="verify" upperBound="-1"
+        eType="#//Requirement" eOpposite="#//Requirement/varifedBy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requirement" eSuperTypes="#//SoSEngineeringObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=Repository.containsAllRequirements"/>
+      <details key="ref=deriveReqt"/>
+      <details key="kref=decomposes"/>
+      <details key="ref=specifiesFunctions"/>
+      <details key="ref=specifiesComponent"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirement_iteralDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSatisfied" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//CategoryType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="origin" eType="#//RequirementOrigin"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="varifedBy" upperBound="-1"
+        eType="#//TestCase" eOpposite="#//TestCase/verify"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deriveReqt" upperBound="-1"
+        eType="#//Requirement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decomposes" upperBound="-1"
+        eType="#//Requirement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesFunctions" upperBound="-1"
+        eType="#//Function" eOpposite="#//Function/isSpecifiedBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refine" upperBound="-1"
+        eType="#//Requirement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesComponent" upperBound="-1"
+        eType="#//Component" eOpposite="#//Component/specifiedBy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=performsTransformationFormType"/>
+      <details key="cont=PartofR.init3"/>
+      <details key="kref=decomposed"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="performsTransformationFormType"
+        eType="#//BasicFlowTransformationType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isSpecifiedBy" upperBound="-1"
+        eType="#//Requirement" eOpposite="#//Requirement/specifiesFunctions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="describesMissionOf" upperBound="-1"
+        eType="#//Component" eOpposite="#//Component/performsMissions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decomposed" upperBound="-1"
+        eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocatedTo" upperBound="-1"
+        eType="#//Component" eOpposite="#//Component/ImplementsFunctions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=finality"/>
+      <details key="cont=PartofR.init4"/>
+      <details key="ref=performsMissions"/>
+      <details key="ref=satisfy"/>
+      <details key="kref=subComponents"/>
+      <details key="ref=ImplementsFunctions"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="componentType" eType="#//CategoryType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="finality" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfy" lowerBound="1"
+        upperBound="-1" eType="#//Requirement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedBy" lowerBound="1"
+        upperBound="-1" eType="#//Requirement" eOpposite="#//Requirement/specifiesComponent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="performsMissions" upperBound="-1"
+        eType="#//Function" eOpposite="#//Function/describesMissionOf"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subComponents" upperBound="-1"
+        eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ImplementsFunctions" upperBound="-1"
+        eType="#//Function" eOpposite="#//Function/allocatedTo"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="componentPosition" eType="#//ComponentPosition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nasCharacteristics" upperBound="-1"
+        eType="#//Characteracteristics" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SoSEngineeringObject" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BasicFlowTransformationType">
+    <eLiterals name="EEnumLiteral0"/>
+    <eLiterals name="Transiform" value="1"/>
+    <eLiterals name="Check_Verify_Validate" value="2"/>
+    <eLiterals name="Control" value="3"/>
+    <eLiterals name="Decide" value="4"/>
+    <eLiterals name="Measure" value="5"/>
+    <eLiterals name="Store" value="6"/>
+    <eLiterals name="Wait" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RequirementOrigin">
+    <eLiterals name="Derived"/>
+    <eLiterals name="Originating" value="1"/>
+    <eLiterals name="DesignChoise_induced" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComponentPosition">
+    <eLiterals name="Not_yet_defined"/>
+    <eLiterals name="Local" value="1"/>
+    <eLiterals name="Environmental_context" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CategoryType">
+    <eLiterals name="Functional"/>
+    <eLiterals name="Non_Functional" value="1"/>
+    <eLiterals name="Operational" value="2"/>
+    <eLiterals name="VandV" value="3"/>
+    <eLiterals name="Interface" value="4"/>
+    <eLiterals name="Constraints" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComponentType">
+    <eLiterals name="Physical_component"/>
+    <eLiterals name="Logical_component" value="1"/>
+    <eLiterals name="System" value="2"/>
+    <eLiterals name="Operational_system" value="3"/>
+    <eLiterals name="Information_system" value="4"/>
+    <eLiterals name="Process" value="5"/>
+    <eLiterals name="Activity" value="6"/>
+    <eLiterals name="Serrvice" value="7"/>
+    <eLiterals name="Actor" value="8"/>
+    <eLiterals name="Organization_Unit" value="9"/>
+    <eLiterals name="Site" value="10"/>
+    <eLiterals name="Role" value="11"/>
+    <eLiterals name="Tool" value="12"/>
+    <eLiterals name="Not_yet_desighed" value="13"/>
+    <eLiterals name="Other" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Characteracteristics">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="cont=Component.nasCharacteristics"/>
+      <details key="lsrc=source"/>
+      <details key="ltrg=target"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Requirement"/>
+  </eClassifiers>
+</ecore:EPackage>

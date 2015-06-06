@@ -1,0 +1,22 @@
+
+embedded:TargetElement
+ACRCV is propagated en canvas: [DiaNode]  name: TotoSet elementName: TotoSet containment: elementSet modelElement: TotoSet own labels: [DiaLabel] attributeName: name name:TotoSetName defaultName:null
+   containment: [Containment] name:totos  SourceNode= TotoSet - containment=elementSet TargetNode= TargetElement - containment=totos figureEmbedded=  fig own propagated= not propagated TargetName= totos TargetReference= totos
+ -> [DiaNode]  name: TargetElement elementName: TargetElement containment: totos modelElement: TargetElement  [Containment] name:totos  SourceNode= TotoSet - containment=elementSet TargetNode= TargetElement - containment=totos figureEmbedded=  fig own propagated= not propagated TargetName= totos TargetReference= totos
+
+
+CNM---------- prepareNodeMapping: TargetElement
+TargetElement
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [totos:TargetElement] -> TargetElement
+validating Containment feature [totos:TargetElement] -> TargetElement
+ACRF adding nodeMapping TargetElement to TotoSet
+   ACRF createNodes: TargetElement
+   ACRF addind labels: TargetElement
+   ACRF addind label: id
+   embedding:TotoSet
+---- map containments ----
+ACRF TotoSet[TargetElement]
+check topnoderef:elementSet
+TotoSet
+TargetElement

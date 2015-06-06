@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_company104="http://company104" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_CNZyEX5yEeOZfKFn8BSe0Q" type="Company104_default_root" name="default.company104_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_DKQb4H5yEeOZfKFn8BSe0Q" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DKQb5H5yEeOZfKFn8BSe0Q" type="4005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DKQb5X5yEeOZfKFn8BSe0Q" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DKQb5n5yEeOZfKFn8BSe0Q" type="5002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_DKQb4X5yEeOZfKFn8BSe0Q"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DKQb4n5yEeOZfKFn8BSe0Q" fontName="Segoe UI"/>
+    <element xmi:type="_company104:Agency" href="default.company104#//@agencies.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DKQb435yEeOZfKFn8BSe0Q" x="320" y="70" width="136" height="76"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_FrPK4H5yEeOZfKFn8BSe0Q" type="1002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FrPK5H5yEeOZfKFn8BSe0Q" type="4009"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FrPK5X5yEeOZfKFn8BSe0Q" type="4010"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FrPK5n5yEeOZfKFn8BSe0Q" type="4011"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FrPK535yEeOZfKFn8BSe0Q" type="5005">
+      <children xmi:type="notation:Node" xmi:id="_K9_d8H5yEeOZfKFn8BSe0Q" type="2005">
+        <children xmi:type="notation:DecorationNode" xmi:id="_K9_d9H5yEeOZfKFn8BSe0Q" type="4006"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_K9_d9X5yEeOZfKFn8BSe0Q" type="4007"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_K9_d9n5yEeOZfKFn8BSe0Q" type="4008"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_K9_d8X5yEeOZfKFn8BSe0Q"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_K9_d8n5yEeOZfKFn8BSe0Q" fontName="Segoe UI"/>
+        <element xmi:type="_company104:Objective" href="default.company104#//@goals.0/@objectives.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K9_d835yEeOZfKFn8BSe0Q" x="19" y="-1"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_QZO-oH5yEeOZfKFn8BSe0Q" type="2005">
+        <children xmi:type="notation:DecorationNode" xmi:id="_QZO-pH5yEeOZfKFn8BSe0Q" type="4006"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_QZO-pX5yEeOZfKFn8BSe0Q" type="4007"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_QZO-pn5yEeOZfKFn8BSe0Q" type="4008"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_QZO-oX5yEeOZfKFn8BSe0Q"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_QZO-on5yEeOZfKFn8BSe0Q" fontName="Segoe UI"/>
+        <element xmi:type="_company104:Objective" href="default.company104#//@goals.0/@objectives.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QZO-o35yEeOZfKFn8BSe0Q" x="14" y="73"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_FrPK4X5yEeOZfKFn8BSe0Q"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_FrPK4n5yEeOZfKFn8BSe0Q" fontName="Segoe UI"/>
+    <element xmi:type="_company104:Goal" href="default.company104#//@goals.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FrPK435yEeOZfKFn8BSe0Q" x="25" y="20" width="221" height="241"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_CNZyEn5yEeOZfKFn8BSe0Q"/>
+  <element xmi:type="_company104:Company" href="default.company104#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_9AWo8X5yEeOo58fC8Fs94w" type="3002" source="_DKQb4H5yEeOZfKFn8BSe0Q" target="_QZO-oH5yEeOZfKFn8BSe0Q">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9AWo9X5yEeOo58fC8Fs94w" type="4013">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9AWo9n5yEeOo58fC8Fs94w" x="-8" y="25"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9AWo935yEeOo58fC8Fs94w" type="4014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9AWo-H5yEeOo58fC8Fs94w" x="-6" y="45"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_9AWo8n5yEeOo58fC8Fs94w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_9AWo835yEeOo58fC8Fs94w" fontName="Segoe UI"/>
+    <element xmi:type="_company104:ObjectiveReach" href="default.company104#//@agencies.0/@reacheds.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9AWo9H5yEeOo58fC8Fs94w" points="[-34, 65, 208, -31]$[-75, 144, 167, 48]$[-215, 103, 27, 7]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9AgZ8H5yEeOo58fC8Fs94w" id="(0.4411764705882353,0.14473684210526316)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9AgZ8X5yEeOo58fC8Fs94w" id="(0.7652173913043478,0.2833333333333333)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_DDnL4H5zEeOo58fC8Fs94w" type="3002" source="_DKQb4H5yEeOZfKFn8BSe0Q" target="_K9_d8H5yEeOZfKFn8BSe0Q">
+    <children xmi:type="notation:DecorationNode" xmi:id="_DDnL5H5zEeOo58fC8Fs94w" type="4013">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DDw84H5zEeOo58fC8Fs94w" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_DDw84X5zEeOo58fC8Fs94w" type="4014">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_DDw84n5zEeOo58fC8Fs94w" y="60"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_DDnL4X5zEeOo58fC8Fs94w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_DDnL4n5zEeOo58fC8Fs94w" fontName="Segoe UI"/>
+    <element xmi:type="_company104:ObjectiveReach" href="default.company104#//@agencies.0/@reacheds.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DDnL435zEeOo58fC8Fs94w" points="[-75, -9, 142, -30]$[-120, -14, 97, -35]$[-202, 15, 15, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DD6G0H5zEeOo58fC8Fs94w" id="(0.5514705882352942,0.18421052631578946)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DD6G0X5zEeOo58fC8Fs94w" id="(0.8913043478260869,0.31666666666666665)"/>
+  </edges>
+</notation:Diagram>

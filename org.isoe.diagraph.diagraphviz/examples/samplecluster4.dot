@@ -1,0 +1,8 @@
+digraph G {
+  subgraph clusterTF {
+    TF
+  }
+  A -> clusterTF
+  B -> clusterTF
+  clusterTF -> C
+} 

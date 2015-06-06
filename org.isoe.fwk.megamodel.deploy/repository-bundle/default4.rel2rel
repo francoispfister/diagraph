@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_rel2rel:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_rel2rel="http://rel2rel">
+  <things name="a">
+    <relations name="1" toThing="//@things.2"/>
+    <relations name="2" toThing="//@things.1"/>
+  </things>
+  <things name="b"/>
+  <things name="c">
+    <relations name="3" toThing="//@things.1" toRelation="//@things.2/@relations.1"/>
+    <relations name="4" toThing="//@things.3"/>
+  </things>
+  <things name="x"/>
+</_rel2rel:World>

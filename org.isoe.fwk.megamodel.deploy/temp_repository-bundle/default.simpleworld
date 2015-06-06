@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odsml_simpleworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:odsml_simpleworld="http://opendsml.org/master/basic/simpleworld.v0">
+  <things name="blabla">
+    <relations name="rel1" toThing="//@things.1" since=""/>
+  </things>
+  <things name="hello"/>
+  <things name="yeswecan">
+    <relations name="rel2" toThing="//@things.3"/>
+    <relations name="go" toThing="//@things.4"/>
+  </things>
+  <things name="finished"/>
+  <things name="doit"/>
+  <things name="param1">
+    <relations name="p1" toThing="//@things.4"/>
+  </things>
+  <things name="var2">
+    <relations name="v2" toThing="//@things.0"/>
+  </things>
+</odsml_simpleworld:World>

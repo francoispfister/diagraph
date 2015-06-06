@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_tank203="http://tank203" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_Qk3_AF6WEeOFm7TjAuA3Kw" type="Tank203_default_root" name="tank203_1.tank203_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_RVEs4F6WEeOFm7TjAuA3Kw" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_RVF7AF6WEeOFm7TjAuA3Kw" type="4002"/>
+    <children xmi:type="notation:Node" xmi:id="_qDUIQF6WEeOFm7TjAuA3Kw" type="2001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_qDUvUF6WEeOFm7TjAuA3Kw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_qDUIQV6WEeOFm7TjAuA3Kw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_qDUIQl6WEeOFm7TjAuA3Kw" fontName="Segoe UI"/>
+      <element xmi:type="_tank203:Sensor" href="tank203_1.tank203#//@tank/@sensor"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qDUIQ16WEeOFm7TjAuA3Kw" x="110" y="25"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_RVEs4V6WEeOFm7TjAuA3Kw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_RVEs4l6WEeOFm7TjAuA3Kw" fontName="Segoe UI"/>
+    <element xmi:type="_tank203:Tank" href="tank203_1.tank203#//@tank"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RVEs416WEeOFm7TjAuA3Kw" x="150" y="160" width="111" height="111"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ShgDwF6WEeOFm7TjAuA3Kw" type="1005">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Shgq0F6WEeOFm7TjAuA3Kw" type="4008"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ShgDwV6WEeOFm7TjAuA3Kw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ShgDwl6WEeOFm7TjAuA3Kw" fontName="Segoe UI"/>
+    <element xmi:type="_tank203:Sink" href="tank203_1.tank203#//@sink"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ShgDw16WEeOFm7TjAuA3Kw" x="55" y="80"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_oPG_sF6WEeOFm7TjAuA3Kw" type="1003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_oPHmwF6WEeOFm7TjAuA3Kw" type="4006"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_oPG_sV6WEeOFm7TjAuA3Kw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_oPG_sl6WEeOFm7TjAuA3Kw" fontName="Segoe UI"/>
+    <element xmi:type="_tank203:Valve" href="tank203_1.tank203#//@valve"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oPG_s16WEeOFm7TjAuA3Kw" x="320" y="230"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Qk3_AV6WEeOFm7TjAuA3Kw"/>
+  <element xmi:type="_tank203:LevelRegulation" href="tank203_1.tank203#/"/>
+</notation:Diagram>

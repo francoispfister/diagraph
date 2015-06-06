@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helloworld:LeMonde xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:helloworld="http://helloworld.example.v0">
+  <vueLangues name="langues">
+    <langues nom="français"/>
+    <langues nom="allemand"/>
+    <langues nom="anglais"/>
+  </vueLangues>
+  <vueHommes name="hommes">
+    <humains nom="albert">
+      <dit_bonjour phrase="coucou" a_un_autre="//@vueHommes/@humains.1"/>
+    </humains>
+    <humains nom="toto"/>
+  </vueHommes>
+</helloworld:LeMonde>

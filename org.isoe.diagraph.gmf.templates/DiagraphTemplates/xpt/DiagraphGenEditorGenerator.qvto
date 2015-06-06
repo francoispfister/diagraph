@@ -1,0 +1,185 @@
+/*
+ * Copyright (c) 20012, LGi2P
+ *
+ *
+ * Contributors:
+ *    Francois Pfister (EMA) - initial API and implementation
+ */
+
+
+modeltype gmfgen uses "http://www.eclipse.org/gmf/2009/GenModel";
+modeltype ecore uses "http://www.eclipse.org/emf/2002/Ecore";
+
+modeltype diastyle uses "http://isoe-2012-diastyle-dsml";
+
+modeltype diagraph uses diagraph("http://isoe-2012-diagraph-dsmlv4");
+
+library DiagraphGenEditorGenerator;
+
+
+query gmfgen::GenEditorGenerator::styleExtension() : ecore::EObject {
+	-- FP140523
+	return self.styleExtension();
+}
+
+
+query diagraph::DGraph::node(nodename : String) : diagraph::DNode {
+	-- FP120704
+	var graphElement : diagraph::DGraphElement := self.nodes![name = nodename];
+	var node : diagraph::DNode := graphElement.oclAsType(diagraph::DNode);
+	return node;
+}
+
+query gmfgen::GenEditorGenerator::diagraph(): diagraph::DGraph {
+	  return self.extension.oclAsType(diagraph::DGraph);
+}
+
+query gmfgen::GenEditorGenerator::diagraphNode(nodename : String): diagraph::DNode {
+	  return self.extension.oclAsType(diagraph::DGraph).node(nodename);
+}
+
+query gmfgen::GenEditorGenerator::diagraphPointOfViewName(nodename : String): String {
+      var nod := self.extension.oclAsType(diagraph::DGraph).node(nodename);
+      var ispov := nod.eClass.oclIsKindOf(diagraph::DPointOfView);
+      if not ispov then
+        return null
+      endif;
+      return nod.oclAsType(diagraph::DPointOfView).viewName;
+}
+
+
+query gmfgen::GenEditorGenerator::isDiagraphPointOfView(nodename : String): Boolean {
+       var nod := self.extension.oclAsType(diagraph::DGraph).node(nodename);
+       if nod.oclIsUndefined() then
+         return false
+       endif;
+       var ispov := nod.eClass.oclIsKindOf(diagraph::DPointOfView);
+	  return ispov;
+}
+
+
+query gmfgen::GenNode::nodeName(): String {
+     return self.editPartClassName.substring(1, self.editPartClassName.rfind('EditPart')-1);
+}
+
+
+query gmfgen::GenEditorGenerator::diagraphNodeContainments(nodename : String): Sequence(diagraph::DImplicitEdge) {
+      var dgraph: diagraph::DGraph := self.extension.oclAsType(diagraph::DGraph);
+      var dnod: diagraph::DNode := dgraph.node(nodename);
+      var res: Sequence(diagraph::DImplicitEdge);
+      if not dnod.edges->isEmpty() then res := dnod.edges->asSequence()[diagraph::DImplicitEdge] endif;
+      return  res;
+}
+
+query gmfgen::GenEditorGenerator::diagraphHasNodeEdges(nodename : String): Boolean {
+      var dnod: diagraph::DNode := self.extension.oclAsType(diagraph::DGraph).node(nodename);
+      if  dnod.edges->isEmpty() then
+        return false
+      endif;
+      return true;
+}
+
+query gmfgen::GenEditorGenerator::extension() : ecore::EObject {
+	-- FP140523
+	return self.extension;
+}
+
+query gmfgen::GenEditorGenerator::extensionToString() : String {
+	-- FP120628
+	return self.extension.repr();
+}
+
+query gmfgen::GenEditorGenerator::diagraphSize() : Integer {
+    var diagr : diagraph::DGraph := self.extension.oclAsType(diagraph::DGraph);
+    return diagr.nodes->size();
+}
+
+query gmfgen::GenEditorGenerator::stylSize() : Integer {
+    var styl : diastyle::DStyle := self.styleExtension.oclAsType(diastyle::DStyle);
+    return styl.styles->size();
+}
+
+
+query gmfgen::GenEditorGenerator::getStyle() : diastyle::DStyle { //FP120724
+    var styl : diastyle::DStyle := self.styleExtension.oclAsType(diastyle::DStyle);
+    return styl;
+}
+
+
+
+
+query gmfgen::GenEditorGenerator::getDGraph() : diagraph::DGraph { //FP120724
+    var dgraph : diagraph::DGraph := self.extension.oclAsType(diagraph::DGraph);
+   // var styl : diastyle::DStyle := self.styleExtension.oclAsType(diastyle::DStyle);
+    return dgraph; //FP121210
+}
+
+query gmfgen::GenEditorGenerator::logDNode(nodename : String): String {
+       var nod: diagraph::DNode := self.getDNode(nodename);
+       if nod.oclIsUndefined() then
+         return "dNode is undefined 111"
+       endif;
+	  return "[["+nod.name+"]]";
+}
+
+
+query gmfgen::GenEditorGenerator::logDNode_v0(nodename : String): String {
+       var dgraph: diagraph::DGraph := self.getDGraph();
+       if dgraph.oclIsUndefined() then
+         return "dgraph is undefined 111"
+        endif;
+       var nod := dgraph.node(nodename);
+       if nod.oclIsUndefined() then
+         return "dNode is undefined 111"
+       endif;
+	  return nod.name;
+}
+
+
+
+query gmfgen::GenEditorGenerator::getDNode(nodename : String): diagraph::DNode {
+       var dgraph: diagraph::DGraph := self.getDGraph();
+       if dgraph.oclIsUndefined() then
+         return null
+        endif;
+       var nod := dgraph.node(nodename);
+       if nod.oclIsUndefined() then
+         return null
+       endif;
+	  return nod;
+}
+
+
+
+query gmfgen::GenEditorGenerator::logBackgroundColor(nodename : String): String {
+       var esult:String = "115 ";
+       var dgraph: diagraph::DGraph := self.getDGraph();
+       if dgraph.oclIsUndefined() then
+         esult := "dgraph is undefined 115"
+        endif;
+       var nod := dgraph.node(nodename);
+       if nod.oclIsUndefined() then
+         esult := esult + "dNode is undefined 115"
+       endif;
+
+      var styl : diastyle::DStyle := self.styleExtension.oclAsType(diastyle::DStyle);
+      esult = esult +  " color: " + styl.getBackgroundColor(self.getDNode(nodename));
+
+	  return esult + " for " + nod.name;
+}
+
+
+
+query gmfgen::GenEditorGenerator::logDNode_old(nodename : String): String {
+       var dgraph: diagraph::DGraph := self.extension.oclAsType(diagraph::DGraph);
+       if dgraph.oclIsUndefined() then
+         return "dgraph is undefined 222"
+        endif;
+       var nod := dgraph.node(nodename);
+       if nod.oclIsUndefined() then
+         return "dNode is undefined 222"
+       endif;
+	  return nod.name;
+}
+
+

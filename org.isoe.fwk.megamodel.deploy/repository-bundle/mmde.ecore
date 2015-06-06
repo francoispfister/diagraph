@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mmde"
+    nsURI="toto////mmde.test" nsPrefix="mmde">
+  <eClassifiers xsi:type="ecore:EClass" name="TechnicalRequirement" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//RequirementCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="flexibility" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//RequirementNatureType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correspondTo" eType="#//Need"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expressed_from" eType="#//Criteria"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//TechnicalRequirement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RequirementCategory">
+    <eLiterals name="todo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RequirementNatureType">
+    <eLiterals name="performance"/>
+    <eLiterals name="functional" value="1"/>
+    <eLiterals name="safety" value="2"/>
+    <eLiterals name="operational" value="3"/>
+    <eLiterals name="service" value="4"/>
+    <eLiterals name="physicalConstraints" value="5"/>
+    <eLiterals name="designConstraints" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Need" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="author" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lifeCycleStage" eType="#//DesignStage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="correspondTo" upperBound="-1"
+        eType="#//TechnicalRequirement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Need"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DesignStage">
+    <eLiterals name="preliminaryDesign"/>
+    <eLiterals name="conceptualDesign" value="1"/>
+    <eLiterals name="embodimentDesign" value="2"/>
+    <eLiterals name="detailedDesign" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StakeHolder" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="group" eType="#//Group"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="express_needs" upperBound="-1"
+        eType="#//Need"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Role" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Architecture" abstract="true" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="models" upperBound="-1"
+        eType="#//Model" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalArchitecture" eSuperTypes="#//Architecture"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalArchitecture" eSuperTypes="#//Architecture"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Model" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ModelType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ModelType">
+    <eLiterals name="organic"/>
+    <eLiterals name="functional" value="1"/>
+    <eLiterals name="behavioral" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemToDesign">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requirements" upperBound="-1"
+        eType="#//TechnicalRequirement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requirements" upperBound="-1"
+        eType="#//Need" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alternatives" upperBound="-1"
+        eType="#//AlternativeSolution" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AlternativeSolution" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="describe" eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfiesRequirements"
+        upperBound="-1" eType="#//TechnicalRequirement"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="effectiveness"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="risk"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DesignConsiderations_ilities">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Criteria" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="#//DesignCriterionType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferenceQualiValue" eType="#//PreferenceQualitativeScale"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferenceQuantValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="precise" eType="#//TechnicalIndicator"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Criteria"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DesignCriterionType"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="PreferenceQualitativeScale">
+    <eLiterals name="High"/>
+    <eLiterals name="medium" value="1" literal="medium"/>
+    <eLiterals name="low" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TechnicalIndicator" abstract="true"
+      eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualitativeObjective" eType="#//PreferenceQualitativeScale"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentQuantitativeEstimate"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentQualitaitveEstimate"
+        eType="#//PreferenceQualitativeScale"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ScoringFunction" eType="#//ScoringFunction"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ScoringFunction">
+    <eLiterals name="utility"/>
+    <eLiterals name="desirability" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MOE" eSuperTypes="#//TechnicalIndicator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EReference0" eType="#//MOP"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MOP" eSuperTypes="#//TechnicalIndicator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TPM" eSuperTypes="#//TechnicalIndicator"/>
+</ecore:EPackage>

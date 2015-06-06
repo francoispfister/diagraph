@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="diagraph actions"
+            id="org.isoe.fwk.runtime.diagraph.actions"
+            label="Diagraph Actions"
+            visible="true">
+         <menu
+               icon="icons/NotationDiagram.gif"
+               id="diagraphMenu"
+               label="Diagraph">
+            <separator
+                  name="diagraphGroup">
+            </separator>
+         </menu>
+
+
+
+         <action
+               label="Layout"
+               icon="icons/btlayout.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Layout"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="sampleGroup"
+               id="org.isoe.fwk.runtime.diagraph.layout.action.LayoutAction">
+         </action>
+
+
+
+
+      </actionSet>
+   </extension>
+
+</plugin>

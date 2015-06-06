@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:wikip="http://wikipedia.v0" xmi:id="_9wa0YJh6EeKy8peJT-GcRg" type="Wikipedia_default_root" name="default.wikipedia_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="__9-4IJh6EeKy8peJT-GcRg" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="__-AGQJh6EeKy8peJT-GcRg" type="4005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__-AGQZh6EeKy8peJT-GcRg" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__-AGQph6EeKy8peJT-GcRg" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__-AGQ5h6EeKy8peJT-GcRg" type="5003">
+      <children xmi:type="notation:Node" xmi:id="_CtKbMJh7EeKy8peJT-GcRg" type="2003">
+        <children xmi:type="notation:DecorationNode" xmi:id="_CtLCQJh7EeKy8peJT-GcRg" type="4003"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_CtKbMZh7EeKy8peJT-GcRg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_CtKbMph7EeKy8peJT-GcRg" fontName="Segoe UI"/>
+        <element xmi:type="wikip:Recipe" href="default.wikipedia#//@wikipedia/@recipes.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CtKbM5h7EeKy8peJT-GcRg" x="19" y="9"/>
+      </children>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__-AGRJh6EeKy8peJT-GcRg" type="5004"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="__9-4IZh6EeKy8peJT-GcRg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="__9-4Iph6EeKy8peJT-GcRg" fontName="Segoe UI"/>
+    <element xmi:type="wikip:Wikipedia" href="default.wikipedia#//@wikipedia"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__9-4I5h6EeKy8peJT-GcRg" x="95" y="105" width="186" height="206"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BLsBYJh7EeKy8peJT-GcRg" type="1002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BLsocJh7EeKy8peJT-GcRg" type="4009"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BLsocZh7EeKy8peJT-GcRg" type="5005">
+      <children xmi:type="notation:Node" xmi:id="_GDcagJh7EeKy8peJT-GcRg" type="2005">
+        <children xmi:type="notation:DecorationNode" xmi:id="_GDdBkJh7EeKy8peJT-GcRg" type="4006"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_GDcagZh7EeKy8peJT-GcRg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_GDcagph7EeKy8peJT-GcRg" fontName="Segoe UI"/>
+        <element xmi:type="wikip:ItemCategory" href="default.wikipedia#//@categories/@itemCategories.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GDcag5h7EeKy8peJT-GcRg" x="63" y="1"/>
+      </children>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BLsocph7EeKy8peJT-GcRg" type="5006">
+      <children xmi:type="notation:Node" xmi:id="_Kk4lYJh7EeKy8peJT-GcRg" type="2006">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Kk5McJh7EeKy8peJT-GcRg" type="4007"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Kk4lYZh7EeKy8peJT-GcRg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Kk4lYph7EeKy8peJT-GcRg" fontName="Segoe UI"/>
+        <element xmi:type="wikip:DishCategory" href="default.wikipedia#//@categories/@dishStyles.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Kk4lY5h7EeKy8peJT-GcRg" x="45" y="2"/>
+      </children>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BLsoc5h7EeKy8peJT-GcRg" type="5007"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_BLsBYZh7EeKy8peJT-GcRg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_BLsBYph7EeKy8peJT-GcRg" fontName="Segoe UI"/>
+    <element xmi:type="wikip:Categories" href="default.wikipedia#//@categories"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BLsBY5h7EeKy8peJT-GcRg" x="375" y="125" width="176" height="121"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_9wa0YZh6EeKy8peJT-GcRg"/>
+  <element xmi:type="wikip:Wikiroot" href="default.wikipedia#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_MrgToJh7EeKy8peJT-GcRg" type="3004" source="_CtKbMJh7EeKy8peJT-GcRg" target="_Kk4lYJh7EeKy8peJT-GcRg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_MrgToZh7EeKy8peJT-GcRg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MrgToph7EeKy8peJT-GcRg" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MrgTo5h7EeKy8peJT-GcRg" points="[15, 0, -207, -14]$[202, 14, -20, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MrqEoJh7EeKy8peJT-GcRg" id="(0.8739495798319328,0.5909090909090909)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MrqEoZh7EeKy8peJT-GcRg" id="(0.21978021978021978,0.5454545454545454)"/>
+  </edges>
+</notation:Diagram>

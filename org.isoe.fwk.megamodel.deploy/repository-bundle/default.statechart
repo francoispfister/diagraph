@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart="http://statechart">
+  <subStates name="s1">
+    <transitions from="//@subStates.0" to="//@subStates.1/@subStates.0" name="sd"/>
+  </subStates>
+  <subStates name="s2">
+    <actions expression="a"/>
+    <subStates name="a3"/>
+  </subStates>
+</_statechart:State>

@@ -1,0 +1,86 @@
+digraph G { rankdir=BT node [fontname="Verdana",fontsize=8,shape=none] edge [fontname="Verdana",fontsize=8];
+subgraph cluster_15081425 /*start subgraph*/{ 
+label="hello";
+
+Reference [
+label=< 
+<TABLE  cellspacing="-1" border="1" >
+<TR><TD>Reference</TD> </TR> 
+<TR><TD>
+<TABLE border="0">
+<TR><TD align="left">key: EString</TD> </TR> 
+<TR><TD port="there" align="left"  >description: EString</TD> </TR> 
+</TABLE>
+</TD></TR>
+</TABLE>
+>
+];
+
+Expression [
+label=< 
+<!-- main_Expression -->
+<TABLE  cellspacing="-1" cellpadding="-1" border="0" >
+  <TR><TD port="Expression">
+    <!-- classifier_Expression -->
+    <TABLE cellspacing="-1" cellpadding="5" border="1" >
+      <TR><TD>Expression</TD> </TR> 
+      <TR><TD>
+        <!-- container_Expression -->
+        <TABLE cellspacing="-1" border="0">
+          <TR><TD align="left">texte[0..1]: EString</TD> </TR> 
+          <TR><TD port="103">
+            <!-- classifier_SubExpression -->
+            <TABLE border="1" cellspacing="-1"  cellpadding="5" > 
+               <TR><TD port="SubExpression">SubExpression</TD> </TR> 
+               <TR><TD>
+                 <!-- container_SubExpression -->
+                 <TABLE  border="0"  cellspacing="-1">
+                   <TR><TD align="left">attr1[0..1]: Typ1</TD> </TR> 
+                   <TR><TD align="left">attr2[0..*]: Typ2</TD> </TR> 
+                   <TR><TD port="SubExpression_foo" align="left">foo: EString</TD> </TR> 
+                 </TABLE><!-- /container_SubExpression -->
+               </TD></TR>
+            </TABLE><!-- /classifier_SubExpression -->
+        </TD></TR> 
+        <TR><TD port="100" align="left"  >bar: EString</TD> </TR> 
+      </TABLE><!-- /container_Expression -->
+    </TD></TR>
+  </TABLE><!-- classifier_Expression -->
+</TD></TR>
+</TABLE><!-- /main_Expression -->
+>
+];
+
+Dialecte [shape=record,style=filled,	fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Dialecte|nom[0..1]: EString\nexemple[0..1]: EString\n}"/*end label*/];
+6131844 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Variante|description[0..1]: EString\n}"/*end label*/];
+Langue [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Langue|nom[0..1]: EString\n}"/*end label*/];
+8949356 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Pays|nom[0..1]: EString\n}"/*end label*/];
+Bonjour [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Bonjour|phrase[0..1]: EString\n}"/*end label*/];
+20863188 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Devise|texte[0..1]: EString\n}"/*end label*/];
+3794357 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Recette|nom[0..1]: EString\ndescription[0..1]: EString\n}"/*end label*/];
+22700073 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Animal|nom[0..1]: EString\n}"/*end label*/];
+Humain [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Humain|nom[0..1]: EString\n}"/*end label*/];
+14927396 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{LeMonde|name[0..1]: EString\n}"/*end label*/];
+}/*end subgraph*/
+Expression:Expression -> Reference [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="references"];
+Dialecte -> Expression:Expression [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="expressions"];
+Langue -> Dialecte [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="dialectes"];
+Langue -> 6131844 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="variantes"];
+8949356 -> Langue [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="langues"];
+14927396 -> 8949356 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="pays"];
+14927396 -> Langue [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="langues"];
+Bonjour -> Humain [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="a_un_autre"];
+Bonjour -> Humain [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="humain"];
+Humain -> Bonjour [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="dit_bonjour"];
+Humain -> Langue [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="parle"];
+Humain -> 8949356 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="pays"];
+Humain -> 20863188 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="devises"];
+Humain -> 3794357 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="recettes"];
+Humain -> 3794357 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="recetteFavorite"];
+Humain -> 22700073 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="animaux"];
+14927396 -> Humain [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="humains"];
+14927396 -> Reference:there [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="999",label="toto"];
+Expression:100 -> Bonjour [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="998",label="titi"];
+Expression:SubExpression_foo -> Langue [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="997",label="tata"];
+Humain -> Expression:103;
+}/*end graph*/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_comerr:ECommerce xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_comerr="http://comerr">
+  <fournisseurs nom="sa chose">
+    <approvisionnes article="//@ventes/@articles.0" articleNom="aptruc"/>
+  </fournisseurs>
+  <clients id="aa" nom="Jules" prenom="Dupont"/>
+  <ventes nom="ventes">
+    <paniers clientNom="panier">
+      <lignes article="//@ventes/@articles.0" quant="10"/>
+      <lignes article="//@ventes/@articles.1" quant="10"/>
+      <client id="100" nom="dudu" prenom="dédé">
+        <adresses voie="des lilas" nomCommune="30000"/>
+      </client>
+    </paniers>
+    <articles id="1" nom="truc" prix="20.5" quantStock="10"/>
+    <articles nom="truc2"/>
+    <articles/>
+  </ventes>
+</_comerr:ECommerce>

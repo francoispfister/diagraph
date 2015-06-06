@@ -1,0 +1,52 @@
+digraph g {
+	graph [
+		rankdir = LR
+		bgcolor= grey50
+	]
+	node [
+		fontsize = "10"
+		shape = box
+		style = "rounded,filled"
+	]
+ 
+	myNode1 [
+		label = "Node One"
+		color = lightsalmon
+		fillcolor = grey75
+	]
+	myNode2 [
+		label = "Node Two"
+		color = lightcoral
+		fillcolor = grey75
+	]
+	myNode3 [
+		label = "Node Three"
+		color = lightpink
+		fillcolor = grey75
+	]
+	myNode4 [
+		label = "Node Four"
+		color = orange
+		fillcolor = grey75
+	]
+ 
+	myNode1 -> myNode2 [ penwidth = 1, fontsize = 8, label = "Connection One" ]
+	myNode2 -> myNode3 [ penwidth = 1, fontsize = 8, label = "Connection Two" ]
+	myNode1 -> myNode4 [ penwidth = 1, fontsize = 8, label = "Connection Three" ]
+ 
+	subgraph cluster_sg1 {
+		label = "subGraph One"
+		style = rounded
+		color = springgreen4
+		myNode1
+		myNode4
+	}
+ 
+	subgraph cluster_sg2 {
+		label = "subGraph Two"
+		style = rounded
+		color = violetred3
+		myNode2
+		myNode3
+	}
+}

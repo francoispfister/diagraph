@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart101:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart101="http://statechart101">
+  <substates name="a">
+    <transitions name="ds" source="//@substates.0" target="//@substates.1"/>
+  </substates>
+  <substates name="b">
+    <substates name="z">
+      <transitions name="t" source="//@substates.1/@substates.0" target="//@substates.1/@substates.1"/>
+    </substates>
+    <substates name="b"/>
+    <transitions name="d" source="//@substates.1" target="//@substates.2"/>
+  </substates>
+  <substates name="e">
+    <transitions name="x" source="//@substates.2" target="//@substates.1"/>
+  </substates>
+  <variables name="var"/>
+</_statechart101:State>

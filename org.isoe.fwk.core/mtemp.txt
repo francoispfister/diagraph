@@ -1,0 +1,633 @@
+B  C  A
+ layer=default resourcepath=org.isoe.mbse.ktest101/model/ktest101.ecore
+canvas is A
+canvas is A
+GNWCR createNodeContainment A-A-subs-subs
+GNWCR createNodeContainment B-A-cs-cs
+------- postParse -----------
+propagate Ecore Inheritance for All Contained Elements
+ContainedElement Tree  (generic):
+End (ContainedElement Tree)
+ContainedElement Tree  (all):
+B
+   A
+C
+End (ContainedElement Tree)
+setNodeDepth
+[Containment] name:cs  SourceNode= A - containment=subs ??? no TargetNode  figureEmbedded=  fig own propagated= not propagated TargetName= cs 
+cloneInheritedContainments  node: A -> B
+checking All Nodes
+!!! check your annotations
+true
+
+
+
+resolveTargetNode for containment:A.subs
+resolveTargetNode:DiaContainment: A->subs->A
+resolveTargetNode for containment:A.cs
+resolveTargetNode:DiaContainment: A->cs->C
+sortContainments
+>>>to sort: A -- subs - order: -1
+>>>to sort: A -- cs - order: -1
+>>>sorted: A -- subs - order: -1
+>>>sorted: A -- cs - order: -1
+logContainments
+>>>[Containment] name:subs  SourceNode= A - containment=subs TargetNode= A - containment=subs figureEmbedded=  fig own propagated= not propagated TargetName= subs TargetReference= subs
+>>>[Containment] name:cs  SourceNode= A - containment=subs TargetNode= C - containment=cs figureEmbedded=  fig own propagated= not propagated TargetName= cs TargetReference= cs
+logContainments -2-
+>>containment: [Containment] name:subs  SourceNode= A - containment=subs TargetNode= A - containment=subs figureEmbedded=  fig own propagated= not propagated TargetName= subs TargetReference= subs
+>>containment: [Containment] name:cs  SourceNode= A - containment=subs TargetNode= C - containment=cs figureEmbedded=  fig own propagated= not propagated TargetName= cs TargetReference= cs
+B
+C
+A
+reparseLinkWithSuperClasses
+B
+C
+A
+ --- propagateInheritedLabelsIfNoLabel --- 
+ --- propagateAllInheritedLabelss --- 
+ --- inferMissingLabels --- 
+CPVC B
+CPVC C
+CPVC A
+-->cs:C
+-->subs:A
+point of view A is consistent
+DACNT node B is abstract and has no container 
+cloneInheritedContainments  node: A -> B
+~~~~~ GmfGraphGenerator processDomainModel - CANVAS
+GmfGraphGenerator
+pass2
+DBGNPR GmfGraphGenerator processReferences for B
+DBGNPR GmfGraphGenerator processReferences for C
+DBGNPR GmfGraphGenerator processReferences for A
+pass3
+pass4
+end pass
+no file C:\workspaces\inforsid06\org.isoe.mbse.ktest101\model\palette.txt
+no file C:\workspaces\inforsid06\org.isoe.mbse.ktest101\model\palette.txt
+~~~~~ GmfToolGenerator processDomainModel - TOOL
+GmfToolGenerator
+TPC GmfToolGenerator processCanvas - [2002]TOOL_CREATE - A - A
+TPN GmfToolGenerator processNode - [2001]TOOL_NODE - C - C
+TPN GmfToolGenerator processNode - [2003]TOOL_NODE - A - A
+Id for Node A = 1
+pass2
+DBGNPR GmfToolGenerator processReferences for B
+DBGNPR GmfToolGenerator processReferences for C
+DBGNPR GmfToolGenerator processReferences for A
+pass3
+pass4
+end pass
+~~~~~ GmfMapGenerator processDomainModel - MAP
+GmfMapGenerator
+~~~~~ GmfMapGenerator processCanvas - [2002]MAP_CREATE - A - A
+MAP_NODE;C;C
+MAP_NODE;A;A
+
+ before sorting:
+C 0
+A 1
+sort nodes by depth
+ after sorting:
+A 1
+C 0
+top nodes:
+tn=A
+tn=C
+process canvas inheritance
+process top nodes
+PTNGmfMapGenerator processTopNode - [2003]MAP_NODE - A - A
+CNM---TOP------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+11347128-A is mapped
+PTNGmfMapGenerator processTopNode - [2001]MAP_NODE - C - C
+CNM---TOP------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+7280616-C is mapped
+pass2
+DBGNPR GmfMapGenerator processReferences for B
+DBGNPR GmfMapGenerator processReferences for C
+DBGNPR GmfMapGenerator processReferences for A
+pass3
+2
+A
+C
+add TopNode toMapping: A
+ATP A
+ATP2 A
+ACRF createNodes: A
+ACRF addind labels: A
+ACRF addind label: name
+A
+C
+GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+ACRF adding nodeMapping C to A
+7280616-C is mapped
+   ACRF createNodes: A
+   ACRF addind labels: A
+   ACRF addind label: name
+A
+C
+   GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+   ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+   ACRF adding nodeMapping C to A
+7280616-C is mapped
+      ACRF createNodes: A
+      ACRF addind labels: A
+      ACRF addind label: name
+A
+C
+      GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+      ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+      ACRF adding nodeMapping C to A
+7280616-C is mapped
+         ACRF createNodes: A
+         ACRF addind labels: A
+         ACRF addind label: name
+A
+C
+         GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+         ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+         ACRF adding nodeMapping C to A
+7280616-C is mapped
+            ACRF createNodes: A
+            ACRF addind labels: A
+            ACRF addind label: name
+A
+C
+            GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+            ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+            ACRF adding nodeMapping C to A
+7280616-C is mapped
+               ACRF createNodes: A
+               ACRF addind labels: A
+               ACRF addind label: name
+A
+C
+               GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+               ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+               ACRF adding nodeMapping C to A
+7280616-C is mapped
+                  ACRF createNodes: A
+                  ACRF addind labels: A
+                  ACRF addind label: name
+A
+C
+                  GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                  ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                  ACRF adding nodeMapping C to A
+7280616-C is mapped
+                     ACRF createNodes: A
+                     ACRF addind labels: A
+                     ACRF addind label: name
+A
+C
+                     GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                     ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                     ACRF adding nodeMapping C to A
+7280616-C is mapped
+                        ACRF createNodes: A
+                        ACRF addind labels: A
+                        ACRF addind label: name
+A
+C
+                        GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                        ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                        ACRF adding nodeMapping C to A
+7280616-C is mapped
+                           ACRF createNodes: A
+                           ACRF addind labels: A
+                           ACRF addind label: name
+A
+C
+                           GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                           ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                           ACRF adding nodeMapping C to A
+7280616-C is mapped
+                              ACRF createNodes: A
+                              ACRF addind labels: A
+                              ACRF addind label: name
+A
+C
+                              GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                              ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                              ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                 ACRF createNodes: A
+                                 ACRF addind labels: A
+                                 ACRF addind label: name
+A
+C
+                                 GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                                 ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                                 ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                    ACRF createNodes: A
+                                    ACRF addind labels: A
+                                    ACRF addind label: name
+A
+C
+                                    GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                                    ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                                    ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                       ACRF createNodes: A
+                                       ACRF addind labels: A
+                                       ACRF addind label: name
+A
+C
+                                       GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                                       ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                                       ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                          ACRF createNodes: A
+                                          ACRF addind labels: A
+                                          ACRF addind label: name
+A
+C
+                                          GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                                          ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                                          ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                             ACRF createNodes: A
+                                             ACRF addind labels: A
+                                             ACRF addind label: name
+A
+C
+                                             GMFMGN embedding:A
+ACRCV is propagated en canvas: A -> A
+ACRCV is propagated en canvas: A -> C
+CNM---CHILD------- prepareNodeMapping: A
+A
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [subs:A] -> A
+validating Containment feature [subs:A] -> A
+                                             ACRF adding nodeMapping A to A
+11347128-A is mapped
+CNM---CHILD------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+                                             ACRF adding nodeMapping C to A
+7280616-C is mapped
+                                                ACRF createNodes: A
+                                                ACRF addind labels: A
+                                                ACRF addind label: name
+A
+C
+                                                GMFMGN embedding:A
+                                                ACRF createNodes: C
+                                                ACRF addind labels: C
+                                                GMFMGN embedding:A
+                                             ACRF createNodes: C
+                                             ACRF addind labels: C
+                                             GMFMGN embedding:A
+                                          ACRF createNodes: C
+                                          ACRF addind labels: C
+                                          GMFMGN embedding:A
+                                       ACRF createNodes: C
+                                       ACRF addind labels: C
+                                       GMFMGN embedding:A
+                                    ACRF createNodes: C
+                                    ACRF addind labels: C
+                                    GMFMGN embedding:A
+                                 ACRF createNodes: C
+                                 ACRF addind labels: C
+                                 GMFMGN embedding:A
+                              ACRF createNodes: C
+                              ACRF addind labels: C
+                              GMFMGN embedding:A
+                           ACRF createNodes: C
+                           ACRF addind labels: C
+                           GMFMGN embedding:A
+                        ACRF createNodes: C
+                        ACRF addind labels: C
+                        GMFMGN embedding:A
+                     ACRF createNodes: C
+                     ACRF addind labels: C
+                     GMFMGN embedding:A
+                  ACRF createNodes: C
+                  ACRF addind labels: C
+                  GMFMGN embedding:A
+               ACRF createNodes: C
+               ACRF addind labels: C
+               GMFMGN embedding:A
+            ACRF createNodes: C
+            ACRF addind labels: C
+            GMFMGN embedding:A
+         ACRF createNodes: C
+         ACRF addind labels: C
+         GMFMGN embedding:A
+      ACRF createNodes: C
+      ACRF addind labels: C
+      GMFMGN embedding:A
+   ACRF createNodes: C
+   ACRF addind labels: C
+   GMFMGN embedding:A
+add TopNode toMapping: C
+ATP C
+ATP2 C
+ACRF createNodes: C
+ACRF addind labels: C
+GMFMGN embedding:A
+0 compartmentMappings
+pass4
+end pass
+7280616-C is mapped
+11347128-A is mapped
+NodeMappings
+--logLabelMapping for AName--
+A relatedDiagram for:A
+   --logLabelMapping for AName--
+      --logLabelMapping for AName--
+         --logLabelMapping for AName--
+            --logLabelMapping for AName--
+               --logLabelMapping for AName--
+                  --logLabelMapping for AName--
+                     --logLabelMapping for AName--
+                        --logLabelMapping for AName--
+                           --logLabelMapping for AName--
+                              --logLabelMapping for AName--
+                                 --logLabelMapping for AName--
+                                    --logLabelMapping for AName--
+                                       --logLabelMapping for AName--
+                                          --logLabelMapping for AName--
+                                             --logLabelMapping for AName--
+                                                --logLabelMapping for AName--
+LinkMappings
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+resourceChanged: /org.isoe.mbse.ktest101.edit
+resourceChanged: /org.isoe.mbse.ktest101.editor
+resourceChanged: /org.isoe.mbse.ktest101.tests
+resourceChanged: /org.isoe.mbse.ktest101.diagram_default_root
+resourceChanged: /org.isoe.mbse.ktest101
+resourceChanged: /org.isoe.mbse.ktest101.edit
+resourceChanged: /org.isoe.mbse.ktest101.editor
+resourceChanged: /org.isoe.mbse.ktest101
+resourceChanged: /org.isoe.mbse.ktest101.editor
+resourceChanged: /org.isoe.mbse.ktest101.tests
+ROGDM B
+ROGDM C
+ROGDM A
+updateLanguageToTransform
+parseConcreteSyntaxOldGen
+*************************    ** B;A;
++++++++++++++++++++++++++   B;A; ++ B;A;
+ROGDM B
+ROGDM C
+ROGDM A
+diagraph parsing start
+resourceChanged: /org.isoe.mbse.ktest101
+resourceChanged: /org.isoe.mbse.ktest101.diagram_default_root
+resourceChanged: /org.isoe.mbse.ktest101.edit
+resourceChanged: /org.isoe.mbse.ktest101.diagram_default_root
+resourceChanged: /org.isoe.mbse.ktest101
+done
+diagraph parsing end
+current diagraph:null->A
+setViews (1) DiagraphGenerator - default; current=default
+current diagram:ktest101->ktest101
+parseConcreteSyntaxNewGen
+concrete syntax parsed - current:A
+concrete syntax parsed with new parser:A
+ktest101 handled in 17 seconds ()
+resourceChanged: /org.isoe.mbse.ktest101.diagram_default_root
+resourceChanged: /org.isoe.mbse.ktest101.editor
+resourceChanged: /org.isoe.mbse.ktest101.tests

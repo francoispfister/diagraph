@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clem:Conteneur xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:clem="http://clem.v0">
+  <foos name="f1" adresse="//@communes.0">
+    <opinions description="oui" foo="//@foos.0" bar="//@bars.0"/>
+  </foos>
+  <foos name="f2" adresse="//@communes.1">
+    <opinions description="non" foo="//@foos.1" bar="//@bars.1"/>
+  </foos>
+  <communes name="Alès"/>
+  <communes name="Nîmes"/>
+  <bars id="201"/>
+  <bars id="101"/>
+</clem:Conteneur>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helloworld:TheWorld xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:helloworld="http://helloworld.example.v1">
+  <languages name="AA"/>
+  <languages name="BB"/>
+  <researchers name="A" motherTongue="//@languages.0">
+    <saysHello sentence="sqdf" toAnother="//@researchers.1"/>
+    <authors publication="//@publications.0" submissionDate="sqdf"/>
+  </researchers>
+  <researchers name="B" motherTongue="//@languages.1">
+    <authors publication="//@publications.1" submissionDate="sqdf"/>
+    <authors publication="//@publications.2" submissionDate="sqdf"/>
+  </researchers>
+  <publications title="p1">
+    <sections header="Intro">
+      <paragraphs text="zeare"/>
+      <paragraphs text="sdfqdf">
+        <annotations text="sqdf"/>
+        <annotations text="sqdf"/>
+      </paragraphs>
+    </sections>
+    <sections header="Conclusion"/>
+    <sections header="Chapter 1"/>
+    <bibliography title="bibliography">
+      <entries reference="dsfsd"/>
+    </bibliography>
+  </publications>
+  <publications title="p2"/>
+  <publications/>
+</helloworld:TheWorld>

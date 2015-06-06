@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bsh
+Bundle-SymbolicName: org.isoe.fwk.bsh
+Bundle-Version: 1.0.20140712.1612
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: lib/bsh-2.0b4.jar,
+ .
+Export-Package: bsh,
+ bsh.classpath,
+ bsh.collection,
+ bsh.commands,
+ bsh.org.objectweb.asm,
+ bsh.reflect,
+ bsh.servlet,
+ bsh.util,
+ bsh.util.lib

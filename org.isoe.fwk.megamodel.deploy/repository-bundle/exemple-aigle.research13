@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_research13:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_research13="http://research13">
+  <processView name="ECMFA">
+    <phases name="submission"/>
+    <phases name="acceptation"/>
+    <phases name="rewriting"/>
+    <phases name="rejection"/>
+    <phases name="reviewing"/>
+    <phases name="publication"/>
+    <phases name="revision"/>
+  </processView>
+  <structuralView name="Laboratory of Advanced Model Driven SYstems">
+    <researchers name="Douglas" forName="F" res_papers="//@structuralView/@papers.2" res_position="//@positions.1">
+      <writes paragraph="//@structuralView/@papers.0/@paragraphs.0" timeSpent="20"/>
+      <skills description="rca"/>
+      <skills description="testing"/>
+    </researchers>
+    <researchers name="Lollini" forName="G" res_papers="//@structuralView/@papers.0" res_position="//@positions.2">
+      <writes paragraph="//@structuralView/@papers.0/@paragraphs.1" timeSpent="120"/>
+      <skills description="meta-modeling"/>
+      <skills description="uml"/>
+    </researchers>
+    <researchers name="Gerstein" forName="L" res_position="//@positions.3">
+      <reviews lname="glossary" reviewNote="//@structuralView/@papers.0/@paragraphs.0/@reviews.0" date="2012-04-04T01:00:00.000+0200"/>
+      <skills description="dsml"/>
+      <skills description="systems engineering"/>
+      <skills description="requirements"/>
+    </researchers>
+    <researchers name="Hallyday" forName="J" res_position="//@positions.5">
+      <reviews reviewNote="//@structuralView/@papers.3/@paragraphs.0/@reviews.0" date="2012-11-25T00:00:00.000+0100"/>
+      <skills description="language design"/>
+      <collaborations ratio="20" col_paper="//@structuralView/@papers.5"/>
+    </researchers>
+    <researchers name="Anthony" forName="R" res_position="//@positions.0">
+      <skills description="databases"/>
+    </researchers>
+    <researchers name="Rivers" forName="D" res_position="//@positions.4">
+      <skills description="process modelling"/>
+    </researchers>
+    <researchers name="Higelin" forName="J">
+      <writes paragraph="//@structuralView/@papers.2/@paragraphs.0" timeSpent="45"/>
+      <skills description="multi-agents"/>
+    </researchers>
+    <researchers name="Stivell" forName="A">
+      <skills description="tuning"/>
+      <skills description="fishing"/>
+    </researchers>
+    <papers name="Metamodel based Code Generation for Visual Notations" authors="//@structuralView/@researchers.1">
+      <paragraphs id="1" name="Definition" content="EMOF defines a limited amount of modelling constructs, among them classes, attributes, references, packages and operations. These concepts">
+        <reviews name="glossary" content="what does EMOF mean ?"/>
+        <reviews name="syntax" content="Use American English please"/>
+      </paragraphs>
+      <paragraphs id="2" name="Obeo" content="Obeo Designer is the product of a french company named Obeo. Obeo is a consulting company which has a strong focus on MDE and MDA. The company is an Eclipse Foundation Strategic Member and a contributor on many Eclipse Modelling projects.">
+        <reviews name="definition" content="define what is meant by &quot;contributor&quot;"/>
+      </paragraphs>
+      <progress process="//@processView" percent="10"/>
+      <keywords weight="30" keyword="//@structuralView/@knowledgeMan/@allkeywords.0"/>
+      <keywords keyword="//@structuralView/@knowledgeMan/@allkeywords.5"/>
+    </papers>
+    <papers name="A Meta-Model-Based Approach for Diagram Generation">
+      <paragraphs id="3" name="MetaCase" content="MetaCase MetaEdit+ products are one of the most mature solutions on the market today. The company started out in 1991, having its roots in work from the University of Jyvskyla in Finland."/>
+      <progress process="//@processView" percent="30"/>
+      <keywords weight="10" keyword="//@structuralView/@knowledgeMan/@allkeywords.2"/>
+      <keywords weight="5" keyword="//@structuralView/@knowledgeMan/@allkeywords.3"/>
+    </papers>
+    <papers name="Formalizing Patterns in DSMLs" authors="//@structuralView/@researchers.0">
+      <paragraphs/>
+      <progress process="//@processView" percent="50"/>
+      <keywords weight="15" keyword="//@structuralView/@knowledgeMan/@allkeywords.4"/>
+    </papers>
+    <papers name="Improving the cognitive effectiveness of DSMLs">
+      <paragraphs>
+        <reviews name="rev"/>
+      </paragraphs>
+      <progress process="//@processView" percent="25"/>
+    </papers>
+    <papers name="A Mapping Language from Models to Diagrams">
+      <progress process="//@processView" percent="15"/>
+      <keywords weight="20" keyword="//@structuralView/@knowledgeMan/@allkeywords.3"/>
+    </papers>
+    <papers name="Grammar-based Definition for Graphical Notations"/>
+    <knowledgeMan name="knowledge management">
+      <allkeywords name="pattern"/>
+      <allkeywords name="similarity"/>
+      <allkeywords name="matching"/>
+      <allkeywords name="rca"/>
+      <allkeywords name="metamodeling"/>
+      <allkeywords name="languages"/>
+    </knowledgeMan>
+  </structuralView>
+  <positions name="chair" description="chair"/>
+  <positions name="assistant-professor" parent="//@positions.3" description="assistant-professor"/>
+  <positions name="lecturer" description="lecturer"/>
+  <positions name="professor" description="professor"/>
+  <positions name="phd student" description="phd student"/>
+  <positions name="phd" parent="//@positions.3" description="phd"/>
+</_research13:PublicationSystem>

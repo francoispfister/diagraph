@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ggram:Genogram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ggram="http://ggram">
+  <hasEntities xsi:type="ggram:Man" Name="al"/>
+  <hasEntities xsi:type="ggram:Woman" Name="her" DateOfBirth=""/>
+  <hasEntities xsi:type="ggram:Man" Name="b"/>
+  <hasEntities xsi:type="ggram:Woman" Name="d"/>
+  <hasRelations xsi:type="ggram:Engagement" source="//@hasEntities.1" target="//@hasEntities.0"/>
+  <hasRelations xsi:type="ggram:LoveAffair" source="//@hasEntities.1" target="//@hasEntities.2"/>
+  <hasRelations xsi:type="ggram:CohabitationAndSeparation" source="//@hasEntities.3" target="//@hasEntities.2"/>
+  <hasChildRelations xsi:type="ggram:HasChild" source="//@hasRelations.2" target="//@hasEntities.0"/>
+</ggram:Genogram>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_no9xMdQnEeKiOOs_BdJFQQ" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_n1UyMNQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_n1ua0NQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_n1vo8NQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_n2EZENQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Artist/firstName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2EZEdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2EZEtQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Artist/lastName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2EZE9QnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2FAINQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Artist/birthDate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2FAIdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n1vo8dQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n1vo8tQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n1vo89QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n1wQANQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n1wQAdQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n1wQAtQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n1wQA9QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n1VZQNQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Artist"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n1VZQdQnEeKiOOs_BdJFQQ" x="440" y="290" width="205"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_n2FAItQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_n2FnMNQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_n2FnMdQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_n2GOQNQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Album/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2GOQdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2GOQtQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Album/releaseDate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2GOQ9QnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2GORNQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Album/ratings"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2GORdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2FnMtQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2FnM9QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2FnNNQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2FnNdQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2FnNtQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2FnN9QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2FnONQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n2FAI9QnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Album"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2FAJNQnEeKiOOs_BdJFQQ" x="570" y="435" width="468"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_n2G1UNQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_n2HcYNQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_n2IDcNQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_n2IDeNQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Country/code"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2IDedQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2IqgNQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Country/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2IqgdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2IDcdQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2IDctQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2IDc9QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2IDdNQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2IDddQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2IDdtQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2IDd9QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n2G1UdQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Country"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2G1UtQnEeKiOOs_BdJFQQ" x="415" y="165"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_n2IqgtQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_n2JRkNQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_n2JRkdQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_n2JRmdQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Genre/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2JRmtQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2JRktQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2JRk9QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2JRlNQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2JRldQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2JRltQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2JRl9QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2JRmNQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n2Iqg9QnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Genre"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2IqhNQnEeKiOOs_BdJFQQ" x="620" y="165"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_n2KfsNQnEeKiOOs_BdJFQQ" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_n2LGwNQnEeKiOOs_BdJFQQ" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_n2LGwdQnEeKiOOs_BdJFQQ" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_n2Lt0NQnEeKiOOs_BdJFQQ" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="music.ecore#//Rating/LOW"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2Lt0dQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2Lt0tQnEeKiOOs_BdJFQQ" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="music.ecore#//Rating/HIGH"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2Lt09QnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2LGwtQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2LGw9QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2LGxNQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n2KfsdQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="music.ecore#//Rating"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2KfstQnEeKiOOs_BdJFQQ" x="30" y="30"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_n2MU4NQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_n2M78NQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_n2M78dQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_n2M7-dQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Song/track"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2M7-tQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_n2NjANQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Song/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_n2NjAdQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2M78tQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2M789QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2M79NQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2M79dQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_n2M79tQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_n2M799QnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_n2M7-NQnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_n2MU4dQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Song"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n2MU4tQnEeKiOOs_BdJFQQ" x="795" y="165"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_qoT3MNQnEeKiOOs_BdJFQQ" type="Note" fontName="Segoe UI" fontHeight="12" bold="true" description="from http://www.eclipse.org/emf/texo" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_qocaENQnEeKiOOs_BdJFQQ" type="DiagramName">
+      <element xsi:nil="true"/>
+    </children>
+    <children xmi:type="notation:BasicDecorationNode" xmi:id="_qocaEdQnEeKiOOs_BdJFQQ" type="Description">
+      <element xsi:nil="true"/>
+    </children>
+    <styles xmi:type="notation:TextStyle" xmi:id="_qoT3MdQnEeKiOOs_BdJFQQ"/>
+    <styles xmi:type="notation:LineTypeStyle" xmi:id="_qoT3MtQnEeKiOOs_BdJFQQ"/>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoT3M9QnEeKiOOs_BdJFQQ" x="145" y="40" width="241" height="56"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_xZsrcNQnEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_xZtSgNQnEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_xZt5kNQnEeKiOOs_BdJFQQ" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_y4rK4NQnEeKiOOs_BdJFQQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="music.ecore#//Identifiable/id"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_y4rK4dQnEeKiOOs_BdJFQQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_xZt5kdQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xZt5ktQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xZt5k9QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_xZugoNQnEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_xZugodQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_xZugotQnEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_xZugo9QnEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_xZsrcdQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Identifiable"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xZsrctQnEeKiOOs_BdJFQQ" x="435" y="30" width="588" height="66"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AAy3sNQoEeKiOOs_BdJFQQ" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AA0F0NQoEeKiOOs_BdJFQQ" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AA0F0dQoEeKiOOs_BdJFQQ" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AA0F0tQoEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AA0s4NQoEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AA0s4dQoEeKiOOs_BdJFQQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AA0s4tQoEeKiOOs_BdJFQQ" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AA0s49QoEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AA0s5NQoEeKiOOs_BdJFQQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AA0s5dQoEeKiOOs_BdJFQQ"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AAy3sdQoEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="music.ecore#//Music"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AAy3stQoEeKiOOs_BdJFQQ" x="530" y="580" width="646" height="56"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_no-YQNQnEeKiOOs_BdJFQQ"/>
+  <element xmi:type="ecore:EPackage" href="music.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_n2SbgNQnEeKiOOs_BdJFQQ" type="3002" source="_n1UyMNQnEeKiOOs_BdJFQQ" target="_n2G1UNQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_n2TpoNQnEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2TpodQnEeKiOOs_BdJFQQ" x="-3" y="-33"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2WF4NQnEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2WF4dQnEeKiOOs_BdJFQQ" x="-3" y="15"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2SbgdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n2SbgtQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Artist/country"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2Sbg9QnEeKiOOs_BdJFQQ" points="[15, 0, 34, 59]$[15, -59, 34, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ9lcNQnEeKiOOs_BdJFQQ" id="(0.25,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ9lcdQnEeKiOOs_BdJFQQ" id="(0.4956521739130435,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_n2Ws8NQnEeKiOOs_BdJFQQ" type="3002" source="_n1UyMNQnEeKiOOs_BdJFQQ" target="_n2IqgtQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_n2Ws9NQnEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2Ws9dQnEeKiOOs_BdJFQQ" x="-23" y="-18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2XUANQnEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2XUAdQnEeKiOOs_BdJFQQ" x="-23" y="20"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2Ws8dQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n2Ws8tQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Artist/genre"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2Ws89QnEeKiOOs_BdJFQQ" points="[38, 0, -27, 76]$[38, -76, -27, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ8XUNQnEeKiOOs_BdJFQQ" id="(0.75,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ8XUdQnEeKiOOs_BdJFQQ" id="(0.33043478260869563,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_n2XUAtQnEeKiOOs_BdJFQQ" type="3002" source="_n2FAItQnEeKiOOs_BdJFQQ" target="_n1UyMNQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_n2XUBtQnEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2XUB9QnEeKiOOs_BdJFQQ" x="-11" y="-30"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2XUCNQnEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2XUCdQnEeKiOOs_BdJFQQ" x="-11" y="15"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2XUA9QnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n2XUBNQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Album/artist"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2XUBdQnEeKiOOs_BdJFQQ" points="[16, 0, 49, 62]$[16, -62, 49, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ-MgNQnEeKiOOs_BdJFQQ" id="(0.01056338028169014,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ-MgdQnEeKiOOs_BdJFQQ" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_n2X7ENQnEeKiOOs_BdJFQQ" type="3002" source="_n2FAItQnEeKiOOs_BdJFQQ" target="_n2IqgtQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_n2X7FNQnEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2X7FdQnEeKiOOs_BdJFQQ" x="14" y="-25"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2X7FtQnEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2X7F9QnEeKiOOs_BdJFQQ" x="9" y="24"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2X7EdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n2X7EtQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Album/genres"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2X7E9QnEeKiOOs_BdJFQQ" points="[-15, 0, 0, 221]$[-15, -221, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ_aoNQnEeKiOOs_BdJFQQ" id="(0.2992957746478873,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ_aodQnEeKiOOs_BdJFQQ" id="(0.6608695652173913,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_n2YiINQnEeKiOOs_BdJFQQ" type="3002" source="_n2FAItQnEeKiOOs_BdJFQQ" target="_n2MU4NQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_n2YiJNQnEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2YiJdQnEeKiOOs_BdJFQQ" x="4" y="-18"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_n2YiJtQnEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_n2YiJ9QnEeKiOOs_BdJFQQ" x="-1" y="23"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_n2YiIdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_n2YiItQnEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Album/songs"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_n2YiI9QnEeKiOOs_BdJFQQ" points="[48, 0, 0, 204]$[48, -204, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ-zkNQnEeKiOOs_BdJFQQ" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_oJ-zkdQnEeKiOOs_BdJFQQ" id="(0.4956521739130435,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_1bWjANQnEeKiOOs_BdJFQQ" type="3003" source="_n2FAItQnEeKiOOs_BdJFQQ" target="_xZsrcNQnEeKiOOs_BdJFQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_1bWjAdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1bWjAtQnEeKiOOs_BdJFQQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1bWjA9QnEeKiOOs_BdJFQQ" points="[53, 0, 17, 341]$[53, -341, 17, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1bd3wNQnEeKiOOs_BdJFQQ" id="(0.6813380281690141,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1bd3wdQnEeKiOOs_BdJFQQ" id="(0.8328611898016998,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_1z4XwNQnEeKiOOs_BdJFQQ" type="3003" source="_n1UyMNQnEeKiOOs_BdJFQQ" target="_xZsrcNQnEeKiOOs_BdJFQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_1z4XwdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_1z4XwtQnEeKiOOs_BdJFQQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1z4Xw9QnEeKiOOs_BdJFQQ" points="[15, 0, 0, 196]$[15, -196, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EsvpcNQoEeKiOOs_BdJFQQ" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1z8pMNQnEeKiOOs_BdJFQQ" id="(0.20679886685552407,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_2gIZwNQnEeKiOOs_BdJFQQ" type="3003" source="_n2MU4NQnEeKiOOs_BdJFQQ" target="_xZsrcNQnEeKiOOs_BdJFQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_2gIZwdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_2gIZwtQnEeKiOOs_BdJFQQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2gIZw9QnEeKiOOs_BdJFQQ" points="[-1, 0, 25, 71]$[-1, -71, 25, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2gNSQNQnEeKiOOs_BdJFQQ" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EsoUsNQoEeKiOOs_BdJFQQ" id="(0.6657223796033994,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_3OXYwNQnEeKiOOs_BdJFQQ" type="3003" source="_n2G1UNQnEeKiOOs_BdJFQQ" target="_xZsrcNQnEeKiOOs_BdJFQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_3OXYwdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_3OXYwtQnEeKiOOs_BdJFQQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3OXYw9QnEeKiOOs_BdJFQQ" points="[-1, 0, -24, 71]$[-1, -71, -24, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3OcRQNQnEeKiOOs_BdJFQQ" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3OcRQdQnEeKiOOs_BdJFQQ" id="(0.10198300283286119,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_4ICywNQnEeKiOOs_BdJFQQ" type="3003" source="_n2IqgtQnEeKiOOs_BdJFQQ" target="_xZsrcNQnEeKiOOs_BdJFQQ">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_4ICywdQnEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_4ICywtQnEeKiOOs_BdJFQQ" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_4ICyw9QnEeKiOOs_BdJFQQ" points="[-1, 0, -52, 71]$[-1, -71, -52, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4IHEMNQnEeKiOOs_BdJFQQ" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4IHEMdQnEeKiOOs_BdJFQQ" id="(0.4985835694050991,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_A6T5oNQoEeKiOOs_BdJFQQ" type="3002" source="_AAy3sNQoEeKiOOs_BdJFQQ" target="_n2FAItQnEeKiOOs_BdJFQQ">
+    <children xmi:type="notation:Node" xmi:id="_A6UgsNQoEeKiOOs_BdJFQQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A6UgsdQoEeKiOOs_BdJFQQ" x="-16" y="-27"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_A6UgstQoEeKiOOs_BdJFQQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_A6Ugs9QoEeKiOOs_BdJFQQ" x="-16" y="36"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_A6T5odQoEeKiOOs_BdJFQQ" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_A6T5otQoEeKiOOs_BdJFQQ" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="music.ecore#//Music/albums"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A6T5o9QoEeKiOOs_BdJFQQ" points="[-49, 0, 0, 62]$[-49, -62, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EssmINQoEeKiOOs_BdJFQQ" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A6YyINQoEeKiOOs_BdJFQQ" id="(0.5,1.0)"/>
+  </edges>
+</notation:Diagram>

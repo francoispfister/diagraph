@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_effbd902:Function xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_effbd902="http://effbd902">
+  <decompositions xsi:type="_effbd902:Function" controlFlowEdge="//@sequenceNodes.2" name="f1">
+    <decompositions xsi:type="_effbd902:Function" name="f">
+      <outputPorts outputflowEdge="//@decompositions.0/@flows.0"/>
+      <inputPorts/>
+    </decompositions>
+    <flows label="o" inputflowEdge="//@decompositions.0/@inputPorts.0"/>
+    <flows inputflowEdge="//@decompositions.0/@decompositions.0/@inputPorts.0"/>
+    <outputPorts outputflowEdge="//@flows.1 //@decompositions.0/@flows.1"/>
+    <inputPorts id="i"/>
+  </decompositions>
+  <sequenceNodes xsi:type="_effbd902:Start" controlFlowEdge="//@sequenceNodes.1"/>
+  <sequenceNodes xsi:type="_effbd902:And" controlFlowEdge="//@decompositions.0"/>
+  <sequenceNodes xsi:type="_effbd902:And" controlFlowEdge="//@sequenceNodes.3"/>
+  <sequenceNodes xsi:type="_effbd902:Final"/>
+  <flows inputflowEdge="//@decompositions.0/@inputPorts.0"/>
+  <flows label="v" inputflowEdge="//@inputPorts.0"/>
+  <outputPorts id="o" outputflowEdge="//@flows.0"/>
+  <inputPorts/>
+</_effbd902:Function>

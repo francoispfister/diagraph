@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="recette1"
+    nsURI="http:///aigle.tp.recette1.v0" nsPrefix="recette1">
+  <eClassifiers xsi:type="ecore:EClass" name="LivreRecettes">
+    <eAnnotations source="diagraph">
+      <details key="pov" value=""/>
+      <details key="label=titre"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="recettes" upperBound="-1"
+        eType="#//Recette" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ingredients" upperBound="-1"
+        eType="#//Ingredient" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="titre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nutriments" upperBound="-1"
+        eType="#//Nutriment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//CategorieIngredient" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Recette">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+      <details key="label=description"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cout" eType="#//Cout"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="r_ingredients" upperBound="-1"
+        eType="#//Ingredients" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ingredient">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Ingredient est une classe de concept&#xD;&#xA;c'est la source de l'association Nutriments"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="i_nutriments" upperBound="-1"
+        eType="#//Nutriments" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categorieIngredient" eType="#//CategorieIngredient"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Cout">
+    <eLiterals name="faible"/>
+    <eLiterals name="moyen" value="1"/>
+    <eLiterals name="eleve" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ingredients">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="label=quantite" value=""/>
+      <details key="label=unite"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_ingredient" eType="#//Ingredient"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantite" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unite" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nutriments">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="label=quantite"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Nutriments est une classe d'association"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantite" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_nutriment" eType="#//Nutriment"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nutriment">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Nutriment est une classe de concept"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valeurCalorique" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CategorieIngredient">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

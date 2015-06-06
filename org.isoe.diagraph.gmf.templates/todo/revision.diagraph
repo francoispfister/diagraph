@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" rootPointOfView="//@elements.8">
+  <elements xsi:type="diagraph:DNode" name="PublicationProcess" containment="//@elements.8" pointOfView="true" pointOfViewName="process" parentPointOfView="//@elements.8">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//PublicationProcess"/>
+    <eClass href="revision.ecore#//PublicationProcess"/>
+    <labelAttribute href="revision.ecore#//Named/name"/>
+    <edges xsi:type="diagraph:DContainment" name="publicationRules" containment="//@elements.0" target="//@elements.2" source="//@elements.0" compartment="true" compartmentName="publicationRules">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/processView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/processView"/>
+    </edges>
+    <edges xsi:type="diagraph:DContainment" name="phases" containment="//@elements.0" target="//@elements.1" source="//@elements.0" compartment="true" compartmentName="phases">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/processView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/processView"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="PublicationPhase" containment="//@elements.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//PublicationPhase"/>
+    <eClass href="revision.ecore#//PublicationPhase"/>
+    <labelAttribute href="revision.ecore#//PublicationPhase/name"/>
+    <edges xsi:type="diagraph:DLink" name="Sequence" containment="//@elements.1" target="//@elements.1" source="//@elements.1">
+      <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Sequence"/>
+      <targetReference href="revision.ecore#//Sequence/successor"/>
+      <eClass href="revision.ecore#//Sequence"/>
+      <labelAttribute href="revision.ecore#//Sequence/sequenceType"/>
+      <sourceReference href="revision.ecore#//Sequence/predecessor"/>
+    </edges>
+    <edges xsi:type="diagraph:DReference" name="neededPerson" target="//@elements.3" source="//@elements.1">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationPhase/neededPerson"/>
+      <targetReference href="revision.ecore#//PublicationPhase/neededPerson"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="Rule" containment="//@elements.0">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Rule"/>
+    <eClass href="revision.ecore#//Rule"/>
+    <labelAttribute href="revision.ecore#//Rule/text"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="Researcher" containment="//@elements.7">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Researcher"/>
+    <eClass href="revision.ecore#//Researcher"/>
+    <labelAttribute href="revision.ecore#//Researcher/position"/>
+    <edges xsi:type="diagraph:DLink" name="Write" containment="//@elements.3" target="//@elements.5" source="//@elements.3">
+      <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Write"/>
+      <targetReference href="revision.ecore#//Write/paragraph"/>
+      <eClass href="revision.ecore#//Write"/>
+      <labelAttribute href="revision.ecore#//Labelled/lname"/>
+    </edges>
+    <edges xsi:type="diagraph:DLink" name="Review" containment="//@elements.3" target="//@elements.6" source="//@elements.3">
+      <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Review"/>
+      <targetReference href="revision.ecore#//Review/reviewNote"/>
+      <eClass href="revision.ecore#//Review"/>
+      <labelAttribute href="revision.ecore#//Labelled/lname"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="Paper" containment="//@elements.7">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Paper"/>
+    <eClass href="revision.ecore#//Paper"/>
+    <labelAttribute href="revision.ecore#//Named/name"/>
+    <edges xsi:type="diagraph:DLink" name="Progress" containment="//@elements.4" target="//@elements.0" source="//@elements.4">
+      <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Progress"/>
+      <targetReference href="revision.ecore#//Progress/process"/>
+      <eClass href="revision.ecore#//Progress"/>
+      <labelAttribute href="revision.ecore#//Labelled/lname"/>
+      <sourceReference href="revision.ecore#//Progress/paper"/>
+    </edges>
+    <edges xsi:type="diagraph:DContainment" name="paragraphs" containment="//@elements.4" target="//@elements.5" source="//@elements.4" compartment="true" compartmentName="paragraphs">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationStructure/papers"/>
+      <targetReference href="revision.ecore#//PublicationStructure/papers"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="Paragraph" containment="//@elements.4">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//Paragraph"/>
+    <eClass href="revision.ecore#//Paragraph"/>
+    <labelAttribute href="revision.ecore#//Named/name"/>
+    <edges xsi:type="diagraph:DContainment" name="reviews" containment="//@elements.5" target="//@elements.6" source="//@elements.5" compartment="true" compartmentName="reviews">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//Paper/paragraphs"/>
+      <targetReference href="revision.ecore#//Paper/paragraphs"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="ReviewNote" containment="//@elements.5">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//ReviewNote"/>
+    <eClass href="revision.ecore#//ReviewNote"/>
+    <labelAttribute href="revision.ecore#//Named/name"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="PublicationStructure" containment="//@elements.8" pointOfView="true" pointOfViewName="structure" parentPointOfView="//@elements.8">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//PublicationStructure"/>
+    <eClass href="revision.ecore#//PublicationStructure"/>
+    <labelAttribute href="revision.ecore#//Named/name"/>
+    <edges xsi:type="diagraph:DContainment" name="researchers" containment="//@elements.7" target="//@elements.3" source="//@elements.7" compartment="true" compartmentName="researchers">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/structuralView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/structuralView"/>
+    </edges>
+    <edges xsi:type="diagraph:DContainment" name="papers" containment="//@elements.7" target="//@elements.4" source="//@elements.7" compartment="true" compartmentName="papers">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/structuralView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/structuralView"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="PublicationSystem" pointOfView="true">
+    <roleInCsGraph xsi:type="ecore:EClass" href="revision.ecore#//PublicationSystem"/>
+    <eClass href="revision.ecore#//PublicationSystem"/>
+    <edges xsi:type="diagraph:DContainment" name="processView" containment="//@elements.8" target="//@elements.0" source="//@elements.8">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/processView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/processView"/>
+    </edges>
+    <edges xsi:type="diagraph:DContainment" name="structuralView" containment="//@elements.8" target="//@elements.7" source="//@elements.8">
+      <roleInCsGraph xsi:type="ecore:EReference" href="revision.ecore#//PublicationSystem/structuralView"/>
+      <targetReference href="revision.ecore#//PublicationSystem/structuralView"/>
+    </edges>
+  </elements>
+</diagraph:DGraph>

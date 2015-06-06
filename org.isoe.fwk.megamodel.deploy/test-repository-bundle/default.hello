@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello:LeMonde xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hello="http://hello.example.v0">
+  <pays langues="//@langues.1 //@langues.2 //@langues.3 //@langues.0 //@langues.7" nom="France"/>
+  <pays langues="//@langues.5 //@langues.7" nom="Angleterre"/>
+  <langues nom="Français"/>
+  <langues nom="Alsacien"/>
+  <langues nom="Breton"/>
+  <langues nom="Corse"/>
+  <langues nom="Allemand"/>
+  <langues nom="Anglais"/>
+  <langues nom="Espagnol"/>
+  <langues nom="Arabe"/>
+  <humains nom="Pierre" pays="//@pays.0">
+    <dit_bonjour phrase="bonjour" a_un_autre="//@humains.1"/>
+  </humains>
+  <humains nom="John" pays="//@pays.1">
+    <dit_bonjour phrase="hello" a_un_autre="//@humains.0"/>
+  </humains>
+</hello:LeMonde>

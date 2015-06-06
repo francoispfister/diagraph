@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="diagraph actions"
+            id="org.isoe.fwk.runtime.diagraph.actions"
+            label="Diagraph Actions"
+            visible="true">
+         <menu
+               icon="icons/NotationDiagram.gif"
+               id="diagraphMenu"
+               label="Diagraph">
+            <separator
+                  name="diagraphGroup">
+            </separator>
+         </menu>
+
+         <action
+               label="Show text"
+               icon="icons/btntxt.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Show text"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.cmd.txt">
+         </action>
+
+          <action
+               label="Delete Annotation"
+               icon="icons/btndelannot.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Delete Annotation"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.cmd.btndelannot">
+         </action>
+
+         <action
+               label="Clear"
+               icon="icons/btnclear.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Clear"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.cmd.clear">
+         </action>
+
+
+        <action
+               label="AddView"
+               icon="icons/btaddview.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="AddView"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.cmd.addview">
+         </action>
+
+
+
+          <action
+               label="Auto"
+               icon="icons/btauto.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Auto"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.cmd.auto">
+         </action>
+
+
+
+         <action
+               label="Layout"
+               icon="icons/btlayout.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="Layout"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.layout.action.LayoutAction">
+         </action>
+
+
+
+        <action
+               label="lnk keyword"
+               icon="icons/btlnk.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="lnk keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.lnk">
+         </action>
+
+
+
+          <action
+               label="nav keyword"
+               icon="icons/btnav.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="nav keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.nav">
+         </action>
+
+
+         <action
+               label="view keyword"
+               icon="icons/btview.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="view keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.view">
+         </action>
+
+
+          <action
+               label="pov keyword"
+               icon="icons/btpov.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="pov keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.pov">
+         </action>
+
+         <action
+               label="icon keyword"
+               icon="icons/bticon.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="icon keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.icon">
+         </action>
+
+
+          <action
+               label="shape keyword"
+               icon="icons/btshape.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="shape keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.shape">
+         </action>
+
+         <action
+               label="label keyword"
+               icon="icons/btlabel.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="label keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.label">
+         </action>
+
+
+          <action
+               label="ltrg keyword"
+               icon="icons/btltrg.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="ltrg keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.ltrg">
+         </action>
+
+          <action
+               label="lsrc keyword"
+               icon="icons/btlsrc.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="lsrc keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.lsrc">
+         </action>
+
+
+
+         <action
+               label="cont keyword"
+               icon="icons/btcont.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="cont keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.cont">
+         </action>
+
+
+         <action
+               label="link keyword"
+               icon="icons/btlink.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="link keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.link">
+         </action>
+
+         <action
+               label="afx keyword"
+               icon="icons/btafx.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="afx keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.afx">
+         </action>
+
+         <action
+               label="kref keyword"
+               icon="icons/btkref.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="kref keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.kref">
+         </action>
+
+
+
+         <action
+               label="ref keyword"
+               icon="icons/btref.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="ref keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.ref">
+         </action>
+
+
+
+         <action
+               label="cref keyword"
+               icon="icons/btcref.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="cref keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.cref">
+         </action>
+
+
+          <action
+               label="node keyword"
+               icon="icons/btnode.gif"
+               class="org.isoe.fwk.runtime.diagraph.layout.workbench.action.LayoutWorkbenchAction"
+               tooltip="node keyword"
+               menubarPath="diagraphMenu/diagraphGroup"
+               toolbarPath="diagraphGroup"
+               id="org.isoe.fwk.runtime.diagraph.add.node">
+         </action>
+
+
+      </actionSet>
+   </extension>
+
+</plugin>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_AUIioR3jEeOzjNWDFD_JYw" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_AUIioh3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIiox3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIipB3jEeOzjNWDFD_JYw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIipR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIiph3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIipx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIiqB3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIiqR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIiqh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIiqx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUIirB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Pedals"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUIirR3jEeOzjNWDFD_JYw" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUIirh3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIirx3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIisB3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUIisR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//BackBrake/type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUIish3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIisx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIitB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIitR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIith3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIitx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIiuB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIiuR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUIiuh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//BackBrake"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUIiux3jEeOzjNWDFD_JYw" x="162" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUIivB3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIivR3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIivh3jEeOzjNWDFD_JYw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIivx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIiwB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIiwR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIiwh3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIiwx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIixB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIixR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUIixh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//FrontBrake"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUIixx3jEeOzjNWDFD_JYw" x="375" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUIiyB3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIiyR3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIiyh3jEeOzjNWDFD_JYw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIiyx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIizB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIizR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIizh3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIizx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIi0B3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIi0R3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUIi0h3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Handlebars"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUIi0x3jEeOzjNWDFD_JYw" x="537" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUIi1B3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIi1R3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIi1h3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUIi1x3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Saddle/type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUIi2B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIi2R3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIi2h3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIi2x3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIi3B3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIi3R3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIi3h3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIi3x3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUIi4B3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Saddle"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUIi4R3jEeOzjNWDFD_JYw" x="699" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUIi4h3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUIi4x3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUIi5B3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUIi5R3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Gear/type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUIi5h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIi5x3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIi6B3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIi6R3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUIi6h3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUIi6x3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUIi7B3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUIi7R3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSToB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Gear"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSToR3jEeOzjNWDFD_JYw" x="894" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSToh3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSTox3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSTpB3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUSTpR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Frame/color"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTph3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTpx3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Frame/type"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTqB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSTqR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSTqh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSTqx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSTrB3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSTrR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSTrh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSTrx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSTsB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Frame"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSTsR3jEeOzjNWDFD_JYw" x="1403" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSTsh3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUSTsx3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSTtB3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUSTtR3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Supplier/superParts"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTth3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTtx3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Supplier/homeParts"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTuB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTuR3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Supplier/handmadeParts"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTuh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSTux3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSTvB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSTvR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSTvh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//Supplier"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSTvx3jEeOzjNWDFD_JYw" x="901"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSTwB3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUSTwR3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSTwh3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUSTwx3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Color/metal"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTxB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTxR3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Color/black"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTxh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTxx3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Color/red"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTyB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSTyR3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//Color/blue"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSTyh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSTyx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSTzB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSTzR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSTzh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//Color"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSTzx3jEeOzjNWDFD_JYw" x="1088"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUST0B3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUST0R3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUST0h3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUST0x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//GearType/innerGear"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST1B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST1R3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//GearType/outerGear"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST1h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUST1x3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUST2B3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUST2R3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUST2h3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//GearType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUST2x3jEeOzjNWDFD_JYw" x="1263"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUST3B3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUST3R3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUST3h3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUST3x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//SaddleType/racingSaddle"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST4B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST4R3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//SaddleType/childSaddle"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST4h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST4x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//SaddleType/unicycleSaddle"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST5B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST5R3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//SaddleType/comfortSaddle"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST5h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUST5x3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUST6B3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUST6R3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUST6h3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//SaddleType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUST6x3jEeOzjNWDFD_JYw" x="1437"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUST7B3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUST7R3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUST7h3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUST7x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//FrameType/cityFrame"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST8B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST8R3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//FrameType/racerFrame"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST8h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST8x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//FrameType/uniFrame"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST9B3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUST9R3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUST9h3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUST9x3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUST-B3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//FrameType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUST-R3jEeOzjNWDFD_JYw" x="1616"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUST-h3jEeOzjNWDFD_JYw" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_AUST-x3jEeOzjNWDFD_JYw" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_AUST_B3jEeOzjNWDFD_JYw" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_AUST_R3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//BackBrakeType/pedalBrake"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUST_h3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUST_x3jEeOzjNWDFD_JYw" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="bike.ecore#//BackBrakeType/handBrake"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUAB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUAR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUAh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUAx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUBB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="bike.ecore#//BackBrakeType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUBR3jEeOzjNWDFD_JYw" x="1788"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUBh3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSUBx3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUCB3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUSUCR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Description/customerName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUCh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUCx3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Description/customerAddress"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUDB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUDR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Description/price"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUDh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUDx3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Description/deliveryDate"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUEB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUER3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUEh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUEx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUFB3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUFR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUFh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUFx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUGB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Description"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUGR3jEeOzjNWDFD_JYw" x="1594" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUGh3jEeOzjNWDFD_JYw" type="1003">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AUSUGx3jEeOzjNWDFD_JYw" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AUSUHB3jEeOzjNWDFD_JYw" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_AUSUHR3jEeOzjNWDFD_JYw" type="4007"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUHh3jEeOzjNWDFD_JYw" type="5007">
+      <children xmi:type="notation:Node" xmi:id="_AUSUHx3jEeOzjNWDFD_JYw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="bike.ecore#//Bike/%diagraph%/@details.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUIB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUIR3jEeOzjNWDFD_JYw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="bike.ecore#//Bike/%diagraph%/@details.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUIh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUIx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUJB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUJR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUJh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element xmi:type="ecore:EAnnotation" href="bike.ecore#//Bike/%diagraph%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUJx3jEeOzjNWDFD_JYw" x="559" y="335" width="463"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUKB3jEeOzjNWDFD_JYw" type="1003">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AUSUKR3jEeOzjNWDFD_JYw" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AUSUKh3jEeOzjNWDFD_JYw" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_AUSUKx3jEeOzjNWDFD_JYw" type="4007"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSULB3jEeOzjNWDFD_JYw" type="5007">
+      <children xmi:type="notation:Node" xmi:id="_AUSULR3jEeOzjNWDFD_JYw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="bike.ecore#//Item/%diagraph%/@details.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSULh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSULx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUMB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUMR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUMh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element xmi:type="ecore:EAnnotation" href="bike.ecore#//Item/%diagraph%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUMx3jEeOzjNWDFD_JYw" x="702" y="48"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUNB3jEeOzjNWDFD_JYw" type="1003">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AUSUNR3jEeOzjNWDFD_JYw" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AUSUNh3jEeOzjNWDFD_JYw" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_AUSUNx3jEeOzjNWDFD_JYw" type="4007"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUOB3jEeOzjNWDFD_JYw" type="5007">
+      <children xmi:type="notation:Node" xmi:id="_AUSUOR3jEeOzjNWDFD_JYw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="bike.ecore#//BackWheel/%diagraph%/@details.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUOh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUOx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUPB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUPR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUPh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element xmi:type="ecore:EAnnotation" href="bike.ecore#//BackWheel/%diagraph%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUPx3jEeOzjNWDFD_JYw" x="1081" y="173"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUQB3jEeOzjNWDFD_JYw" type="1003">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AUSUQR3jEeOzjNWDFD_JYw" source="Shortcut">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AUSUQh3jEeOzjNWDFD_JYw" key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children xmi:type="notation:Node" xmi:id="_AUSUQx3jEeOzjNWDFD_JYw" type="4007"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSURB3jEeOzjNWDFD_JYw" type="5007">
+      <children xmi:type="notation:Node" xmi:id="_AUSURR3jEeOzjNWDFD_JYw" type="2007">
+        <element xmi:type="ecore:EStringToStringMapEntry" href="bike.ecore#//FrontWheel/%diagraph%/@details.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSURh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSURx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUSB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUSR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUSh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element xmi:type="ecore:EAnnotation" href="bike.ecore#//FrontWheel/%diagraph%"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUSx3jEeOzjNWDFD_JYw" x="1243" y="181"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUTB3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSUTR3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUTh3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUSUTx3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Item/id"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUUB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUUR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Item/price"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUUh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AUSUUx3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//Item/supplier"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUVB3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUVR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUVh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUVx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUWB3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUWR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUWh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUWx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUXB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Item"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUXR3jEeOzjNWDFD_JYw" x="698"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUXh3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSUXx3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUYB3jEeOzjNWDFD_JYw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUYR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUYh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUYx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUZB3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUZR3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUZh3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUZx3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUaB3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//BackWheel"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUaR3jEeOzjNWDFD_JYw" x="1077" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUah3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSUax3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUbB3jEeOzjNWDFD_JYw" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_AUSUbR3jEeOzjNWDFD_JYw" type="2001">
+        <element xmi:type="ecore:EAttribute" href="bike.ecore#//FrontWheel/color"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUbh3jEeOzjNWDFD_JYw"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUbx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUcB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUcR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUch3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUcx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUdB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUdR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUdh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//FrontWheel"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUdx3jEeOzjNWDFD_JYw" x="1239" y="167"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AUSUeB3jEeOzjNWDFD_JYw" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_AUSUeR3jEeOzjNWDFD_JYw" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_AUSUeh3jEeOzjNWDFD_JYw" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUex3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUfB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUfR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUfh3jEeOzjNWDFD_JYw" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_AUSUfx3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_AUSUgB3jEeOzjNWDFD_JYw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_AUSUgR3jEeOzjNWDFD_JYw"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_AUSUgh3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="bike.ecore#//Bike"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AUSUgx3jEeOzjNWDFD_JYw" x="555" y="329" width="463"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_AUSUhB3jEeOzjNWDFD_JYw"/>
+  <element xmi:type="ecore:EPackage" href="bike.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUhR3jEeOzjNWDFD_JYw" type="3003" source="_AUIioh3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUhh3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUhx3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUiB3jEeOzjNWDFD_JYw" points="[0, 0, -660, 82]$[0, -30, -660, 52]$[660, -30, 0, 52]$[660, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUiR3jEeOzjNWDFD_JYw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUih3jEeOzjNWDFD_JYw" id="(0.0948905109489051,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUix3jEeOzjNWDFD_JYw" type="3003" source="_AUIirh3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUjB3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUjR3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUjh3jEeOzjNWDFD_JYw" points="[0, 0, -487, 82]$[0, -30, -487, 52]$[487, -30, 0, 52]$[487, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUjx3jEeOzjNWDFD_JYw" id="(0.49673202614379086,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUkB3jEeOzjNWDFD_JYw" id="(0.19708029197080293,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUkR3jEeOzjNWDFD_JYw" type="3003" source="_AUIivB3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUkh3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUkx3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUlB3jEeOzjNWDFD_JYw" points="[0, 0, -312, 82]$[0, -30, -312, 52]$[312, -30, 0, 52]$[312, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUlR3jEeOzjNWDFD_JYw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUlh3jEeOzjNWDFD_JYw" id="(0.291970802919708,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUlx3jEeOzjNWDFD_JYw" type="3003" source="_AUIiyB3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUmB3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUmR3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUmh3jEeOzjNWDFD_JYw" points="[0, 0, -164, 82]$[0, -30, -164, 52]$[164, -30, 0, 52]$[164, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUmx3jEeOzjNWDFD_JYw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUnB3jEeOzjNWDFD_JYw" id="(0.39416058394160586,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUnR3jEeOzjNWDFD_JYw" type="3003" source="_AUIi1B3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUnh3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUnx3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUoB3jEeOzjNWDFD_JYw" points="[0, 0, 0, 82]$[0, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUoR3jEeOzjNWDFD_JYw" id="(0.4962962962962963,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUoh3jEeOzjNWDFD_JYw" id="(0.49635036496350365,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUox3jEeOzjNWDFD_JYw" type="3003" source="_AUIi4h3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUpB3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUpR3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUph3jEeOzjNWDFD_JYw" points="[0, 0, 176, 82]$[0, -30, 176, 52]$[-176, -30, 0, 52]$[-176, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUpx3jEeOzjNWDFD_JYw" id="(0.4959349593495935,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUqB3jEeOzjNWDFD_JYw" id="(0.5912408759124088,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUqR3jEeOzjNWDFD_JYw" type="3003" source="_AUSUXh3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUqh3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUqx3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUrB3jEeOzjNWDFD_JYw" points="[0, 0, 335, 82]$[0, -30, 335, 52]$[-335, -30, 0, 52]$[-335, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUrR3jEeOzjNWDFD_JYw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUrh3jEeOzjNWDFD_JYw" id="(0.6934306569343066,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUrx3jEeOzjNWDFD_JYw" type="3003" source="_AUSUah3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUsB3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUsR3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUsh3jEeOzjNWDFD_JYw" points="[0, 0, 484, 82]$[0, -30, 484, 52]$[-484, -30, 0, 52]$[-484, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUsx3jEeOzjNWDFD_JYw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUtB3jEeOzjNWDFD_JYw" id="(0.7956204379562044,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUtR3jEeOzjNWDFD_JYw" type="3003" source="_AUSToh3jEeOzjNWDFD_JYw" target="_AUSUTB3jEeOzjNWDFD_JYw">
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUth3jEeOzjNWDFD_JYw" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUtx3jEeOzjNWDFD_JYw" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUuB3jEeOzjNWDFD_JYw" points="[0, 0, 647, 82]$[0, -30, 647, 52]$[-647, -30, 0, 52]$[-647, -82, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUuR3jEeOzjNWDFD_JYw" id="(0.4961832061068702,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUuh3jEeOzjNWDFD_JYw" id="(0.8978102189781022,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUux3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUSToh3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSUvB3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUvR3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUvh3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUvx3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUwB3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUwR3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/frame"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUwh3jEeOzjNWDFD_JYw" points="[0, 0, -577, 94]$[528, -61, -49, 33]$[577, -94, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUwx3jEeOzjNWDFD_JYw" id="(0.8137254901960784,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUxB3jEeOzjNWDFD_JYw" id="(0.4961832061068702,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUxR3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUSUah3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSUxh3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUxx3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSUyB3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSUyR3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSUyh3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSUyx3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/frontWheel"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSUzB3jEeOzjNWDFD_JYw" points="[0, 0, -409, 111]$[367, -61, -42, 50]$[409, -111, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUzR3jEeOzjNWDFD_JYw" id="(0.7254901960784313,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSUzh3jEeOzjNWDFD_JYw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSUzx3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUSUXh3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSU0B3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU0R3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSU0h3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU0x3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSU1B3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSU1R3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/backWheel"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSU1h3jEeOzjNWDFD_JYw" points="[0, 0, -256, 119]$[214, -61, -42, 58]$[256, -119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU1x3jEeOzjNWDFD_JYw" id="(0.6274509803921569,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU2B3jEeOzjNWDFD_JYw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSU2R3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIi4h3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSU2h3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU2x3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSU3B3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU3R3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSU3h3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSU3x3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/gear"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSU4B3jEeOzjNWDFD_JYw" points="[0, 0, -92, 111]$[92, -111, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU4R3jEeOzjNWDFD_JYw" id="(0.5392156862745098,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU4h3jEeOzjNWDFD_JYw" id="(0.4959349593495935,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSU4x3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIi1B3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSU5B3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU5R3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSU5h3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU5x3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSU6B3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSU6R3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/saddle"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSU6h3jEeOzjNWDFD_JYw" points="[0, 0, 88, 111]$[-88, -111, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU6x3jEeOzjNWDFD_JYw" id="(0.45098039215686275,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU7B3jEeOzjNWDFD_JYw" id="(0.4962962962962963,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSU7R3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIiyB3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSU7h3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU7x3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSU8B3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU8R3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSU8h3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSU8x3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/handlebars"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSU9B3jEeOzjNWDFD_JYw" points="[0, 0, 257, 119]$[-216, -61, 41, 58]$[-257, -119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU9R3jEeOzjNWDFD_JYw" id="(0.3627450980392157,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU9h3jEeOzjNWDFD_JYw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSU9x3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIioh3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSU-B3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU-R3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSU-h3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSU-x3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSU_B3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSU_R3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/pedals"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSU_h3jEeOzjNWDFD_JYw" points="[0, 0, 766, 119]$[-725, -61, 41, 58]$[-766, -119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSU_x3jEeOzjNWDFD_JYw" id="(0.08823529411764706,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVAB3jEeOzjNWDFD_JYw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSVAR3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIivB3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSVAh3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVAx3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSVBB3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVBR3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSVBh3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSVBx3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/frontBrake"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSVCB3jEeOzjNWDFD_JYw" points="[0, 0, 409, 119]$[-368, -61, 41, 58]$[-409, -119, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVCR3jEeOzjNWDFD_JYw" id="(0.2647058823529412,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVCh3jEeOzjNWDFD_JYw" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSVCx3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUIirh3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSVDB3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVDR3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSVDh3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVDx3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSVEB3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSVER3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/backBrake"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSVEh3jEeOzjNWDFD_JYw" points="[0, 0, 588, 111]$[-534, -61, 54, 50]$[-588, -111, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVEx3jEeOzjNWDFD_JYw" id="(0.17647058823529413,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVFB3jEeOzjNWDFD_JYw" id="(0.49673202614379086,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AUSVFR3jEeOzjNWDFD_JYw" type="3002" source="_AUSUeB3jEeOzjNWDFD_JYw" target="_AUSUBh3jEeOzjNWDFD_JYw">
+    <children xmi:type="notation:Node" xmi:id="_AUSVFh3jEeOzjNWDFD_JYw" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVFx3jEeOzjNWDFD_JYw" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AUSVGB3jEeOzjNWDFD_JYw" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_AUSVGR3jEeOzjNWDFD_JYw" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_AUSVGh3jEeOzjNWDFD_JYw" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AUSVGx3jEeOzjNWDFD_JYw" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="bike.ecore#//Bike/description"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AUSVHB3jEeOzjNWDFD_JYw" points="[0, 0, -786, 60]$[786, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVHR3jEeOzjNWDFD_JYw" id="(0.9019607843137255,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AUSVHh3jEeOzjNWDFD_JYw" id="(0.4972972972972973,1.0)"/>
+  </edges>
+</notation:Diagram>

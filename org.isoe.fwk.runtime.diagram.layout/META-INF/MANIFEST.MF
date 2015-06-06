@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Diagram Layout
+Bundle-SymbolicName: org.isoe.fwk.runtime.diagram.layout;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",
+ org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.extensionpoint.layout;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4",
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor;bundle-version="1.7.0",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.generator;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.fwk.runtime.diagram.layout

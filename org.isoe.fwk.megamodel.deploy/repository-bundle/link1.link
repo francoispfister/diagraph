@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:X xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:link="http://link.v0">
+  <as name="a1">
+    <bs name="b1"/>
+    <bs name="b1"/>
+    <cs name="c1">
+      <ds name="d1"/>
+    </cs>
+    <cs name="c100">
+      <ds name="d100"/>
+    </cs>
+    <ws name="w1" wc="//@as.0/@cs.1"/>
+    <ws name="w2" wc="//@as.1/@cs.0"/>
+    <ms name="m" mk="//@ks.0" ma="//@as.0"/>
+    <ns999 name="a10" nk="//@ks.0"/>
+    <ns999 name="n9999" nk="//@ks.0"/>
+    <ns999 name="n9998" nk="//@ks.1"/>
+  </as>
+  <as name="a2">
+    <bs name="b2"/>
+    <cs name="c2"/>
+    <cs name="c22">
+      <ds name="d222"/>
+    </cs>
+  </as>
+  <ks name="k10"/>
+  <ks name="k11"/>
+</link:X>

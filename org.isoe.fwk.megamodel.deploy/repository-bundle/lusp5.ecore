@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="lusp5"
+    nsURI="http:///lusp.v5-0" nsPrefix="lusp5">
+  <eClassifiers xsi:type="ecore:EClass" name="StudyView" eSuperTypes="#//ModelingElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=allUsers" value=""/>
+      <details key="kref=concernsStudy" value=""/>
+      <details key="pov:studview" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concernsStudy" eType="#//SE_Study"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allUsers" upperBound="512"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studied_SOI" eType="#//Component"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SE_Study" eSuperTypes="#//ModelingElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=team" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="responsible" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="team" upperBound="512"
+        eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lastUser" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="studyObjectives" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User" eSuperTypes="#//ModelingElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="userName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//ModelingElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OrganicView">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=allComponents" value=""/>
+      <details key="pov:orgview" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allComponents" upperBound="512"
+        eType="#//Component" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lusp">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cref=studyView" value=""/>
+      <details key="cref=organicView" value=""/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="studyView" eType="#//StudyView"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="organicView" eType="#//OrganicView"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelingElement">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

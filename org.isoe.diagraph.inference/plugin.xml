@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.isoe.diagraph.syntaxgenerator">
+      <SyntaxInference
+            class="org.isoe.diagraph.inference.SyntaxInference">
+      </SyntaxInference>
+      <SyntaxRefactoring
+            class="org.isoe.diagraph.inference.SyntaxRefactoring">
+      </SyntaxRefactoring>
+   </extension>
+
+</plugin>

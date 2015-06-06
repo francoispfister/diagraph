@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_imof:IPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_imof="http://imof">
+  <contents xsi:type="_imof:IClass" name="Car" superType="//@contents.1">
+    <references name="4" type="//@contents.2"/>
+    <references name="1" type="//@contents.5"/>
+    <attributes name="name" type="//@contents.3"/>
+  </contents>
+  <contents xsi:type="_imof:IClass" name="Vehicle" subTypes="//@contents.0"/>
+  <contents xsi:type="_imof:IClass" name="Wheel">
+    <attributes name="diameter" type="//@contents.4"/>
+  </contents>
+  <contents xsi:type="_imof:IDatatype" name="String"/>
+  <contents xsi:type="_imof:IDatatype" name="Double"/>
+  <contents xsi:type="_imof:IClass" name="Engine">
+    <attributes name="power" type="//@contents.4"/>
+  </contents>
+</_imof:IPackage>

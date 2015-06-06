@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_system915="http://system915" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_hAnBsTEwEeOcAdJHv_bb-g" type="System915_default_root" name="default7.system915_default_root_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_iqJLUDEwEeOcAdJHv_bb-g" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iqJLVDEwEeOcAdJHv_bb-g" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_j-pgIDEwEeOcAdJHv_bb-g" type="2001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_j-txkDEwEeOcAdJHv_bb-g" type="4001"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_j-qHMDEwEeOcAdJHv_bb-g"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_j-qHMTEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_j-qHMjEwEeOcAdJHv_bb-g" diagramLink="_mcolgDEwEeOcAdJHv_bb-g" hint="System915_functionDecomposition_root"/>
+        <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j-quQDEwEeOcAdJHv_bb-g"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_iqJLUTEwEeOcAdJHv_bb-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_iqJLUjEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+      <element xmi:type="_system915:System" href="default7.system915#//@systemView"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iqJLUzEwEeOcAdJHv_bb-g" x="55" y="155" width="206" height="126"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_hAnBsjEwEeOcAdJHv_bb-g"/>
+    <element xmi:type="_system915:Workbench" href="default7.system915#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_mcolgDEwEeOcAdJHv_bb-g" type="System915_functionDecomposition_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_m1IlEDEwEeOcAdJHv_bb-g" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_m1a48DEwEeOcAdJHv_bb-g" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_m1IlETEwEeOcAdJHv_bb-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_m1IlEjEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_m1IlEzEwEeOcAdJHv_bb-g"/>
+      <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture/@decompositions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m1IlFDEwEeOcAdJHv_bb-g" x="110" y="115" width="116" height="56"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_nYfw0DEwEeOcAdJHv_bb-g" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nYl3cDEwEeOcAdJHv_bb-g" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_nYgX4DEwEeOcAdJHv_bb-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_nYgX4TEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_nYg-8DEwEeOcAdJHv_bb-g" diagramLink="_oN4gsDEwEeOcAdJHv_bb-g"/>
+      <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture/@decompositions.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nYg-8TEwEeOcAdJHv_bb-g" x="100" y="245" width="46" height="41"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_mcolgTEwEeOcAdJHv_bb-g"/>
+    <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture"/>
+    <edges xmi:type="notation:Edge" xmi:id="_oDZH8DEwEeOcAdJHv_bb-g" type="3001" source="_nYfw0DEwEeOcAdJHv_bb-g" target="_m1IlEDEwEeOcAdJHv_bb-g">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_oDZH8TEwEeOcAdJHv_bb-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_oDZH8jEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_oDZH8zEwEeOcAdJHv_bb-g" points="[8, -20, -37, 102]$[103, -130, 58, -8]"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_oN4gsDEwEeOcAdJHv_bb-g" type="System915_functionDecomposition_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_ojEGgDEwEeOcAdJHv_bb-g" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ojEGhTEwEeOcAdJHv_bb-g" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ojEGgTEwEeOcAdJHv_bb-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ojEGgjEwEeOcAdJHv_bb-g" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_ojEGgzEwEeOcAdJHv_bb-g"/>
+      <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture/@decompositions.1/@decompositions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ojEGhDEwEeOcAdJHv_bb-g" x="105" y="140" width="41" height="46"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_oN4gsTEwEeOcAdJHv_bb-g"/>
+    <element xmi:type="_system915:Function" href="default7.system915#//@systemView/@functionalArchitecture/@decompositions.1"/>
+  </notation:Diagram>
+</xmi:XMI>

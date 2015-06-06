@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            describer="org.eclipse.core.internal.content.TextContentDescriber"
+            file-extensions="dot"
+            id="fr.lirmm.dotutils.contents.dot"
+            name="dot"
+            priority="high">
+      </content-type>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="fr.lirmm.dotutils.exportmenuobject"
+            nameFilter="*.dot"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="fr.lirmm.dotutils.exportmenu"
+               label="Dot Export"
+               path="additions">
+            <separator
+                  name="actions">
+            </separator>
+         </menu>
+         <action
+               class="lirmm.dotutils.SVGExportDotAction"
+               enablesFor="1"
+               id="fr.lirmm.dotutils.svgexport"
+               label="Export To SVG"
+               menubarPath="fr.lirmm.dotutils.exportmenu/actions">
+         </action>
+         <action
+               class="lirmm.dotutils.PNGExportDotAction"
+               enablesFor="1"
+               id="fr.lirmm.dotutils.svgexport"
+               label="Export To PNG"
+               menubarPath="fr.lirmm.dotutils.exportmenu/actions">
+         </action>
+         <action
+               class="lirmm.dotutils.JPGExportDotAction"
+               enablesFor="1"
+               id="fr.lirmm.dotutils.svgexport"
+               label="Export To JPG"
+               menubarPath="fr.lirmm.dotutils.exportmenu/actions">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

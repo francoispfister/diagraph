@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="MegamodelCanvas">
+  <figures name="default">
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-1" y="-1"/>
+      <template/>
+      <template x="-1" y="1"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration">
+      <template x="-1" y="-1"/>
+      <template/>
+      <template x="-1" y="1"/>
+    </figures>
+    <descriptors name="DsmlFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DsmlFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <insets left="3" bottom="3" right="3"/>
+        <children xsi:type="gmfgraph:Label" name="DsmlNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="modelsFigure">
+          <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="3" left="3" bottom="3" right="3"/>
+          </border>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="notationsFigure">
+          <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="3" left="3" bottom="3" right="3"/>
+          </border>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ecoreDiagramsFigure">
+          <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="3" left="3" bottom="3" right="3"/>
+          </border>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.2"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="ModelFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ModelFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <insets left="3" bottom="3" right="3"/>
+        <children xsi:type="gmfgraph:Label" name="ModelNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Label" name="ModelExcerptFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="notationDiagramsFigure">
+          <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="3" left="3" bottom="3" right="3"/>
+          </border>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="NotationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NotationFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <insets left="3" bottom="3" right="3"/>
+        <children xsi:type="gmfgraph:Label" name="NotationNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NotationDiagramFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NotationDiagramFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <insets left="3" bottom="3" right="3"/>
+        <children xsi:type="gmfgraph:Label" name="NotationDiagramURIFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EcoreDiagramFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EcoreDiagramFigure">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true" matchMinorSize="true" forceSingleLine="true" majorAlignment="CENTER" minorAlignment="CENTER" majorSpacing="0" minorSpacing="0"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+        <insets left="3" bottom="3" right="3"/>
+        <children xsi:type="gmfgraph:Label" name="EcoreDiagramNameFigure">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="RelatedToFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelatedToPolylineConnection" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NavigationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NavigationPolylineConnection" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RelatedToKindFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RelatedToKindFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NavigationIdFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="NavigationIdFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="DiagramNameFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="DiagramNameFigure">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Tahoma" height="12" style="ITALIC"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="Dsml" figure="DsmlFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="Model" figure="ModelFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="Notation" figure="NotationFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="NotationDiagram" figure="NotationDiagramFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <nodes name="EcoreDiagram" figure="EcoreDiagramFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="20" dy="20"/>
+    </facets>
+  </nodes>
+  <connections name="RelatedTo" figure="RelatedToFigure"/>
+  <connections name="Navigation" figure="NavigationFigure"/>
+  <compartments name="models" figure="DsmlFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="notations" figure="DsmlFigure" accessor="//@figures.0/@descriptors.0/@accessors.2"/>
+  <compartments name="ecoreDiagrams" figure="DsmlFigure" accessor="//@figures.0/@descriptors.0/@accessors.3"/>
+  <compartments name="notationDiagrams" figure="ModelFigure" accessor="//@figures.0/@descriptors.1/@accessors.2"/>
+  <labels name="DsmlName" figure="DsmlFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="RelatedToKind" figure="RelatedToKindFigure"/>
+  <labels name="ModelName" figure="ModelFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="ModelExcerpt" figure="ModelFigure" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="NotationName" figure="NotationFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="NavigationId" figure="NavigationIdFigure"/>
+  <labels name="NotationDiagramURI" figure="NotationDiagramFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="DiagramName" figure="DiagramNameFigure"/>
+  <labels name="EcoreDiagramName" figure="EcoreDiagramFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+</gmfgraph:Canvas>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart03="http://statechart03" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_AxDfwd0XEeKbRcv-Whc6Sg" type="Statechart03_default_root" name="default.statechart03_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_Ct_tkN0XEeKbRcv-Whc6Sg" type="1003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_CuBiwN0XEeKbRcv-Whc6Sg" type="4006"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ct_tkd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Ct_tkt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:SimpleState" href="default.statechart03#//@substates.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ct_tk90XEeKbRcv-Whc6Sg" x="145" y="100" width="116" height="51"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Dpz1kN0XEeKbRcv-Whc6Sg" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Dpz1lN0XEeKbRcv-Whc6Sg" type="4002"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_Dpz1kd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Dpz1kt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:ForkState" href="default.statechart03#//@substates.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dpz1k90XEeKbRcv-Whc6Sg" x="145" y="235" width="141" height="12"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_IvTIsN0XEeKbRcv-Whc6Sg" type="1003">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IvTvwN0XEeKbRcv-Whc6Sg" type="4006"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_IvTIsd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IvTIst0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:SimpleState" href="default.statechart03#//@substates.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IvTIs90XEeKbRcv-Whc6Sg" x="145" y="325" width="141" height="56"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_TsDKIN0XEeKbRcv-Whc6Sg" type="1004">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TsDxMN0XEeKbRcv-Whc6Sg" type="4008"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_TsDKId0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_TsDKIt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:InitialState" href="default.statechart03#//@substates.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TsDKI90XEeKbRcv-Whc6Sg" x="254" y="46"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_UqPQsN0XEeKbRcv-Whc6Sg" type="1005">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UqPQtN0XEeKbRcv-Whc6Sg" type="4010"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_UqPQsd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_UqPQst0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:FinalState" href="default.statechart03#//@substates.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UqPQs90XEeKbRcv-Whc6Sg" x="343" y="371"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_AxDfwt0XEeKbRcv-Whc6Sg"/>
+  <element xmi:type="_statechart03:CompositeState" href="default.statechart03#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_FdD74N0XEeKbRcv-Whc6Sg" type="3001" source="_Ct_tkN0XEeKbRcv-Whc6Sg" target="_Dpz1kN0XEeKbRcv-Whc6Sg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FdFKAN0XEeKbRcv-Whc6Sg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_FdFKAd0XEeKbRcv-Whc6Sg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_FdD74d0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_FdD74t0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:Transition" href="default.statechart03#//@substates.0/@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FdD7490XEeKbRcv-Whc6Sg" points="[-3, 26, 11, -110]$[-13, 137, 1, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Fd0J0N0XEeKbRcv-Whc6Sg" id="(0.6831683168316832,0.9545454545454546)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_JiC0QN0XEeKbRcv-Whc6Sg" type="3001" source="_Dpz1kN0XEeKbRcv-Whc6Sg" target="_IvTIsN0XEeKbRcv-Whc6Sg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_JiDbUN0XEeKbRcv-Whc6Sg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JiDbUd0XEeKbRcv-Whc6Sg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_JiC0Qd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_JiC0Qt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:Transition" href="default.statechart03#//@substates.1/@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JiC0Q90XEeKbRcv-Whc6Sg" points="[0, 11, 0, -65]$[-4, 74, -4, -2]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JiHFsN0XEeKbRcv-Whc6Sg" id="(0.1773049645390071,0.03571428571428571)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KQWrwN0XEeKbRcv-Whc6Sg" type="3001" source="_Dpz1kN0XEeKbRcv-Whc6Sg" target="_IvTIsN0XEeKbRcv-Whc6Sg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_KQXS0N0XEeKbRcv-Whc6Sg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_KQXS0d0XEeKbRcv-Whc6Sg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_KQWrwd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KQWrwt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:Transition" href="default.statechart03#//@substates.1/@transitions.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KQWrw90XEeKbRcv-Whc6Sg" points="[4, 8, -37, -71]$[51, 71, 10, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KQaWIN0XEeKbRcv-Whc6Sg" id="(0.7920792079207921,0.6363636363636364)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KQaWId0XEeKbRcv-Whc6Sg" id="(0.6808510638297872,0.14285714285714285)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_UMGjMN0XEeKbRcv-Whc6Sg" type="3001" source="_TsDKIN0XEeKbRcv-Whc6Sg" target="_Ct_tkN0XEeKbRcv-Whc6Sg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UMHKQN0XEeKbRcv-Whc6Sg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_UMHKQd0XEeKbRcv-Whc6Sg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_UMGjMd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_UMGjMt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:Transition" href="default.statechart03#//@substates.3/@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UMGjM90XEeKbRcv-Whc6Sg" points="[-6, 11, 22, -40]$[-12, 43, 16, -8]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UMKNkN0XEeKbRcv-Whc6Sg" id="(0.8017241379310345,0.1568627450980392)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_VGOCEN0XEeKbRcv-Whc6Sg" type="3001" source="_IvTIsN0XEeKbRcv-Whc6Sg" target="_UqPQsN0XEeKbRcv-Whc6Sg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VGOpIN0XEeKbRcv-Whc6Sg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_VGOpId0XEeKbRcv-Whc6Sg" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_VGOCEd0XEeKbRcv-Whc6Sg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_VGOCEt0XEeKbRcv-Whc6Sg" fontName="Segoe UI"/>
+    <element xmi:type="_statechart03:Transition" href="default.statechart03#//@substates.2/@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VGOCE90XEeKbRcv-Whc6Sg" points="[28, 11, -69, -26]$[96, 48, -1, 11]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VGP3QN0XEeKbRcv-Whc6Sg" id="(0.8014184397163121,0.35714285714285715)"/>
+  </edges>
+</notation:Diagram>

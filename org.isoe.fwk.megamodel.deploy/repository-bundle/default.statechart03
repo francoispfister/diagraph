@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart03:CompositeState xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_statechart03="http://statechart03">
+  <substates xsi:type="_statechart03:SimpleState" name="s">
+    <transitions source="//@substates.0" target="//@substates.1"/>
+  </substates>
+  <substates xsi:type="_statechart03:ForkState" name="f">
+    <transitions source="//@substates.1" target="//@substates.2"/>
+    <transitions source="//@substates.1" target="//@substates.2"/>
+  </substates>
+  <substates xsi:type="_statechart03:SimpleState">
+    <transitions source="//@substates.2" target="//@substates.4"/>
+  </substates>
+  <substates xsi:type="_statechart03:InitialState">
+    <transitions source="//@substates.3" target="//@substates.0"/>
+  </substates>
+  <substates xsi:type="_statechart03:FinalState"/>
+</_statechart03:CompositeState>

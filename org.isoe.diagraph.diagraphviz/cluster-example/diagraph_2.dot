@@ -1,0 +1,235 @@
+digraph G { rankdir=BT node [fontname="Verdana",fontsize=10,shape=none] edge [fontname="Verdana",fontsize=10];
+subgraph cluster_22266741 /*start subgraph*/{ 
+label="diagraph";
+
+DElementCategory
+[label=<
+<TABLE  cellspacing="-1" cellpadding="0" border="0" > 
+<TR><TD port="port_DElementCategory">
+    <TABLE cellspacing="-1" border="1" >
+      <TR><TD>DElementCategory</TD></TR>
+      <TR><TD>
+          <TABLE border="0">
+           <TR><TD port="port_DElementCategory_name" align="left">name: EString</TD></TR>
+          </TABLE>
+          </TD>
+      </TR>
+    </TABLE>
+    </TD>
+</TR>
+</TABLE>
+>];
+
+DPointOfView
+[label=<
+<TABLE  cellspacing="-1" cellpadding="0" border="0" > 
+<TR><TD port="port_DPointOfView">
+    <TABLE cellspacing="-1" border="1" >
+    <TR><TD>DPointOfView</TD></TR>
+    <TR><TD>
+        <TABLE border="0">
+        </TABLE>
+        </TD>
+    </TR>
+  </TABLE>
+  </TD>
+ </TR>
+</TABLE>
+>];
+
+DViewNavigation[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DViewNavigation"><TABLE cellspacing="-1" border="1" ><TR><TD>DViewNavigation</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_DViewNavigation_id" align="left">id: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DGraph[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DGraph"><TABLE cellspacing="-1" border="1" ><TR><TD>DGraph</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_DGraph_graphHandler" align="left">graphHandler: DGraphHandler</TD></TR><TR><TD port="port_DGraph_layerName" align="left">layerName: EString</TD></TR><TR><TD port="port_DGraph_layerType" align="left">layerType: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EStringToStringMapEntry[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EStringToStringMapEntry"><TABLE cellspacing="-1" border="1" ><TR><TD>EStringToStringMapEntry</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EStringToStringMapEntry_key" align="left">key: EString</TD></TR><TR><TD port="port_EStringToStringMapEntry_value" align="left">value: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EObject[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EObject"><TABLE cellspacing="-1" border="1" ><TR><TD>EObject</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EAnnotation[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EAnnotation"><TABLE cellspacing="-1" border="1" ><TR><TD>EAnnotation</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EAnnotation_source" align="left">source: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EModelElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EModelElement"><TABLE cellspacing="-1" border="1" ><TR><TD>EModelElement</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DNode[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DNode"><TABLE cellspacing="-1" border="1" ><TR><TD>DNode</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_DNode_navigationName" align="left">navigationName: EString</TD></TR><TR><TD port="port_DNode_viewName" align="left">viewName: EString</TD></TR><TR><TD port="port_DNode_navigationLink" align="left">navigationLink: EBoolean</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+ENamedElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_ENamedElement"><TABLE cellspacing="-1" border="1" ><TR><TD>ENamedElement</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_ENamedElement_name" align="left">name: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DGraphElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DGraphElement"><TABLE cellspacing="-1" border="1" ><TR><TD>DGraphElement</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_DGraphElement_name" align="left">name: EString</TD></TR><TR><TD port="port_DGraphElement_label" align="left">label: EString</TD></TR><TR><TD port="port_DGraphElement_icon" align="left">icon: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EFactory[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EFactory"><TABLE cellspacing="-1" border="1" ><TR><TD>EFactory</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EPackage[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EPackage"><TABLE cellspacing="-1" border="1" ><TR><TD>EPackage</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EPackage_nsURI" align="left">nsURI: EString</TD></TR><TR><TD port="port_EPackage_nsPrefix" align="left">nsPrefix: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EClassifier[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EClassifier"><TABLE cellspacing="-1" border="1" ><TR><TD>EClassifier</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EClassifier_instanceClassName" align="left">instanceClassName: EString</TD></TR><TR><TD port="port_EClassifier_instanceTypeName" align="left">instanceTypeName: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EGenericType[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EGenericType"><TABLE cellspacing="-1" border="1" ><TR><TD>EGenericType</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+ETypeParameter[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_ETypeParameter"><TABLE cellspacing="-1" border="1" ><TR><TD>ETypeParameter</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EParameter[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EParameter"><TABLE cellspacing="-1" border="1" ><TR><TD>EParameter</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+ETypedElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_ETypedElement"><TABLE cellspacing="-1" border="1" ><TR><TD>ETypedElement</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_ETypedElement_ordered" align="left">ordered: EBoolean</TD></TR><TR><TD port="port_ETypedElement_unique" align="left">unique: EBoolean</TD></TR><TR><TD port="port_ETypedElement_lowerBound" align="left">lowerBound: EInt</TD></TR><TR><TD port="port_ETypedElement_upperBound" align="left">upperBound: EInt</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EOperation[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EOperation"><TABLE cellspacing="-1" border="1" ><TR><TD>EOperation</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EStructuralFeature[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EStructuralFeature"><TABLE cellspacing="-1" border="1" ><TR><TD>EStructuralFeature</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EStructuralFeature_changeable" align="left">changeable: EBoolean</TD></TR><TR><TD port="port_EStructuralFeature_volatile" align="left">volatile: EBoolean</TD></TR><TR><TD port="port_EStructuralFeature_transient" align="left">transient: EBoolean</TD></TR><TR><TD port="port_EStructuralFeature_defaultValueLiteral" align="left">defaultValueLiteral: EString</TD></TR><TR><TD port="port_EStructuralFeature_unsettable" align="left">unsettable: EBoolean</TD></TR><TR><TD port="port_EStructuralFeature_derived" align="left">derived: EBoolean</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EClass[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EClass"><TABLE cellspacing="-1" border="1" ><TR><TD>EClass</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EClass_abstract" align="left">abstract: EBoolean</TD></TR><TR><TD port="port_EClass_interface" align="left">interface: EBoolean</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EAttribute[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EAttribute"><TABLE cellspacing="-1" border="1" ><TR><TD>EAttribute</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EAttribute_iD" align="left">iD: EBoolean</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DTypedElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DTypedElement"><TABLE cellspacing="-1" border="1" ><TR><TD>DTypedElement</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DOwnedElement[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DOwnedElement"><TABLE cellspacing="-1" border="1" ><TR><TD>DOwnedElement</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+EReference[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_EReference"><TABLE cellspacing="-1" border="1" ><TR><TD>EReference</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_EReference_containment" align="left">containment: EBoolean</TD></TR><TR><TD port="port_EReference_resolveProxies" align="left">resolveProxies: EBoolean</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DEdge[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DEdge"><TABLE cellspacing="-1" border="1" ><TR><TD>DEdge</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DLink[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DLink"><TABLE cellspacing="-1" border="1" ><TR><TD>DLink</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DOwnedEdge[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DOwnedEdge"><TABLE cellspacing="-1" border="1" ><TR><TD>DOwnedEdge</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DReference[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DReference"><TABLE cellspacing="-1" border="1" ><TR><TD>DReference</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DNestingEdge[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DNestingEdge"><TABLE cellspacing="-1" border="1" ><TR><TD>DNestingEdge</TD></TR><TR><TD><TABLE border="0">
+</TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+DPartitioningNestingEdge[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="port_DPartitioningNestingEdge"><TABLE cellspacing="-1" border="1" ><TR><TD>DPartitioningNestingEdge</TD></TR><TR><TD><TABLE border="0">
+<TR><TD port="port_DPartitioningNestingEdge_partitionName" align="left">partitionName: EString</TD></TR></TABLE></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/
+DNode:port_DNode -> DEdge:port_DEdge [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="edges"];
+DPointOfView:port_DPointOfView -> DElementCategory:port_DElementCategory [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="elementCategories"];
+DPointOfView:port_DPointOfView -> DNode:port_DNode [arrowhead=empty];
+DViewNavigation:port_DViewNavigation -> DPointOfView:port_DPointOfView [color=red,arrowhead=vee,headlabel="0..1",label="navigationTarget"];
+DViewNavigation:port_DViewNavigation -> DNode:port_DNode [color=red,arrowhead=vee,headlabel="0..1",label="navigationSource"];
+DNode:port_DNode -> DViewNavigation:port_DViewNavigation [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="viewNavigation"];
+DGraph:port_DGraph -> DNode:port_DNode [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="nodes"];
+DGraph:port_DGraph -> DPointOfView:port_DPointOfView [color=red,arrowhead=vee,headlabel="1..1",label="pointOfView"];
+EAnnotation:port_EAnnotation -> EStringToStringMapEntry:port_EStringToStringMapEntry [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="details"];
+EAnnotation:port_EAnnotation -> EModelElement:port_EModelElement [color=red,arrowhead=vee,headlabel="0..1",label="eModelElement"];
+EAnnotation:port_EAnnotation -> EObject:port_EObject [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="contents"];
+EAnnotation:port_EAnnotation -> EObject:port_EObject [color=red,arrowhead=vee,headlabel="0..*",label="references"];
+EAnnotation:port_EAnnotation -> EModelElement:port_EModelElement [arrowhead=empty];
+EModelElement:port_EModelElement -> EAnnotation:port_EAnnotation [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eAnnotations"];
+DGraph:port_DGraph -> EModelElement:port_EModelElement [arrowhead=empty];
+DNode:port_DNode -> DGraph:port_DGraph [color=red,arrowhead=vee,headlabel="0..1",label="graph"];
+ENamedElement:port_ENamedElement -> EModelElement:port_EModelElement [arrowhead=empty];
+DGraphElement:port_DGraphElement -> ENamedElement:port_ENamedElement [color=red,arrowhead=vee,headlabel="0..1",label="roleInCsGraph"];
+DGraphElement:port_DGraphElement -> DElementCategory:port_DElementCategory [color=red,arrowhead=vee,headlabel="0..1",label="category"];
+DGraphElement:port_DGraphElement -> EModelElement:port_EModelElement [arrowhead=empty];
+DNode:port_DNode -> DGraphElement:port_DGraphElement [arrowhead=empty];
+EClass:port_EClass -> EClass:port_EClass [color=red,arrowhead=vee,headlabel="0..*",label="eSuperTypes"];
+EOperation:port_EOperation -> EClass:port_EClass [color=red,arrowhead=vee,headlabel="0..1",label="eContainingClass"];
+EGenericType:port_EGenericType -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="eUpperBound"];
+EGenericType:port_EGenericType -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eTypeArguments"];
+EGenericType:port_EGenericType -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="eLowerBound"];
+EGenericType:port_EGenericType -> ETypeParameter:port_ETypeParameter [color=red,arrowhead=vee,headlabel="0..1",label="eTypeParameter"];
+EFactory:port_EFactory -> EPackage:port_EPackage [color=red,arrowhead=vee,headlabel="1..1",label="ePackage"];
+EFactory:port_EFactory -> EModelElement:port_EModelElement [arrowhead=empty];
+EPackage:port_EPackage -> EFactory:port_EFactory [color=red,arrowhead=vee,headlabel="1..1",label="eFactoryInstance"];
+EPackage:port_EPackage -> EClassifier:port_EClassifier [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eClassifiers"];
+EPackage:port_EPackage -> EPackage:port_EPackage [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eSubpackages"];
+EPackage:port_EPackage -> EPackage:port_EPackage [color=red,arrowhead=vee,headlabel="0..1",label="eSuperPackage"];
+EPackage:port_EPackage -> ENamedElement:port_ENamedElement [arrowhead=empty];
+EClassifier:port_EClassifier -> EPackage:port_EPackage [color=red,arrowhead=vee,headlabel="0..1",label="ePackage"];
+EClassifier:port_EClassifier -> ETypeParameter:port_ETypeParameter [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eTypeParameters"];
+EClassifier:port_EClassifier -> ENamedElement:port_ENamedElement [arrowhead=empty];
+EGenericType:port_EGenericType -> EClassifier:port_EClassifier [color=red,arrowhead=vee,headlabel="0..1",label="eClassifier"];
+ETypeParameter:port_ETypeParameter -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eBounds"];
+ETypeParameter:port_ETypeParameter -> ENamedElement:port_ENamedElement [arrowhead=empty];
+EOperation:port_EOperation -> ETypeParameter:port_ETypeParameter [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eTypeParameters"];
+EParameter:port_EParameter -> EOperation:port_EOperation [color=red,arrowhead=vee,headlabel="0..1",label="eOperation"];
+ETypedElement:port_ETypedElement -> EClassifier:port_EClassifier [color=red,arrowhead=vee,headlabel="0..1",label="eType"];
+ETypedElement:port_ETypedElement -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="eGenericType"];
+ETypedElement:port_ETypedElement -> ENamedElement:port_ENamedElement [arrowhead=empty];
+EParameter:port_EParameter -> ETypedElement:port_ETypedElement [arrowhead=empty];
+EOperation:port_EOperation -> EParameter:port_EParameter [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eParameters"];
+EOperation:port_EOperation -> EClassifier:port_EClassifier [color=red,arrowhead=vee,headlabel="0..*",label="eExceptions"];
+EOperation:port_EOperation -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eGenericExceptions"];
+EOperation:port_EOperation -> ETypedElement:port_ETypedElement [arrowhead=empty];
+EClass:port_EClass -> EOperation:port_EOperation [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eOperations"];
+EStructuralFeature:port_EStructuralFeature -> EClass:port_EClass [color=red,arrowhead=vee,headlabel="0..1",label="eContainingClass"];
+EStructuralFeature:port_EStructuralFeature -> ETypedElement:port_ETypedElement [arrowhead=empty];
+EClass:port_EClass -> EStructuralFeature:port_EStructuralFeature [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eStructuralFeatures"];
+EClass:port_EClass -> EGenericType:port_EGenericType [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eGenericSuperTypes"];
+EClass:port_EClass -> EClassifier:port_EClassifier [arrowhead=empty];
+DTypedElement:port_DTypedElement -> EClass:port_EClass [color=red,arrowhead=vee,headlabel="0..1",label="eClass"];
+EAttribute:port_EAttribute -> EStructuralFeature:port_EStructuralFeature [arrowhead=empty];
+DTypedElement:port_DTypedElement -> EAttribute:port_EAttribute [color=red,arrowhead=vee,headlabel="0..1",label="labelAttribute"];
+DNode:port_DNode -> DTypedElement:port_DTypedElement [arrowhead=empty];
+DOwnedElement:port_DOwnedElement -> DNode:port_DNode [color=red,arrowhead=vee,headlabel="0..1",label="owner"];
+DOwnedElement:port_DOwnedElement -> DGraphElement:port_DGraphElement [arrowhead=empty];
+DNode:port_DNode -> DOwnedElement:port_DOwnedElement [arrowhead=empty];
+DEdge:port_DEdge -> DNode:port_DNode [color=red,arrowhead=vee,headlabel="1..1",label="target"];
+DEdge:port_DEdge -> DNode:port_DNode [color=red,arrowhead=vee,headlabel="1..1",label="source"];
+EReference:port_EReference -> EReference:port_EReference [color=red,arrowhead=vee,headlabel="0..1",label="eOpposite"];
+EReference:port_EReference -> EAttribute:port_EAttribute [color=red,arrowhead=vee,headlabel="0..*",label="eKeys"];
+EReference:port_EReference -> EStructuralFeature:port_EStructuralFeature [arrowhead=empty];
+DEdge:port_DEdge -> EReference:port_EReference [color=red,arrowhead=vee,headlabel="0..1",label="targetReference"];
+DEdge:port_DEdge -> DGraphElement:port_DGraphElement [arrowhead=empty];
+DLink:port_DLink -> EReference:port_EReference [color=red,arrowhead=vee,headlabel="0..1",label="sourceReference"];
+DOwnedEdge:port_DOwnedEdge -> DOwnedElement:port_DOwnedElement [arrowhead=empty];
+DOwnedEdge:port_DOwnedEdge -> DEdge:port_DEdge [arrowhead=empty];
+DLink:port_DLink -> DOwnedEdge:port_DOwnedEdge [arrowhead=empty];
+DLink:port_DLink -> DTypedElement:port_DTypedElement [arrowhead=empty];
+DReference:port_DReference -> DEdge:port_DEdge [arrowhead=empty];
+DNestingEdge:port_DNestingEdge -> DOwnedEdge:port_DOwnedEdge [arrowhead=empty];
+DPartitioningNestingEdge:port_DPartitioningNestingEdge -> DNestingEdge:port_DNestingEdge [arrowhead=empty];
+}/*end graph*/

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_publication2014b:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_publication2014b="http://publication2014b">
+  <processView name="process: rules + phases">
+    <phases name="redaction" neededPerson="//@structuralView/@researchers.1">
+      <linksToSuccessors successor="//@processView/@phases.3" predecessor="//@processView/@phases.0"/>
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.5" predecessor="//@processView/@phases.0"/>
+      <linksToSuccessors successor="//@processView/@phases.4" predecessor="//@processView/@phases.0"/>
+      <linksToSuccessors successor="//@processView/@phases.7" predecessor="//@processView/@phases.0"/>
+    </phases>
+    <phases name="decision" neededPerson="//@structuralView/@researchers.4">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.0" predecessor="//@processView/@phases.1"/>
+    </phases>
+    <phases name="submission">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.6" predecessor="//@processView/@phases.2"/>
+    </phases>
+    <phases name="figures" neededPerson="//@structuralView/@researchers.3">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.5" predecessor="//@processView/@phases.3"/>
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.2" predecessor="//@processView/@phases.3"/>
+    </phases>
+    <phases name="state of the art">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.5" predecessor="//@processView/@phases.4"/>
+    </phases>
+    <phases name="revision" neededPerson="//@structuralView/@researchers.4 //@structuralView/@researchers.3">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.0" predecessor="//@processView/@phases.5"/>
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.2" predecessor="//@processView/@phases.5"/>
+    </phases>
+    <phases name="publication" neededPerson="//@structuralView/@researchers.3"/>
+    <phases name="bibliography" neededPerson="//@structuralView/@researchers.0">
+      <linksToSuccessors sequenceType="finishToStart" successor="//@processView/@phases.5" predecessor="//@processView/@phases.7"/>
+    </phases>
+    <publicationRules text="latex doublespace" key="manuscript"/>
+    <publicationRules text="no passive voice" key="style"/>
+    <publicationRules text="LNCS" key="template"/>
+    <publicationRules text="american english" key="syntax"/>
+    <publicationRules text="100 words max" key="abstract"/>
+  </processView>
+  <structuralView name="Structure: researchers + papers">
+    <researchers phaseParticipation="//@processView/@phases.7" name="Lo, M" position="Student">
+      <writes lname="write" paragraph="//@structuralView/@papers.1/@paragraphs.1"/>
+    </researchers>
+    <researchers phaseParticipation="//@processView/@phases.0" name="Daclin, N" position="Assistant Professor">
+      <writes lname="write" paragraph="//@structuralView/@papers.0/@paragraphs.0"/>
+      <reviews lname="correction" reviewNote="//@structuralView/@papers.0/@paragraphs.1/@reviews.0"/>
+    </researchers>
+    <researchers name="Derosiere, G" position="Student">
+      <writes lname="write" paragraph="//@structuralView/@papers.1/@paragraphs.0"/>
+    </researchers>
+    <researchers phaseParticipation="//@processView/@phases.5 //@processView/@phases.3 //@processView/@phases.6" name="Dray, G" position="Assistant Professor">
+      <writes lname="write" paragraph="//@structuralView/@papers.2/@paragraphs.0"/>
+    </researchers>
+    <researchers phaseParticipation="//@processView/@phases.5 //@processView/@phases.1" name="Urtado, C" position="Assistant professor">
+      <writes lname="write" paragraph="//@structuralView/@papers.0/@paragraphs.1"/>
+      <reviews lname="reviews" reviewNote="//@structuralView/@papers.2/@paragraphs.0/@reviews.0"/>
+    </researchers>
+    <papers name="Improving Usability in Human Computer ...">
+      <paragraphs name="Intro">
+        <reviews name="note 1"/>
+        <reviews name="translation"/>
+        <reviews name="note 2"/>
+      </paragraphs>
+      <paragraphs name="Related Work">
+        <reviews name="contrib 2"/>
+      </paragraphs>
+      <progress lname="progress = 100 %" process="//@processView"/>
+    </papers>
+    <papers name="Some contribution for the ...">
+      <paragraphs name="part 1"/>
+      <paragraphs name="part 2"/>
+      <progress lname="progress = 25 %" process="//@processView"/>
+    </papers>
+    <papers name="Opinion Ext">
+      <paragraphs name="conclusion">
+        <reviews name="modif 1"/>
+      </paragraphs>
+      <progress lname="progress = 50%" process="//@processView"/>
+    </papers>
+  </structuralView>
+</_publication2014b:PublicationSystem>

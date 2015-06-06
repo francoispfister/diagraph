@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statemachine:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_statemachine="http://statemachine">
+  <declarations xsi:type="_statemachine:InitialState" label="initial" to_transitions="//@declarations.7"/>
+  <declarations xsi:type="_statemachine:FinalState" label="final"/>
+  <declarations xsi:type="_statemachine:NormalState" label="a" to_transitions="//@declarations.4 //@declarations.5">
+    <entry/>
+  </declarations>
+  <declarations xsi:type="_statemachine:NormalState" label="b" to_transitions="//@declarations.6"/>
+  <declarations xsi:type="_statemachine:Transition" label="aa" to_state="//@declarations.1"/>
+  <declarations xsi:type="_statemachine:Transition" label="bb" to_state="//@declarations.3"/>
+  <declarations xsi:type="_statemachine:Transition" label="ee" to_state="//@declarations.1"/>
+  <declarations xsi:type="_statemachine:Transition" label="x" to_state="//@declarations.2"/>
+  <machineVariables name="v1"/>
+  <machineVariables name="v2"/>
+</_statemachine:StateMachine>

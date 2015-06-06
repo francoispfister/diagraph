@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_syswbeff1065ok:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_syswbeff1065ok="http://syswbeff1065ok">
+  <systemView id="sy">
+    <functionalArchitecture name="fa">
+      <decompositions name="f1">
+        <decompositions>
+          <inputPorts/>
+        </decompositions>
+        <flows inputflowEdge="//@systemView/@functionalArchitecture/@decompositions.0/@decompositions.0/@inputPorts.0"/>
+        <outputPorts id="o" outputflowEdge="//@systemView/@functionalArchitecture/@flows.0 //@systemView/@functionalArchitecture/@decompositions.0/@flows.0"/>
+      </decompositions>
+      <decompositions name="f2">
+        <inputPorts id="i"/>
+      </decompositions>
+      <sequenceNodes xsi:type="_syswbeff1065ok:Start" controlFlowEdge="//@systemView/@functionalArchitecture/@sequenceNodes.1"/>
+      <sequenceNodes xsi:type="_syswbeff1065ok:Or" controlFlowEdge="//@systemView/@functionalArchitecture/@decompositions.0 //@systemView/@functionalArchitecture/@decompositions.1"/>
+      <flows label="flo" inputflowEdge="//@systemView/@functionalArchitecture/@decompositions.1/@inputPorts.0">
+        <items name="it"/>
+      </flows>
+    </functionalArchitecture>
+  </systemView>
+  <catalog id="cat11">
+    <patterns name="pata">
+      <decompositions>
+        <decompositions>
+          <outputPorts outputflowEdge="//@catalog.0/@patterns.0/@decompositions.0/@flows.0"/>
+        </decompositions>
+        <decompositions>
+          <inputPorts/>
+        </decompositions>
+        <sequenceNodes xsi:type="_syswbeff1065ok:Start" controlFlowEdge="//@catalog.0/@patterns.0/@decompositions.0/@decompositions.0"/>
+        <flows inputflowEdge="//@catalog.0/@patterns.0/@decompositions.0/@decompositions.1/@inputPorts.0"/>
+      </decompositions>
+      <sequenceNodes xsi:type="_syswbeff1065ok:Start" controlFlowEdge="//@catalog.0/@patterns.0/@decompositions.0"/>
+    </patterns>
+    <patterns name="patb"/>
+  </catalog>
+</_syswbeff1065ok:Workbench>

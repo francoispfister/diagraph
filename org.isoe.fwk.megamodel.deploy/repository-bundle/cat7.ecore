@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cat7"
+    nsURI="http://cat7" nsPrefix="_cat7">
+  <eClassifiers xsi:type="ecore:EClass" name="Personne" eSuperTypes="#//NoeudCible">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+      <details key="label=dateNaiss"/>
+    </eAnnotations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="personne" eType="#//Personne"/>
+    </eOperations>
+    <eOperations name="predecesseur" eType="#//Personne"/>
+    <eOperations name="successeur" eType="#//Personne"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateNaiss" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role" eSuperTypes="#//NoeudSource">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=hierarchie"/>
+    </eAnnotations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="role" eType="#//Role"/>
+    </eOperations>
+    <eOperations name="predecesseur" eType="#//Role"/>
+    <eOperations name="successeur" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hierarchie" eType="#//RoleHierarchie"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AffectationRolePersonne" eSuperTypes="#//Fleche">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=role"/>
+      <details key="ltrg=personne"/>
+      <details key="cont=Entreprise.affectations"/>
+      <details key="label=libelle"/>
+    </eAnnotations>
+    <eOperations name="valide" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="personne" eType="#//Personne"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="libelle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entreprise" eSuperTypes="#//Categorie">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="role1" eType="#//Role"/>
+      <eParameters name="role2" eType="#//Role"/>
+    </eOperations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="personne1" eType="#//Personne"/>
+      <eParameters name="personne2" eType="#//Personne"/>
+    </eOperations>
+    <eOperations name="affectation" eType="#//AffectationRolePersonne">
+      <eParameters name="role" eType="#//Role"/>
+      <eParameters name="personne" eType="#//Personne"/>
+    </eOperations>
+    <eOperations name="intervalleAffectation" eType="#//Role">
+      <eParameters name="personne" eType="#//Personne"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="personnes" upperBound="-1"
+        eType="#//Personne" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roles" upperBound="-1"
+        eType="#//Role" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="affectations" upperBound="-1"
+        eType="#//AffectationRolePersonne" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NoeudCible" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="noeud" eType="#//NoeudCible"/>
+    </eOperations>
+    <eOperations name="predecesseur" eType="#//NoeudCible"/>
+    <eOperations name="successeur" eType="#//NoeudCible"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fleche" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eOperations name="valide" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cible" eType="#//NoeudCible"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//NoeudSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Categorie" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="n1" eType="#//NoeudSource"/>
+      <eParameters name="n2" eType="#//NoeudSource"/>
+    </eOperations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="n1" eType="#//NoeudCible"/>
+      <eParameters name="n2" eType="#//NoeudCible"/>
+    </eOperations>
+    <eOperations name="affectation" eType="#//Fleche">
+      <eParameters name="source" eType="#//NoeudSource"/>
+      <eParameters name="cible" eType="#//NoeudCible"/>
+    </eOperations>
+    <eOperations name="intervalleAffectation" upperBound="-1" eType="#//NoeudSource">
+      <eParameters name="cible" eType="#//NoeudCible"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cibles" upperBound="-1"
+        eType="#//NoeudCible"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fleches" upperBound="-1"
+        eType="#//Fleche"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sources" upperBound="-1"
+        eType="#//NoeudSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RoleHierarchie">
+    <eLiterals name="autre"/>
+    <eLiterals name="president" value="1"/>
+    <eLiterals name="intendant" value="2"/>
+    <eLiterals name="secretaire" value="3"/>
+    <eLiterals name="caissier" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NoeudSource" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="noeud" eType="#//NoeudSource"/>
+    </eOperations>
+    <eOperations name="predecesseur" eType="#//NoeudSource"/>
+    <eOperations name="successeur" eType="#//NoeudSource"/>
+  </eClassifiers>
+</ecore:EPackage>

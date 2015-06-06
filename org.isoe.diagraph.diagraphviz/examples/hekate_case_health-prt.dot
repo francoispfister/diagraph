@@ -1,0 +1,317 @@
+digraph G{  node [shape=record, fontsize=9, height=0.1, width=0.05]; edge [style=dashed, arrowsize=0.5, len=0.1]; rankdir=LR 
+subgraph "cluster_HealthCare" {
+"{[[diagnosis], [allergic], [age]]|[[medication]]}"
+}
+subgraph "cluster_HealthCare" {
+"{[[medication], [age], [creatinineLevel], [creatinineClearance]]|[[dose]]}"
+}
+subgraph "cluster_HealthCare" {
+"{[[age], [weight], [creatinineLevel]]|[[creatinineClearance]]}"
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_InputMedicalFactors" {
+label="InputMedicalFactors"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_MiddleMedicalFactors" {
+label="MiddleMedicalFactors"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_PatientFactors" {
+label="PatientFactors"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Treatment" {
+label="Treatment"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_diagnosis" {
+label="diagnosis"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_creatinineLevel" {
+label="creatinineLevel"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_creatinineClearance" {
+label="creatinineClearance"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_age" {
+label="age"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_allergic" {
+label="allergic"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_weight" {
+label="weight"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_medication" {
+label="medication"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_HealthCare" {
+label="HealthCare"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_dose" {
+label="dose"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_InputMedicalFactors" {
+label="InputMedicalFactors"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_creatinineLevel" {
+label="creatinineLevel"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_MiddleMedicalFactors" {
+label="MiddleMedicalFactors"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_creatinineClearance" {
+label="creatinineClearance"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_PatientFactors" {
+label="PatientFactors"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_age" {
+label="age"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_PatientFactors" {
+label="PatientFactors"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_allergic" {
+label="allergic"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_PatientFactors" {
+label="PatientFactors"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_weight" {
+label="weight"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Treatment" {
+label="Treatment"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_medication" {
+label="medication"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Treatment" {
+label="Treatment"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_dose" {
+label="dose"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+"{[[diagnosis], [allergic], [age]]|[[medication]]}"->"{[[medication], [age], [creatinineLevel], [creatinineClearance]]|[[dose]]}"
+"{[[age], [weight], [creatinineLevel]]|[[creatinineClearance]]}"->"{[[medication], [age], [creatinineLevel], [creatinineClearance]]|[[dose]]}"
+}

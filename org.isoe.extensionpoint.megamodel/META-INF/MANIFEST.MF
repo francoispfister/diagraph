@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Megamodel Feature
+Bundle-SymbolicName: org.isoe.extensionpoint.megamodel;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.extensionpoint.xmi;bundle-version="1.0.4",
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.isoe.diagraph.controler;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Export-Package: org.isoe.extensionpoint.megamodel

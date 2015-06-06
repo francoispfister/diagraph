@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_k7:X xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_k7="http://k7">
+  <xcs xsi:type="_k7:A" name="a1">
+    <is name="i5"/>
+  </xcs>
+  <xcs xsi:type="_k7:A" name="a2">
+    <is name="i1"/>
+  </xcs>
+  <xcs xsi:type="_k7:B" name="b1">
+    <is name="i2"/>
+  </xcs>
+  <xcs xsi:type="_k7:B" name="b2"/>
+  <xcs xsi:type="_k7:J" name="j1">
+    <is name="i3"/>
+  </xcs>
+  <xcs xsi:type="_k7:J" name="j2"/>
+  <xcs xsi:type="_k7:K" name="k1">
+    <is name="i4"/>
+  </xcs>
+  <xcs xsi:type="_k7:K" name="k2"/>
+  <xcs xsi:type="_k7:B"/>
+  <ps name="p1"/>
+  <ps name="p2">
+    <ml1 l1c="//@xcs.0" l1m="//@ps.1"/>
+    <ml1 l1c="//@xcs.2" l1m="//@ps.1"/>
+    <ml1 l1c="//@xcs.4" l1m="//@ps.1"/>
+    <ml1 l1c="//@xcs.6" l1m="//@ps.1"/>
+    <ml1 xsi:type="_k7:L3" l1m="//@ps.1" l3z="//@zs"/>
+  </ps>
+  <ps xsi:type="_k7:Q" name="q1">
+    <ml1 l1c="//@xcs.0" l1m="//@ps.2"/>
+    <ml1 l1c="//@xcs.2" l1m="//@ps.2"/>
+    <ml1 l1c="//@xcs.4" l1m="//@ps.2"/>
+    <ml1 l1c="//@xcs.6" l1m="//@ps.2"/>
+  </ps>
+  <ps xsi:type="_k7:Q" name="q2"/>
+  <zs z1="z1"/>
+  <l4s p="//@ps.0" a="//@xcs.1"/>
+  <l4s p="//@ps.0" a="//@xcs.5"/>
+  <l4s p="//@ps.0" a="//@xcs.7"/>
+  <t1s name="t1a"/>
+  <t1s name="t1b"/>
+</_k7:X>

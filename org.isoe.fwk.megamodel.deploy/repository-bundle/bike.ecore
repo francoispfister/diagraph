@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bike"
+    nsURI="http://bike" nsPrefix="_bike">
+  <eClassifiers xsi:type="ecore:EClass" name="Item" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supplier" eType="#//Supplier"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pedals" eSuperTypes="#//Item"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BackBrake" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//BackBrakeType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FrontBrake" eSuperTypes="#//Item"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Handlebars" eSuperTypes="#//Item"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Saddle" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//SaddleType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gear" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//GearType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BackWheel" eSuperTypes="#//Item">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FrontWheel" eSuperTypes="#//Item">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//Color"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Frame" eSuperTypes="#//Item">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" eType="#//Color"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//FrameType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Supplier">
+    <eLiterals name="superParts" literal="superParts"/>
+    <eLiterals name="homeParts" value="1" literal="homeParts"/>
+    <eLiterals name="handmadeParts" value="2" literal="handmadeParts"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Color">
+    <eLiterals name="metal" literal="metal"/>
+    <eLiterals name="black" value="1" literal="black"/>
+    <eLiterals name="red" value="2" literal="red"/>
+    <eLiterals name="blue" value="3" literal="blue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GearType">
+    <eLiterals name="innerGear"/>
+    <eLiterals name="outerGear" value="1" literal="outerGear"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SaddleType">
+    <eLiterals name="racingSaddle"/>
+    <eLiterals name="childSaddle" value="1"/>
+    <eLiterals name="unicycleSaddle" value="2" literal="unicycleSaddle"/>
+    <eLiterals name="comfortSaddle" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FrameType">
+    <eLiterals name="cityFrame"/>
+    <eLiterals name="racerFrame" value="1" literal="racerFrame"/>
+    <eLiterals name="uniFrame" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BackBrakeType">
+    <eLiterals name="pedalBrake"/>
+    <eLiterals name="handBrake" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bike">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="hasBackWheels"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/OCL">
+      <details key="hasBackwheel" value="self.backWheel &lt;> null and (self.frontWheel = null or self.frontWheel &lt;> null)"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frame" lowerBound="1" eType="#//Frame"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frontWheel" eType="#//FrontWheel"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="backWheel" lowerBound="1"
+        eType="#//BackWheel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gear" eType="#//Gear" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="saddle" lowerBound="1"
+        eType="#//Saddle" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="handlebars" eType="#//Handlebars"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pedals" lowerBound="1"
+        eType="#//Pedals" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="frontBrake" eType="#//FrontBrake"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="backBrake" lowerBound="1"
+        eType="#//BackBrake" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="description" eType="#//Description"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Description">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deliveryDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Fsm Runner
+Bundle-SymbolicName: org.isoe.diagraph.model.interpreter.ui;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.diagraph.model.interpreter.ui.Activator
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.ui;bundle-version="1.0.4",
+ org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.eclipse.core.resources;bundle-version="1.0.4",
+ org.isoe.extensionpoint.modelrunner;bundle-version="1.0.4",
+ org.eclipse.emf.common;bundle-version="2.7.0",
+ org.isoe.diagraph.osem.constants;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.isoe.diagraph.model.interpreter.ui,
+ org.isoe.diagraph.model.interpreter.ui.actions

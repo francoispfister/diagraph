@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_error4:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_error4="http://error4">
+  <things name="t1">
+    <relations name="r2"/>
+    <components name="c1"/>
+    <components name="c2"/>
+  </things>
+  <things name="t2">
+    <relations name="r3"/>
+    <relations name="r1"/>
+    <components name="c3"/>
+  </things>
+  <things name="t3">
+    <relations name="r4" toThing="//@things.3"/>
+  </things>
+  <things/>
+</_error4:World>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="0"/>
+    <element href="helloworld1.ecore#//World/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="174" y="241" width="153"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="0"/>
+    <element href="helloworld1.ecore#//Thing/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="169" y="116" width="143"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="helloworld1.ecore#//World"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="170" y="235" width="153"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="helloworld1.ecore#//Thing/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="helloworld1.ecore#//Thing"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="165" y="75" width="143" height="78"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="helloworld1.ecore#/"/>
+  <edges type="3002" source="//@children.2" target="//@children.3">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-7" y="-21"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="19"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="helloworld1.ecore#//World/things"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-30, 6, -65, 143]$[-80, 6, -115, 143]$[-80, -136, -115, 1]$[-35, -136, -70, 1]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.20398009950248755,0.37254901960784315)"/>
+  </edges>
+  <edges type="3002" source="//@children.3" target="//@children.3">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-17" y="-8"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-4" y="12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="helloworld1.ecore#//Thing/things"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[28, 5, 80, 48]$[90, 5, 142, 48]$[90, -87, 142, -44]$[-18, -87, 34, -44]$[-18, -52, 34, -9]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8041958041958042,0.6923076923076923)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.43356643356643354,0.1282051282051282)"/>
+  </edges>
+</notation:Diagram>

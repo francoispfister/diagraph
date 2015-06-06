@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="casebd30" nsURI="http://casebd30" nsPrefix="_casebd30">
+  <eAnnotations source="diagen">
+    <details key="knownas=adl"/>
+    <details key="origin=http://foobar"/>
+    <details key="leftparent=adl200" value="delta1=foo&#xD;&#xA;delta2=bar"/>
+    <details key="rightparent=adl103" value="delta1=hello&#xD;&#xA;azerty&#xD;&#xA;role.Content.expression=eprsample"/>
+    <details key="requires=simpleworld,adl203" value="simpleworld&#xD;&#xA;adl203"/>
+    <details key="context=composition"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractExpression" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameUnicity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/ocl/examples/OCL">
+      <details key="nameUnicity" value="bindings->isUnique(name)&#xD;&#xA;and&#xD;&#xA;components->isUnique(name)&#xD;&#xA;and&#xD;&#xA;interfaces->isUnique(name)&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=value"/>
+      <details key="kref=totos"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subExpressions" upperBound="-1"
+        eType="#//AbstractExpression" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="totos" upperBound="-1"
+        eType="#//Toto" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aaaa" eSuperTypes="#//AbstractExpression">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=subExpressions"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bbbb" eSuperTypes="#//AbstractExpression">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=subExpressions"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cccc" eSuperTypes="#//AbstractExpression">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=subExpressions"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RootExpression" eSuperTypes="#//AbstractExpression">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="cont=AbstractExpression.subExpressions"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foos" upperBound="-1" eType="#//Foo"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Foo">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="kref=bars"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bars" upperBound="-1" eType="#//Bar"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bar">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Toto">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="kref=tatas"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tatas" upperBound="-1"
+        eType="#//Tata" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tata">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

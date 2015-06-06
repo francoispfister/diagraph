@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl301:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl301="http://adl301">
+  <subComponents name="salle café">
+    <requiredInterfaces name="eau" signature="">
+      <bindings from="//@subComponents.0/@requiredInterfaces.0" to="//@subComponents.0/@subComponents.2/@requiredInterfaces.1"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="electricité">
+      <bindings from="//@subComponents.0/@requiredInterfaces.1" to="//@subComponents.0/@subComponents.2/@requiredInterfaces.2"/>
+      <bindings from="//@subComponents.0/@requiredInterfaces.1" to="//@subComponents.0/@subComponents.1/@requiredInterfaces.1"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="chercheurs">
+      <bindings from="//@subComponents.0/@requiredInterfaces.2" to="//@subComponents.0/@subComponents.0/@requiredInterfaces.2"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="java beans">
+      <bindings from="//@subComponents.0/@requiredInterfaces.3" to="//@subComponents.0/@subComponents.1/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="gâteaux">
+      <bindings from="//@subComponents.0/@requiredInterfaces.4" to="//@subComponents.0/@subComponents.0/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <providedInterfaces name="ambiance ok"/>
+    <subComponents name="goûter">
+      <requiredInterfaces name="gateaux"/>
+      <requiredInterfaces name="kawa"/>
+      <requiredInterfaces name="chercheurs"/>
+      <providedInterfaces name="ambiance ok">
+        <bindings from="//@subComponents.0/@subComponents.0/@providedInterfaces.0" to="//@subComponents.0/@providedInterfaces.0"/>
+      </providedInterfaces>
+    </subComponents>
+    <subComponents name="moulin à café">
+      <requiredInterfaces name="java beans"/>
+      <requiredInterfaces name="electricité"/>
+      <providedInterfaces name="café moulu">
+        <bindings from="//@subComponents.0/@subComponents.1/@providedInterfaces.0" to="//@subComponents.0/@subComponents.2/@requiredInterfaces.0"/>
+      </providedInterfaces>
+    </subComponents>
+    <subComponents name="cafetière">
+      <requiredInterfaces name="café moulu"/>
+      <requiredInterfaces name="eau"/>
+      <requiredInterfaces name="electricité"/>
+      <providedInterfaces name="kawa">
+        <bindings from="//@subComponents.0/@subComponents.2/@providedInterfaces.0" to="//@subComponents.0/@subComponents.0/@requiredInterfaces.1"/>
+      </providedInterfaces>
+    </subComponents>
+  </subComponents>
+</_adl301:Component>

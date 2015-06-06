@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="errorstm.ecore#//Transition/event"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="errorstm.ecore#//Transition/guard"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="errorstm.ecore#//Transition/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//Transition"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="120" y="285"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="errorstm.ecore#//AbstractState/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//AbstractState"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="270" y="133" width="373"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//CompositeState"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="330" y="285" width="118"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//StateMachine"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="285" y="390"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//InitialState"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="535" y="340"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//SimpleState"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="470" y="285"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//FinalState"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="605" y="285"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="errorstm.ecore#//Action/kind"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//Action"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="520" y="25"/>
+  </children>
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="errorstm.ecore#//ActionKind/ENTRY"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="errorstm.ecore#//ActionKind/EXIT"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="errorstm.ecore#//ActionKind"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="125" y="550"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//Action/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="30" y="105"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//AbstractState/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="660" y="60"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//CompositeState/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="620" y="190"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//Transition/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="295" height="113"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//StateMachine/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="200" y="380"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//SimpleState/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="460" y="495"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//FinalState/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="645" y="450"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="errorstm.ecore#//InitialState/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="595" y="350"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="errorstm.ecore#/"/>
+  <edges type="3002" source="//@children.0" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//Transition/from"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[6, 0, -185, 111]$[6, -120, -185, -9]$[46, -120, -145, -9]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8983050847457628,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.39215686274509803,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.0" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="20" y="-12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//Transition/to"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-7, 0, -174, 111]$[-7, -140, -174, -29]$[58, -140, -109, -29]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7966101694915254,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.29411764705882354,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.0">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-16" y="19"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="14" y="11"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//AbstractState/incoming"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-109, -29, 58, -140]$[-174, -29, -7, -140]$[-174, 111, -7, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.29411764705882354,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7966101694915254,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.0">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-18" y="-31"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="17" y="-24"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//AbstractState/outgoing"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-145, -9, 46, -120]$[-185, -9, 6, -120]$[-185, 111, 6, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.39215686274509803,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8983050847457628,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.7">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-28"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="31"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//AbstractState/actions"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[128, 0, 0, 59]$[128, -59, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.2" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="8" y="-23"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-17" y="-16"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//CompositeState/states"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-26, 0, -131, 111]$[-26, -111, -131, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.48672566371681414,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5980392156862745,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.2" target="//@children.0">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-20" y="-8"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-19" y="12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//CompositeState/transitions"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-26, 25, 152, -41]$[-120, 25, 58, -41]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.23893805309734514,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.2" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-1, 0, -113, 111]$[-1, -111, -113, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7433628318584071,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.696078431372549,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.4" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 130, 166]$[0, -166, 130, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.5" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -44, 111]$[0, -111, -44, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7941176470588235,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.6" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-30, 0, 25, 111]$[-30, -111, 25, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8921568627450981,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.3" target="//@children.2">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-12" y="-28"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-12" y="28"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="errorstm.ecore#//StateMachine/state"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, -20, -5, 110]$[0, -109, -5, 21]"/>
+  </edges>
+</notation:Diagram>

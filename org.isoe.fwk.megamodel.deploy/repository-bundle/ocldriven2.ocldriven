@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ocldriven:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_ocldriven="http://ocldriven">
+  <medias name="m1" copies="1"/>
+  <medias name="m2" copies="1"/>
+  <members name="j"/>
+  <loans member="//@members.0" media="//@medias.0"/>
+  <loans member="//@members.0" media="//@medias.1"/>
+  <dependancies before="//@medias.1" after="//@medias.0"/>
+</_ocldriven:Library>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_fragdial:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_fragdial="http://fragdial" name="Bank Transaction System">
+  <nestedComponents1 name="Customer">
+    <requiredInterfaces name="Response">
+      <bindings to="//@nestedComponents1.2/@providedInterfaces.0" from="//@nestedComponents1.0/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <providedInterfaces name="Question"/>
+    <nestedComponents2 name="Money withdraw">
+      <requiredInterfaces name="Money">
+        <bindings to="//@nestedComponents1.2/@nestedComponents2.0/@nestedComponents3.0/@providedInterfaces.0" from="//@nestedComponents1.0/@nestedComponents2.0/@requiredInterfaces.0"/>
+      </requiredInterfaces>
+      <providedInterfaces name="Dialog"/>
+    </nestedComponents2>
+  </nestedComponents1>
+  <nestedComponents1 name="Bank">
+    <nestedComponents2 name="Manage withdraw">
+      <nestedComponents3 name="Money transaction">
+        <providedInterfaces name="Control"/>
+        <providedInterfaces name="Transaction"/>
+      </nestedComponents3>
+      <nestedComponents3 name="Request data">
+        <requiredInterfaces name="Query">
+          <bindings to="//@nestedComponents1.3/@providedInterfaces.0" from="//@nestedComponents1.1/@nestedComponents2.0/@nestedComponents3.1/@requiredInterfaces.0"/>
+        </requiredInterfaces>
+      </nestedComponents3>
+    </nestedComponents2>
+    <nestedComponents2 name="Manage cash"/>
+  </nestedComponents1>
+  <nestedComponents1 name="ATM">
+    <requiredInterfaces name="Question">
+      <bindings to="//@nestedComponents1.0/@providedInterfaces.0" from="//@nestedComponents1.2/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="Stock"/>
+    <providedInterfaces name="Response"/>
+    <providedInterfaces name="Order"/>
+    <nestedComponents2 name="Money withdraw">
+      <nestedComponents3 name="Money dialog">
+        <requiredInterfaces name="Dialog">
+          <bindings to="//@nestedComponents1.0/@nestedComponents2.0/@providedInterfaces.0" from="//@nestedComponents1.2/@nestedComponents2.0/@nestedComponents3.0/@requiredInterfaces.0"/>
+        </requiredInterfaces>
+        <providedInterfaces name="Money"/>
+      </nestedComponents3>
+      <nestedComponents3 name="Money transaction">
+        <requiredInterfaces name="Transaction">
+          <bindings to="//@nestedComponents1.1/@nestedComponents2.0/@nestedComponents3.0/@providedInterfaces.1" from="//@nestedComponents1.2/@nestedComponents2.0/@nestedComponents3.1/@requiredInterfaces.0"/>
+        </requiredInterfaces>
+        <requiredInterfaces name="Control">
+          <bindings to="//@nestedComponents1.1/@nestedComponents2.0/@nestedComponents3.0/@providedInterfaces.0" from="//@nestedComponents1.2/@nestedComponents2.0/@nestedComponents3.1/@requiredInterfaces.1"/>
+        </requiredInterfaces>
+      </nestedComponents3>
+    </nestedComponents2>
+  </nestedComponents1>
+  <nestedComponents1 name="Database">
+    <providedInterfaces name="Query"/>
+  </nestedComponents1>
+</_fragdial:Component>

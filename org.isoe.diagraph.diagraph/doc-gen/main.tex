@@ -1,0 +1,247 @@
+\documentclass{article}
+
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+
+\setcounter{secnumdepth}{3}
+
+\begin{document}
+
+\author{author111}
+\title{title111}
+\maketitle
+
+\section{Introduction}\label{Introduction}
+
+\subsection{Diagraph Description}\label{diagraph_Description}
+
+\subsubsection{DEdge}\label{DEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DGraphElement}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations}
+\begin{itemize}
+\item target: \nameref{DNode} [1] 
+\item source: \nameref{DNode} [1] 
+\item targetReference: \nameref{EReference} [0..1] 
+\end{itemize}
+\subsubsection{DGraphElement}\label{DGraphElement} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{EModelElement}
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item name: String [0..1] 
+\item icon: String [0..1] 
+\end{itemize}
+\subsubsection*{Associations}
+\begin{itemize}
+\item semanticRole: \nameref{ENamedElement} [0..1] 
+\end{itemize}
+\subsubsection{DNode}\label{DNode} 
+\subsubsection*{Description} ~\\
+
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DGraphElement}
+\item \nameref{DLabeledElement}
+\item \nameref{DOwnedElement}
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item shape: \nameref{DShape} [0..1]  \textit{~=~rectangle} 
+\item layout: boolean [0..1]  \textit{~=~false} 
+\item navigationLink: String [0..1] 
+\end{itemize}
+\subsubsection*{Associations}
+\begin{itemize}
+\item edges: \nameref{DEdge} [0..*] (containment) 
+\item viewNavigation: \nameref{DViewNavigation} [0..1] (containment) 
+\item graph: \nameref{DGraph} [0..1] 
+\end{itemize}
+\subsubsection{DLabeledEdge}\label{DLabeledEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\
+
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DOwnedEdge}
+\item \nameref{DLabeledElement}
+\item \nameref{DExplicitEdge}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations}
+\begin{itemize}
+\item sourceReference: \nameref{EReference} [0..1] 
+\end{itemize}
+\subsubsection{DReference}\label{DReference} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\
+
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DEdge}
+\item \nameref{DExplicitEdge}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DImplicitEdge}\label{DImplicitEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\
+
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DOwnedEdge}
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item inherited: boolean [0..1]  \textit{~=~false} 
+\end{itemize}
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DGraph}\label{DGraph} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{EModelElement}
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item viewName: String [0..1] 
+\item graphHandler: \nameref{DGraphHandler} [0..1] 
+\end{itemize}
+\subsubsection*{Associations}
+\begin{itemize}
+\item nodes: \nameref{DNode} [0..*] (containment) 
+\item pointOfView: \nameref{DPointOfView} [1] 
+\end{itemize}
+\subsubsection{DLabeledElement}\label{DLabeledElement} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item None
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item labels: String [0..*] 
+\end{itemize}
+\subsubsection*{Associations}
+\begin{itemize}
+\item eClaz: \nameref{EClass} [0..1] 
+\item dlabels: \nameref{DLabel} [0..*] (containment) 
+\end{itemize}
+\subsubsection{DOwnedElement}\label{DOwnedElement} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item None
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations}
+\begin{itemize}
+\item owner: \nameref{DNode} [0..1] 
+\end{itemize}
+\subsubsection{DOwnedEdge}\label{DOwnedEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DOwnedElement}
+\item \nameref{DEdge}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DCompartmentingEdge}\label{DCompartmentingEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DImplicitEdge}
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item partitionName: String [0..1] 
+\end{itemize}
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DPointOfView}\label{DPointOfView} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DNode}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DViewNavigation}\label{DViewNavigation} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item None
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item id: String [0..1] 
+\end{itemize}
+\subsubsection*{Associations}
+\begin{itemize}
+\item navigationTarget: \nameref{DGraph} [0..1] 
+\item navigationSource: \nameref{DNode} [0..1] 
+\end{itemize}
+\subsubsection{DAffixingEdge}\label{DAffixingEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DImplicitEdge}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DLabel}\label{DLabel} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item None
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations}
+\begin{itemize}
+\item attribute: \nameref{EAttribute} [0..1] 
+\end{itemize}
+\subsubsection{DExplicitEdge}\label{DExplicitEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item None
+\end{itemize}
+\subsubsection*{Attributes}
+\begin{itemize}
+\item arrows: \nameref{DShape} [0..2] 
+\end{itemize}
+\subsubsection*{Associations} ~\\ No additional associations
+\subsubsection{DNavigationEdge}\label{DNavigationEdge} 
+\subsubsection*{Description} ~\\ No additional description
+\subsubsection*{Semantics} ~\\ No additional description
+\subsubsection*{Generalizations}
+\begin{itemize}
+\item \nameref{DEdge}
+\end{itemize}
+\subsubsection*{Attributes} ~\\ No additional attributes
+\subsubsection*{Associations} ~\\ No additional associations
+
+
+
+\end{document}

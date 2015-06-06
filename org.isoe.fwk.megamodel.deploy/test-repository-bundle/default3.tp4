@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp4:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp4="http://idm-scg-tp4.v0">
+  <processView name="pProcess">
+    <phases name="review"/>
+    <phases name="acceptation"/>
+    <phases name="final"/>
+  </processView>
+  <structuralView name="PStructure">
+    <researchers name="res1" position="//@positions.1">
+      <writes lname="write 1" paragraph="//@structuralView/@papers.0/@paragraphs.0"/>
+      <skills description="sk1"/>
+    </researchers>
+    <researchers name="res2" position="//@positions.0">
+      <reviews lname="review2" reviewNote="//@structuralView/@papers.0/@paragraphs.0/@reviews.1"/>
+      <skills description="sk2"/>
+      <skills description="sk3"/>
+    </researchers>
+    <papers name="p1" keywords="//@allKeywords.1 //@allKeywords.0">
+      <paragraphs name="para1">
+        <reviews name="rw1"/>
+        <reviews name="rw2"/>
+      </paragraphs>
+      <progress lname="95" process="//@processView"/>
+    </papers>
+    <papers name="pap2">
+      <paragraphs name="sq"/>
+    </papers>
+    <papers name="gf"/>
+    <papers name="dsq"/>
+    <papers name="sdf"/>
+    <papers/>
+    <papers name="sd"/>
+  </structuralView>
+  <positions description="Teacher"/>
+  <positions description="Lecturer"/>
+  <allKeywords name="mda"/>
+  <allKeywords name="grammar"/>
+</tp4:PublicationSystem>

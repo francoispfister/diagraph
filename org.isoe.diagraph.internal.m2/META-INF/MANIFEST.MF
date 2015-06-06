@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Internal M2
+Bundle-SymbolicName: org.isoe.diagraph.internal.m2
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.diagraph.internal.m2.Activator
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.isoe.diagraph.common;bundle-version="1.0.4",
+ org.isoe.fwk.utils;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.dgi;bundle-version="1.0.4",
+ org.isoe.diagraph.factory;bundle-version="1.0.4",
+ org.isoe.diagraph.toemf;bundle-version="1.0.4",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.fwk.log;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.internal.api;bundle-version="1.0.4",
+ org.isoe.extensionpoint.rules;bundle-version="1.0.4",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.isoe.diagraph.parser.api;bundle-version="1.0.4",
+ org.isoe.diagraph.parser;bundle-version="1.0.4",
+ org.isoe.extensionpoint.parsers;bundle-version="1.0.4",
+ org.isoe.diagraph.internal.m2;bundle-version="1.0.4",
+ org.isoe.diagraph.runner;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.isoe.diagraph.internal.api;x-internal:=true,
+ org.isoe.diagraph.internal.m2;x-internal:=true,
+ org.isoe.diagraph.internal.m2.api;x-internal:=true,
+ org.isoe.diagraph.internal.m2.parser;x-internal:=true

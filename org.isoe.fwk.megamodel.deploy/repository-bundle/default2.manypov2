@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manypov2:A xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:manypov2="http://sample.manypov2.v0">
+  <abs name="b1">
+    <bcs name="c1"/>
+    <bcs name="c2"/>
+  </abs>
+  <abs name="b2">
+    <bcs name="c100"/>
+    <bcs name="c200"/>
+    <bcs name="c300"/>
+  </abs>
+  <aes name="e1">
+    <efs name="f1"/>
+    <efs name="f2"/>
+    <efs name="f1"/>
+    <efs name="f2"/>
+    <efs name="f3"/>
+  </aes>
+  <aes name="e2"/>
+  <aes name="e3"/>
+  <ajs name="j1"/>
+  <ajs name="j2">
+    <jks name="jk1"/>
+    <jks name="jk2"/>
+  </ajs>
+  <aks name="k1">
+    <kms name="m2"/>
+    <kns name="n3"/>
+  </aks>
+  <aks name="k2">
+    <kms name="m1" mns="//@aks.1/@kns.0 //@aks.0/@kns.0"/>
+    <kms name="m3" mns="//@aks.0/@kns.0"/>
+    <kms name="m4" mns="//@aks.1/@kns.1"/>
+    <kns name="n1"/>
+    <kns name="n2"/>
+  </aks>
+</manypov2:A>

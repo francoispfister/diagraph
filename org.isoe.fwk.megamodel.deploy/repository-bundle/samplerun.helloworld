@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_helloworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_helloworld="http://helloworld">
+  <things name="Foo">
+    <relations name="foobar" toThing="//@things.1" since="ever"/>
+    <relations name="a" toThing="//@things.2"/>
+  </things>
+  <things name="Bar">
+    <relations name="b" toThing="//@things.3"/>
+    <relations name="c" toThing="//@things.4"/>
+  </things>
+  <things name="one">
+    <relations name="d" toThing="//@things.3"/>
+  </things>
+  <things name="two"/>
+  <things name="three"/>
+</_helloworld:World>

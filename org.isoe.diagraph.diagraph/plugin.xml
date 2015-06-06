@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://isoe-2012-diagraph-dsmlv4"
+            class="org.isoe.diagraph.diagraph.DiagraphPackage"
+            genModel="saved_model/diagraph.genmodel"/>
+   </extension>
+
+</plugin>

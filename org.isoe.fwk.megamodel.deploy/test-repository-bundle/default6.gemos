@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gemos:GemosDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gemos="http:////gemos-package-en-minuscule-svp">
+  <containsGemosObjects xsi:type="gemos:Operational" gemosObjectName="opé 2">
+    <operationalModes gemosObjectName="m1">
+      <linksMode gemosObjectName="m1 to m2" targetMode="//@containsGemosObjects.0/@operationalModes.1" sourceMode="//@containsGemosObjects.0/@operationalModes.0"/>
+      <ModeContainsScenarioObjects xsi:type="gemos:Scenario" scenarioName="s1">
+        <linksScenario scenarioName="s1 to s2" targetScenario="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.1" sourceScenario="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0"/>
+        <containsEFFBDObjects xsi:type="gemos:Function" effbdObjectName="f1">
+          <linksEFFBDObject effbdConnectionName="b1" targetEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1" sourceEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0"/>
+          <linksEFFBDObject effbdConnectionName="b2" targetEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1" sourceEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0"/>
+          <linksEFFBDObject effbdConnectionName="b3" targetEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1" sourceEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0"/>
+        </containsEFFBDObjects>
+        <containsEFFBDObjects xsi:type="gemos:Function" effbdObjectName="f2">
+          <linksEFFBDObject effbdConnectionName="b21" targetEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0" sourceEFFBDObject="//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1"/>
+        </containsEFFBDObjects>
+      </ModeContainsScenarioObjects>
+      <ModeContainsScenarioObjects xsi:type="gemos:Scenario" scenarioName="s2"/>
+    </operationalModes>
+    <operationalModes gemosObjectName="m2"/>
+  </containsGemosObjects>
+</gemos:GemosDiagram>

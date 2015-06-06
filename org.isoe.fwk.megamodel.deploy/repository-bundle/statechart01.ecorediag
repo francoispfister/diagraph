@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" name="StateChart" measurementUnit="Pixel">
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="statechart01.ecore#//Transition/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="statechart01.ecore#//Transition/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="statechart01.ecore#//Transition/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="9" y="293" width="162"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="statechart01.ecore#//Transition/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//Transition/expression"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="statechart01.ecore#//Transition"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="5" y="170" width="162" height="160"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="statechart01.ecore#//Variable/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="statechart01.ecore#//Variable/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="statechart01.ecore#//Variable/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="234" y="43" width="302"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="statechart01.ecore#//State/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="statechart01.ecore#//State/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="statechart01.ecore#//State/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="statechart01.ecore#//State/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="statechart01.ecore#//State/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="299" y="406" width="188"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="statechart01.ecore#//State/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//State/label"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//State/activity"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//State/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="statechart01.ecore#//State"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="295" y="220" width="188" height="223"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="statechart01.ecore#//Variable/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//Variable/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="statechart01.ecore#//Variable/value"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="statechart01.ecore#//Variable"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="230" y="15" width="302"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="statechart01.ecore#/"/>
+  <edges type="3002" source="//@children.4" target="//@children.5">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-27" y="58"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="17" y="24"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//State/variables"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-17, -41, 74, 199]$[-17, -183, 74, 57]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.3351063829787234,0.18556701030927836)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.12,0.10810810810810811)"/>
+  </edges>
+  <edges type="3002" source="//@children.4" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-61" y="-33"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-23"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//State/transitions"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-19, 47, 154, 130]$[-149, 47, 24, 130]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.10638297872340426,0.1958762886597938)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.856,0.06756756756756757)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.4">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="3" y="9"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-21" y="-12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//Transition/source"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[89, 62, -151, 20]$[219, 62, -21, 20]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.448,0.05405405405405406)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.11764705882352941,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.4">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-9" y="13"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-46" y="8"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//Transition/target"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[61, 85, -149, -110]$[191, 85, -19, -110]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.624,0.06756756756756757)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.10294117647058823,0.7053571428571429)"/>
+  </edges>
+  <edges type="3002" source="//@children.4" target="//@children.4">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-6" y="-21"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//State/parentstate"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[33, 36, 3, -116]$[142, 36, 112, -116]$[142, 165, 112, 13]$[33, 165, 3, 13]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8235294117647058,0.026785714285714284)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.9852941176470589,0.7142857142857143)"/>
+  </edges>
+  <edges type="3002" source="//@children.4" target="//@children.4">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Century Schoolbook L" fontHeight="10"/>
+    <element href="statechart01.ecore#//State/substates"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[3, 13, 33, 165]$[112, 13, 142, 165]$[112, -116, 142, 36]$[3, -116, 33, 36]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.9852941176470589,0.7142857142857143)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8235294117647058,0.026785714285714284)"/>
+  </edges>
+</notation:Diagram>

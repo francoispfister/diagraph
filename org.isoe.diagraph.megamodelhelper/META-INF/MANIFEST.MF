@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Megamodel Helper
+Bundle-SymbolicName: org.isoe.diagraph.megamodelhelper
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.isoe.diagraph.megamodel;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagen;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.megamodelhelper
+

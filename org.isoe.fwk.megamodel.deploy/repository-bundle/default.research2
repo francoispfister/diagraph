@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<research2:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:research2="http://isoe-sample-research2a.v2">
+  <processView name="Ecmfa 2013">
+    <phases name="submission"/>
+    <phases name="correction"/>
+  </processView>
+  <structuralView name="Lurmm Lab">
+    <researchers name="Jim" res_position="//@positions.1">
+      <writes paragraph="//@structuralView/@papers.1/@paragraphs.0" timeSpent="20"/>
+      <skills description="rca"/>
+    </researchers>
+    <researchers name="Tom" res_position="//@positions.0">
+      <reviews reviewNote="//@structuralView/@papers.1/@paragraphs.0/@reviews.0"/>
+      <skills description="modeling"/>
+    </researchers>
+    <papers name="Paper p1" keywords="//@structuralView/@knowledgeMan/@allkeywords.0">
+      <progress process="//@processView" percent="20"/>
+      <progress lname="xwc" process="//@processView" percent="30"/>
+      <progress process="//@processView" percent="40"/>
+    </papers>
+    <papers name="Paper p2" keywords="//@structuralView/@knowledgeMan/@allkeywords.1">
+      <paragraphs name="p1">
+        <reviews name="n1"/>
+      </paragraphs>
+      <progress percent="40"/>
+      <progress process="//@processView" percent="20"/>
+    </papers>
+    <knowledgeMan name="kman">
+      <allkeywords name="tee" kpapers="//@structuralView/@papers.0"/>
+      <allkeywords name="cofee" kpapers="//@structuralView/@papers.1"/>
+    </knowledgeMan>
+  </structuralView>
+  <positions description="Professor"/>
+  <positions description="Assistant Professor"/>
+  <positions description="Phd Student"/>
+</research2:PublicationSystem>

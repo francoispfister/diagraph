@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph
+Bundle-SymbolicName: org.isoe.diagraph.diagraph;singleton:=true
+Bundle-Version: 1.0.5.20150603
+Bundle-ClassPath: .
+Bundle-Vendor: LGi2P Isoe
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.diagraph,
+ org.isoe.diagraph.diagraph.helpers,
+ org.isoe.diagraph.diagraph.impl,
+ org.isoe.diagraph.diagraph.util
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.eclipse.emf.ecore;bundle-version="1.0.4";visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport
+Bundle-ActivationPolicy: lazy

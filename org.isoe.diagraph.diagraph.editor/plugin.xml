@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated diagraph -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.isoe.diagraph.diagraph.presentation.DiagraphModelWizardID"
+            name="%_UI_DiagraphModelWizard_label"
+            class="org.isoe.diagraph.diagraph.presentation.DiagraphModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DiagraphModelFile.gif">
+         <description>%_UI_DiagraphModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated diagraph -->
+      <editor
+            id="org.isoe.diagraph.diagraph.presentation.DiagraphEditorID"
+            name="%_UI_DiagraphEditor_label"
+            icon="icons/full/obj16/DiagraphModelFile.gif"
+            extensions="diagraph"
+            class="org.isoe.diagraph.diagraph.presentation.DiagraphEditor"
+            contributorClass="org.isoe.diagraph.diagraph.presentation.DiagraphActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

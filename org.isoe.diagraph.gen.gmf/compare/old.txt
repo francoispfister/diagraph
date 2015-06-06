@@ -1,0 +1,270 @@
+private Object[] createNodeMapping(DiaNode node, int id, int depth) { // FP130914
+
+		Object[] result_ = new Object[2];
+		DiaNode concreteNode = node;
+		if (LOG)
+			// adding nodeMapping Required to NestedComponent
+			clog("CNM for " + parser2.getCurrentView() + "."
+					+ concreteNode.getName()); //
+		boolean check = false;
+		boolean tb = false;
+		if (LOG)
+			clog("\n[---");
+		uniqueid++;
+
+		IDiagraphNode idiagraphNode = parser2.getDiagraphNode(
+				concreteNode.getSemanticRole(), 0);
+
+		int recursivedepth = idiagraphNode.getRecursiveDepth();
+
+		if (LOG) {
+			// adding nodeMapping Required to NestedComponent
+			clog("CNM---" + (depth == 0 ? "TOP" : "CHILD")
+
+			+ " depth=" + depth + " rdepth=" + recursivedepth
+					+ " ------- createNodeMapping: " + concreteNode.getName());
+
+			if (depth > 0)
+				tb = true;
+			if (concreteNode.isAbstract())
+				tb = true;
+			IDiagraphNode pov = parser2.getCurrentPointOfView().getPov();
+
+			if (((EClass) concreteNode.getEModelElement()).isSuperTypeOf(pov
+					.getEClass()))
+				tb = true;
+			tb = false;
+
+		}
+
+		if (false && ((EClass) concreteNode.getEModelElement()).isAbstract()) // FP131120xx
+			throw new RuntimeException(
+					"see error10 case: abstract class cannot be a concrete node for "
+							+ concreteNode.getName());
+
+		EModelElement modelElement = concreteNode.getEModelElement();
+
+		EReference containmentRefBase = (EReference) concreteNode
+				.getContainmentReferenceBase();
+
+		if (LOG)
+			clog(idiagraphNode.toString());
+
+		// idiagraphNode.isRecursiveCompartment(eReference);
+
+		EReference oncanvas = concreteNode.getContainmentOnCanvas(); // FP140221xxxaaabbb
+		EReference containmentRefAlt = (EReference) concreteNode
+				.getContainmentReferenceAlt();
+
+		if (oncanvas != null
+				&& containmentRefAlt == null
+				&& (containmentRefBase == null || concreteNode
+						.getDiagraphContainment(containmentRefBase) == null)) {// FP130431B//isDiagraphContainment_(containmentRef)){
+
+			containmentRefBase = (EReference) concreteNode
+					.getContainmentOnCanvas();
+		}
+
+		if (containmentRefBase == null) { // FP130209 //done too late
+			EClass eclaz = (EClass) modelElement;
+			EReference cf = (EReference) eclaz.eContainingFeature();
+			containmentRefBase = cf;
+			if (LOG)
+				clog(containmentRefBase.getName() + " a");
+		}
+
+		if (LOG) {
+			EClass eclaz_ = (EClass) concreteNode.getEModelElement();
+			clog(eclaz_.getName());
+			clog(eclaz_.eContainer().getClass().getName());
+			String msg = "validating " + "Containment feature ["
+					+ containmentRefBase.getName() + ":"
+					+ containmentRefBase.getEType().getName() + "] -> "
+					+ concreteNode.getName();
+
+			clog(msg);
+
+		}
+
+		boolean containmentNotNull = true;
+		boolean notCommonGeneric = false;
+		boolean containingNotNull = true;
+
+		validate_(containmentRefBase, concreteNode, containmentNotNull,
+				notCommonGeneric, containingNotNull, depth == 0, depth,
+				recursivedepth); // FP140121
+
+		String title = concreteNode.getName();
+		if (concreteNode.getLabels() != null
+				&& !concreteNode.getLabels().isEmpty())
+			title = concreteNode.getLabels().get(0);// FP121008
+		CreationTool gmftool = DGenHelpers.findCreationToolByTitle(
+				toolRegistry, title);
+		Node gmfnode = DGenHelpers.findNode(canvas, concreteNode.getName());
+		NodeMapping nodeMapping_ = null;
+		if (gmfnode != null) { // FP130806
+
+			// FP140407
+			// EReference aoc_ = idiagraphNode
+			// .getAutoCompartmentByAbstractUpper_nu();
+
+			List<IDiagraphReferenceAssociation> sibls = idiagraphNode
+					.getAllSiblingContainments();
+			for (IDiagraphReferenceAssociation sibl : sibls) {
+				clog(sibl.toString());
+
+			}
+
+			List<EReference> aotkbsups = idiagraphNode
+					.getAbstractAutoCompartmentBySupers();
+			for (EReference aotkbsup : aotkbsups) {
+				if (aotkbsup != null) {
+					clog(aotkbsup.getName());
+					EClass cc = aotkbsup.getEContainingClass();
+				}
+			}
+
+			// String icn=cc.getInstanceClassName();
+			// EStructuralFeature ssft=aotkbsup.eContainingFeature();
+
+			// idiagraphNode.getAbstractAutoCompartment();
+			// clog(aoc_ == null ? "" : aoc_.getName());
+			List<EReference> kacrs = idiagraphNode
+					.getKrefAltContainmentReferences();
+			for (EReference kacr : kacrs) {
+				clog(kacr.getName());
+			}
+
+			List<EReference> autocontes = parser2
+					.patternContainmentAssociationsKrefAutoCBySub(
+							(EClass) modelElement, true);
+
+			if (DParams.containment_LOG)
+				clogk(uniqueid + " ]" + (sibls.isEmpty() ? "" : "sibls") + " "
+						+ (kacrs.isEmpty() ? "" : "kacrs") + " "
+						+ (aotkbsups.isEmpty() ? "" : "aotkbsups") + " "
+						+ (autocontes.isEmpty() ? "" : "autocontes") + " ");
+
+			// FP140407
+			EReference autocont = autocontes.isEmpty() ? null : autocontes
+					.get(0); // FP140415
+			// parser2.getKrefAutoContainmentBySubNode((EClass) modelElement,
+			// true, view);
+
+			if (autocont != null) {
+				if (parser2.getRecursiveCompartment((EClass) modelElement,
+						title) != null) // FP140415
+					containmentRefAlt = autocont;
+			}
+
+			if (autocont == null) {// FP140407b
+				List<EReference> superautoconts = idiagraphNode
+						.getAbstractAutoCompartmentBySupers(); // FP150318
+				autocont = superautoconts.isEmpty() ? null : superautoconts
+						.get(0);// sorted ?
+				containmentRefAlt = autocont == null ? containmentRefAlt
+						: autocont; // FP140416
+			}
+
+			int instancedepth = depth - idiagraphNode.getDepth();
+
+			boolean first_ = instancedepth < 1;
+			boolean ttb = false;
+			EReference cont = null;
+			EReference decl = idiagraphNode.getDeclaredContainment();
+
+			if (decl == null) {
+				cont = containmentRefBase;
+				if (!first_ && containmentRefAlt != null)
+					cont = containmentRefAlt; // FP140218
+				if (DParams.containment_LOG)
+					clogk(concreteNode.getName() + " ]  decl="
+							+ (decl == null ? "null" : decl.getName())
+							+ " instancedepth=" + instancedepth + " cont="
+							+ cont.getName());
+			} else {
+				cont = decl; // FP140417aaa
+				if (!first_ && containmentRefAlt != null)
+					cont = containmentRefAlt; // FP140218
+				if (DParams.containment_LOG)
+					clogk(concreteNode.getName() + " ]  decl="
+							+ (decl == null ? "null" : decl.getName())
+							+ " instancedepth=" + instancedepth + " cont="
+							+ cont.getName());
+
+			}
+
+			// FP140416aaaa
+
+			String log = "";
+			if (LOG || DParams.containment_LOG) {
+				try {
+
+					log = "depth="
+							+ depth
+							+ " instancedepth="
+							+ instancedepth
+							+ " cont="
+							+ (concreteNode.getContainer() == null ? "nil"
+									: concreteNode.getContainer()
+											.getSourceNode().getName()) + " "
+							+ ((EClass) cont.eContainer()).getName() + "."
+							+ cont.getName() + ":"
+							+ ((EClass) modelElement).getName();
+
+					if (DParams.containment_LOG)
+						clogk(log);
+
+				} catch (Exception e) {
+					cerror("err before hook");
+				}
+			}
+
+			idiagraphNode.hook_("5_createNodeMapping", log);
+
+			if (concreteNode.isAbstract()) {
+				List<IDiaNode> acs_ = concreteNode.getSubNodes();
+				if (acs_.isEmpty())
+					throw new RuntimeException(
+							"should not happen in addNodeAndCompartmentMappingsAndChildren");
+
+			}
+
+			Object[] mapping = DGenHelpers.createNodeMappingAndChildReference_(
+			// FP140121pbici
+					gmftool, gmfnode, modelElement, cont);
+			if (LOG)
+				clog("\n---]");
+			nodeMapping_ = (NodeMapping) mapping[0];
+
+			if (nodeMapping_ == null)
+				tb = true;
+
+			ChildReference justadded = (ChildReference) mapping[1];
+
+			concreteNode.addNodeMapping(nodeMapping_,
+					((EClass) nodeMapping_.getDomainMetaElement()).getName());// ,
+																				// justadded);
+																				// //
+																				// FP140417xy
+
+			idiagraphNode.addNodeMapping(nodeMapping_, justadded);
+
+			IDiagraphMapping dnm_ = new DiagraphMapping(idiagraphNode,
+					nodeMapping_, justadded, uniqueid, depth,
+					"NodeMapping_info " + log);
+
+			if (LOG)
+				GmfLogger.logNodeMapping(nodeMapping_, 0);
+			if (DParams.EXPERIMENT_OCL)
+				createLibraryConstraint(concreteNode, nodeMapping_);
+		} else {
+			if (!concreteNode.getSemanticRole().isAbstract())
+				cerror("no gmfnode found for " + concreteNode.getName());
+		}
+
+		result_[0] = nodeMapping_;
+		result_[1] = concreteNode;
+		return result_;
+	}
+

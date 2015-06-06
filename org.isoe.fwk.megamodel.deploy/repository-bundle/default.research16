@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_research16:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_research16="http://research16">
+  <structuralView name="Conference of Advanced Model Driven SYstems">
+    <researchers name="Douglas" res_position="//@positions.1">
+      <skills description="rca"/>
+      <skills description="testing"/>
+    </researchers>
+    <researchers name="Rivers" res_position="//@positions.5">
+      <skills description="process modeling"/>
+    </researchers>
+    <researchers name="Lollini" res_position="//@positions.2">
+      <skills description="metamodelling"/>
+      <skills description="uml"/>
+    </researchers>
+    <researchers name="Gerstein" res_position="//@positions.0">
+      <skills description="dsml"/>
+      <skills description="systems engineering"/>
+      <skills description="requirements"/>
+    </researchers>
+    <papers name="Metamodel based Code Generation for Visual Notations">
+      <paragraphs name="definitions">
+        <reviews name="replace x with y"/>
+      </paragraphs>
+      <paragraphs name="use cases">
+        <reviews name="improve style"/>
+      </paragraphs>
+      <paragraphs name="conclusion">
+        <reviews name="justify x"/>
+      </paragraphs>
+      <keywords weight="5" keyword="//@structuralView/@knowledgeMan/@allkeywords.6"/>
+    </papers>
+    <papers name="Grammar-based Definition for Graphical Notations">
+      <paragraphs name="introduction"/>
+      <paragraphs name="future works"/>
+      <keywords weight="50" keyword="//@structuralView/@knowledgeMan/@allkeywords.5"/>
+    </papers>
+    <papers name="Improving the cognitive effectiveness of DSMLs" state="//@behaviorView/@pubStates.1">
+      <paragraphs name="abstract"/>
+      <paragraphs name="conclusion"/>
+      <paragraphs name="intro"/>
+      <paragraphs name="description"/>
+      <keywords weight="10" keyword="//@structuralView/@knowledgeMan/@allkeywords.1"/>
+    </papers>
+    <papers name="Formalizing Patterns in DSMLs">
+      <paragraphs name="introduction"/>
+      <paragraphs name="state of the art"/>
+      <paragraphs name="history"/>
+      <paragraphs name="description"/>
+      <keywords weight="30" keyword="//@structuralView/@knowledgeMan/@allkeywords.1"/>
+      <keywords weight="20" keyword="//@structuralView/@knowledgeMan/@allkeywords.5"/>
+    </papers>
+    <papers name="A Meta-Model-Based Approach for Diagram Generation">
+      <paragraphs name="experiments"/>
+      <paragraphs name="abstract"/>
+      <paragraphs name="proof A"/>
+    </papers>
+    <papers name="A Mapping Language from Models to Diagrams">
+      <paragraphs name="state of the art"/>
+      <paragraphs name="category theory"/>
+      <paragraphs name="colimit"/>
+      <paragraphs name="bibliography"/>
+      <keywords weight="30" keyword="//@structuralView/@knowledgeMan/@allkeywords.7"/>
+      <keywords weight="10" keyword="//@structuralView/@knowledgeMan/@allkeywords.9"/>
+      <keywords weight="30" keyword="//@structuralView/@knowledgeMan/@allkeywords.7"/>
+    </papers>
+    <papers name="Grammar-based Definition for Graphical Notations" state="//@behaviorView/@pubStates.2">
+      <paragraphs name="sketches"/>
+      <paragraphs name="definitions"/>
+      <paragraphs name="conclusion">
+        <reviews name="cite work xy"/>
+      </paragraphs>
+    </papers>
+    <knowledgeMan name="Keywords">
+      <allkeywords name="dsml"/>
+      <allkeywords name="pattern"/>
+      <allkeywords name="similarity"/>
+      <allkeywords name="graph drawing"/>
+      <allkeywords name="ebnf"/>
+      <allkeywords name="grammar"/>
+      <allkeywords name="type theory"/>
+      <allkeywords name="category theory"/>
+      <allkeywords name="cartography"/>
+      <allkeywords name="notation"/>
+    </knowledgeMan>
+  </structuralView>
+  <positions description="phd student"/>
+  <positions description="chair"/>
+  <positions description="assistant professor"/>
+  <positions description="lecturer"/>
+  <positions description="phd"/>
+  <positions description="professor"/>
+  <behaviorView label="Status">
+    <pubStates name="Submission">
+      <transitions guardExpression="threshold ok" source="//@behaviorView/@pubStates.0" target="//@behaviorView/@pubStates.1"/>
+      <transitions guardExpression="plagiarism" source="//@behaviorView/@pubStates.0" target="//@behaviorView/@pubStates.3"/>
+      <transitions guardExpression="concurrent submission" source="//@behaviorView/@pubStates.0" target="//@behaviorView/@pubStates.3"/>
+      <transitions guardExpression="primary review ok" source="//@behaviorView/@pubStates.0" target="//@behaviorView/@pubStates.2"/>
+      <s_actions actionStatement="upload paper"/>
+    </pubStates>
+    <pubStates name="First Review"/>
+    <pubStates name="Second Review">
+      <transitions guardExpression="minor contribution" source="//@behaviorView/@pubStates.2" target="//@behaviorView/@pubStates.3"/>
+      <transitions guardExpression="peer review ok" source="//@behaviorView/@pubStates.2" target="//@behaviorView/@pubStates.4"/>
+    </pubStates>
+    <pubStates name="Rejection"/>
+    <pubStates name="Acceptation"/>
+  </behaviorView>
+</_research16:PublicationSystem>

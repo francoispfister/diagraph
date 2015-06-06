@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ASCII"?>
+<_relationworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_relationworld="http://relationworld">
+  <thingsa name="Marie" since="1950-01-06T00:04:00.000+0100"/>
+  <thingsa name="Thomas" since="1955-01-21T00:05:00.000+0100"/>
+  <thingsa name="L&#xe9;a" since="1963-01-26T00:08:00.000+0100"/>
+  <thingsa name="Julie" since="1970-01-13T00:09:00.000+0100"/>
+  <thingsa name="Louise" since="1972-01-24T00:07:00.000+0100"/>
+  <thingsa name="Noor" since="1976-01-08T00:10:00.000+0100"/>
+  <thingsa name="Milan" since="1990-01-02T00:10:00.000+0100"/>
+  <thingsa name="Elise" since="1991-01-05T00:05:00.000+0100"/>
+  <thingsa name="Jean-Jacques" since="1980-01-24T00:06:00.000+0100"/>
+  <thingsa name="Jean-Charles" since="1955-01-11T00:10:00.000+0100"/>
+  <thingsa name="Jean-Pierre" since="1963-01-24T00:09:00.000+0100"/>
+  <thingsa name="Jean-Paul" since="1967-01-24T00:06:00.000+0100"/>
+  <thingsb step="one"/>
+  <thingsb step="two"/>
+  <thingsb step="three"/>
+  <thingsb step="four"/>
+  <relations thingA="//@thingsa.0" thingB="//@thingsb.0"/>
+  <relations thingA="//@thingsa.1" thingB="//@thingsb.1"/>
+  <relations thingA="//@thingsa.2" thingB="//@thingsb.1"/>
+  <relations thingA="//@thingsa.3" thingB="//@thingsb.2"/>
+  <relations thingA="//@thingsa.4" thingB="//@thingsb.2"/>
+  <relations thingA="//@thingsa.5" thingB="//@thingsb.2"/>
+  <relations thingA="//@thingsa.6" thingB="//@thingsb.3"/>
+  <relations thingA="//@thingsa.7" thingB="//@thingsb.3"/>
+  <relations thingA="//@thingsa.9" thingB="//@thingsb.1"/>
+  <relations thingA="//@thingsa.11" thingB="//@thingsb.1"/>
+</_relationworld:World>

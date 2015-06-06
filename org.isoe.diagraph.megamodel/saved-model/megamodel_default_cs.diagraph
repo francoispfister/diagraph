@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" pointOfView="//@nodes.0" viewName="default">
+  <nodes xsi:type="diagraph:DPointOfView" name="Megamodel">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Megamodel"/>
+    <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Megamodel"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="dsmls" target="//@nodes.1" source="//@nodes.0"/>
+  </nodes>
+  <nodes name="Dsml">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Dsml"/>
+    <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Dsml"/>
+    <edges xsi:type="diagraph:DCompartmentingEdge" name="models" target="//@nodes.2" source="//@nodes.1" partitionName="Model"/>
+    <edges xsi:type="diagraph:DCompartmentingEdge" name="notations" target="//@nodes.3" source="//@nodes.1" partitionName="Notation"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="relations" source="//@nodes.1"/>
+    <edges xsi:type="diagraph:DLabeledEdge" name="RelatedTo">
+      <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//RelatedTo"/>
+      <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//RelatedTo"/>
+    </edges>
+  </nodes>
+  <nodes name="Model">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Model"/>
+    <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Model"/>
+  </nodes>
+  <nodes name="Notation">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Notation"/>
+    <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Notation"/>
+    <edges xsi:type="diagraph:DCompartmentingEdge" name="diagrams" target="//@nodes.4" source="//@nodes.3" partitionName="Diagram"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="navigations" source="//@nodes.3"/>
+  </nodes>
+  <nodes name="Diagram">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Diagram"/>
+    <eClaz href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Diagram"/>
+  </nodes>
+</diagraph:DGraph>

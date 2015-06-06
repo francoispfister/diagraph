@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_kreq204:PartofR xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_kreq204="http://kreq204">
+  <init1 requirementRepository="requirement repository">
+    <containsAllRequirements name="req1" varifedBy="//@init2.0" deriveReqt="//@init1.0/@containsAllRequirements.1" specifiesFunctions="//@init3.0/@decomposed.0" specifiesComponent="//@init4.0/@subComponents.0/@subComponents.0">
+      <decomposes name="req3" varifedBy="//@init2.2"/>
+    </containsAllRequirements>
+    <containsAllRequirements name="req2" varifedBy="//@init2.1"/>
+  </init1>
+  <init2 name="test1" verify="//@init1.0/@containsAllRequirements.0"/>
+  <init2 name="test2" verify="//@init1.0/@containsAllRequirements.1"/>
+  <init2 name="test3" verify="//@init1.0/@containsAllRequirements.0/@decomposes.0"/>
+  <init4 finality="compo" ImplementsFunctions="//@init3.0/@decomposed.0">
+    <subComponents finality="sub" performsMissions="//@init3.0/@decomposed.0/@decomposed.0">
+      <subComponents finality="subsub" satisfy="//@init1.0/@containsAllRequirements.0" specifiedBy="//@init1.0/@containsAllRequirements.0"/>
+    </subComponents>
+  </init4>
+  <init3 performsTransformationFormType="Check_Verify_Validate">
+    <decomposed performsTransformationFormType="Control" isSpecifiedBy="//@init1.0/@containsAllRequirements.0" allocatedTo="//@init4.0">
+      <decomposed performsTransformationFormType="Measure" describesMissionOf="//@init4.0/@subComponents.0"/>
+    </decomposed>
+  </init3>
+</_kreq204:PartofR>

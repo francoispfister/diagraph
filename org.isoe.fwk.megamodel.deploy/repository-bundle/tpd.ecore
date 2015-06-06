@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="tpd"
+    nsURI="http:///tpd-v0" nsPrefix="tpd">
+  <eAnnotations source="diastyle.node.n3">
+    <details key="parent=n2" value=""/>
+    <details key="background=lightgreen" value=""/>
+    <details key="shape=ellipse"/>
+    <details key="size=80,80"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.partition.p1">
+    <details key="background=lightblue" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n2">
+    <details key="background=red" value=""/>
+    <details key="layout=vertical" value=""/>
+    <details key="font=arial" value=""/>
+    <details key="size=0,0"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n6">
+    <details key="background=yellow" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.edge.e1">
+    <details key="background=darkgreen" value=""/>
+    <details key="arrowsize=5" value=""/>
+    <details key="linewidth=3" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n1">
+    <details key="background=orange" value=""/>
+    <details key="size=60,60"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n5">
+    <details key="background=yellow"/>
+    <details key="shape=custom"/>
+    <details key="font=arial"/>
+    <details key="data=0,0;40,0;40,30;30,30;30,40;40,30;30,40;0,40"/>
+    <details key="size=40,40"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n4">
+    <details key="shape=custom"/>
+    <details key="data=20,0;40,40;0,40;20,0"/>
+    <details key="size=40,40"/>
+    <details key="background=lightblue"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Infrastructure">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculateurs" upperBound="-1"
+        eType="#//Calculateur" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="peripheriques" upperBound="-1"
+        eType="#//Peripherique" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="localisations" upperBound="-1"
+        eType="#//Localisation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentation" eType="#//VueDocumentation"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Calculateur">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+      <details key="kref=processeurs"/>
+      <details key="ref=coordonnee"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="categorie" eType="#//Categorie"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="coordonnee" eType="#//Localisation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processeurs" upperBound="-1"
+        eType="#//Processeur" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Peripherique">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+      <details key="label=nature"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nature" eType="#//Nature"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cadence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Categorie">
+    <eLiterals name="tempsReelDur"/>
+    <eLiterals name="tempsReel" value="1"/>
+    <eLiterals name="standard" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Nature">
+    <eLiterals name="entree"/>
+    <eLiterals name="sortie" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nomenclature">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_localisation" upperBound="-1"
+        eType="#//Localisation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Famille">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_nomenclature" eType="#//Nomenclature"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="docus" upperBound="-1"
+        eType="#//Documentation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="label=cadence"/>
+      <details key="ltrg=perif"/>
+      <details key="lsrc=calculateur"/>
+      <details key="cont=Calculateur.interfaces"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cadence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calculateur" eType="#//Calculateur"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="perif" eType="#//Peripherique"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Localisation">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+      <details key="label=coteX"/>
+      <details key="label=coteY"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coteX" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="coteY" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Documentation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VueDocumentation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="familles" upperBound="-1"
+        eType="#//Famille" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nomenclatures" upperBound="-1"
+        eType="#//Nomenclature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Processeur">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_famille" eType="#//Famille"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cadence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.mbse.system101/src/" editDirectory="/org.isoe.mbse.system101.edit/src/" modelPluginID="org.isoe.mbse.system101" modelName="System101" complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.7">
+  <genPackages prefix="System101" basePackage="org.isoe.mbse" disposableProviderFactory="true">
+    <ecorePackage href="system101.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//System"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//System/functionalArchitecture"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//System/physicalArchitecture"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//Workbench"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Workbench/systemView"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Workbench/functionProperties"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Workbench/things"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="system101.ecore#//Workbench/foobar"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="system101.ecore#//Named"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="system101.ecore#//Named/ident"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//FunctionProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//FunctionProperty/parent"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="system101.ecore#//FunctionProperty/description"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//Function"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Function/decompositions"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Function/property"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Function/associations"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Function/allocatedTo"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//Component"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Component/decompositions"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Component/associations"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//Component/performs"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="system101.ecore#//PatternCatalog"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="system101.ecore#//PatternCatalog/id"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="system101.ecore#//PatternCatalog/patterns"/>
+      </genFeatures>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

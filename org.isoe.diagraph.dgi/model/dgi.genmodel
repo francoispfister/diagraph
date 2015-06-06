@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.diagraph.dgi/src"
+    modelPluginID="org.isoe.diagraph.dgi" modelName="Dgi" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
+  <foreignModel>dgi.ecore</foreignModel>
+  <genPackages prefix="Dgi" basePackage="org.isoe.diagraph" disposableProviderFactory="true"
+      ecorePackage="dgi.ecore#/">
+    <genClasses image="false" ecoreClass="dgi.ecore#//DElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DElement/eContainmentModelElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DElement/eModelElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DElement/dLowerElements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DElement/dSuperElements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dgi.ecore#//DLabelledElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DLabelledElement/dLabels"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DNode/dReferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DNode/dContainments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DNode/dLinks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DNode/root"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DNode/recursive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DNode/navigations"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/resolveDiagramRecursion"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/addRootChild">
+        <genParameters ecoreParameter="dgi.ecore#//DNode/addRootChild/node"/>
+      </genOperations>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/resolveTargetRef"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/logContainments"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/logReferences"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/checkReferences"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/resolveReferenceTargetNodes"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/resolveContainmentSourceAndTargetNodes"/>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/findReference">
+        <genParameters ecoreParameter="dgi.ecore#//DNode/findReference/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/findContainmentByTargetName">
+        <genParameters ecoreParameter="dgi.ecore#//DNode/findContainmentByTargetName/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/findContainmentbyName">
+        <genParameters ecoreParameter="dgi.ecore#//DNode/findContainmentbyName/name"/>
+      </genOperations>
+      <genOperations ecoreOperation="dgi.ecore#//DNode/inferContainment">
+        <genParameters ecoreParameter="dgi.ecore#//DNode/inferContainment/diagramElements"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DLink/eSourceModelElement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DLink/eTargetModelElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DLink/reversedSource"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DPoorReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DPoorReference/eTargetModelElement"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DContainment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DContainment/compartment"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DLabel">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dgi.ecore#//DLabel/dLabelledElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DLabel/fromSuperElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DLabel/inferred"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DLabel/eAttributeModelElement"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DGenericElement"/>
+    <genClasses ecoreClass="dgi.ecore#//DConcreteSyntax">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/dNodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/dElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/dEdges"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/rootPointOfView"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/pointsOfView"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DConcreteSyntax/currentPointOfView"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dgi.ecore#//DEdge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DEdge/dSourceNode"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DEdge/dTargetNode"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dgi.ecore#//DNamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dgi.ecore#//DNamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="dgi.ecore#//DPointOfView">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dgi.ecore#//DPointOfView/children"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dgi.ecore#//DPointOfView/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dgi.ecore#//DPointOfView/dRootNode"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

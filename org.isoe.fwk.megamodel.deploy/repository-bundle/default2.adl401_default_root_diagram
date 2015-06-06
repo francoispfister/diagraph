@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl401="http://adl401" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_3A23oLNXEeOzu8YaToa7mA" type="Adl401_default_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_3Det0LNXEeOzu8YaToa7mA" type="1004">
+      <children xmi:type="notation:DecorationNode" xmi:id="_3DfU4LNXEeOzu8YaToa7mA" type="4007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_3Det0bNXEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_3Det0rNXEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_3Det07NXEeOzu8YaToa7mA" diagramLink="_5ASYwLNXEeOzu8YaToa7mA"/>
+      <element xmi:type="_adl401:Component" href="default2.adl401#//@subComponents.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Det1LNXEeOzu8YaToa7mA" x="105" y="190" width="115" height="111"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_3DfU4bNXEeOzu8YaToa7mA" type="1004">
+      <children xmi:type="notation:DecorationNode" xmi:id="_3Df78LNXEeOzu8YaToa7mA" type="4007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_3DfU4rNXEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_3DfU47NXEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_3DfU5LNXEeOzu8YaToa7mA"/>
+      <element xmi:type="_adl401:Component" href="default2.adl401#//@subComponents.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3DfU5bNXEeOzu8YaToa7mA" x="20" y="70"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_3A23obNXEeOzu8YaToa7mA"/>
+    <element xmi:type="_adl401:Component" href="default2.adl401#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_5ASYwLNXEeOzu8YaToa7mA" type="Adl401_default_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_5BD00LNXEeOzu8YaToa7mA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5BEb4LNXEeOzu8YaToa7mA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_5BD00bNXEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_5BD00rNXEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <element xmi:type="_adl401:Required" href="default2.adl401#//@subComponents.0/@requiredInterfaces.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5BD007NXEeOzu8YaToa7mA" x="105" y="105" width="81" height="76"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_9BchELNXEeOzu8YaToa7mA" type="1003">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9BdIILNXEeOzu8YaToa7mA" type="4004"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9BdIIbNXEeOzu8YaToa7mA" type="5001">
+        <children xmi:type="notation:Node" xmi:id="__t114LNXEeOzu8YaToa7mA" type="2001">
+          <children xmi:type="notation:DecorationNode" xmi:id="__t2c8LNXEeOzu8YaToa7mA" type="4003"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="__t114bNXEeOzu8YaToa7mA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__t114rNXEeOzu8YaToa7mA" fontName="Segoe UI"/>
+          <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__t1147NXEeOzu8YaToa7mA" x="89" y="2" width="76" height="46"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_BBDKMLNYEeOzu8YaToa7mA" type="2001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_BBDxQLNYEeOzu8YaToa7mA" type="4003"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_BBDKMbNYEeOzu8YaToa7mA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_BBDKMrNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+          <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BBDKM7NYEeOzu8YaToa7mA" x="41" y="16"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_9BchEbNXEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_9BchErNXEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_9BchE7NXEeOzu8YaToa7mA" diagramLink="_CxsBYLNYEeOzu8YaToa7mA" hint="Adl401_vwcontent_root"/>
+      <element xmi:type="_adl401:Content" href="default2.adl401#//@subComponents.0/@content"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9BchFLNXEeOzu8YaToa7mA" x="46" y="200" width="156" height="151"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_5AS_0LNXEeOzu8YaToa7mA"/>
+    <element xmi:type="_adl401:Component" href="default2.adl401#//@subComponents.0"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_CxsBYLNYEeOzu8YaToa7mA" type="Adl401_vwcontent_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_C0fdwLNYEeOzu8YaToa7mA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_C0fdxbNYEeOzu8YaToa7mA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_C0fdwbNYEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_C0fdwrNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_C0fdw7NYEeOzu8YaToa7mA" hint="Adl401_vweclass0_root"/>
+      <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C0fdxLNYEeOzu8YaToa7mA" x="50" y="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_C0gE0LNYEeOzu8YaToa7mA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_C0gE1bNYEeOzu8YaToa7mA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_C0gE0bNYEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_C0gE0rNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_C0gE07NYEeOzu8YaToa7mA" hint="Adl401_vweclass0_root"/>
+      <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C0gE1LNYEeOzu8YaToa7mA" x="155" y="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_DXhSULNYEeOzu8YaToa7mA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DXigcLNYEeOzu8YaToa7mA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_DXh5YLNYEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DXh5YbNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_DXh5YrNYEeOzu8YaToa7mA" diagramLink="_DeutkLNYEeOzu8YaToa7mA" hint="Adl401_vweclass0_root"/>
+      <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DXh5Y7NYEeOzu8YaToa7mA" x="90" y="160" width="126" height="101"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_CxsBYbNYEeOzu8YaToa7mA"/>
+    <element xmi:type="_adl401:Content" href="default2.adl401#//@subComponents.0/@content"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_DeutkLNYEeOzu8YaToa7mA" type="Adl401_vweclass0_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_D2lz8LNYEeOzu8YaToa7mA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_D2nCELNYEeOzu8YaToa7mA" type="4018"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_D2nCEbNYEeOzu8YaToa7mA" type="5001">
+        <children xmi:type="notation:Node" xmi:id="_EiM8wLNYEeOzu8YaToa7mA" type="2001">
+          <children xmi:type="notation:DecorationNode" xmi:id="_EiNj0LNYEeOzu8YaToa7mA" type="4017"/>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_EiNj0bNYEeOzu8YaToa7mA" type="5002">
+            <children xmi:type="notation:Node" xmi:id="_E6_3QLNYEeOzu8YaToa7mA" type="2002">
+              <children xmi:type="notation:DecorationNode" xmi:id="_E7AeULNYEeOzu8YaToa7mA" type="4016"/>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_E7AeUbNYEeOzu8YaToa7mA" type="5003"/>
+              <styles xmi:type="notation:DescriptionStyle" xmi:id="_E6_3QbNYEeOzu8YaToa7mA"/>
+              <styles xmi:type="notation:FontStyle" xmi:id="_E6_3QrNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+              <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.2/@erefs0.0/@erefs0.0/@erefs0.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E6_3Q7NYEeOzu8YaToa7mA" x="9" y="2"/>
+            </children>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_EiM8wbNYEeOzu8YaToa7mA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_EiM8wrNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+          <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.2/@erefs0.0/@erefs0.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EiM8w7NYEeOzu8YaToa7mA" x="80" y="-2"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_D2lz8bNYEeOzu8YaToa7mA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_D2lz8rNYEeOzu8YaToa7mA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_D2lz87NYEeOzu8YaToa7mA"/>
+      <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.2/@erefs0.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D2lz9LNYEeOzu8YaToa7mA" x="60" y="100" width="146" height="111"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_DevUoLNYEeOzu8YaToa7mA"/>
+    <element xmi:type="_adl401:EClass0" href="default2.adl401#//@subComponents.0/@content/@EReference0.2"/>
+  </notation:Diagram>
+</xmi:XMI>

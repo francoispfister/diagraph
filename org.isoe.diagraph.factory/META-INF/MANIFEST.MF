@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: org.isoe.diagraph.factory
+Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.5.0",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.workbench.api
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Name: Diagraph Factory
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.isoe.diagraph.factory
+Bundle-Vendor: LGi2P Isoe
+

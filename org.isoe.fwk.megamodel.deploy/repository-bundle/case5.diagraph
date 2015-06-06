@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" rootPointOfView="//@elements.1">
+  <elements xsi:type="diagraph:DNode" name="D" containment="//@elements.1">
+    <eClass href="case5.ecore#//D"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="N" pointOfView="true">
+    <eClass href="case5.ecore#//N"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="T" containment="//@elements.1">
+    <eClass href="case5.ecore#//T"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="A" containment="//@elements.1">
+    <eClass href="case5.ecore#//A"/>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="B" containment="//@elements.1">
+    <eClass href="case5.ecore#//B"/>
+    <edges xsi:type="diagraph:DReference" name="ds" target="//@elements.0" source="//@elements.4">
+      <targetReference href="case5.ecore#//B/ds"/>
+    </edges>
+  </elements>
+  <elements xsi:type="diagraph:DNode" name="E" containment="//@elements.1">
+    <eClass href="case5.ecore#//E"/>
+  </elements>
+</diagraph:DGraph>

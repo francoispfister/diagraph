@@ -1,0 +1,19 @@
+
+embedded:Toto
+ACRCV is propagated en canvas: [DiaNode]  name: TotoSet elementName: TotoSet containment: elementSet modelElement: TotoSet own labels: [DiaLabel] attributeName: name name:TotoSetName defaultName:null
+   containment: [Containment] name:totos  SourceNode= TotoSet - containment=elementSet TargetNode= Toto - containment= ??? no TargetNode containement  figureEmbedded=  fig own propagated= not propagated TargetName= totos TargetReference= totos
+ -> [DiaNode]  name: Toto elementName: Toto containment:  null  modelElement: Toto own labels: [DiaLabel] attributeName: id name:TotoId defaultName:null
+  [Containment] name:totos  SourceNode= TotoSet - containment=elementSet TargetNode= Toto - containment= ??? no TargetNode containement  figureEmbedded=  fig own propagated= not propagated TargetName= totos TargetReference= totos
+
+
+CNM---------- prepareNodeMapping: Toto
+eClassifiers a
+Toto
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [eClassifiers:EClassifier] -> Toto
+validating Containment feature [eClassifiers:EClassifier] -> Toto
+java.lang.RuntimeException:  (in view default) Containment feature [eClassifiers:EClassifier] should contain instances of node class Toto in createNodeMapping
+	at org.isoe.diagraph.generator.gmf.main.DiagraphRunner.handleException(DiagraphRunner.java:978)
+	at org.isoe.diagraph.generator.gmf.main.DiagraphRunner.generateAllPointsOfView(DiagraphRunner.java:1001)
+
+

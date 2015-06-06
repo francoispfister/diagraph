@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_system913:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_system913="http://system913">
+  <systemView name="s">
+    <functionalArchitecture name="f1" associations="//@systemView/@functionalArchitecture.1"/>
+    <functionalArchitecture name="f2">
+      <decompositions name="f7"/>
+      <decompositions name="f8" associations="//@systemView/@functionalArchitecture.1/@decompositions.0"/>
+      <decompositions name="f10" associations="//@systemView/@functionalArchitecture.1/@decompositions.1">
+        <decompositions name="f100"/>
+      </decompositions>
+    </functionalArchitecture>
+  </systemView>
+  <kinds name="a"/>
+  <kinds name="b"/>
+  <kinds name="c"/>
+</_system913:Workbench>

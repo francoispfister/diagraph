@@ -1,0 +1,108 @@
+digraph G { rankdir=BT node [fontsize=10,shape=none] edge [fontsize=10];
+subgraph cluster_15081425 /*start subgraph*/{ 
+label="complexity sample";
+
+Reference [
+label=< 
+<!-- main_Reference -->
+<TABLE  cellspacing="-1" cellpadding="0" border="0" >
+  <TR><TD port="Reference">
+    <!-- classifier_Reference -->
+    <TABLE  cellspacing="-1" border="1" >
+      <TR><TD>Reference</TD> </TR> 
+      <TR><TD>
+        <!-- container_Reference -->
+        <TABLE border="0">
+          <TR><TD  port="Reference_key" align="left">key: EString</TD> </TR> 
+          <TR><TD  port="Reference_description" align="left">description: EString</TD> </TR> 
+        </TABLE><!-- /container_Reference -->
+      </TD></TR>
+    </TABLE><!-- /classifier_Reference -->
+  </TD></TR>
+</TABLE><!-- /main_Reference -->
+>
+];
+<!-- cluster described with html-->
+Expression [
+label=< 
+<!-- main_Expression -->
+<TABLE  cellspacing="-1" cellpadding="0" border="0" >
+  <TR><TD port="Expression">
+    <!-- classifier_Expression -->
+    <TABLE cellspacing="-1" cellpadding="5" border="1" >
+      <TR><TD>Expression</TD> </TR> 
+      <TR><TD>
+        <!-- container_Expression -->
+        <TABLE cellspacing="-1" border="0">
+          <TR><TD align="left">texte[0..1]: EString</TD> </TR> 
+          <TR><TD port="Expression_SubExpression">
+            <!-- classifier_SubExpression -->
+            <TABLE border="1" cellspacing="-1"  cellpadding="5" > 
+               <TR><TD port="SubExpression">SubExpression</TD> </TR> 
+               <TR><TD>
+                 <!-- container_SubExpression -->
+                 <TABLE  border="0"  cellspacing="-1">
+                   <TR><TD align="left">attr1[0..1]: Typ1</TD> </TR> 
+                   <TR><TD align="left">attr2[0..*]: Typ2</TD> </TR> 
+                   
+    <!-- nested classifier in a TR -->               
+                   
+    <TR><TD port="Expression_SubExpression_Foobar">
+    <!-- classifier_Foobar -->
+    <TABLE  cellspacing="-1" border="1" >
+      <TR><TD>Foobar</TD> </TR> 
+      <TR><TD>
+        <!-- container_Foobar -->
+        <TABLE border="0">
+          <TR><TD  port="Expression_SubExpression_Foobar_hola" align="left">hola: EString</TD> </TR> 
+          <TR><TD  port="Expression_SubExpression_Foobar_hello" align="left">hello: EString</TD> </TR> 
+        </TABLE><!-- /container_Foobar -->
+      </TD></TR>
+    </TABLE><!-- /classifier_Foobar -->
+  </TD></TR>
+     
+  <!-- /nested classifier in a TR -->              
+                   
+                   
+                   <TR><TD port="SubExpression_foo" align="left">foo: EString</TD> </TR> 
+                 </TABLE><!-- /container_SubExpression -->
+               </TD></TR>
+            </TABLE><!-- /classifier_SubExpression -->
+        </TD></TR> 
+        <TR><TD port="Expression_bar" align="left"  >bar: EString</TD> </TR> 
+      </TABLE><!-- /container_Expression -->
+    </TD></TR>
+  </TABLE><!-- classifier_Expression -->
+</TD></TR>
+</TABLE><!-- /main_Expression -->
+>
+];
+
+SubLanguage [shape=record,style=filled,	fillcolor=".0 .0 1.0",/*start label*/label="{SubLanguage|name[0..1]: EString\nexemple[0..1]: EString\n}"/*end label*/];
+Language [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Language|name[0..1]: EString\n}"/*end label*/];
+Hello [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Hello|phrase[0..1]: EString\n}"/*end label*/];
+Person [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Person|name[0..1]: EString\n}"/*end label*/];
+
+}/*end subgraph*/
+
+
+Expression:Expression -> Reference:Reference [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="references"];
+SubLanguage -> Expression:Expression [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="expressions"];
+Language -> SubLanguage [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="sub_languages"];
+Hello -> Person [color=red,arrowhead=vee,headlabel="0..1",label="to_another_person"];
+Hello -> Person [color=red,arrowhead=vee,headlabel="0..1",label="person"];
+Person -> Hello [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="says_hello"];
+Person -> Language [color=red,arrowhead=vee,headlabel="0..*",label="speaks"];
+Expression:Expression_bar -> Hello [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="998",label="lab1"];
+Expression:Expression_bar -> Expression:Expression_SubExpression_Foobar_hello [color=orange,dir=both,arrowtail=tee,arrowhead=tee,headlabel="zing",label="boom"];                                    
+Expression:SubExpression_foo -> Language [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="997",label="lab2"];
+Expression:Expression_bar -> Reference:Reference_description [color=blue,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="998",label="lab1"];
+Person -> Expression:Expression_SubExpression [color=black,dir=both,arrowtail=box,arrowhead=obox,headlabel="199",label="lab100"];
+}/*end graph*/
+
+
+
+
+
+
+

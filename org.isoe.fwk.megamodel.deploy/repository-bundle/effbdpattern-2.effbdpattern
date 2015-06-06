@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_effbdpattern:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_effbdpattern="http://effbdpattern">
+  <workingModels name="Model">
+    <functionalArchitecture name="fa">
+      <decompositions name="xyz" pattern="//@patternCatalog/@systemPatterns.0"/>
+    </functionalArchitecture>
+  </workingModels>
+  <patternCatalog id="patterns">
+    <patterns name="patern1"/>
+    <patterns name="patern2"/>
+    <systemPatterns name="pat1" modelElement="//@patternCatalog/@patterns.0"/>
+    <systemPatterns name="pat2" knownApplications="" modelElement="//@patternCatalog/@patterns.1"/>
+  </patternCatalog>
+</_effbdpattern:Workbench>

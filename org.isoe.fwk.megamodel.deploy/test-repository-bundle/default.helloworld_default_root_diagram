@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:helloworld="http://helloworld.example.v0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_CuT1MToJEeKcHfu1TZWdNA" type="Helloworld_default_root" name="default.helloworld_default_root_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_DVpiADoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DVqJEDoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_DVpiAToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DVpiAjoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_DVpiAzoJEeKcHfu1TZWdNA" diagramLink="_FBTLgDoJEeKcHfu1TZWdNA" hint="Helloworld_languages_root"/>
+      <element xmi:type="helloworld:VueLangue" href="default.helloworld#//@vueLangues"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DVpiBDoJEeKcHfu1TZWdNA" x="100" y="130" width="111" height="66"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Ebw1gDoJEeKcHfu1TZWdNA" type="1002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_EbyDoDoJEeKcHfu1TZWdNA" type="4002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ebw1gToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Ebw1gjoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Ebw1gzoJEeKcHfu1TZWdNA" diagramLink="_Jj3XwDoJEeKcHfu1TZWdNA" hint="Helloworld_hommes_root"/>
+      <element xmi:type="helloworld:VueHommes" href="default.helloworld#//@vueHommes"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EbxckDoJEeKcHfu1TZWdNA" x="425" y="195" width="81" height="56"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_CuT1MjoJEeKcHfu1TZWdNA"/>
+    <element xmi:type="helloworld:LeMonde" href="default.helloworld#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_FBTLgDoJEeKcHfu1TZWdNA" type="Helloworld_languages_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_FdJaADoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FdKoIDoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_FdJaAToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_FdJaAjoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Langue" href="default.helloworld#//@vueLangues/@langues.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FdJaAzoJEeKcHfu1TZWdNA" x="270" y="100" width="96" height="61"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_HBFR8DoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HBF5AzoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_HBF5ADoJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_HBF5AToJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Langue" href="default.helloworld#//@vueLangues/@langues.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HBF5AjoJEeKcHfu1TZWdNA" x="270" y="190" width="91" height="51"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_H7UFkDoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_H7UsoDoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_H7UFkToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_H7UFkjoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Langue" href="default.helloworld#//@vueLangues/@langues.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H7UFkzoJEeKcHfu1TZWdNA" x="270" y="265" width="101" height="66"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_FBTLgToJEeKcHfu1TZWdNA"/>
+    <element xmi:type="helloworld:VueLangue" href="default.helloworld#//@vueLangues"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_Jj3XwDoJEeKcHfu1TZWdNA" type="Helloworld_hommes_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_J_7BoDoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_J_8PwDoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_J_7osDoJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_J_7osToJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Humain" href="default.helloworld#//@vueHommes/@humains.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J_7osjoJEeKcHfu1TZWdNA" x="210" y="90" width="131" height="56"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_LESBoDoJEeKcHfu1TZWdNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LESosDoJEeKcHfu1TZWdNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_LESBoToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LESBojoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Humain" href="default.helloworld#//@vueHommes/@humains.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LESBozoJEeKcHfu1TZWdNA" x="215" y="215" width="111" height="71"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Jj3XwToJEeKcHfu1TZWdNA"/>
+    <element xmi:type="helloworld:VueHommes" href="default.helloworld#//@vueHommes"/>
+    <edges xmi:type="notation:Edge" xmi:id="_LsKhADoJEeKcHfu1TZWdNA" type="3001" source="_J_7BoDoJEeKcHfu1TZWdNA" target="_LESBoDoJEeKcHfu1TZWdNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LsLIEDoJEeKcHfu1TZWdNA" type="4002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LsLIEToJEeKcHfu1TZWdNA" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_LsKhAToJEeKcHfu1TZWdNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LsKhAjoJEeKcHfu1TZWdNA" fontName="Segoe UI"/>
+      <element xmi:type="helloworld:Bonjour" href="default.helloworld#//@vueHommes/@humains.0/@dit_bonjour.0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LsKhAzoJEeKcHfu1TZWdNA" points="[8, 28, 13, -59]$[51, 55, 56, -32]"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,413 @@
+digraph G{  node [shape=record, fontsize=9, height=0.1, width=0.05]; edge [style=dashed, arrowsize=0.5, len=0.1]; rankdir=LR 
+subgraph "cluster_Thermostat" {
+"{[[month]]|[[season]]}"
+}
+subgraph "cluster_Time" {
+"{[[month]]|[[season]]}"
+}
+subgraph "cluster_Thermostat" {
+"{[[day]]|[[today]]}"
+}
+subgraph "cluster_Time" {
+"{[[day]]|[[today]]}"
+}
+subgraph "cluster_Date" {
+"{[[day]]|[[today]]}"
+}
+subgraph "cluster_Thermostat" {
+"{[[today], [hour]]|[[operation]]}"
+}
+subgraph "cluster_Time" {
+"{[[today], [hour]]|[[operation]]}"
+}
+subgraph "cluster_Thermostat" {
+"{[[season], [operation]]|[[thermostat_settings]]}"
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Temperature" {
+label="Temperature"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Date" {
+label="Date"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_season" {
+label="season"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_operation" {
+label="operation"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Thermostat" {
+label="Thermostat"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_thermostat_settings" {
+label="thermostat_settings"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Date" {
+label="Date"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_season" {
+label="season"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Time" {
+label="Time"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_operation" {
+label="operation"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Temperature" {
+label="Temperature"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_thermostat_settings" {
+label="thermostat_settings"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Date" {
+label="Date"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Date" {
+label="Date"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Date" {
+label="Date"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+"{[[month]]|[[season]]}"->"{[[season], [operation]]|[[thermostat_settings]]}"
+"{[[day]]|[[today]]}"->"{[[today], [hour]]|[[operation]]}"
+"{[[today], [hour]]|[[operation]]}"->"{[[season], [operation]]|[[thermostat_settings]]}"
+}

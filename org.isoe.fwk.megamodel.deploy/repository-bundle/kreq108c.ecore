@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kreq108c" nsURI="http://kreq108c" nsPrefix="_kreq108c">
+  <eClassifiers xsi:type="ecore:EClass" name="Bbbb">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" upperBound="-1" eType="#//Cccc"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="es" upperBound="-1" eType="#//Eeee"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cccc">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="kref=fs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fs" upperBound="-1" eType="#//Ffff"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Eeee" eSuperTypes="#//Gggg">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ffff" eSuperTypes="#//Gggg">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=Cccc.fs"/>
+      <details key="kref=subFs"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="varifedBy" upperBound="-1"
+        eType="#//Eeee"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subFs" upperBound="-1"
+        eType="#//Ffff" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gggg" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

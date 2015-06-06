@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph:Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graph="http://isoe.graph.example.v0" name="gg">
+  <nodes name="a" leavings="//@edges.0"/>
+  <nodes name="b" enterings="//@edges.0"/>
+  <edges name="ab" sourceNode="//@nodes.0" targetNode="//@nodes.1"/>
+</graph:Graph>

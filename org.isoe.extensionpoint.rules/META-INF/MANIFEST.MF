@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Diagraph Syntax Rules
+Bundle-SymbolicName: org.isoe.extensionpoint.rules;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.extensionpoint.rules
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<si_pme:Enterprise xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:si_pme="http://si_pme_engineering/1.0">
+  <decomposedIn xsi:type="si_pme:Workstation" name="PC2"/>
+  <decomposedIn xsi:type="si_pme:Workstation" name="PC2"/>
+  <concerns name="LGI2P">
+    <workstations name="PC4" owners="//@companyMembers.1"/>
+    <workstations name="PC5" owners="//@companyMembers.0"/>
+  </concerns>
+  <refers xsi:type="si_pme:OrganisationCell" name="ISOe">
+    <workstations name="PC1" responsible="//@companyMembers.0"/>
+    <workstations name="PC2" owners="//@companyMembers.0"/>
+  </refers>
+  <companyMembers name="Vincent" inChargeOf="//@refers.0/@workstations.1 //@concerns.0/@workstations.1" responsibleOf="//@refers.0/@workstations.0"/>
+  <companyMembers name="Nawel" inChargeOf="//@concerns.0/@workstations.0"/>
+</si_pme:Enterprise>

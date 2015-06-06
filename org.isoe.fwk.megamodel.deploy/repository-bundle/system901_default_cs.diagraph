@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" pointOfView="//@nodes.1" viewName="default">
+  <nodes name="System">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//System"/>
+    <eClaz href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//System"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="functionalArchitecture" source="//@nodes.0"/>
+  </nodes>
+  <nodes xsi:type="diagraph:DPointOfView" name="Workbench">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//Workbench"/>
+    <eClaz href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//Workbench"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="systemView" target="//@nodes.0" source="//@nodes.1"/>
+    <edges xsi:type="diagraph:DImplicitEdge" name="kinds" target="//@nodes.2" source="//@nodes.1"/>
+  </nodes>
+  <nodes name="FunctionKind">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//FunctionKind"/>
+    <eClaz href="platform:/resource/org.isoe.mbse.system901/model/system901.ecore#//FunctionKind"/>
+  </nodes>
+</diagraph:DGraph>

@@ -1,0 +1,417 @@
+«IMPORT 'http://www.eclipse.org/gmf/2009/GenModel'»«REM»gmfgen«ENDREM»
+
+«EXTENSION xpt::StringOperations»
+«EXTENSION xpt::editor::Utils»
+«EXTENSION xpt::editor::GenDiagram»
+
+
+
+«DEFINE diagramOutlinePageClassName FOR gmfgen::GenEditorView-»
+«className.xpandSplit('DiagramEditor')->first()»DiagramOutlinePage
+«ENDDEFINE»
+
+«DEFINE modelNavigatorClassName FOR gmfgen::GenEditorView-»
+«className.xpandSplit('DiagramEditor')->first()»ModelNavigator
+«ENDDEFINE»
+
+
+«DEFINE x5 FOR gmfgen::GenEditorView-»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»
+  «IF iter.isFirstIteration()-»
+     «editorGen.domainGenModel.editorPluginID.xpandSplit('.editor')->first()-»
+  «ENDIF»
+«ENDFOREACH»
+«ENDDEFINE»
+
+
+«DEFINE x6 FOR gmfgen::GenEditorView-»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»
+    «tlnode.editPartClassName-»
+«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE x7 FOR gmfgen::GenEditorView-»«className-»«ENDDEFINE»
+
+«DEFINE tlnodename FOR gmfgen::GenEditorView-»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»«IF iter.isFirstIteration()-»«editorGen.domainGenModel.editorPluginID.xpandSplit('.editor')->first()».«tlnode.getUniqueIdentifier().xpandSplit('_')->first()-»«ENDIF»«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE x9 FOR gmfgen::GenEditorView-»
+canvasSemanticEClass:«editorGen.diagram.domainDiagramElement.ecoreClass.name»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»
+«IF iter.isFirstIteration()»
+ node1 «tlnode.editPartClassName»
+ node2 «tlnode.getClassNameSuffux()»
+ node3 «tlnode.getEditPartQualifiedClassName()»
+ node4 «tlnode.getUniqueIdentifier()» //State_1001
+ node5 «tlnode.visualID» //node5 1001
+ node6 «tlnode.getDomainMetaClass()»
+ node7 «tlnode.elementType»
+ node8 «tlnode.itemSemanticEditPolicyClassName»
+ semanticClass «editorGen.domainGenModel.editorPluginID.xpandSplit('.editor')->first()».«tlnode.editPartClassName.xpandSplit('EditPart')->first()»
+«ENDIF»
+«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE firstTopNodeQualifiedClassName FOR gmfgen::GenEditorView-»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»«IF iter.isFirstIteration()»«editorGen.domainGenModel.editorPluginID.xpandSplit('.editor')->first()».«tlnode.editPartClassName.xpandSplit('EditPart')->first()»«ENDIF»«ENDFOREACH»
+«ENDDEFINE»
+
+
+«DEFINE firstTopNodeEditPartQualifiedClassName FOR gmfgen::GenEditorView-»
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»«IF iter.isFirstIteration()»«tlnode.getEditPartQualifiedClassName()»«ENDIF»«ENDFOREACH»
+«ENDDEFINE»
+
+«DEFINE getItemProvidersAdapterFactoryInvocation FOR gmfgen::GenEditorView-»
+   «editorGen.editor.packageName».«editorGen.domainGenModel.modelName»DiagramEditorPlugin.getInstance().getItemProvidersAdapterFactory();
+«ENDDEFINE»
+
+«DEFINE getItemProvidersPreferenceInvocation FOR gmfgen::GenEditorView-»
+   «editorGen.editor.packageName».«editorGen.domainGenModel.modelName»DiagramEditorPlugin.getInstance().getPreferenceStore();
+«ENDDEFINE»
+
+
+«AROUND getAdapter FOR gmfgen::GenEditorView-»
+«REM»
+	customized OutlineView
+«ENDREM»
+
+«EXPAND createDiagramOutlinePageInternalClass-»
+«REM»
+«EXPAND debugContextGenEditorView-»
+«EXPAND debugContextPalette FOR editorGen.diagram.palette-»
+«ENDREM»
+	«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 1b')»
+	private void hideEditor(){
+		org.eclipse.ui.IWorkbenchPage page = org.eclipse.ui.PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage();
+	    for (org.eclipse.ui.IEditorReference iEditorReference : page.getEditorReferences()) {
+			//System.out.println("@@@ "+iEditorReference.getName());
+			if (iEditorReference.getName().contains("root_diagram#")) //FP121109
+			    ;//page.hideEditor(iEditorReference);
+		}
+	}
+
+	«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 1')»
+	public Object getAdapter(Class type) {
+		// todo - see:
+		// http://www.eclipse.org/articles/Article-Tabbed-Properties/tabbed_properties_view.html
+		// http://www.eclipse.org/webtools/wst/components/sse/designs/EditorSelection.html
+		// http://www.ibm.com/developerworks/opensource/library/os-ecllink/
+
+		if (type == org.eclipse.ui.part.IShowInTargetList.class) {
+			return new org.eclipse.ui.part.IShowInTargetList() {
+				public String[] getShowInTargetIds() {
+					return new String[] { org.eclipse.ui.navigator.resources.ProjectExplorer.VIEW_ID };
+				}
+			};
+		}
+		if (type == org.eclipse.ui.views.contentoutline.IContentOutlinePage.class) {
+			org.eclipse.ui.views.contentoutline.IContentOutlinePage contentOutlinePage = createContentOutlinePage();
+			if (contentOutlinePage == null)
+				contentOutlinePage = (org.eclipse.ui.views.contentoutline.IContentOutlinePage) super
+						.getAdapter(type);
+			hideEditor(); //hack
+			return contentOutlinePage;
+		}
+		return super.getAdapter(type);
+	}
+
+	«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 2')»
+	protected org.eclipse.ui.views.contentoutline.IContentOutlinePage createContentOutlinePage() {
+		/* In case of extension-point mechanism
+		return DiagramOutlineProvider
+				.getOutlineFactory("org.isoe.eval.«editorGen.domainGenModel.modelName».outline",
+						"foobarimpl").create(this);*/
+
+		org.eclipse.ui.views.contentoutline.IContentOutlinePage result = new «editorGen.domainGenModel.modelName»DiagramOutlinePage(this);
+		System.out.println("in createContentOutlinePage "+result.getClass().getName()); //FP140513
+		System.out.println("Persisted Children:");
+		for (Object object : this.getDiagram().getPersistedChildren()) {
+			System.out.println("changed" + object.toString());
+		}
+		result.addSelectionChangedListener(new org.eclipse.jface.viewers.ISelectionChangedListener() {
+			public void selectionChanged(org.eclipse.jface.viewers.SelectionChangedEvent event) {
+				System.out.println("changed");
+			}
+		});
+		return result;
+	}
+«ENDAROUND»
+
+«AROUND configureGraphicalViewer FOR gmfgen::GenEditorView-»
+	«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 3')»
+	protected void configureGraphicalViewer() {
+		super.configureGraphicalViewer();
+		«EXPAND xpt::editor::DiagramEditorContextMenuProvider::qualifiedClassName FOR editorGen.diagram» provider =
+				new «EXPAND xpt::editor::DiagramEditorContextMenuProvider::qualifiedClassName FOR editorGen.diagram»(this, getDiagramGraphicalViewer());
+		getDiagramGraphicalViewer().setContextMenu(provider);
+		getSite().registerContextMenu(org.eclipse.gmf.runtime.diagram.ui.actions.ActionIds.DIAGRAM_EDITOR_CONTEXT_MENU, provider, getDiagramGraphicalViewer());
+	}
+
+   «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 4')»
+		public void setDiagram(final org.eclipse.gmf.runtime.notation.Diagram diagram) { //FP
+		if (org.eclipse.swt.widgets.Display.getCurrent() != Display.getDefault()) {
+			Display.getDefault().asyncExec(new Runnable() {
+				public void run() {
+					// navigation_added.set(diagram);
+				}
+			});
+		} else {
+			// navigation_added.set(diagram);
+		}
+	}
+«ENDAROUND»
+
+«DEFINE createDiagramOutlinePageInternalClass FOR gmfgen::GenEditorView-»
+   «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 5')»
+   class «editorGen.domainGenModel.modelName»ModelNavigator extends org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.AbstractModelNavigator {
+		public «editorGen.domainGenModel.modelName»ModelNavigator(org.eclipse.swt.widgets.Composite parent,
+				org.eclipse.gmf.runtime.diagram.ui.parts.IDiagramWorkbenchPart diagEditor, org.eclipse.ui.part.IPageSite pageSite) {
+			super(parent, diagEditor, pageSite);
+		}
+
+       «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 6')»
+		@Override
+		protected org.eclipse.emf.common.notify.AdapterFactory getAdapterFactory() {
+		    return «EXPAND getItemProvidersAdapterFactoryInvocation»
+		}
+
+	    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 7')»
+	    @Override
+		protected void createDiagramsMenu(org.eclipse.jface.action.IMenuManager manager,
+				org.eclipse.emf.ecore.EObject selectedObject) {
+			super.createDiagramsMenu(manager, selectedObject);
+		    //FP130610bx
+			if (selectedObject instanceof «EXPAND tlnodename») {
+				manager.appendToGroup(
+						org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.IOutlineMenuConstants.NEW_GROUP,
+						new org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.actions.CreateDiagramAction(
+								selectedObject,
+								getDiagramResource(),
+								Integer.toString(«EXPAND firstTopNodeEditPartQualifiedClassName».VISUAL_ID),
+								«editorGen.domainGenModel.modelName»DiagramEditorPlugin.DIAGRAM_PREFERENCES_HINT));
+			}
+		 }
+	  }
+
+
+ «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 8')»
+ class «editorGen.domainGenModel.modelName»DiagramOutlinePage extends org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.AbstractDiagramsOutlinePage{
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 9')»
+	public «editorGen.domainGenModel.modelName»DiagramOutlinePage(org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor editor) {
+		super(editor);
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 10')»
+	@Override
+	public void dispose() {
+		super.dispose();
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 11')»
+	@Override
+	protected void selectAssociatedPartsInEditor() {
+		super.selectAssociatedPartsInEditor();
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 12')»
+	@Override
+	public void selectionChanged(org.eclipse.jface.viewers.SelectionChangedEvent event) {
+		super.selectionChanged(event);
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 13')»
+	@Override
+	protected org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.AbstractModelNavigator createNavigator(org.eclipse.swt.widgets.Composite parent, org.eclipse.ui.part.IPageSite pageSite) {
+		return new «editorGen.domainGenModel.modelName»ModelNavigator(parent, getEditor(), pageSite);
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 14')»
+	@Override
+	protected org.eclipse.jface.preference.IPreferenceStore getPreferenceStore() {
+		return «EXPAND getItemProvidersPreferenceInvocation»
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 15')»
+	@Override
+	protected String getEditorID() {
+		return «editorGen.editor.packageName».«className».ID;
+	}
+
+    «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 16')»
+	private void log(java.util.List  shapes){
+		for (Object shape : shapes) {
+			if (shape instanceof org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart){
+				this.getEditor().getDiagramGraphicalViewer().setSelection(new org.eclipse.jface.viewers.StructuredSelection(shape));
+				System.out.println(((org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart) shape).getModel().toString());
+				org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart shapeNodeEditPart = (org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart) shape;
+				log(shapeNodeEditPart.getChildren());
+			}
+		}
+	}
+
+	/**
+	 * Open the new diagram in the same editor
+	 */
+	«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 17')»
+	@Override
+	protected void handleDoubleClickEvent() {
+		org.eclipse.jface.viewers.IStructuredSelection selection = (org.eclipse.jface.viewers.IStructuredSelection) getSelection();
+		Object selectedObject = selection.getFirstElement();
+		if (selectedObject != null && selectedObject instanceof org.eclipse.gmf.runtime.notation.Diagram){
+			org.eclipse.gmf.runtime.notation.Diagram d = (org.eclipse.gmf.runtime.notation.Diagram) selectedObject;
+			org.eclipse.emf.common.util.EList  ch = d.getPersistedChildren();
+			for (Object object : ch) {
+				System.out.println(object.getClass().getName());
+			}
+		}
+		org.eclipse.gmf.runtime.diagram.ui.parts.DiagramEditor diag= this.getEditor();
+		org.eclipse.emf.common.util.EList  ch = diag.getDiagram().getPersistedChildren();
+		for (Object object : ch) {
+			System.out.println(object.getClass().getName());
+			if (object instanceof org.eclipse.gmf.runtime.notation.Node){
+				org.eclipse.gmf.runtime.notation.Node nod = (org.eclipse.gmf.runtime.notation.Node) object;
+				try {
+					this.getEditor().getDiagramGraphicalViewer().setSelection(new org.eclipse.jface.viewers.StructuredSelection(diag.getDiagramEditPart().getChildren().get(0)));
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+				org.eclipse.gef.EditPartViewer edpv=diag.getDiagramEditPart().getViewer();
+			}
+		}
+
+		if (selectedObject != null && selectedObject instanceof org.eclipse.gmf.runtime.notation.Diagram && getEditor().getDiagram() != selectedObject
+				&& getEditor().getDiagram().eResource().equals(((org.eclipse.gmf.runtime.notation.Diagram) selectedObject).eResource())) {
+			((«editorGen.editor.packageName».«className») getEditor()).setDiagram((org.eclipse.gmf.runtime.notation.Diagram) selectedObject);
+		}
+	}
+}
+«ENDDEFINE»
+
+
+
+«REM»
+
+
+«DEFINE enode FOR gmfgen::GenNode-»
+«FOREACH compartments AS compartment-»
+compartment.title:«compartment.title»
+«FOREACH compartment.childNodes AS childNode-»
+childNode.getUniqueIdentifier:«childNode.getUniqueIdentifier()»
+ElementTypesQualifiedClassName.childNode.getUniqueIdentifier:«getDiagram().getElementTypesQualifiedClassName()».«childNode.getUniqueIdentifier()»
+«ENDFOREACH-»
+«ENDFOREACH-»
+compartments:«compartments»
+eRootContainer:??
+graphicalNodeEditPolicyClassName:«graphicalNodeEditPolicyClassName»
+metaType:??
+modelFacet.metaClass:«modelFacet.metaClass»
+«ENDDEFINE»
+
+«DEFINE processFoobar(String path) FOR gmfgen::GenEditorGenerator-»
+«IF 'foobar'.equalsIgnoreCase(path)-»
+«path»
+«ENDIF»
+--processFoobar--
+path:«path»
+domainGenModel.editorPluginID:«domainGenModel.editorPluginID»
+diagram.domainDiagramElement.genPackage.prefix:«diagram.domainDiagramElement.genPackage.prefix»
+--processFoobar end--
+«ENDDEFINE»
+
+«DEFINE debugContextPalette FOR gmfgen::Palette-»
+«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified')»
+void debugXpandPalette(){
+/*
+####    xpand  debugContext   ####
+getFactoryQualifiedClassName()=«getFactoryQualifiedClassName()»
+*/
+}
+«ENDDEFINE»
+
+«DEFINE debugContextGenPackage FOR genmodel::GenPackage-»
+	//getNameToken(self)=«getNameToken(self)»
+«ENDDEFINE»
+
+«DEFINE debugxxx FOR gmfgen::GenEditorGenerator-»
+//debugxxx=«self.uri().substringBefore('#' + self.uriFragment())»
+«ENDDEFINE»
+«DEFINE preferenceHintAccess FOR gmfgen::GenEditorGenerator»
+«plugin.getActivatorQualifiedClassName()».DIAGRAM_PREFERENCES_HINT
+«ENDDEFINE»
+
+
+«DEFINE debugContextGenEditorView FOR gmfgen::GenEditorView-»
+«EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified')»
+void debugXpandGenEditorView(){
+/*
+####    xpand  debugContext   ####
+editorGen.editor.packageName=«editorGen.editor.packageName»
+iD=«iD»
+
+contextID=«contextID»
+className=«className»
+substrclassName=«className.substring(0,3)»
+dap=«className.xpandSplit('DiagramEditor')->first()»DiagramOutlinePage
+dap2=«EXPAND diagramOutlinePageClassName-»
+editorGen.diagram.generateCreateShortcutAction()=«editorGen.diagram.generateCreateShortcutAction()»
+
+modelNavigatorClassName:«EXPAND modelNavigatorClassName-»
+diagramOutlinePageClassName:«EXPAND diagramOutlinePageClassName-»
+
+domainGenModelName:«editorGen.domainGenModel.modelName»
+editorGen.domainGenModel.editorPluginID:«editorGen.domainGenModel.editorPluginID»
+«editorGen.domainGenModel.editorPluginID»
+xxxx:«editorGen.domainGenModel.modelPluginID».diagram.part.«editorGen.domainGenModel.modelName»DiagramEditorPlugin.getInstance().getItemProvidersAdapterFactory();
+processFoobar:«EXPAND processFoobar(editorGen.diagram.creationWizardIconPath) FOR editorGen»
+
+«EXPAND enode FOREACH editorGen.diagram.topLevelNodes-»
+
+domainDiagramElement.ecoreClass.name:«editorGen.diagram.domainDiagramElement.ecoreClass.name»
+
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode-»
+topLevelNode?«tlnode»
+
+«FOREACH tlnode.containedNodes AS ctnod-»
+containedNode?«ctnod»
+«ENDFOREACH»
+«ENDFOREACH»
+
+canvasSemanticEClass:«editorGen.diagram.domainDiagramElement.ecoreClass.name»
+
+«FOREACH editorGen.diagram.topLevelNodes AS tlnode ITERATOR iter-»
+«IF iter.isFirstIteration()»
+ node1 «tlnode.editPartClassName»
+ node2 «tlnode.getClassNameSuffux()»
+ node3 «tlnode.getEditPartQualifiedClassName()»
+ node4 «tlnode.getUniqueIdentifier()»
+ node5 «tlnode.visualID»
+ node6 «tlnode.getDomainMetaClass()»
+ node7 «tlnode.elementType»
+ node8 «tlnode.itemSemanticEditPolicyClassName»
+ semanticClass «editorGen.domainGenModel.editorPluginID.xpandSplit('.editor')->first()».«tlnode.editPartClassName.xpandSplit('EditPart')->first()»
+«ENDIF»
+«ENDFOREACH»
+
+
+firstTopNodeQualifiedClassName:«EXPAND firstTopNodeQualifiedClassName-»
+firstTopNodeEditPartQualifiedClassName:«EXPAND firstTopNodeEditPartQualifiedClassName-»
+
+*/
+}
+
+«ENDDEFINE»
+
+«ENDREM»
+
+
+
+
+
+
+
+
+
+
+
+

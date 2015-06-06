@@ -1,0 +1,303 @@
+digraph G { rankdir=BT  overlap = "scale" labelfloat = "true" node [fontname="Verdana", fontsize=10, shape=none] edge [fontname="Verdana", fontsize=10];
+subgraph cluster_1 /*start subgraph 2*/{ label="A2";
+id31144620[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid31144620"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EModelElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id6015177[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid6015177"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>ENamedElement</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pENamedElement_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id19372225[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid19372225"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EClassifier</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id22073172[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid22073172"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>ETypedElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id26406437[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid26406437"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EStructuralFeature</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id17130743[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid17130743"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EClass</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id7655982[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid7655982"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EAttribute</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id31313247[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid31313247"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EReference</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pEReference_containment" align="left">containment: EBoolean</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/
+subgraph cluster_2 /*start subgraph 2*/{ label="B3";
+id18697845[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid18697845"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DPointOfView</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id28432383[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid28432383"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DGraph</TD></TR>
+<TR><TD></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+id10782905[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid10782905"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DNode</TD></TR>
+<TR><TD></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+id11919482[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid11919482"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DGraphElement</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pDGraphElement_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id806641[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid806641"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DLabelledElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id1230280[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid1230280"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DOwnedElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id16723022[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid16723022"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id7787695[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid7787695"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DLink</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id25520094[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid25520094"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DOwnedEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id23481525[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid23481525"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DReference</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id20331600[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid20331600"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DNestingEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id14397555[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid14397555"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DPartitioningNestingEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id27317520[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid27317520"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DAffixingEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/
+subgraph cluster_3 /*start subgraph 2*/{ label="B4";
+id8302170 [  shape="circle"  style="filled", fillcolor="lightsalmon1"  fixedsize="true" width="3.0"  height="3.0" label= "TheWorld:DPointOfView" ]
+id19945951 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "TheWorld:EClass" ]
+id19316843 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "languages;-1:EReference" ]
+id25420041 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Language:EClass" ]
+id19065033 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "name:EAttribute" ]
+id19607627 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Researcher:EClass" ]
+id7313359 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Hello:EClass" ]
+id5742980 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Publication:EClass" ]
+id19723987 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Section:EClass" ]
+id16828278 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Paragraph:EClass" ]
+id2561149 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Authors:EClass" ]
+id28461256 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Annotation:EClass" ]
+id29909270 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Bibliography:EClass" ]
+id6162159 [  shape="box"  style="filled", fillcolor="lightyellow1"  label= "Entry:EClass" ]
+id644373 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "reference:EAttribute" ]
+id6675333 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "title:EAttribute" ]
+id32847724 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "entries:EReference" ]
+id31649197 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "text:EAttribute" ]
+id29458266 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "submissionDate:EAttribute" ]
+id24667963 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "publication:EReference" ]
+id28309169 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "title:EAttribute" ]
+id23919367 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "sections;-1:EReference" ]
+id30705996 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "header:EAttribute" ]
+id8514003 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "paragraphs;-1:EReference" ]
+id18760944 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "text:EAttribute" ]
+id4188450 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "annotations;-1:EReference" ]
+id23199213 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "bibliography:EReference" ]
+id4027479 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "researcher:EReference" ]
+id32352163 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "name:EAttribute" ]
+id4641925 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "saysHello;-1:EReference" ]
+id2790403 [  shape="octagon"  style="filled", fillcolor="lightyellow1"  label= "sentence:EAttribute" ]
+id22770667 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "toAnother:EReference" ]
+id26795807 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "motherTongue:EReference" ]
+id12611877 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "speaks;-1:EReference" ]
+id6851307 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "authors;-1:EReference" ]
+id28428664 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "annotates;-1:EReference" ]
+id19680659 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "researcher:EReference" ]
+id8023684 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "researchers;-1:EReference" ]
+id9436934 [  shape="pentagon" style="filled", fillcolor="lightyellow1"   label= "publications;-1:EReference" ]
+id20955323 [  shape="hexagon"  style="filled", fillcolor="lightseagreen"  label= "languages:DNestingEdge" ]
+id8801067 [  shape="hexagon"  style="filled", fillcolor="lightseagreen"  label= "researchers:DNestingEdge" ]
+id11610274 [  shape="hexagon"  style="filled", fillcolor="lightseagreen"  label= "publications:DNestingEdge" ]
+id2508535 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Language:DNode" ]
+id6129295 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Researcher:DNode" ]
+id14869148 [  shape="house"  style="filled", fillcolor="lightslateblue"  label= "Hello:DLink" ]
+id25915973 [  shape="house"  style="filled", fillcolor="lightslateblue"  label= "Authors:DLink" ]
+id33240770 [  shape="parallelogram"  style="filled", fillcolor="lightseagreen"  label= "speaks:DReference" ]
+id29889322 [  shape="parallelogram"  style="filled", fillcolor="lightseagreen"  label= "motherTongue:DReference" ]
+id885623 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Publication:DNode" ]
+id6436242 [  shape="septagon"  style="filled", fillcolor="lightseagreen"  label= "bibliography:DPartitioningNestingEdge" ]
+id27985270 [  shape="septagon"  style="filled", fillcolor="lightseagreen"  label= "sections:DPartitioningNestingEdge" ]
+id16803043 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Section:DNode" ]
+id15976046 [  shape="septagon"  style="filled", fillcolor="lightseagreen"  label= "paragraphs:DPartitioningNestingEdge" ]
+id2773403 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Paragraph:DNode" ]
+id6853776 [  shape="septagon"  style="filled", fillcolor="lightseagreen"  label= "annotations:DPartitioningNestingEdge" ]
+id21789789 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Annotation:DNode" ]
+id23659532 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Bibliography:DNode" ]
+id32604499 [  shape="septagon"  style="filled", fillcolor="lightseagreen"  label= "entries:DPartitioningNestingEdge" ]
+id24583853 [  shape="circle" style="filled", fillcolor="lightsalmon1" fixedsize="true" width="2.0"  height="2.0" label= "Entry:DNode" ]
+}/*end subgraph*/
+subgraph cluster_4 /*start subgraph 2*/{ label="C5";
+blabla
+}/*end subgraph*/
+/*1a ecoreDiagraphM2Graph Edges*/
+
+/*1b ecoreDiagraphM2Graph Edges*/
+
+id18697845:pid18697845 -> id10782905:pid10782905 [color="black", arrowhead=empty ];
+id28432383:pid28432383 -> id31144620:pid31144620 [color="black", arrowhead=empty ];
+id6015177:pid6015177 -> id31144620:pid31144620 [color="black", arrowhead=empty ];
+id11919482:pid11919482 -> id31144620:pid31144620 [color="black", arrowhead=empty ];
+id10782905:pid10782905 -> id11919482:pid11919482 [color="black", arrowhead=empty ];
+id19372225:pid19372225 -> id6015177:pid6015177 [color="black", arrowhead=empty ];
+id22073172:pid22073172 -> id6015177:pid6015177 [color="black", arrowhead=empty ];
+id26406437:pid26406437 -> id22073172:pid22073172 [color="black", arrowhead=empty ];
+id17130743:pid17130743 -> id19372225:pid19372225 [color="black", arrowhead=empty ];
+id7655982:pid7655982 -> id26406437:pid26406437 [color="black", arrowhead=empty ];
+id10782905:pid10782905 -> id806641:pid806641 [color="black", arrowhead=empty ];
+id10782905:pid10782905 -> id1230280:pid1230280 [color="black", arrowhead=empty ];
+id31313247:pid31313247 -> id26406437:pid26406437 [color="black", arrowhead=empty ];
+id16723022:pid16723022 -> id11919482:pid11919482 [color="black", arrowhead=empty ];
+id25520094:pid25520094 -> id1230280:pid1230280 [color="black", arrowhead=empty ];
+id25520094:pid25520094 -> id16723022:pid16723022 [color="black", arrowhead=empty ];
+id7787695:pid7787695 -> id25520094:pid25520094 [color="black", arrowhead=empty ];
+id7787695:pid7787695 -> id806641:pid806641 [color="black", arrowhead=empty ];
+id23481525:pid23481525 -> id16723022:pid16723022 [color="black", arrowhead=empty ];
+id20331600:pid20331600 -> id25520094:pid25520094 [color="black", arrowhead=empty ];
+id14397555:pid14397555 -> id20331600:pid20331600 [color="black", arrowhead=empty ];
+id27317520:pid27317520 -> id25520094:pid25520094 [color="black", arrowhead=empty ];
+id10782905:pid10782905 -> id16723022:pid16723022 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="edges"];
+id28432383:pid28432383 -> id10782905:pid10782905 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="nodes"];
+id28432383:pid28432383 -> id18697845:pid18697845 [color=green,arrowhead=vee,headlabel="1..1",label="pointOfView"];
+id10782905:pid10782905 -> id28432383:pid28432383 [color=green,arrowhead=vee,headlabel="0..1",label="graph"];
+id1230280:pid1230280 -> id10782905:pid10782905 [color=green,arrowhead=vee,headlabel="0..1",label="owner"];
+id16723022:pid16723022 -> id10782905:pid10782905 [color=green,arrowhead=vee,headlabel="1..1",label="target"];
+id16723022:pid16723022 -> id10782905:pid10782905 [color=green,arrowhead=vee,headlabel="1..1",label="source"];
+id11919482:pid11919482 -> id6015177:pid6015177 [color=red,arrowhead=vee,headlabel="0..1",label="roleInCsGraph"];
+id17130743:pid17130743 -> id17130743:pid17130743 [color=red,arrowhead=vee,headlabel="0..*",label="eSuperTypes"];
+id22073172:pid22073172 -> id19372225:pid19372225 [color=red,arrowhead=vee,headlabel="0..1",label="eType"];
+id26406437:pid26406437 -> id17130743:pid17130743 [color=red,arrowhead=vee,headlabel="0..1",label="eContainingClass"];
+id17130743:pid17130743 -> id26406437:pid26406437 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eStructuralFeatures"];
+id806641:pid806641 -> id17130743:pid17130743 [color=red,arrowhead=vee,headlabel="0..1",label="eClass"];
+id806641:pid806641 -> id7655982:pid7655982 [color=red,arrowhead=vee,headlabel="0..*",label="labelAttributes"];
+id31313247:pid31313247 -> id31313247:pid31313247 [color=red,arrowhead=vee,headlabel="0..1",label="eOpposite"];
+id31313247:pid31313247 -> id7655982:pid7655982 [color=red,arrowhead=vee,headlabel="0..*",label="eKeys"];
+id16723022:pid16723022 -> id31313247:pid31313247 [color=red,arrowhead=vee,headlabel="0..1",label="targetReference"];
+id7787695:pid7787695 -> id31313247:pid31313247 [color=red,arrowhead=vee,headlabel="0..1",label="sourceReference"];
+/*2 diagraphM0Simple Edges  */
+
+id8302170 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id25420041 -> id19065033 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id6162159 -> id644373 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id29909270 -> id6675333 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id28461256 -> id31649197 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id2561149 -> id29458266 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id5742980 -> id28309169 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id19723987 -> id30705996 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id16828278 -> id18760944 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id19607627 -> id32352163 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id7313359 -> id2790403 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id8302170 -> id20955323 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id8302170 -> id8801067 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id8302170 -> id11610274 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id2508535 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id2508535 -> id19065033 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id2508535 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id6129295 -> id32352163 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id6129295 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id14869148 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id14869148 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id25915973 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id25915973 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id33240770 -> id12611877 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id33240770 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id33240770 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="source"];
+id29889322 -> id26795807 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id29889322 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id29889322 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="source"];
+id885623 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id885623 -> id28309169 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id885623 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6436242 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id27985270 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id16803043 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id16803043 -> id30705996 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id16803043 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id15976046 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id2773403 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id2773403 -> id18760944 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id2773403 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6853776 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id21789789 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id21789789 -> id31649197 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id21789789 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id23659532 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id23659532 -> id6675333 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id23659532 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id32604499 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id24583853 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id24583853 -> id644373 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id24583853 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id32604499 -> id32847724 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id32604499 -> id24583853 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id6853776 -> id4188450 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id6853776 -> id21789789 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id15976046 -> id8514003 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id15976046 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id27985270 -> id23919367 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id27985270 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id6436242 -> id23199213 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id6436242 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id25915973 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id25915973 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id25915973 -> id24667963 [color=brown,arrowhead="vee",arrowsize="1" ,label="targetReference"];
+id25915973 -> id29458266 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id25915973 -> id4027479 [color=brown,arrowhead="vee",arrowsize="1" ,label="sourceReference"];
+id14869148 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id14869148 -> id22770667 [color=brown,arrowhead="vee",arrowsize="1" ,label="targetReference"];
+id14869148 -> id2790403 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id14869148 -> id19680659 [color=brown,arrowhead="vee",arrowsize="1" ,label="sourceReference"];
+id11610274 -> id9436934 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id11610274 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id8801067 -> id8023684 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id8801067 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id20955323 -> id19316843 [color=brown,arrowhead="vee",arrowsize="1" ,label="role"];
+id20955323 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+ id2508535 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id6129295 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id885623 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id16803043 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id2773403 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id21789789 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id23659532 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id24583853 -> id10782905:pid10782905 [color=gray,arrowhead=none ,label="instance of DNode  "];
+ id11610274 -> id20331600:pid20331600 [color=gray,arrowhead=none ,label="instance of DNestingEdge  "];
+ id8801067 -> id20331600:pid20331600 [color=gray,arrowhead=none ,label="instance of DNestingEdge  "];
+ id20955323 -> id20331600:pid20331600 [color=gray,arrowhead=none ,label="instance of DNestingEdge  "];
+ id6436242 -> id14397555:pid14397555 [color=gray,arrowhead=none ,label="instance of DPartitioningNestingEdge  "];
+ id27985270 -> id14397555:pid14397555 [color=gray,arrowhead=none ,label="instance of DPartitioningNestingEdge  "];
+ id15976046 -> id14397555:pid14397555 [color=gray,arrowhead=none ,label="instance of DPartitioningNestingEdge  "];
+ id6853776 -> id14397555:pid14397555 [color=gray,arrowhead=none ,label="instance of DPartitioningNestingEdge  "];
+ id32604499 -> id14397555:pid14397555 [color=gray,arrowhead=none ,label="instance of DPartitioningNestingEdge  "];
+ id33240770 -> id23481525:pid23481525 [color=gray,arrowhead=none ,label="instance of DReference  "];
+ id29889322 -> id23481525:pid23481525 [color=gray,arrowhead=none ,label="instance of DReference  "];
+ id8302170 -> id18697845:pid18697845 [color=gray,arrowhead=none ,label="instance of DPointOfView  "];
+}/*end graph*/

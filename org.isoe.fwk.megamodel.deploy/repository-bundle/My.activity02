@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_activity02:FlowDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_activity02="http://activity02">
+  <things xsi:type="_activity02:Start" name="start">
+    <relations toFunction="//@things.1"/>
+  </things>
+  <things xsi:type="_activity02:Decision">
+    <relations toFunction="//@things.2"/>
+    <relations toFunction="//@things.3"/>
+  </things>
+  <things xsi:type="_activity02:Simple" name="Wash">
+    <relations toFunction="//@things.4"/>
+    <ports name="input"/>
+    <ports name="cal.input"/>
+    <ports name="output"/>
+  </things>
+  <things xsi:type="_activity02:Simple" name="Heat">
+    <relations toFunction="//@things.4"/>
+    <ports name="input"/>
+    <ports name="cal. output"/>
+  </things>
+  <things xsi:type="_activity02:Decision">
+    <relations toFunction="//@things.5"/>
+  </things>
+  <things xsi:type="_activity02:End" name="end"/>
+  <datas name="Electrical energy" from="//@things.3/@ports.0"/>
+  <datas name="Dirty Cloth" from="//@things.2/@ports.0"/>
+  <datas name="Clean Cloth" from="//@things.2/@ports.2"/>
+  <datas name="Calories" from="//@things.2/@ports.1" to="//@things.3/@ports.1"/>
+</_activity02:FlowDiagram>

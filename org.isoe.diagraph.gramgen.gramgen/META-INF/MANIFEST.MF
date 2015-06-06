@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Diagraph Gramgen
+Bundle-SymbolicName: org.isoe.diagraph.gramgen.gramgen;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",
+ org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.eclipse.emf.codegen.ecore;bundle-version="2.7.0",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.extensionpoint.gramgen;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.gramgen.pattern.association;bundle-version="1.0.4",
+ org.isoe.gramgen.pattern.classassociation;bundle-version="1.0.4",
+ org.isoe.gramgen.pattern.compartiment;bundle-version="1.0.4",
+ org.isoe.diagraph.common;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4",
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor;bundle-version="1.7.0",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Bundle-ClassPath: .,
+ org.isoe.extensionpoint.diagraph.action,
+ org.isoe.extensionpoint.diagraph.generator
+Export-Package: org.isoe.diagraph.commands,
+ org.isoe.diagraph.gramgen.actions,
+ org.isoe.diagraph.gramgen.save.apicaller,
+ org.isoe.diagraph.gramgen.similarity,
+ org.isoe.diagraph.gramgen.similarity.response,
+ org.isoe.diagraph.gramgen.similarity.subGraphIsomorphism,
+ org.isoe.diagraph.langage.internal.utils;x-internal:=true

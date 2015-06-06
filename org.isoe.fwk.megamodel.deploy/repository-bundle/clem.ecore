@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="clem"
+    nsURI="http://clem.v0" nsPrefix="clem">
+  <eClassifiers xsi:type="ecore:EClass" name="Conteneur">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foos" upperBound="-1" eType="#//Foo"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="communes" upperBound="-1"
+        eType="#//Commune" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bars" upperBound="-1" eType="#//Bar"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Foo">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+      <details key="ref=adresse" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="adresse" eType="#//Commune"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opinions" upperBound="-1"
+        eType="#//Opinion" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Commune">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value="name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bar">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=id" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Opinion">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foo" eType="#//Foo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bar" eType="#//Bar"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schema>
+   <element name="extension">
+      <complexType>
+         <sequence minOccurs="0" maxOccurs="2">
+            <element ref="EclipseAutomationServer"/>
+            <element ref="EclipseAutomationHandler"/>
+         </sequence>
+      </complexType>
+   </element>
+</schema>

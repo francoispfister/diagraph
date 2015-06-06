@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ptntim101:Place xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_ptntim101="http://ptntim101">
+  <subnets name="ini" transitions="//@nodes.0"/>
+  <subnets name="a" transitions="//@nodes.1"/>
+  <subnets name="b" transitions="//@nodes.2"/>
+  <subnets name="c" transitions="//@nodes.2">
+    <subnets name="ini" transitions="//@subnets.3/@nodes.0"/>
+    <subnets name="fin"/>
+    <subnets name="foo" transitions="//@subnets.3/@nodes.1">
+      <tokens/>
+    </subnets>
+    <subnets name="bar" transitions="//@subnets.3/@nodes.2"/>
+    <nodes xsi:type="_ptntim101:Transition" name="" places="//@subnets.3/@subnets.2" guard="a"/>
+    <nodes xsi:type="_ptntim101:Transition" places="//@subnets.3/@subnets.3" guard="b"/>
+    <nodes xsi:type="_ptntim101:Transition" places="//@subnets.3/@subnets.1" guard="c"/>
+    <tokens/>
+  </subnets>
+  <subnets name="fin"/>
+  <subnets name="d" transitions="//@nodes.3">
+    <tokens/>
+  </subnets>
+  <subnets name="e" transitions="//@nodes.4"/>
+  <nodes xsi:type="_ptntim101:Transition" places="//@subnets.1 //@subnets.5" guard="k"/>
+  <nodes xsi:type="_ptntim101:Transition" places="//@subnets.2 //@subnets.3" guard="l"/>
+  <nodes xsi:type="_ptntim101:Transition" places="//@subnets.4 //@subnets.5" guard="m"/>
+  <nodes xsi:type="_ptntim101:Transition" places="//@subnets.6" guard="n"/>
+  <nodes xsi:type="_ptntim101:Transition" places="//@subnets.4" guard="k"/>
+</_ptntim101:Place>

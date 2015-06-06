@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Runtime Utils
+Bundle-SymbolicName: org.isoe.diagraph.notationparser;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.factory;bundle-version="1.0.4",
+ org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.extensionpoint.parsers;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.fwk.pathes;bundle-version="1.0.4",
+ org.isoe.fwk.utils;bundle-version="1.0.4",
+ org.isoe.extensionpoint.languagehandler;bundle-version="1.0.4",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4",
+ org.isoe.fwk.utils.debug;bundle-version="1.0.4",
+ org.isoe.diagraph.parser.api;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.generator;bundle-version="1.0.4",
+ org.isoe.diagraph.diagrammable;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.notationparser,
+ org.isoe.diagraph.notationparser.visitor

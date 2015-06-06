@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart02:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart02="http://statechart02">
+  <substates name="s1">
+    <substates name="subs1">
+      <substates name="subsubs1"/>
+    </substates>
+    <variables name="v2"/>
+    <transitions name="t" source="//@substates.0" target="//@substates.1"/>
+  </substates>
+  <substates name="s2"/>
+  <variables name="v1"/>
+</_statechart02:State>

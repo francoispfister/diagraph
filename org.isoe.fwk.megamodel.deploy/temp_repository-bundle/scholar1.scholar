@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scholar:ScholarManagement xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scholar="http:///scholar.v0">
+  <students name="Nicolas">
+    <exams name="03/06" lecture="//@lectures.0"/>
+    <exams name="01/04" lecture="//@lectures.1"/>
+  </students>
+  <students name="Clementine">
+    <exams name="01/04" lecture="//@lectures.3"/>
+    <exams name="03/06" lecture="//@lectures.2"/>
+  </students>
+  <disciplines name="IS"/>
+  <disciplines name="SI"/>
+  <lectures name="IS4A" lecture_teacher="//@teachers.0" discipline="//@disciplines.0"/>
+  <lectures name="IS3A" lecture_teacher="//@teachers.0" discipline="//@disciplines.0"/>
+  <lectures name="SI2A" lecture_teacher="//@teachers.1" discipline="//@disciplines.1"/>
+  <lectures name="SIMaster" lecture_teacher="//@teachers.1" discipline="//@disciplines.1"/>
+  <teachers name="Vincent"/>
+  <teachers name="Christian"/>
+</scholar:ScholarManagement>

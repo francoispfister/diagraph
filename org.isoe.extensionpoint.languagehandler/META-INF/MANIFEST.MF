@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Language Cloner
+Bundle-SymbolicName: org.isoe.extensionpoint.languagehandler;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.extensionpoint.languagehandler
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4"

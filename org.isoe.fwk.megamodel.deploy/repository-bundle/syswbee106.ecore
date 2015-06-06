@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="syswbee106"
+    nsURI="http://syswbee106" nsPrefix="_syswbee106">
+  <eAnnotations source="diagen">
+    <details key="knownas=simple world" value=""/>
+    <details key="origin=http://org.isoe.fr" value=""/>
+    <details key="leftparent=nil" value=""/>
+    <details key="rightparent=nil" value=""/>
+    <details key="requires=nil" value=""/>
+    <details key="context=startup" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.vertical">
+    <details key="layout=vertical" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Function">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=System.functionalArchitecture"/>
+      <details key="nav:functionbreakdownFA"/>
+      <details key="label=domain"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=ncatalog"/>
+      <details key="label=domain"/>
+      <details key="cont=PatternCatalog.patterns"/>
+      <details key="nav:functionbreakdownPA"/>
+      <details key="ref=associations"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=functionbreakdownFA"/>
+      <details key="cont=Function.decompositions"/>
+      <details key="label=domain"/>
+      <details key="ref=associations"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=functionbreakdownPA"/>
+      <details key="cont=Function.decompositions"/>
+      <details key="label=domain"/>
+      <details key="ref=associations"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decompositions" upperBound="-1"
+        eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="property" upperBound="-1"
+        eType="#//FunctionProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="associations" eType="#//Function"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionProperty">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//FunctionProperty"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=id"/>
+      <details key="cref=functionalArchitecture"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionalArchitecture"
+        eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternCatalog">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=id" value=""/>
+      <details key="nav:ncatalog"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=ncatalog"/>
+      <details key="cref=patterns"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="patterns" upperBound="-1"
+        eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Workbench">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aprop" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemView" eType="#//System"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionProperties" upperBound="-1"
+        eType="#//FunctionProperty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="catalog" upperBound="-1"
+        eType="#//PatternCatalog" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

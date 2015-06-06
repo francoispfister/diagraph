@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Association
+Bundle-SymbolicName: org.isoe.gramgen.pattern.association;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Vendor: LGi2P Isoe
+Bundle-Localization: plugin
+Export-Package: org.isoe.gramgen.pattern.association,
+ org.isoe.gramgen.pattern.association.impl,
+ org.isoe.gramgen.pattern.association.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport;bundle-version="1.0.4"

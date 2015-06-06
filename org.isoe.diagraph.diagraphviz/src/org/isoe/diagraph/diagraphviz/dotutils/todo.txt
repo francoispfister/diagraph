@@ -1,0 +1,58 @@
+
+	todo port aléatoire et à passer au mdwb
+	dotify
+	load buidlin
+	log out
+	enlever copyof sandbox
+	enlever boolean tb
+	enlever M2 de test
+	
+	
+	
+	
+		mainTab = new TabFolder(parent, SWT.NONE);
+		mainTab.setLayoutData(BorderLayout.CENTER);
+		tabItemOperation = new TabItem(mainTab, SWT.NONE);
+		tabItemOperation.setText("Diagraph Operations");
+		tabItemDev = new TabItem(mainTab, SWT.NONE);
+		tabItemDev.setText("Diagraph Dev");
+		compositeTabOp = new Composite(mainTab, SWT.NONE);
+		compositeTabDev = new Composite(mainTab, SWT.NONE);
+		compositeTabDev.setLayout(new FillLayout(SWT.VERTICAL));
+		tabItemDev.setControl(compositeTabDev);
+		cdev = compositeTabDev;
+		tabItemOperation.setControl(compositeTabOp);
+		compositeTabOp.setLayout(null);
+		panelUpper = new Composite(compositeTabOp, SWT.NONE);
+		panelUpper.setBounds(0, 0, 1000, 230);
+		panelUpper.setBackground(SWTResourceManager.getColor(SWT.COLOR_GRAY));
+		panelUpper.setLayout(null);
+		
+			
+
+
+noeuds isolés
+multiples labels
+link labels
+une couleur par type
+
+
+
+
+
+	
+	obtenir la liste des langages
+	liste des modèles
+	liste des organismes
+	lsite des labos
+	liste des équipes
+	
+	apurer ihm
+	séparer sansdboxview, automation
+	éviter exception si pas de projet dans mwb
+	
+	déployer
+	
+	obfuscate en enlevant tous les clog
+	
+	

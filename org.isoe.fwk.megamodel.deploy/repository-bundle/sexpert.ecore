@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="">
+  <eClassifiers xsi:type="ecore:EClass" name="Atome">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listeTermes" upperBound="-1"
+        eType="#//Terme" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseRegle">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hypothese" upperBound="-1"
+        eType="#//Atome" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ensembleTermes" upperBound="-1"
+        eType="#//Terme" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conclusion" eType="#//Atome"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Terme">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="constante" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseFaits">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listeAtomes" upperBound="-1"
+        eType="#//Atome" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ensembleTermes" upperBound="-1"
+        eType="#//Terme" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

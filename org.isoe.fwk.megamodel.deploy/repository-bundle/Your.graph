@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<graph:Graph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graph="http://isoe.graph.example.v0" name="urgraph">
+  <nodes name="node_0" leavings="//@edges.0 //@edges.1 //@edges.2" enterings="//@edges.0 //@edges.3 //@edges.6"/>
+  <nodes name="node_1" leavings="//@edges.3 //@edges.4 //@edges.5" enterings="//@edges.1 //@edges.4 //@edges.7"/>
+  <nodes name="node_2" leavings="//@edges.6 //@edges.7 //@edges.8" enterings="//@edges.2 //@edges.5 //@edges.8"/>
+  <edges name="node_0 -> node_0" sourceNode="//@nodes.0" targetNode="//@nodes.0"/>
+  <edges name="node_0 -> node_1" sourceNode="//@nodes.0" targetNode="//@nodes.1"/>
+  <edges name="node_0 -> node_2" sourceNode="//@nodes.0" targetNode="//@nodes.2"/>
+  <edges name="node_1 -> node_0" sourceNode="//@nodes.1" targetNode="//@nodes.0"/>
+  <edges name="node_1 -> node_1" sourceNode="//@nodes.1" targetNode="//@nodes.1"/>
+  <edges name="node_1 -> node_2" sourceNode="//@nodes.1" targetNode="//@nodes.2"/>
+  <edges name="node_2 -> node_0" sourceNode="//@nodes.2" targetNode="//@nodes.0"/>
+  <edges name="node_2 -> node_1" sourceNode="//@nodes.2" targetNode="//@nodes.1"/>
+  <edges name="node_2 -> node_2" sourceNode="//@nodes.2" targetNode="//@nodes.2"/>
+</graph:Graph>

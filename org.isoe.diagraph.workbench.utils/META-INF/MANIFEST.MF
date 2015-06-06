@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph WB Utils
+Bundle-SymbolicName: org.isoe.diagraph.workbench.utils
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.7.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.extensionpoint.parsers;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4",
+ org.isoe.diagraph.factory;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.fwk.utils.debug;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.generator;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.workbench.utils

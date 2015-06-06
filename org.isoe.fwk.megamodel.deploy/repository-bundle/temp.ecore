@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="temp"
+    nsURI="http;///temp" nsPrefix="temp">
+  <eClassifiers xsi:type="ecore:EClass" name="Critere" eSuperTypes="#//Named">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Critere"
+        eOpposite="#//Critere/criteres"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="criteres" upperBound="-1"
+        eType="#//Critere" containment="true" eOpposite="#//Critere/parent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mop" eType="#//Mop" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mop" eSuperTypes="#//Named">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Mop"
+        eOpposite="#//Mop/mops"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mops" upperBound="-1" eType="#//Mop"
+        containment="true" eOpposite="#//Mop/parent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assoc" upperBound="-1"
+        eType="#//Valeur" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Valeur">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" eType="#//Unit"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mop" eType="#//Mop"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Unit" eSuperTypes="#//Named"/>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="critere" eType="#//Critere"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="units" upperBound="-1"
+        eType="#//Unit" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

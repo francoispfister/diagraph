@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cinematic" nsURI="http://www.example.org/cinematic" nsPrefix="cinematic">
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentedElement" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=documentation" value="_"/>
+      <details key="label=name" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceGraphique" eSuperTypes="#//DocumentedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="pov" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ecrans" upperBound="-1"
+        eType="#//Ecran" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ecran" eSuperTypes="#//DocumentedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="kref=widgets" value="_"/>
+      <details key="label=id" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="widgets" upperBound="-1"
+        eType="#//Widget" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navs" upperBound="-1" eType="#//Navigation"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Widget" eSuperTypes="#//DocumentedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//Widget">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Navigation">
+    <eAnnotations source="diagraph">
+      <details key="link" value="_"/>
+      <details key="label=uri" value="_"/>
+      <details key="cont=Ecran.navs" value="_"/>
+      <details key="lsrc=from" value="_"/>
+      <details key="ltrg=to" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//Ecran"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//Ecran"/>
+  </eClassifiers>
+</ecore:EPackage>

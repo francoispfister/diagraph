@@ -1,0 +1,68 @@
+digraph G {
+	node [shape=plaintext];
+	subgraph cluster_avantphase {	
+		label="phase système";
+		fontsize=16;
+		labeljust="l";
+		style=filled;
+		color=lightgray;
+		sysv [label="Système vierge"];
+		Xcast [label="Xcast projet 2008-2009"];
+		sysv -> Xcast;
+	}
+	subgraph cluster_p1{
+		label="phase 1";
+		fontsize=16;
+		labeljust="l";
+		style=filled;
+		color=lightgoldenrod;
+		v0 [label="Xcast permier fork"];
+		v0b [label="TBXcast V0 2008-2009"];
+		{
+			rank = same;
+			v0;
+			v0b;
+		}
+	}
+	subgraph cluster_p2{
+		label="phase 2";
+		fontsize=16;
+		labeljust="l";
+		style=filled;
+		color=palegreen;
+		v1 [label="Envoi paquet TBXcast"];
+		v1b [label="TBXcast V1 2008-2009"];
+		{
+			rank = same;
+			v1;
+			v1b;
+		}
+	}
+	subgraph cluster_p3{
+		label="phase 3";
+		fontsize=16;
+		labeljust="l";
+		style=filled;
+		color=lightsalmon;
+		v2 [label="Routage paquet TBXcast"];
+	}
+	subgraph cluster_v3 {
+		v31 [label="Construction de l'arbre"];
+		v32 [label="Segmentation de l'arbre"];
+		v33 [label="Récupération topologie"];
+		label="phase 4";
+		fontsize=16;
+		labeljust="l";
+		style=filled;
+		color=lightblue;
+	}
+	Xcast -> v0 ;
+	v0b -> v0 [style=dashed];
+	v0 -> v1;
+	v1b -> v1 [style=dashed];
+	v1 -> v2;
+	v2 -> v31;
+	v2 -> v32 ;
+	v2 -> v33;
+
+}

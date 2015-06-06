@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc:DocBook xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:doc="doc">
+  <books>
+    <articles title="art1">
+      <sections_1 title="sect1">
+        <paras content="para1"/>
+        <paras content="para2"/>
+        <sections_2 title="sect2">
+          <paras content="para3"/>
+        </sections_2>
+      </sections_1>
+    </articles>
+  </books>
+  <books>
+    <articles title="art2"/>
+  </books>
+</doc:DocBook>

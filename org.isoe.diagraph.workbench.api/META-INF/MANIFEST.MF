@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Api
+Bundle-SymbolicName: org.isoe.diagraph.workbench.api
+Bundle-Version: 1.0.4.2014121712009
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.workbench.api
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.megamodel;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4"
+Bundle-Vendor: LGi2P Isoe

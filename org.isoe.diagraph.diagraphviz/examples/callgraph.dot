@@ -1,0 +1,51 @@
+digraph callgraph {
+
+  node [fontname="verdana"];
+
+  fontname="Verdana";
+
+  subgraph cluster_foo {
+     label="foo";
+     node [label="method_1" ] foo_method_1;
+     node [label="method_2" ] foo_method_2;
+     node [label="method_3" ] foo_method_3;
+  }
+
+  subgraph cluster_bar {
+    label="bar";
+    node [label="method_a"  ] bar_method_a;
+    node [label="method_b"  ] bar_method_b;
+    node [label="method_c"  ] bar_method_c;
+  }
+
+  subgraph cluster_baz {
+     label="baz";
+     node [label="method_1" ] baz_method_1;
+     node [label="method_b" ] baz_method_b;
+     node [label="method_3" ] baz_method_3;
+     node [label="method_c" ] baz_method_c;
+  }
+
+  main -> bar_method_a;
+
+  bar_method_a -> bar_method_c;
+  bar_method_a -> foo_method_2;
+
+  foo_method_2 -> baz_method_3;
+
+  bar_method_b -> foo_method_1;
+  bar_method_b -> foo_method_2;
+  baz_method_b -> baz_method_1;
+
+  foo_method_2 -> foo_method_3;
+  bar_method_c -> baz_method_c;
+  bar_method_b -> baz_method_b;
+
+  foo_method_1 -> baz_method_c;
+  
+  
+  cluster_bar -> cluster_baz;
+  cluster_bar -> baz_method_3;
+ 
+  
+}

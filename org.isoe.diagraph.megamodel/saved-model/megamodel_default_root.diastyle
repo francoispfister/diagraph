@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diastyle:DStyle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:diastyle="http://isoe-2012-diastyle-dsml">
+  <styles xsi:type="diastyle:DNodeStyle" name="default" icon="default" sizeX="20" radius="5" shape="arrow" sizeY="20" shapeData="">
+    <styleBridges name="Megamodel.default">
+      <dGraphElement xsi:type="diagraph:DPointOfView" href="megamodel_default_root.diagraph#//@nodes.0"/>
+    </styleBridges>
+    <styleBridges name="Dsml.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.1"/>
+    </styleBridges>
+    <styleBridges name="Model.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.2"/>
+    </styleBridges>
+    <styleBridges name="Notation.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.3"/>
+    </styleBridges>
+    <styleBridges name="NotationDiagram.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.4"/>
+    </styleBridges>
+    <styleBridges name="Diagram.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.5"/>
+    </styleBridges>
+    <styleBridges name="EcoreDiagram.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="megamodel_default_root.diagraph#//@nodes.6"/>
+    </styleBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="default" color="black" icon="default" arrowDirection="left" arrowSize="1">
+    <styleBridges name="RelatedTo.default">
+      <dGraphElement xsi:type="diagraph:DLabeledEdge" href="megamodel_default_root.diagraph#//@nodes.1/@edges.0"/>
+    </styleBridges>
+    <styleBridges name="Navigation.default">
+      <dGraphElement xsi:type="diagraph:DLabeledEdge" href="megamodel_default_root.diagraph#//@nodes.3/@edges.0"/>
+    </styleBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNestingEdgeStyle" name="default">
+    <styleBridges name="dsmls.default">
+      <dGraphElement xsi:type="diagraph:DImplicitEdge" href="megamodel_default_root.diagraph#//@nodes.0/@edges.0"/>
+    </styleBridges>
+    <styleBridges name="models.default">
+      <dGraphElement xsi:type="diagraph:DCompartmentingEdge" href="megamodel_default_root.diagraph#//@nodes.1/@edges.1"/>
+    </styleBridges>
+    <styleBridges name="notations.default">
+      <dGraphElement xsi:type="diagraph:DCompartmentingEdge" href="megamodel_default_root.diagraph#//@nodes.1/@edges.2"/>
+    </styleBridges>
+    <styleBridges name="ecoreDiagrams.default">
+      <dGraphElement xsi:type="diagraph:DCompartmentingEdge" href="megamodel_default_root.diagraph#//@nodes.1/@edges.3"/>
+    </styleBridges>
+    <styleBridges name="notationDiagrams.default">
+      <dGraphElement xsi:type="diagraph:DCompartmentingEdge" href="megamodel_default_root.diagraph#//@nodes.2/@edges.0"/>
+    </styleBridges>
+  </styles>
+  <dGraph href="megamodel_default_root.diagraph#/"/>
+</diastyle:DStyle>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Styleparser2
+Bundle-SymbolicName: org.isoe.diagraph.styleparser;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.common;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.extensionpoint.parsers;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.styleparser

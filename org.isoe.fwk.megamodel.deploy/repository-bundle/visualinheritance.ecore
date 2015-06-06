@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="visualinheritance"
+    nsURI="http://compartment-visualinheritance/1.0" nsPrefix="visualinheritance">
+  <eClassifiers xsi:type="ecore:EClass" name="Azerty" abstract="true" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+      <details key="ref=goof" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goof" eType="#//Goof"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gloubi" eSuperTypes="#//Azerty">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="host=QZERTY" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="qwerties" upperBound="-1"
+        eType="#//Qwerty" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Zoo" eSuperTypes="#//Azerty">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Glorb" eSuperTypes="#//Azerty">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Qwerty" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="komp=Gloubi.QZERTY" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Top" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=barbaz" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="barbaz" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Test">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="azerties" upperBound="-1"
+        eType="#//Azerty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goofs" upperBound="-1"
+        eType="#//Goof" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jklms" upperBound="-1"
+        eType="#//Jklm" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zorglubs" upperBound="-1"
+        eType="#//Zorglub" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="amigos" upperBound="-1"
+        eType="#//Amigo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geniuses" upperBound="-1"
+        eType="#//Genius" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Goof">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Jklm" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=wxcvs234:Walibi/figureEmbedded" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wxcvs234" upperBound="-1"
+        eType="#//Wxcv" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Wxcv" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Zorglub">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="boulgas456" upperBound="-1"
+        eType="#//Boulga" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Boulga" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="komp=Zorglub.*" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hola" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Amigo" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=holas" value=""/>
+      <details key="kref=tchaos" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="holas" upperBound="-1"
+        eType="#//Hola" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tchaos" upperBound="-1"
+        eType="#//Tchao" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tchao" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Genius" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=value" value=""/>
+      <details key="kref=smarties" value=""/>
+      <details key="kref=cleverz" value=""/>
+      <details key="ref=tchao" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tchao" eType="#//Tchao"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smarties" upperBound="-1"
+        eType="#//Smarty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cleverz" upperBound="-1"
+        eType="#//Clever" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Jo" eSuperTypes="#//Genius">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=jo_jklms" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="jo_jklms" eType="#//Jklm"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Jack" eSuperTypes="#//Genius">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Jim" eSuperTypes="#//Genius">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Smarty" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Clever" eSuperTypes="#//Top">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

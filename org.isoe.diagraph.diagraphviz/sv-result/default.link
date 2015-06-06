@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link:X xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:link="http://link.v0">
+  <as name="A">
+    <bs name="B"/>
+    <cs name="C" b="//@as.0/@bs.0">
+      <ds name="D"/>
+    </cs>
+    <ws name="aaaaa" wc="//@as.0/@cs.0"/>
+    <ms name="bbbbb" mk="//@ks.0" ma="//@as.0"/>
+    <ns999 name="ccccc" nk="//@ks.0"/>
+  </as>
+  <ks name="K"/>
+</link:X>

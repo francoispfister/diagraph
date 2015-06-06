@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gemos106" nsURI="http://gemos106" nsPrefix="_gemos106">
+  <eClassifiers xsi:type="ecore:EClass" name="Gemos">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phases" upperBound="-1" eType="//Phase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Phase" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=families"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="families" upperBound="-1" eType="//Family" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="//PhaseType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationalMode" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=configurations"/>
+      <details key="pref=in"/>
+      <details key="pref=out"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkMode" upperBound="-1" eType="//M2M" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configurations" upperBound="-1" eType="//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="in" upperBound="-1" eType="//In" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="out" upperBound="-1" eType="//Out" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="//ModeType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="validScenarios" upperBound="-1" eType="//Scenario" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="M2M" eSuperTypes="//NamedElement //Transition">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=msrc"/>
+      <details key="ltrg=mtrg"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="msrc" eType="//OperationalMode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mtrg" eType="//OperationalMode"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkConfig" upperBound="-1" eType="//C2C" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="initialConfiguration">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C2C" eSuperTypes="//NamedElement //Transition">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=csrc"/>
+      <details key="ltrg=ctrg"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="csrc" eType="//Configuration"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ctrg" eType="//Configuration"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Out" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toModes" upperBound="-1" eType="//In" eOpposite="//In/fromMode"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="In" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fromMode" eType="//Out" eOpposite="//Out/toModes"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Family" eSuperTypes="//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=modes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modes" upperBound="-1" eType="//OperationalMode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="//FamillyType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FamillyType">
+    <eLiterals name="None"/>
+    <eLiterals name="Operational" value="1"/>
+    <eLiterals name="Default" value="2"/>
+    <eLiterals name="Maintenance" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ModeType">
+    <eLiterals name="UD_UserDefined" literal="Sub mode user defined"/>
+    <eLiterals name="C_Design" value="1" literal="C"/>
+    <eLiterals name="RI_PIVVQ" value="2" literal="RI"/>
+    <eLiterals name="D1_ReadyForDeployment" value="3" literal="D1"/>
+    <eLiterals name="D2_OperationalRetract" value="4" literal="D2"/>
+    <eLiterals name="D3_OffSiteFunctionning" value="5" literal="D3"/>
+    <eLiterals name="O1_ReadyAndDeployed" value="6" literal="O1"/>
+    <eLiterals name="O2_OperationalPreparation" value="7" literal="O2"/>
+    <eLiterals name="O3_Operational" value="8" literal="O3"/>
+    <eLiterals name="O4_EndOfNormalFunctionning" value="9" literal="O4"/>
+    <eLiterals name="O5_OnSiteFunctionning" value="10" literal="O5"/>
+    <eLiterals name="DS1_Stop" value="11" literal="DS1"/>
+    <eLiterals name="DS2_NonNominalFunctionning" value="12" literal="DS2"/>
+    <eLiterals name="DS3_WaitForDetectionAndDiagnosis" value="13" literal="DS3"/>
+    <eLiterals name="M1_CorrectiveMaintenance" value="14" literal="M1"/>
+    <eLiterals name="M2_PreventiveMaintenance" value="15" literal="M2"/>
+    <eLiterals name="M3_AdaptativeMaintenance" value="16" literal="M3"/>
+    <eLiterals name="M4_EvolutiveMaintenance" value="17" literal="M4"/>
+    <eLiterals name="F1_DefinitiveRetract" value="18" literal="F1"/>
+    <eLiterals name="F2_Dismantling" value="19" literal="F2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PhaseType">
+    <eLiterals name="None"/>
+    <eLiterals name="Design" value="1"/>
+    <eLiterals name="IVVQ" value="2" literal="Integration Verification Validation and Qualification"/>
+    <eLiterals name="Deployment" value="3"/>
+    <eLiterals name="Exploitation" value="4"/>
+    <eLiterals name="EndOfLife" value="5" literal="End of Life"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transitionCondition">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="guard">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="firingCondition">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromAnySource">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelledIn">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

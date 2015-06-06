@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Mtbe-fr-rule
+Bundle-SymbolicName: matcher.mtbe-fr-rule;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Vendor: Lirmm Marel
+Bundle-Localization: plugin
+Export-Package: rules,
+ rules.impl,
+ rules.util
+Require-Bundle: org.isoe.extensionpoint.similarity;bundle-version="1.0.4",
+ org.eclipse.emf.common;bundle-version="2.7.0",
+ org.eclipse.emf.ecore;bundle-version="2.7.0"
+Eclipse-LazyStart: true
+Bundle-ActivationPolicy: lazy

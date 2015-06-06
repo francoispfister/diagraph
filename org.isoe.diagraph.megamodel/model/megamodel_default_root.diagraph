@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" pointOfView="//@nodes.0" viewName="default">
+  <nodes xsi:type="diagraph:DPointOfView" name="Megamodel">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Megamodel"/>
+    <eClaz href="megamodel.ecore#//Megamodel"/>
+    <edges xsi:type="diagraph:DImplicitEdge" owner="//@nodes.0" name="dsmls" target="//@nodes.1" source="//@nodes.0">
+      <semanticRole xsi:type="ecore:EReference" href="megamodel.ecore#//Megamodel/dsmls"/>
+      <targetReference href="megamodel.ecore#//Megamodel/dsmls"/>
+    </edges>
+  </nodes>
+  <nodes name="Dsml" owner="//@nodes.0">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Dsml"/>
+    <eClaz href="megamodel.ecore#//Dsml"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/name"/>
+    </dlabels>
+    <edges xsi:type="diagraph:DLabeledEdge" owner="//@nodes.1" name="RelatedTo" target="//@nodes.1" source="//@nodes.1">
+      <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//RelatedTo"/>
+      <targetReference href="megamodel.ecore#//RelatedTo/to"/>
+      <eClaz href="megamodel.ecore#//RelatedTo"/>
+      <dlabels>
+        <attribute href="megamodel.ecore#//RelatedTo/kind"/>
+      </dlabels>
+      <sourceReference href="megamodel.ecore#//RelatedTo/from"/>
+    </edges>
+    <edges xsi:type="diagraph:DCompartmentingEdge" owner="//@nodes.1" name="models" target="//@nodes.2" source="//@nodes.1" partitionName="models">
+      <semanticRole xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/models"/>
+      <targetReference href="megamodel.ecore#//Dsml/models"/>
+    </edges>
+    <edges xsi:type="diagraph:DCompartmentingEdge" owner="//@nodes.1" name="notations" target="//@nodes.3" source="//@nodes.1" partitionName="notations">
+      <semanticRole xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/notations"/>
+      <targetReference href="megamodel.ecore#//Dsml/notations"/>
+    </edges>
+    <edges xsi:type="diagraph:DCompartmentingEdge" owner="//@nodes.1" name="ecoreDiagrams" target="//@nodes.6" source="//@nodes.1" partitionName="ecoreDiagrams">
+      <semanticRole xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/ecoreDiagrams"/>
+      <targetReference href="megamodel.ecore#//Dsml/ecoreDiagrams"/>
+    </edges>
+  </nodes>
+  <nodes name="Model" owner="//@nodes.1">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Model"/>
+    <eClaz href="megamodel.ecore#//Model"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/name"/>
+    </dlabels>
+    <dlabels>
+      <attribute href="megamodel.ecore#//Model/excerpt"/>
+    </dlabels>
+    <edges xsi:type="diagraph:DCompartmentingEdge" owner="//@nodes.2" name="notationDiagrams" target="//@nodes.4" source="//@nodes.2" partitionName="notationDiagrams">
+      <semanticRole xsi:type="ecore:EReference" href="megamodel.ecore#//Model/notationDiagrams"/>
+      <targetReference href="megamodel.ecore#//Model/notationDiagrams"/>
+    </edges>
+  </nodes>
+  <nodes name="Notation" owner="//@nodes.1">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Notation"/>
+    <eClaz href="megamodel.ecore#//Notation"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/name"/>
+    </dlabels>
+    <edges xsi:type="diagraph:DLabeledEdge" owner="//@nodes.3" name="Navigation" target="//@nodes.3" source="//@nodes.3">
+      <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Navigation"/>
+      <targetReference href="megamodel.ecore#//Navigation/to"/>
+      <eClaz href="megamodel.ecore#//Navigation"/>
+      <dlabels>
+        <attribute href="megamodel.ecore#//Navigation/id"/>
+      </dlabels>
+      <sourceReference href="megamodel.ecore#//Navigation/from"/>
+    </edges>
+  </nodes>
+  <nodes name="NotationDiagram" owner="//@nodes.2">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//NotationDiagram"/>
+    <eClaz href="megamodel.ecore#//NotationDiagram"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/URI"/>
+    </dlabels>
+  </nodes>
+  <nodes name="Diagram">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//Diagram"/>
+    <eClaz href="megamodel.ecore#//Diagram"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/name"/>
+    </dlabels>
+  </nodes>
+  <nodes name="EcoreDiagram" owner="//@nodes.1">
+    <semanticRole xsi:type="ecore:EClass" href="megamodel.ecore#//EcoreDiagram"/>
+    <eClaz href="megamodel.ecore#//EcoreDiagram"/>
+    <dlabels>
+      <attribute href="megamodel.ecore#//MegamodelElement/name"/>
+    </dlabels>
+  </nodes>
+</diagraph:DGraph>

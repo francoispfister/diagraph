@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_syswbee106:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_syswbee106="http://syswbee106">
+  <systemView id="System under study">
+    <functionalArchitecture domain="Functionnal  architecture">
+      <decompositions associations="//@systemView/@functionalArchitecture/@decompositions.1"/>
+      <decompositions/>
+    </functionalArchitecture>
+  </systemView>
+  <functionProperties description="prop1"/>
+  <catalog id="Pattern catalog 1">
+    <patterns domain="f100" associations="//@catalog.0/@patterns.1">
+      <decompositions domain="f524" property="//@functionProperties.0"/>
+    </patterns>
+    <patterns domain="f200"/>
+    <patterns domain="f300"/>
+  </catalog>
+  <catalog id="Pattern catalog 2">
+    <patterns domain="f1000">
+      <decompositions domain="fazerty" associations="//@catalog.1/@patterns.0/@decompositions.1"/>
+      <decompositions domain="fqwerty"/>
+    </patterns>
+  </catalog>
+</_syswbee106:Workbench>

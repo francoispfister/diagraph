@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/matcher.mtbe-fr-rule/src"
+    modelPluginID="matcher.mtbe-fr-rule" modelName="Rules" importerID="org.eclipse.emf.importer.ecore"
+    copyrightFields="false">
+  <foreignModel>rules.ecore</foreignModel>
+  <genPackages prefix="Rules" disposableProviderFactory="true" ecorePackage="rules.ecore#/">
+    <genClasses ecoreClass="rules.ecore#//RulesLattice">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rules.ecore#//RulesLattice/rules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//RulesLattice/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//RulesLattice/target"/>
+    </genClasses>
+    <genClasses ecoreClass="rules.ecore#//Rule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rules.ecore#//Rule/children"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rules.ecore#//Rule/parents"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rules.ecore#//Rule/premise"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rules.ecore#//Rule/conclusion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rules.ecore#//Rule/nodes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//Rule/name"/>
+    </genClasses>
+    <genClasses ecoreClass="rules.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//Node/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rules.ecore#//Node/relatedNodes"/>
+    </genClasses>
+    <genClasses ecoreClass="rules.ecore#//NodeRelation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//NodeRelation/relation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference rules.ecore#//NodeRelation/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rules.ecore#//NodeRelation/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//NodeRelation/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//NodeRelation/upperBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rules.ecore#//NodeRelation/relationTgt"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

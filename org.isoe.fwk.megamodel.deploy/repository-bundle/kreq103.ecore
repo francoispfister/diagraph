@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kreq103" nsURI="http://kreq103" nsPrefix="_kreq103">
+  <eClassifiers xsi:type="ecore:EClass" name="Bbbb">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" lowerBound="1" upperBound="-1"
+        eType="#//Cccc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gs" upperBound="-1" eType="#//Gggg"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cccc">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="kref=fs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fs" upperBound="-1" eType="#//Ffff"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ffff">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=Cccc.fs"/>
+      <details key="label=id"/>
+      <details key="kref=subFs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subFs" upperBound="-1"
+        eType="#//Ffff" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BasicFlowTransformationType">
+    <eLiterals name="EEnumLiteral0"/>
+    <eLiterals name="Transiform" value="1"/>
+    <eLiterals name="Check_Verify_Validate" value="2"/>
+    <eLiterals name="Control" value="3"/>
+    <eLiterals name="Decide" value="4"/>
+    <eLiterals name="Measure" value="5"/>
+    <eLiterals name="Store" value="6"/>
+    <eLiterals name="Wait" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="RequirementOrigin">
+    <eLiterals name="Derived"/>
+    <eLiterals name="Originating" value="1"/>
+    <eLiterals name="DesignChoise_induced" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComponentPosition">
+    <eLiterals name="Not_yet_defined"/>
+    <eLiterals name="Local" value="1"/>
+    <eLiterals name="Environmental_context" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CategoryType">
+    <eLiterals name="Functional"/>
+    <eLiterals name="Non_Functional" value="1"/>
+    <eLiterals name="Operational" value="2"/>
+    <eLiterals name="VandV" value="3"/>
+    <eLiterals name="Interface" value="4"/>
+    <eLiterals name="Constraints" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ComponentType">
+    <eLiterals name="Physical_component"/>
+    <eLiterals name="Logical_component" value="1"/>
+    <eLiterals name="System" value="2"/>
+    <eLiterals name="Operational_system" value="3"/>
+    <eLiterals name="Information_system" value="4"/>
+    <eLiterals name="Process" value="5"/>
+    <eLiterals name="Activity" value="6"/>
+    <eLiterals name="Serrvice" value="7"/>
+    <eLiterals name="Actor" value="8"/>
+    <eLiterals name="Organization_Unit" value="9"/>
+    <eLiterals name="Site" value="10"/>
+    <eLiterals name="Role" value="11"/>
+    <eLiterals name="Tool" value="12"/>
+    <eLiterals name="Not_yet_desighed" value="13"/>
+    <eLiterals name="Other" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gggg">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

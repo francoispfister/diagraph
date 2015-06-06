@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Export-Package: org.isoe.diagraph.generator.generic
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.isoe.diagraph.internal.m2;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.isoe.diagraph.internal.api;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4"
+Bundle-Vendor: LGi2P Isoe
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Name: Diagraph
+Bundle-Activator: org.isoe.diagraph.generator.generic.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.isoe.diagraph.generator.generic;singleton:=tr
+ ue
+

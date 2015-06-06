@@ -1,0 +1,249 @@
+digraph G { rankdir=LR    node [fontname="Verdana",fontsize=10,shape=none] edge [fontname="Verdana",fontsize=10];
+label="default:TheWorld";
+   /*start top node*/
+   id31775739[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id31775739p0">
+      <TABLE bgcolor="blanchedalmond" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id31775739p1" align="left">AA:Language</TD></TR>
+         <TR><!-- row --><TD port="id31775739p2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id16594303[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id16594303p0">
+      <TABLE bgcolor="blanchedalmond" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id16594303p1" align="left">BB:Language</TD></TR>
+         <TR><!-- row --><TD port="id16594303p2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id29567874[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id29567874p0">
+      <TABLE bgcolor="cadetblue1" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id29567874p1" align="left">A:Researcher</TD></TR>
+         <TR><!-- row --><TD port="id29567874p2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id2963539[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id2963539p0">
+      <TABLE bgcolor="cadetblue1" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id2963539p1" align="left">B:Researcher</TD></TR>
+         <TR><!-- row --><TD port="id2963539p2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id13424221[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id13424221p0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id13424221p1" align="left">p1:Publication</TD></TR>
+         <TR><!-- row --><TD port="id13424221p2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=1-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+            <!-- start child node -->
+            <TR><TD port="id20055805p0">
+               <TABLE bgcolor="brown1" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="id20055805p1" align="left">bibliography:Bibliography</TD></TR>
+                  <TR><!-- row --><TD port="id20055805p2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=2-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Entry</TD></TR>
+                     <!-- start child node -->
+                     <TR><TD port="id25749752p0">
+                        <TABLE bgcolor="darkturquoise" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="id25749752p1" align="left">dsfsd:Entry</TD></TR>
+                           <TR><!-- row --><TD port="id25749752p2" align="left">Type:obj</TD></TR>
+                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=3-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+            <!-- start child node -->
+            <TR><TD port="id25108427p0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="id25108427p1" align="left">Intro:Section</TD></TR>
+                  <TR><!-- row --><TD port="id25108427p2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=4-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+                     <!-- start child node -->
+                     <TR><TD port="id14660139p0">
+                        <TABLE bgcolor="chartreuse" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="id14660139p1" align="left">zeare:Paragraph</TD></TR>
+                           <TR><!-- row --><TD port="id14660139p2" align="left">Type:obj</TD></TR>
+
+                              <!-- start compartment -->
+                              <TR><TD><!--k=5-->
+                              <TABLE   bgcolor="yellow"  border="0"><TR><TD>Annotation</TD></TR>
+
+                              <TR><TD></TD></TR>
+                              </TABLE></TD></TR>
+                              <!-- end compartment -->                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+                     <!-- start child node -->
+                     <TR><TD port="id5493951p0">
+                        <TABLE bgcolor="chartreuse" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="id5493951p1" align="left">sdfqdf:Paragraph</TD></TR>
+                           <TR><!-- row --><TD port="id5493951p2" align="left">Type:obj</TD></TR>
+
+                              <!-- start compartment -->
+                              <TR><TD><!--k=6-->
+                              <TABLE   bgcolor="yellow"  border="0"><TR><TD>Annotation</TD></TR>
+                              <!-- start child node -->
+                              <TR><TD port="id28596532p0">
+                                 <TABLE bgcolor="chocolate" cellspacing="-1" border="1">
+                                    <TR><TD><TABLE  border="0" cellspacing="-1" >
+                                    <TR><!-- row --><TD port="id28596532p1" align="left">sqdf:Annotation</TD></TR>
+                                    <TR><!-- row --><TD port="id28596532p2" align="left">Type:obj</TD></TR>
+                                    </TABLE></TD></TR>
+                                 </TABLE>
+                              </TD></TR>
+                              <!-- end child node -->
+                              <!-- start child node -->
+                              <TR><TD port="id7916459p0">
+                                 <TABLE bgcolor="chocolate" cellspacing="-1" border="1">
+                                    <TR><TD><TABLE  border="0" cellspacing="-1" >
+                                    <TR><!-- row --><TD port="id7916459p1" align="left">sqdf:Annotation</TD></TR>
+                                    <TR><!-- row --><TD port="id7916459p2" align="left">Type:obj</TD></TR>
+                                    </TABLE></TD></TR>
+                                 </TABLE>
+                              </TD></TR>
+                              <!-- end child node -->
+
+                              </TABLE></TD></TR>
+                              <!-- end compartment -->                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+            <!-- start child node -->
+            <TR><TD port="id8611210p0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="id8611210p1" align="left">Conclusion:Section</TD></TR>
+                  <TR><!-- row --><TD port="id8611210p2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=7-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+
+                     <TR><TD></TD></TR>
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+            <!-- start child node -->
+            <TR><TD port="id8351825p0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="id8351825p1" align="left">Chapter 1:Section</TD></TR>
+                  <TR><!-- row --><TD port="id8351825p2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=8-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+
+                     <TR><TD></TD></TR>
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id10946652[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id10946652p0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id10946652p1" align="left">p2:Publication</TD></TR>
+         <TR><!-- row --><TD port="id10946652p2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=9-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=10-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   id1433270[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="id1433270p0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="id1433270p1" align="left">null:Publication</TD></TR>
+         <TR><!-- row --><TD port="id1433270p2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=11-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=12-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+
+id29567874:id29567874p0 -> id31775739:id31775739p1 [color=blue];
+id2963539:id2963539p0 -> id16594303:id16594303p1 [color=blue];
+id29567874:id29567874p0 -> id2963539:id2963539p1 [label= "sqdf", color=red];
+id29567874:id29567874p0 -> id13424221:id13424221p1 [label= "sqdf", color=red];
+id2963539:id2963539p0 -> id10946652:id10946652p1 [label= "sqdf", color=red];
+id2963539:id2963539p0 -> id1433270:id1433270p1 [label= "sqdf", color=red];
+}/*end graph*/

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_mimap:DocumentRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_mimap="http://mimap">
+  <map title="map">
+    <rootTopics name="a" subtopics="#//@map/@rootTopics.2">
+      <comments subject="t1">
+        <items body="ti1"/>
+        <items body="ti2"/>
+      </comments>
+      <comments subject="t2"/>
+    </rootTopics>
+    <rootTopics name="b"/>
+    <rootTopics name="c" resources="#//@map/@resources.0"/>
+    <relations xsi:type="_mimap:Relationship" target="#//@map/@rootTopics.1" source="#//@map/@rootTopics.0" name="d1"/>
+    <relations xsi:type="_mimap:IncludeRelationship" target="#//@map/@rootTopics.2" source="#//@map/@rootTopics.0" name="i1" type="INCLUDES"/>
+    <relations xsi:type="_mimap:ExtendRelationship" target="#//@map/@rootTopics.0" source="#//@map/@rootTopics.1" name="ex" type="EXTENDS"/>
+    <resources name="r1" topics="#//@map/@rootTopics.2"/>
+  </map>
+</_mimap:DocumentRoot>

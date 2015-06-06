@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<revision:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:revision="http://revision.example">
+  <processView name="pubProcess">
+    <phases name="pubphase1" neededPerson="//@structuralView/@researchers.0"/>
+    <phases name="pubphase2">
+      <linksToSuccessors successor="//@processView/@phases.0" predecessor="//@processView/@phases.1"/>
+    </phases>
+    <publicationRules text="w&lt;xc&lt;wcx" key="rule1"/>
+    <publicationRules key="rul23"/>
+  </processView>
+  <structuralView name="publicationStructure">
+    <researchers phaseParticipation="//@processView/@phases.0" name="totoseracher" position="prof">
+      <writes lname="writ1" paragraph="//@structuralView/@papers.0/@paragraphs.0"/>
+      <reviews lname="reviews" reviewNote="//@structuralView/@papers.0/@paragraphs.0/@reviews.1"/>
+    </researchers>
+    <researchers name="titisearcher" position="student"/>
+    <papers name="paper1">
+      <paragraphs name="para1">
+        <reviews name="revnote1"/>
+        <reviews name="revnote2"/>
+      </paragraphs>
+      <paragraphs name="para2"/>
+      <progress lname="progrss" process="//@processView" percent="10"/>
+    </papers>
+    <papers name="paper2"/>
+  </structuralView>
+</revision:PublicationSystem>

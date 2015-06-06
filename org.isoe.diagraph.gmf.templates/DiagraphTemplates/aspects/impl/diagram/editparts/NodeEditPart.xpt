@@ -1,0 +1,320 @@
+/*
+ * Copyright (c) 2006, 2007 Borland Software Corporation
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *    Dmitry Stadnik (Borland) - initial API and implementation
+ *    Alexander Shatalin (Borland) - initial API and implementation
+ */
+
+«IMPORT "http://www.eclipse.org/gmf/2008/GenModel"»
+«IMPORT "http://www.eclipse.org/emf/2002/Ecore"»
+«IMPORT "http://isoe-2012-diagraph-dsmlv4"»
+
+
+
+«EXTENSION xpt::diagram::ViewmapAttributesUtils»
+«EXTENSION xpt::diagram::Utils»
+«EXTENSION xpt::diagram::editparts::Utils»
+«EXTENSION xpt::GenEditorGenerator»
+«EXTENSION xpt::DiagraphGenEditorGenerator»
+«EXTENSION xpt::editor::GenDiagram»
+«EXTENSION xpt::editor::Utils»
+
+
+
+/**
+ *  DIAGRAPH - FROM OPENIAML */
+ * We re-define the entire command, since we're creating a
+ * new sub-class.
+ */
+«AROUND createNodeShape(gmfgen::GenNode node) FOR gmfgen::InnerClassViewmap-»
+	«REM»only expand for classes which we can support«ENDREM»
+	«REM»
+		ALL classes now have 'Stereotype' labels, so we need to extend ALL labels.
+		«IF {.template-classname-list.}»
+	«ENDREM»
+	«IF true»
+		«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code) Jevon modification: we extend createNodeShape to use our extended class.')»
+		protected org.eclipse.draw2d.IFigure createNodeShape() {
+			«className» figure = new Extended«className»();
+			«IF node.childNodes->size() > 0 and node.getLayoutType() = gmfgen::ViewmapLayoutType::XY_LAYOUT-»
+	 		figure.setUseLocalCoordinates(true);
+			«ENDIF-»
+	 		return primaryShape = figure;
+		}
+
+		«EXPAND impl::diagram::editparts::NodeEditPart::getPrimaryShapeMethod FOR className-»
+
+		«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code) Extends the normal generated Figure class with one that can handle notification events, to render changes in the model.\n\nUnfortunately, GMF generates the Viewmap as part of the .gmfgen directly, so we cannot modify the generated code here; we have to extend it in this way. Its not ideal.')»
+		public class Extended«className» extends «className» {
+
+
+
+		/**
+		 * To be removed when GMF graph will support multiline labels
+		 */
+		«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH MODIFIED 121104)')»
+		public void add(org.eclipse.draw2d.IFigure figure, Object constraint, int index) {
+			if (figure instanceof org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel){
+				((org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel)figure).setTextWrap(true);
+			}
+			super.add(figure, constraint, index);
+		}
+
+
+			«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code)')»
+			private org.eclipse.emf.ecore.EObject resolvedObject;
+
+			«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code)')»
+			public Extended«className»() {
+				// initialise parent as normal
+				super();
+
+				// find the parent object
+				resolvedObject = resolveSemanticElement();
+
+				// refresh any parent labels
+				refreshLabels();
+
+				// add a notification listener
+				// based on http://dev.eclipse.org/newslists/news.eclipse.modeling.gmf/msg12297.html
+
+				/*
+		        org.eclipse.emf.transaction.NotificationFilter nf = org.eclipse.emf.transaction.NotificationFilter.createFeatureFilter(
+			        	org.openiaml.model.model.ModelPackage.eINSTANCE.getNamedElement_Name()
+			        ).or(org.eclipse.emf.transaction.NotificationFilter.createFeatureFilter(
+			        	org.eclipse.emf.ecore.EcorePackage.eINSTANCE.getENamedElement_Name()
+			        ));
+
+
+		        org.eclipse.emf.transaction.ResourceSetListener rsl = new org.eclipse.emf.transaction.ResourceSetListenerImpl(nf) {
+					EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code)')
+					@Override
+					public void resourceSetChanged(org.eclipse.emf.transaction.ResourceSetChangeEvent event) {
+						refreshLabels();
+					}
+		        };
+
+		        getEditingDomain().addResourceSetListener(rsl);
+
+		         */
+
+			}
+
+			«EXPAND xpt::Common::generatedMemberComment('(DIAGRAPH uses Iaml code)')»
+			public void refreshLabels() {
+				if (resolvedObject != null) {
+					// labels from parent
+					if (resolvedObject.eContainer() != null) {
+						org.eclipse.emf.ecore.EObject parent = resolvedObject.eContainer();
+
+						// permit parent labels from ENamedElements as well
+						/*
+						String parentName = null;
+						if (parent instanceof org.openiaml.model.model.NamedElement) {
+							parentName = "Container: " + ((org.openiaml.model.model.NamedElement) parent).getName();
+						} else
+
+						if (parent instanceof org.eclipse.emf.ecore.ENamedElement) {
+							parentName = "Container: " + ((org.eclipse.emf.ecore.ENamedElement) parent).getName();
+						}
+						*/
+
+						String containmentName = resolvedObject.eContainingFeature() == null ? "" : resolvedObject.eContainingFeature().getName();
+
+						«REM»generated by template«ENDREM»
+						/* parent features */
+						//{template-parents}
+
+						/* containment features */
+						//{template-containments}
+					}
+
+					// other labels from the current object
+
+					/* type features */
+					//{template-types}
+
+					/* eType features */
+					//{template-etypes}
+
+					/* stereotype figures */
+					//{template-stereotypes}
+				}
+			}
+
+		}
+	«ELSE»
+		«REM»continue with normal shape«ENDREM»
+		«targetDef.proceed()»
+	«ENDIF»
+«ENDAROUND»
+
+«DEFINE getTypeName(String fqn, String name) FOR gmfgen::InnerClassViewmap-»
+	// we actually want the type name
+	String typeName = "???";
+	if (resolvedObject instanceof «fqn») {
+		«fqn» actual = («fqn») resolvedObject;
+
+		if (actual.getType() == null) {
+			typeName = "Any";
+		} else {
+			typeName = actual.getType().getName();
+		}
+	}
+
+	getFigure«name»TypeFigure().setText("Type: " + typeName);
+«ENDDEFINE»
+
+«DEFINE getETypeName(String fqn, String name) FOR gmfgen::InnerClassViewmap-»
+	// we actually want the type name
+	String typeName = "???";
+	if (resolvedObject instanceof «fqn») {
+		«fqn» actual = («fqn») resolvedObject;
+
+		if (actual.getEType() == null) {
+			typeName = "Any";
+		} else {
+			typeName = actual.getEType().getName();
+		}
+	}
+	getFigure«name»ETypeFigure().setText("Type: " + typeName);
+«ENDDEFINE»
+
+
+
+«DEFINE Main FOR First::Second::MyClass -»
+«attribute1», «attribute2»
+«ENDDEFINE»
+
+
+«AROUND createNodePlate FOR gmfgen::GenNode-»
+	  «EXPAND xpt::Common::generatedMemberComment('DIAGRAPH modified 4')»
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(«IF getDiagram().isPixelMapMode()»«defaultSizeWidth(viewmap, 600)», «defaultSizeHeight(viewmap, 300)»«ELSE»getMapMode().DPtoLP(«defaultSizeWidth(viewmap, 600)»), getMapMode().DPtoLP(«defaultSizeHeight(viewmap, 300)»)«ENDIF»);
+		«EXPAND debug-»
+		//«getDiagram().editorGen.diagraphSize()»
+
+
+		//DIAGRAPH to modify 0704
+	    /*  example:
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(600,300);
+		return result;
+		*/
+		return result;
+	}
+«ENDAROUND»
+
+
+
+
+
+«DEFINE debug FOR gmfgen::GenNode»
+
+
+/*120702 120704a
+
+      «IF getDiagram().isPixelMapMode()-»
+         self.getDiagram().isPixelMapMode()
+	  «ENDIF-»
+	  AAA-- EXPAND xpt::Common::copyright FOR editorGen: «EXPAND xpt::Common::copyright FOR getDiagram().editorGen-»  ////
+	  BBB-- getDiagram().domainDiagramElement.genPackage.prefix: «getDiagram().domainDiagramElement.genPackage.prefix»  ////
+	  CCC-- getDiagram().domainDiagramElement.ecoreClass.name: «getDiagram().domainDiagramElement.ecoreClass.name»  ////
+	  DDD-- getDiagram().domainDiagramElement.ecoreClass.references «getDiagram().domainDiagramElement.ecoreClass.eAllReferences»  ////
+	  EEE-- getDiagram().editorGen.extension() «getDiagram().editorGen.extension()» ////
+	  FFF-- getDiagram().editorGen.extensionToString() «getDiagram().editorGen.extensionToString()» ////
+	  GGG-- EXPAND MetaModel::QualifiedClassName FOR getDiagram().domainDiagramElement «EXPAND MetaModel::QualifiedClassName FOR getDiagram().domainDiagramElement»  ////
+	  HHH-- getDocumentRoot(self) «getDocumentRoot(getDiagram())-»  ////
+	  III-- EXPAND foobar FOR getDiagram() «EXPAND foobar FOR getDiagram()-» ////
+      JJJ-- getDiagram().editorGen.diagraphSize()«getDiagram().editorGen.diagraphSize()»  //FP120703
+      KKK-- getGraphicalNodeEditPolicyQualifiedClassName() «getGraphicalNodeEditPolicyQualifiedClassName()» ////
+      LLL-- editPartClassName «editPartClassName» ////
+      LLLx-- editPartClassName.substring(1, editPartClassName.rfind('EditPart')) «editPartClassName.substring(1, editPartClassName.rfind('EditPart')-1)» ////
+      MMM-- getDiagram().editPartsPackageName «getDiagram().editPartsPackageName»
+      NNN-- getDiagram().domainDiagramElement.ecoreClass «getDiagram().domainDiagramElement.ecoreClass»
+      OOO-- EXPAND tototata «EXPAND tototata-» ////
+      PPP-- getDiagram().editorGen.isDiagraphPointOfView('Diagram')«getDiagram().editorGen.isDiagraphPointOfView('Diagram')»  //FP120703
+      QQQ-- getDiagram().editorGen.isDiagraphPointOfView('Classroom')«getDiagram().editorGen.isDiagraphPointOfView(editPartClassName.substring(1, editPartClassName.rfind('EditPart')-1))»  //FP120703
+      RRR-- getDiagram().editorGen.isDiagraphPointOfView(nodeName())«getDiagram().editorGen.isDiagraphPointOfView(nodeName())»  //FP120703
+      TTT-- IF getDiagram().editorGen.diagraphHasNodeEdges(nodeName()
+      TTT-- has edges for:«nodeName()»
+      «IF getDiagram().editorGen.diagraphHasNodeEdges(nodeName())-»
+         hasEdges
+      «ELSE-»
+         hasNoEdges
+      «ENDIF-»
+      UUU-- containments for:«nodeName()-» ...todo
+
+
+      getDiagram().editorGen.logDNode(nodeName())  «getDiagram().editorGen.logDNode(nodeName())-»
+
+      getDiagram().editorGen.logBackgroundColor(nodeName())  «getDiagram().editorGen.logBackgroundColor(nodeName())-»
+
+      VVVV-- getBackgroundColor:«getDiagram().editorGen.getStyle().getBackgroundColor(null)»
+
+
+      SSS-- compartments for:«nodeName()»
+      «FOREACH getDiagram().editorGen.diagraphNodeContainments(nodeName()) AS contnm-»
+         contnm.target.name:[«contnm.target.name»]
+      «ENDFOREACH-»
+
+*/
+
+«ENDDEFINE»
+«REM»
+«DEFINE diagraphEdges FOR gmfgen::GenNode»
+   «FOREACH getDiagram().editorGen.diagraphNodeEdges(nodeName()) AS edg-»
+         edge:[]
+   «ENDFOREACH-»
+«ENDDEFINE»
+«ENDREM»
+
+
+«DEFINE diagraphContainment FOR diagraph::DImplicitEdge»
+         containment.target.name:[«self.target.name»]
+«ENDDEFINE»
+
+
+«DEFINE foobar FOR gmfgen::GenDiagram»
+	//1«getDocumentRoot(self)»
+	//2«EXPAND MetaModel::QualifiedClassName FOR getDocumentRoot(self)»
+    //3«EXPAND MetaModel::QualifiedClassName FOR domainDiagramElement»
+	//4«EXPAND MetaModel::NewInstance('docRoot') FOR getDocumentRoot(self)»
+«ENDDEFINE»
+
+
+«DEFINE tototata FOR gmfgen::GenNode-»
+//a
+	«LET getResizeConstraints(viewmap) AS rc-»
+	//b
+		«IF  null <> rc-»
+		//c
+			«IF rc.resizeHandleNames->size() > 0-»
+			//a
+			  «FOREACH rc.resizeHandleNames->asSequence() AS name SEPARATOR ' | '»
+			   //c «name»
+			  «ENDFOREACH-»
+			«ELSE»
+			   //d  NONE
+			«ENDIF»);
+		«ELSE»
+			   //e  NONE
+		«ENDIF»
+
+	«ENDLET-»
+«ENDDEFINE»
+
+
+
+
+
+
+
+
+
+

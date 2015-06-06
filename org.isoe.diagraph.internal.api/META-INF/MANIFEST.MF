@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Internal Api
+Bundle-SymbolicName: org.isoe.diagraph.internal.api
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.common;bundle-version="1.0.4",
+ org.isoe.diagraph.runner;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.internal.api;x-internal:=true

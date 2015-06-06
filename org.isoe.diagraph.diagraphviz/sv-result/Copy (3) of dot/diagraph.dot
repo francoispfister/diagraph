@@ -1,0 +1,133 @@
+digraph G { rankdir=BT  overlap = "scale" labelfloat = "true" node [fontname="Verdana", fontsize=10, shape=none] edge [fontname="Verdana", fontsize=10];
+subgraph cluster_1 /*start subgraph 2*/{ label="ecore";
+id23472789[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid23472789"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EModelElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id24813348[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid24813348"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>ENamedElement</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pENamedElement_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id14220075[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid14220075"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EClassifier</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id33228489[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid33228489"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>ETypedElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id7065437[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid7065437"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EStructuralFeature</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id15746892[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid15746892"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EClass</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id12450318[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid12450318"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EAttribute</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id22375148[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid22375148"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>EReference</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pEReference_containment" align="left">containment: EBoolean</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/subgraph cluster_26800268 /*start subgraph 1*/{ label="diagraph";
+id4768574[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid4768574"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DPointOfView</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id28428664[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid28428664"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DGraph</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pDGraph_layerName" align="left">viewName: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id4027479[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid4027479"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DNode</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pDNode_navigationName" align="left">navigationName: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id17447266[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid17447266"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DGraphElement</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pDGraphElement_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id10554704[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid10554704"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DLabelledElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id24197364[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid24197364"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DOwnedElement</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id18693853[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid18693853"><TABLE bgcolor="cadetblue1" cellspacing="-1" border="1" ><TR><TD>DEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id5393177[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid5393177"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DLink</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id12611877[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid12611877"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DOwnedEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id4470681[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid4470681"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DReference</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id10371282[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid10371282"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DNestingEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id19008539[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid19008539"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>DPartitioningNestingEdge</TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/id4027479:pid4027479 -> id18693853:pid18693853 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="edges"];
+id4768574:pid4768574 -> id4027479:pid4027479 [color="black", arrowhead=empty ];
+id28428664:pid28428664 -> id4027479:pid4027479 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="nodes"];
+id28428664:pid28428664 -> id4768574:pid4768574 [color=red,arrowhead=vee,headlabel="1..1",label="pointOfView"];
+id28428664:pid28428664 -> id23472789:pid23472789 [color="black", arrowhead=empty ];
+id4027479:pid4027479 -> id28428664:pid28428664 [color=red,arrowhead=vee,headlabel="0..1",label="graph"];
+id24813348:pid24813348 -> id23472789:pid23472789 [color="black", arrowhead=empty ];
+id17447266:pid17447266 -> id24813348:pid24813348 [color=red,arrowhead=vee,headlabel="0..1",label="roleInCsGraph"];
+id17447266:pid17447266 -> id23472789:pid23472789 [color="black", arrowhead=empty ];
+id4027479:pid4027479 -> id17447266:pid17447266 [color="black", arrowhead=empty ];
+id15746892:pid15746892 -> id15746892:pid15746892 [color=red,arrowhead=vee,headlabel="0..*",label="eSuperTypes"];
+id14220075:pid14220075 -> id24813348:pid24813348 [color="black", arrowhead=empty ];
+id33228489:pid33228489 -> id14220075:pid14220075 [color=red,arrowhead=vee,headlabel="0..1",label="eType"];
+id33228489:pid33228489 -> id24813348:pid24813348 [color="black", arrowhead=empty ];
+id7065437:pid7065437 -> id15746892:pid15746892 [color=red,arrowhead=vee,headlabel="0..1",label="eContainingClass"];
+id7065437:pid7065437 -> id33228489:pid33228489 [color="black", arrowhead=empty ];
+id15746892:pid15746892 -> id7065437:pid7065437 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="eStructuralFeatures"];
+id15746892:pid15746892 -> id14220075:pid14220075 [color="black", arrowhead=empty ];
+id10554704:pid10554704 -> id15746892:pid15746892 [color=red,arrowhead=vee,headlabel="0..1",label="eClass"];
+id12450318:pid12450318 -> id7065437:pid7065437 [color="black", arrowhead=empty ];
+id10554704:pid10554704 -> id12450318:pid12450318 [color=red,arrowhead=vee,headlabel="0..*",label="labelAttributes"];
+id4027479:pid4027479 -> id10554704:pid10554704 [color="black", arrowhead=empty ];
+id24197364:pid24197364 -> id4027479:pid4027479 [color=red,arrowhead=vee,headlabel="0..1",label="owner"];
+id4027479:pid4027479 -> id24197364:pid24197364 [color="black", arrowhead=empty ];
+id18693853:pid18693853 -> id4027479:pid4027479 [color=red,arrowhead=vee,headlabel="1..1",label="target"];
+id18693853:pid18693853 -> id4027479:pid4027479 [color=red,arrowhead=vee,headlabel="1..1",label="source"];
+id22375148:pid22375148 -> id22375148:pid22375148 [color=red,arrowhead=vee,headlabel="0..1",label="eOpposite"];
+id22375148:pid22375148 -> id12450318:pid12450318 [color=red,arrowhead=vee,headlabel="0..*",label="eKeys"];
+id22375148:pid22375148 -> id7065437:pid7065437 [color="black", arrowhead=empty ];
+id18693853:pid18693853 -> id22375148:pid22375148 [color=red,arrowhead=vee,headlabel="0..1",label="targetReference"];
+id18693853:pid18693853 -> id17447266:pid17447266 [color="black", arrowhead=empty ];
+id5393177:pid5393177 -> id22375148:pid22375148 [color=red,arrowhead=vee,headlabel="0..1",label="sourceReference"];
+id12611877:pid12611877 -> id24197364:pid24197364 [color="black", arrowhead=empty ];
+id12611877:pid12611877 -> id18693853:pid18693853 [color="black", arrowhead=empty ];
+id5393177:pid5393177 -> id12611877:pid12611877 [color="black", arrowhead=empty ];
+id5393177:pid5393177 -> id10554704:pid10554704 [color="black", arrowhead=empty ];
+id4470681:pid4470681 -> id18693853:pid18693853 [color="black", arrowhead=empty ];
+id10371282:pid10371282 -> id12611877:pid12611877 [color="black", arrowhead=empty ];
+id19008539:pid19008539 -> id10371282:pid10371282 [color="black", arrowhead=empty ];
+}/*end graph*/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Diagraph"
+            id="org.isoe.diagraph.workbench">
+      </category>
+      <view
+            name="Console Logger"
+            icon="icons/sample.gif"
+            category="org.isoe.diagraph.workbench"
+            class="org.isoe.diagraph.console.logger.views.ConsoleLogger"
+            id="org.isoe.diagraph.console.logger.views.ConsoleLogger">
+      </view>
+   </extension>
+
+
+</plugin>

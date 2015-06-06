@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp4v:Infrastructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp4v="http://tp4v">
+  <calculateurs id_embarq="Pilotage">
+    <interfaces id_embarq="i001" cadence="100.0" calculateur="//@calculateurs.0" perif="//@peripheriques.0"/>
+    <interfaces id_embarq="i002" cadence="100.0" calculateur="//@calculateurs.0" perif="//@peripheriques.1"/>
+    <interfaces id_embarq="i003" cadence="20.0" calculateur="//@calculateurs.0" perif="//@peripheriques.2">
+      <trace t_nomenclature="//@documentation/@nomenclatures.2" date_heure="12/10"/>
+    </interfaces>
+    <interfaces id_embarq="i004" cadence="10.0" calculateur="//@calculateurs.0" perif="//@peripheriques.3">
+      <trace t_nomenclature="//@documentation/@nomenclatures.1" date_heure="14/06"/>
+    </interfaces>
+    <processeurs id_embarq="i586" _famille="//@documentation/@familles.0"/>
+    <processeurs id_embarq="8051" _famille="//@documentation/@familles.0">
+      <trace t_nomenclature="//@documentation/@nomenclatures.1" date_heure="13/11"/>
+    </processeurs>
+  </calculateurs>
+  <calculateurs id_embarq="GestionMoteur">
+    <interfaces id_embarq="i006" cadence="35.0" calculateur="//@calculateurs.1" perif="//@peripheriques.2">
+      <trace t_nomenclature="//@documentation/@nomenclatures.0" date_heure="15/07"/>
+    </interfaces>
+    <interfaces id_embarq="i007" cadence="20.0" calculateur="//@calculateurs.1" perif="//@peripheriques.4"/>
+    <processeurs id_embarq="z80"/>
+  </calculateurs>
+  <calculateurs id_embarq="PressionCabine">
+    <trace t_nomenclature="//@documentation/@nomenclatures.1" date_heure="12/11"/>
+    <interfaces id_embarq="i009" cadence="5.0" calculateur="//@calculateurs.2" perif="//@peripheriques.5"/>
+    <processeurs id_embarq="68000" _famille="//@documentation/@familles.1"/>
+  </calculateurs>
+  <peripheriques id_perif="Capteur Altitude"/>
+  <peripheriques id_perif="Capteur Vitesse"/>
+  <peripheriques id_embarq="" id_perif="Actionneur Carburant" nature="sortie">
+    <trace t_nomenclature="//@documentation/@nomenclatures.1" date_heure="22/11"/>
+  </peripheriques>
+  <peripheriques id_perif="Actionneur xyz" nature="sortie"/>
+  <peripheriques id_perif="Capteur Niveau"/>
+  <peripheriques id_perif="Capteur Pression">
+    <trace t_nomenclature="//@documentation/@nomenclatures.0" date_heure="14/11"/>
+  </peripheriques>
+  <localisations id_loc="loc1" coteX="41" coteY="56"/>
+  <localisations id_loc="loc2" coteX="120" coteY="444"/>
+  <localisations id_loc="loc3" coteX="785" coteY="8421"/>
+  <localisations id_loc="loc4" coteX="78" coteY="147"/>
+  <documentation name="Documentation">
+    <familles nom="intel">
+      <docus description="technique"/>
+      <docus description="foobar"/>
+      <docus description="barfoo"/>
+    </familles>
+    <familles nom="motorola">
+      <docus description="baz"/>
+      <docus description="bar"/>
+    </familles>
+    <nomenclatures name="nomencl a">
+      <zlocalisation localisation="//@localisations.3" coteZ="145"/>
+    </nomenclatures>
+    <nomenclatures name="nomencl b"/>
+    <nomenclatures name="nomencl c410">
+      <zlocalisation localisation="//@localisations.2" coteZ="12"/>
+    </nomenclatures>
+    <nomenclatures name="nomencl 999">
+      <zlocalisation localisation="//@localisations.0" coteZ="102"/>
+    </nomenclatures>
+  </documentation>
+</tp4v:Infrastructure>

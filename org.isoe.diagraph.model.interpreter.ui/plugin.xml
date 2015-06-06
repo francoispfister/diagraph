@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="org.isoe.diagraph.kermeta.runner.contribution1">
+         <menu
+               label="Run Fsm Submenu"
+               path="additions"
+               id="org.isoe.diagraph.kermeta.runner.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Run as Kermeta"
+               class="org.isoe.diagraph.model.interpreter.ui.actions.InterpretModelAction"
+               menubarPath="org.isoe.diagraph.kermeta.runner.menu1/group1"
+               enablesFor="1"
+               id="org.isoe.diagraph.kermeta.runner.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

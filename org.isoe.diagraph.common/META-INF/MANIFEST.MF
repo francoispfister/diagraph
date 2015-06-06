@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: org.isoe.diagraph.common
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.eclipse.emf.codegen.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4"
+Bundle-Vendor: LGi2P Isoe
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Name: Diagraph Common
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.isoe.diagraph.common
+

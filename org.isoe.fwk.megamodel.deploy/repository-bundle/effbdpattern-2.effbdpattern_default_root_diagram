@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_effbdpattern="http://effbdpattern" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_CfexATpMEeO8WrXZEDUo9w" type="Effbdpattern_default_root" name="effbdpattern-2.effbdpattern_default_root_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_FJF3kDpMEeO8WrXZEDUo9w" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FJPokDpMEeO8WrXZEDUo9w" type="4002"/>
+      <children xmi:type="notation:Node" xmi:id="_Hhi8sDpMEeO8WrXZEDUo9w" type="2001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Hhi8tTpMEeO8WrXZEDUo9w" type="4001"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_Hhi8sTpMEeO8WrXZEDUo9w"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_Hhi8sjpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Hhi8szpMEeO8WrXZEDUo9w" diagramLink="_SDBh8TpNEeO479mItO1CfQ" hint="Effbdpattern_functionArchitecture_root"/>
+        <element xmi:type="_effbdpattern:Function" href="effbdpattern-2.effbdpattern#//@workingModels.0/@functionalArchitecture"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hhi8tDpMEeO8WrXZEDUo9w"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_FJF3kTpMEeO8WrXZEDUo9w"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_FJF3kjpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+      <element xmi:type="_effbdpattern:Model" href="effbdpattern-2.effbdpattern#//@workingModels.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FJF3kzpMEeO8WrXZEDUo9w" x="25" y="85" width="126" height="86"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ImH_IDpMEeO8WrXZEDUo9w" type="1006">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ImH_JTpMEeO8WrXZEDUo9w" type="4008"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ImH_JjpMEeO8WrXZEDUo9w" type="5001">
+        <children xmi:type="notation:Node" xmi:id="_KUN4oDpMEeO8WrXZEDUo9w" type="2002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_KUN4pDpMEeO8WrXZEDUo9w" type="4007"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_KUN4oTpMEeO8WrXZEDUo9w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_KUN4ojpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+          <element xmi:type="_effbdpattern:SystemPattern" href="effbdpattern-2.effbdpattern#//@patternCatalog/@systemPatterns.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KUN4ozpMEeO8WrXZEDUo9w" x="9" y="6"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Lv3XQDpMEeO8WrXZEDUo9w" type="2002">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Lv3XRDpMEeO8WrXZEDUo9w" type="4007"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_Lv3XQTpMEeO8WrXZEDUo9w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Lv3XQjpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+          <element xmi:type="_effbdpattern:SystemPattern" href="effbdpattern-2.effbdpattern#//@patternCatalog/@systemPatterns.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lv3XQzpMEeO8WrXZEDUo9w" x="76" y="12"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_ImH_ITpMEeO8WrXZEDUo9w"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ImH_IjpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_ImH_IzpMEeO8WrXZEDUo9w" diagramLink="_R4VKUDpMEeO8WrXZEDUo9w" hint="Effbdpattern_catalog_root"/>
+      <element xmi:type="_effbdpattern:PatternCatalog" href="effbdpattern-2.effbdpattern#//@patternCatalog"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ImH_JDpMEeO8WrXZEDUo9w" x="45" y="255" width="186" height="186"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_CfexAjpMEeO8WrXZEDUo9w"/>
+    <element xmi:type="_effbdpattern:Workbench" href="effbdpattern-2.effbdpattern#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_R4VKUDpMEeO8WrXZEDUo9w" type="Effbdpattern_catalog_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_STHo4DpMEeO8WrXZEDUo9w" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_STHo5TpMEeO8WrXZEDUo9w" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_STHo4TpMEeO8WrXZEDUo9w"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_STHo4jpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_STHo4zpMEeO8WrXZEDUo9w" hint="Effbdpattern_functionPattern_root"/>
+      <element xmi:type="_effbdpattern:Function" href="effbdpattern-2.effbdpattern#//@patternCatalog/@patterns.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_STHo5DpMEeO8WrXZEDUo9w" x="60" y="70" width="96" height="46"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_TKA0oDpMEeO8WrXZEDUo9w" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TKA0pTpMEeO8WrXZEDUo9w" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_TKA0oTpMEeO8WrXZEDUo9w"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_TKA0ojpMEeO8WrXZEDUo9w" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_TKA0ozpMEeO8WrXZEDUo9w" hint="Effbdpattern_functionPattern_root"/>
+      <element xmi:type="_effbdpattern:Function" href="effbdpattern-2.effbdpattern#//@patternCatalog/@patterns.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TKA0pDpMEeO8WrXZEDUo9w" x="116" y="175"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_R4VKUTpMEeO8WrXZEDUo9w"/>
+    <element xmi:type="_effbdpattern:PatternCatalog" href="effbdpattern-2.effbdpattern#//@patternCatalog"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_SDBh8TpNEeO479mItO1CfQ" type="Effbdpattern_functionArchitecture_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_SlQFQDpNEeO479mItO1CfQ" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SlQFRTpNEeO479mItO1CfQ" type="4004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_SlQFQTpNEeO479mItO1CfQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_SlQFQjpNEeO479mItO1CfQ" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_SlQFQzpNEeO479mItO1CfQ"/>
+      <element xmi:type="_effbdpattern:Function" href="effbdpattern-2.effbdpattern#//@workingModels.0/@functionalArchitecture/@decompositions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SlQFRDpNEeO479mItO1CfQ" x="111" y="124"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_SDBh8jpNEeO479mItO1CfQ"/>
+    <element xmi:type="_effbdpattern:Function" href="effbdpattern-2.effbdpattern#//@workingModels.0/@functionalArchitecture"/>
+  </notation:Diagram>
+</xmi:XMI>

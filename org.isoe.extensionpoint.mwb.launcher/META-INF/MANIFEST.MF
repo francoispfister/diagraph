@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Model WB Launcher
+Bundle-SymbolicName: org.isoe.extensionpoint.mwb.launcher;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.extensionpoint.mwb.launcher
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"

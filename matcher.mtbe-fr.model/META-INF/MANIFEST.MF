@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph matcher.mtbe-fr.model
+Bundle-SymbolicName: matcher.mtbe-fr.model;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: mtbe.fr.trace;bundle-version="1.0.4",
+ org.isoe.extensionpoint.similarity;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.fwk.platform.resolver;bundle-version="1.0.4",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.7.0"
+Bundle-ClassPath: lib/simmetrics_jar_v1_6_2_d07_02_07.jar,
+ .
+Export-Package: mtbe.model.matcher.helpers

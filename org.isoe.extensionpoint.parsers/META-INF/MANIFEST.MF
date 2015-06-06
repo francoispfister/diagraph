@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Diagraph Annotation Parsers
+Bundle-SymbolicName: org.isoe.extensionpoint.parsers;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.isoe.diagraph.common;bundle-version="1.0.4",
+ org.eclipse.gmf.runtime.notation;bundle-version="1.5.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4"
+Export-Package: org.isoe.extensionpoint.parsers

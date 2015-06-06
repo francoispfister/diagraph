@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_publication103:PublicationStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_publication103="http://publication103">
+  <researchers name="Jim" res_position="//@positions.3">
+    <skills description="rca"/>
+    <skills description="refactoring"/>
+    <skills description="coevolution"/>
+    <collaborations ratio="80" col_paper="//@papers.0"/>
+  </researchers>
+  <researchers name="Jo" res_position="//@positions.1">
+    <skills description="notation"/>
+    <skills description="fol"/>
+    <collaborations ratio="20" col_paper="//@papers.0"/>
+  </researchers>
+  <researchers name="Pamela">
+    <reviews reviewNote="//@papers.0/@paragraphs.0/@reviews.1" date="2013-06-10T12:15:00.000+0200"/>
+    <reviews lname="" reviewNote="//@papers.0/@paragraphs.2/@reviews.0" date="2013-06-04T12:15:00.000+0200"/>
+    <skills description="metamodeling"/>
+    <skills description="requirements"/>
+  </researchers>
+  <papers name="Managing metamodel coevolution">
+    <paragraphs name="Intro" content="This paper discusses the problem of co-adapting models, transformations, and tools. Different aspects are taken into account and a prospective and unifying characterization is given with the intent of clarifying the main difficulties and outline the basic requirements for possible solutions.">
+      <reviews name="note 1" content="This paper discusses"/>
+      <reviews name="note 2"/>
+    </paragraphs>
+    <paragraphs name="Related Work"/>
+    <paragraphs name="Contribution">
+      <reviews name="note 1"/>
+    </paragraphs>
+  </papers>
+  <positions description="Assistant professor"/>
+  <positions description="PHD Student"/>
+  <positions description="Research Engineer"/>
+  <positions description="Professor"/>
+</_publication103:PublicationStructure>

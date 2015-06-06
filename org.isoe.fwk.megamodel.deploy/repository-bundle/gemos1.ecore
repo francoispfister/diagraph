@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gemos1"
+    nsURI="http://isoe.gemos1" nsPrefix="gemos1">
+  <eClassifiers xsi:type="ecore:EClass" name="Component">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phases" upperBound="-1"
+        eType="#//Phase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Phase" eSuperTypes="#//Etat">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=sousPhases"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sousPhases" upperBound="-1"
+        eType="#//SousPhase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ElementNomme" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SousPhase" eSuperTypes="#//Etat">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=modes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modes" upperBound="-1"
+        eType="#//Mode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vmodes" upperBound="-1"
+        eType="#//VersMode" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mode" eSuperTypes="#//Etat">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Etat" abstract="true" eSuperTypes="#//ElementNomme">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VersMode" eSuperTypes="#//Transition">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="cont=SousPhase.vmodes"/>
+      <details key="lsrc=srcSousPhase"/>
+      <details key="ltrg=trgSousPhase"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="srcSousPhase" eType="#//SousPhase"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trgSousPhase" eType="#//SousPhase"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition" abstract="true" eSuperTypes="#//ElementNomme">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+</ecore:EPackage>

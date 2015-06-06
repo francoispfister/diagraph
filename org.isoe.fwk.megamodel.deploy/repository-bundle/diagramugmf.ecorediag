@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1001">
+    <children type="4001"/>
+    <children visible="false" type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children visible="false" type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//Diagram"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="380" y="305" height="48"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children visible="false" type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children visible="false" type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//View"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="225" y="75" width="453" height="78"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children visible="false" type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children visible="false" type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//Edge"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="500" y="305" width="178" height="48"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children visible="false" type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children visible="false" type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//Node"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="225" y="305" width="121" height="48"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="diagramugmf.ecore#//Location/x"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="diagramugmf.ecore#//Location/y"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//Location"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="215" y="390"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="diagramugmf.ecore#//Size/width"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="diagramugmf.ecore#//Size/height"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//Size"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="380" y="375"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children visible="false" type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children visible="false" type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontName="Segoe UI" fontHeight="10" lineColor="0"/>
+    <element href="diagramugmf.ecore#//EObject"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="690" y="245"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="diagramugmf.ecore#/"/>
+  <edges type="3002" source="//@children.1" target="//@children.2">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-14" y="38"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="6" y="26"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//View/sourceEdges"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[188, 13, 11, -172]$[188, 167, 11, -18]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.28343949044585987,0.8333333333333334)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.16853932584269662,0.41025641025641024)"/>
+  </edges>
+  <edges type="3002" source="//@children.2" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-9" y="-31"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="11" y="-35"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//Edge/source"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[11, -18, 188, 167]$[11, -172, 188, 13]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.16853932584269662,0.41025641025641024)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.28343949044585987,0.8333333333333334)"/>
+  </edges>
+  <edges type="3002" source="//@children.2" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-9" y="-12"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="11" y="-20"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//Edge/target"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[67, -16, 21, 180]$[67, -170, 21, 26]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.16379310344827586,0.36065573770491804)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7753623188405797,0.6666666666666666)"/>
+  </edges>
+  <edges type="3002" source="//@children.3" target="//@children.1">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="6" y="-31"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-14" y="-15"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//Node/parent"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[14, -3, 36, 173]$[14, -157, 36, 19]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.2647058823529412,0.07547169811320754)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.021442495126705652,0.7564102564102564)"/>
+  </edges>
+  <edges type="3003" source="//@children.0" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-5, -23, -25, 192]$[-5, -177, -25, 38]"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.2">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-14" y="5"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//View/targetEdges"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[21, 26, 67, -170]$[21, 180, 67, -16]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7753623188405797,0.6666666666666666)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.16379310344827586,0.36065573770491804)"/>
+  </edges>
+  <edges type="3003" source="//@children.3" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-16, -28, -57, 170]$[-16, -182, -57, 16]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7720588235294118,0.6116504854368932)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.2937062937062937,0.7948717948717948)"/>
+  </edges>
+  <edges type="3003" source="//@children.2" target="//@children.1">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[47, -23, 64, 192]$[47, -177, 64, 38]"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7692307692307693,0.5)"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.3">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-14" y="37"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="11" y="18"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//View/children"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[36, 19, 14, -157]$[36, 173, 14, -3]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.021442495126705652,0.7564102564102564)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.2647058823529412,0.07547169811320754)"/>
+  </edges>
+  <edges type="3002" source="//@children.3" target="//@children.4">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-6" y="37"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-6" y="-20"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//Node/location"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-9, 23, 22, -80]$[-9, 102, 22, -1]"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.38235294117647056,0.02564102564102564)"/>
+  </edges>
+  <edges type="3002" source="//@children.3" target="//@children.5">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-15" y="8"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-8" y="-17"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//Node/size"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[46, 23, -100, -57]$[46, 97, -100, 17]$[96, 97, -50, 17]"/>
+  </edges>
+  <edges type="3002" source="//@children.1" target="//@children.6">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-12" y="-33"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-17" y="35"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="0"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI" fontHeight="10"/>
+    <element href="diagramugmf.ecore#//View/element"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[95, 44, -37, -133]$[139, 44, 7, -133]$[139, 165, 7, -12]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8264331210191083,0.07692307692307693)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.23529411764705882,0.31868131868131866)"/>
+  </edges>
+</notation:Diagram>

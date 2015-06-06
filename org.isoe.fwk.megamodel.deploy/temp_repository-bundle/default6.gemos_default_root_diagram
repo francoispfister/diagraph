@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gemos="http:////gemos-package-en-minuscule-svp" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_A2S3MTJUEeKWbecFiBGcNA" type="Gemos_default_root" name="default6.gemos_default_root_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_BQBl0DJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BQBl1TJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_BQBl0TJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BQBl0jJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_BQBl0zJUEeKWbecFiBGcNA" diagramLink="_CBbNkDJUEeKWbecFiBGcNA" hint="Gemos_second_root"/>
+      <element xmi:type="gemos:Operational" href="default6.gemos#//@containsGemosObjects.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BQBl1DJUEeKWbecFiBGcNA" x="355" y="185" width="116" height="36"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_A2S3MjJUEeKWbecFiBGcNA"/>
+    <element xmi:type="gemos:GemosDiagram" href="default6.gemos#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_CBbNkDJUEeKWbecFiBGcNA" type="Gemos_second_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_Cb6xMDJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Cb7_UDJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Cb6xMTJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Cb6xMjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Cb6xMzJUEeKWbecFiBGcNA" diagramLink="_FyPMwDJUEeKWbecFiBGcNA" hint="Gemos_third_root"/>
+      <element xmi:type="gemos:Mode" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cb6xNDJUEeKWbecFiBGcNA" x="323" y="116"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_DCBu8DJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DCBu9TJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_DCBu8TJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DCBu8jJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_DCBu8zJUEeKWbecFiBGcNA" hint="Gemos_third_root"/>
+      <element xmi:type="gemos:Mode" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DCBu9DJUEeKWbecFiBGcNA" x="477" y="287"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_CBbNkTJUEeKWbecFiBGcNA"/>
+    <element xmi:type="gemos:Operational" href="default6.gemos#//@containsGemosObjects.0"/>
+    <edges xmi:type="notation:Edge" xmi:id="_EKADoDJUEeKWbecFiBGcNA" type="3001" source="_Cb6xMDJUEeKWbecFiBGcNA" target="_DCBu8DJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_EKAqsDJUEeKWbecFiBGcNA" type="4002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_EKAqsTJUEeKWbecFiBGcNA" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_EKADoTJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_EKADojJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Mode2Mode" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@linksMode.0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EKADozJUEeKWbecFiBGcNA" points="[8, 10, -134, -164]$[131, 176, -11, 2]"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EKFjMDJUEeKWbecFiBGcNA" id="(0.23404255319148937,0.65)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_FyPMwDJUEeKWbecFiBGcNA" type="Gemos_third_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_GIGvEDJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_GIH9MDJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_GIGvETJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_GIGvEjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_GIGvEzJUEeKWbecFiBGcNA" diagramLink="_Ien6gDJUEeKWbecFiBGcNA" hint="Gemos_fourth_root"/>
+      <element xmi:type="gemos:Scenario" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GIGvFDJUEeKWbecFiBGcNA" x="330" y="125" width="126" height="46"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_GwlEUDJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_GwlrYDJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_GwlEUTJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_GwlEUjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_GwlEUzJUEeKWbecFiBGcNA" hint="Gemos_fourth_root"/>
+      <element xmi:type="gemos:Scenario" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GwlEVDJUEeKWbecFiBGcNA" x="400" y="245" width="141" height="71"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_FyPMwTJUEeKWbecFiBGcNA"/>
+    <element xmi:type="gemos:Mode" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0"/>
+    <edges xmi:type="notation:Edge" xmi:id="_HbjT8DJUEeKWbecFiBGcNA" type="3001" source="_GIGvEDJUEeKWbecFiBGcNA" target="_GwlEUDJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Hbj7ADJUEeKWbecFiBGcNA" type="4002">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Hbj7ATJUEeKWbecFiBGcNA" x="-20" y="44"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_HbjT8TJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_HbjT8jJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Scenario2scenario" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@linksScenario.0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HbjT8zJUEeKWbecFiBGcNA" points="[10, 23, -67, -109]$[7, 129, -70, -3]"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_Ien6gDJUEeKWbecFiBGcNA" type="Gemos_fourth_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_I8Y0kDJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_I8Y0lDJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_I8Y0kTJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_I8Y0kjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Function" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I8Y0kzJUEeKWbecFiBGcNA" x="150" y="40" width="96" height="36"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_JjXVADJUEeKWbecFiBGcNA" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JjXVBDJUEeKWbecFiBGcNA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_JjXVATJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_JjXVAjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Function" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JjXVAzJUEeKWbecFiBGcNA" x="175" y="235" width="71" height="31"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Ien6gTJUEeKWbecFiBGcNA"/>
+    <element xmi:type="gemos:Scenario" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0"/>
+    <edges xmi:type="notation:Edge" xmi:id="_KmGkYDJUEeKWbecFiBGcNA" type="3001" source="_I8Y0kDJUEeKWbecFiBGcNA" target="_JjXVADJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KmHLcDJUEeKWbecFiBGcNA" type="4004">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KmHygDJUEeKWbecFiBGcNA" x="-26" y="-13"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_KmGkYTJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KmGkYjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Branch" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0/@linksEFFBDObject.0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KmGkYzJUEeKWbecFiBGcNA" points="[-9, 18, -51, -169]$[-48, 102, -90, -85]$[26, 172, -16, -15]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_bYZc4DJUEeKWbecFiBGcNA" type="3001" source="_I8Y0kDJUEeKWbecFiBGcNA" target="_JjXVADJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bYZc5DJUEeKWbecFiBGcNA" type="4004">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bYZc5TJUEeKWbecFiBGcNA" x="7" y="-6"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_bYZc4TJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bYZc4jJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Branch" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0/@linksEFFBDObject.1"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bYZc4zJUEeKWbecFiBGcNA" points="[3, 18, -34, -157]$[36, 172, -1, -3]"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bYZc5jJUEeKWbecFiBGcNA" id="(0.4225352112676056,0.0967741935483871)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_cnnCADJUEeKWbecFiBGcNA" type="3001" source="_I8Y0kDJUEeKWbecFiBGcNA" target="_JjXVADJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cnnpEDJUEeKWbecFiBGcNA" type="4004">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_cnnpETJUEeKWbecFiBGcNA" x="-21" y="29"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_cnnCATJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_cnnCAjJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Branch" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.0/@linksEFFBDObject.2"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cnnCAzJUEeKWbecFiBGcNA" points="[21, 18, 6, -173]$[85, 76, 70, -115]$[24, 176, 9, -15]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_cnqFUDJUEeKWbecFiBGcNA" id="(0.78125,0.3888888888888889)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_mK2S0DJUEeKWbecFiBGcNA" type="3001" source="_JjXVADJUEeKWbecFiBGcNA" target="_I8Y0kDJUEeKWbecFiBGcNA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mK254DJUEeKWbecFiBGcNA" type="4004">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mK254TJUEeKWbecFiBGcNA" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_mK2S0TJUEeKWbecFiBGcNA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_mK2S0jJUEeKWbecFiBGcNA" fontName="Segoe UI"/>
+      <element xmi:type="gemos:Branch" href="default6.gemos#//@containsGemosObjects.0/@operationalModes.0/@ModeContainsScenarioObjects.0/@containsEFFBDObjects.1/@linksEFFBDObject.0"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mK2S0zJUEeKWbecFiBGcNA" points="[-9, -5, 52, 190]$[-179, -87, -118, 108]$[-64, -193, -3, 2]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mK4vEDJUEeKWbecFiBGcNA" id="(0.1267605633802817,0.5483870967741935)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mK4vETJUEeKWbecFiBGcNA" id="(0.03125,0.3333333333333333)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

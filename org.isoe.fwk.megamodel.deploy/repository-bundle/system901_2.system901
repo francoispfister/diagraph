@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_system901:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_system901="http://system901">
+  <systemView name="s">
+    <functionalArchitecture id="f1"/>
+    <functionalArchitecture id="j2">
+      <decompositions xsi:type="_system901:Function" name="f100"/>
+      <decompositions xsi:type="_system901:Function" name="f200">
+        <decompositions xsi:type="_system901:Function" name="f2000"/>
+      </decompositions>
+    </functionalArchitecture>
+  </systemView>
+  <kinds name="a"/>
+  <kinds name="b"/>
+</_system901:Workbench>

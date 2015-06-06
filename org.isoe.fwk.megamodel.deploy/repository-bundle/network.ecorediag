@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_MtrfMATqEeOvprIWARszTg" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_Mt3scATqEeOvprIWARszTg" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_Mt4TgATqEeOvprIWARszTg" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_Mt4TgQTqEeOvprIWARszTg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_Mt4TiQTqEeOvprIWARszTg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="network.ecore#//SocialNetwork/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt4TigTqEeOvprIWARszTg"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Mt4TggTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Mt4TgwTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Mt4ThATqEeOvprIWARszTg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Mt4ThQTqEeOvprIWARszTg" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Mt4ThgTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Mt4ThwTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Mt4TiATqEeOvprIWARszTg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Mt3scQTqEeOvprIWARszTg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="network.ecore#//SocialNetwork"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mt3scgTqEeOvprIWARszTg" x="13" y="145"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Mt4TiwTqEeOvprIWARszTg" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_Mt46kATqEeOvprIWARszTg" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_Mt46kQTqEeOvprIWARszTg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_Mt46mQTqEeOvprIWARszTg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="network.ecore#//Person/id"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt46mgTqEeOvprIWARszTg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Mt46mwTqEeOvprIWARszTg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="network.ecore#//Person/firstName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt46nATqEeOvprIWARszTg"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Mt46nQTqEeOvprIWARszTg" type="2001">
+        <element xmi:type="ecore:EAttribute" href="network.ecore#//Person/lastName"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt46ngTqEeOvprIWARszTg"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Mt46kgTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Mt46kwTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Mt46lATqEeOvprIWARszTg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Mt46lQTqEeOvprIWARszTg" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Mt46lgTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Mt46lwTqEeOvprIWARszTg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Mt46mATqEeOvprIWARszTg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Mt4TjATqEeOvprIWARszTg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="network.ecore#//Person"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mt4TjQTqEeOvprIWARszTg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_MtrfMQTqEeOvprIWARszTg"/>
+  <element xmi:type="ecore:EPackage" href="network.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_Mt46nwTqEeOvprIWARszTg" type="3002" source="_Mt3scATqEeOvprIWARszTg" target="_Mt4TiwTqEeOvprIWARszTg">
+    <children xmi:type="notation:Node" xmi:id="_Mt5hoATqEeOvprIWARszTg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt5hoQTqEeOvprIWARszTg" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Mt5hogTqEeOvprIWARszTg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt5howTqEeOvprIWARszTg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mt46oATqEeOvprIWARszTg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Mt46oQTqEeOvprIWARszTg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="network.ecore#//SocialNetwork/members"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mt46ogTqEeOvprIWARszTg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Muc7QATqEeOvprIWARszTg" id="(0.4956521739130435,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Muc7QQTqEeOvprIWARszTg" id="(0.5,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Mt5hpATqEeOvprIWARszTg" type="3002" source="_Mt4TiwTqEeOvprIWARszTg" target="_Mt4TiwTqEeOvprIWARszTg">
+    <children xmi:type="notation:Node" xmi:id="_Mt5hqATqEeOvprIWARszTg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt5hqQTqEeOvprIWARszTg" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Mt5hqgTqEeOvprIWARszTg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Mt5hqwTqEeOvprIWARszTg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_Mt5hpQTqEeOvprIWARszTg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Mt5hpgTqEeOvprIWARszTg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="network.ecore#//Person/knows"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mt5hpwTqEeOvprIWARszTg" points="[69, 10, 69, 10]$[131, 20, 131, 20]$[161, 89, 161, 89]$[66, 89, 66, 89]$[30, 42, 30, 42]"/>
+  </edges>
+</notation:Diagram>

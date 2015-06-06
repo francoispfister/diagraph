@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="inher3"
+    nsURI="http:///inher3.v0" nsPrefix="inher3">
+  <eClassifiers xsi:type="ecore:EClass" name="Concept" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doc" eType="#//Document"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foos" upperBound="-1" eType="#//Foo"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bazez" upperBound="-1"
+        eType="#//Baz" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documents" upperBound="-1"
+        eType="#//Document" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="blings" upperBound="-1"
+        eType="#//Bling" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gelaties" upperBound="-1"
+        eType="#//Gelati" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infoz" upperBound="-1"
+        eType="#//Info" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Foo" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="barbaz" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concerns" upperBound="-1"
+        eType="#//Concern" containment="true" eOpposite="#//Concern/foo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Document">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=tex" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tex" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Baz" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Concern">
+    <eAnnotations source="diagraph">
+      <details key="link=concerns" value=""/>
+      <details key="label=cost" value=""/>
+      <details key="label=delay" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foo" eType="#//Foo" eOpposite="#//Foo/concerns"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="baz" eType="#//Baz"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="delay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tutti" eSuperTypes="#//Foo">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=bozo" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bills" upperBound="-1"
+        eType="#//Bill" containment="true" eOpposite="#//Bill/tutti"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bozo" eType="#//Bling"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infosss" upperBound="-1"
+        eType="#//Infoss" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Frutti" eSuperTypes="#//Foo">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=bling55" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bling55" eType="#//Bling"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bling">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bill">
+    <eAnnotations source="diagraph">
+      <details key="link=bills" value=""/>
+      <details key="label=gates" value=""/>
+      <details key="lsrc=tutti" value=""/>
+      <details key="ltrg=bling" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bling" eType="#//Bling"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gates" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tutti" eType="#//Tutti"
+        eOpposite="#//Tutti/bills"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gelati" eSuperTypes="#//Tutti">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cont=System.gelaties" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="designation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Info">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=tek" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Infoss">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="label=descr" value=""/>
+      <details key="lsrc=tutti" value=""/>
+      <details key="ltrg=info" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="info" eType="#//Info"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tutti" eType="#//Tutti"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.fwk.megamodel/src"
+    modelPluginID="org.isoe.fwk.megamodel" modelName="Megamodel" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>megamodel.ecore</foreignModel>
+  <genPackages prefix="Megamodel" basePackage="org.isoe.fwk" disposableProviderFactory="true"
+      ecorePackage="megamodel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="megamodel.ecore#//RefactoringType">
+      <genEnumLiterals ecoreEnumLiteral="megamodel.ecore#//RefactoringType/patternBased"/>
+      <genEnumLiterals ecoreEnumLiteral="megamodel.ecore#//RefactoringType/duplicateReferences"/>
+      <genEnumLiterals ecoreEnumLiteral="megamodel.ecore#//RefactoringType/poorReferences"/>
+      <genEnumLiterals ecoreEnumLiteral="megamodel.ecore#//RefactoringType/missingAnnotations"/>
+      <genEnumLiterals ecoreEnumLiteral="megamodel.ecore#//RefactoringType/inferNames"/>
+    </genEnums>
+    <genClasses ecoreClass="megamodel.ecore#//Megamodel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Megamodel/modelingLanguages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Megamodel/notationPatterns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Megamodel/buildIn"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Dsml">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/models"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/notations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/rootNotation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/leftParent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/requires"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/knownAs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/rightParent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/relations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/semanticBridge"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/relateds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/problem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/context"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/keywords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Dsml/details"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Dsml/variantOf"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Model">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference megamodel.ecore#//Model/instanceOf"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//ModelingUniverse">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//ModelingUniverse/megamodels"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//ModelingUniverse/languageWorkbench"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//ModelingUniverse/modelWorkbench"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//ModelingUniverse/diagramRuntimes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//ModelingObject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//ModelingObject/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//ModelingObject/URI"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/universeLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/megamodelLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/instanceLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/coreMegamodel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Location/absoluteLocation"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Refactoring">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Refactoring/versionedLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Refactoring/targetLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Refactoring/type"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Generation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Generation/concreteSyntax"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Generation/diagram"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Platform">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Platform/buildInRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Platform/matchingEngines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Platform/notationGenerators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Platform/notationsTransformations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Platform/platformURI"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Notation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Notation/navigations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Notation/workBench"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Notation/notationBridge"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//Diagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagram/canvas"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagram/generatedBy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagram/navigations"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//MultiViewNavigation">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference megamodel.ecore#//MultiViewNavigation/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//MultiViewNavigation/target"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//DotDiagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//DotDiagram/runtime"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//GmfDiagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//GmfDiagram/runtime"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//ObeoDiagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//ObeoDiagram/runtime"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//GraphitiDiagram">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//GraphitiDiagram/runtime"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//Matcher">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Matcher/left"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Matcher/right"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Matcher/pattern"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Matcher/source"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//SimilarityFloodingMatcher"/>
+    <genClasses ecoreClass="megamodel.ecore#//StructuralMatcher"/>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//NotationWorkbench"/>
+    <genClasses ecoreClass="megamodel.ecore#//GmfTools">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//GmfTools/gmfGraphURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//GmfTools/gmfToolsURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//GmfTools/gmfMapURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//GmfTools/gmfGenURI"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Diagraph">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagraph/generationParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagraph/refactoringParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagraph/locationParameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Diagraph/diagraphURI"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagraph/matchers"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//NotationTransformation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//NotationTransformation/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//NotationTransformation/target"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//DiagramRuntime"/>
+    <genClasses ecoreClass="megamodel.ecore#//GmfRuntime"/>
+    <genClasses ecoreClass="megamodel.ecore#//GraphViz"/>
+    <genClasses ecoreClass="megamodel.ecore#//NotationPattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//NotationPattern/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//NotationGenerator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//NotationGenerator/matcher"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//NotationGenerator/target"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses ecoreClass="megamodel.ecore#//ReteMatcher"/>
+    <genClasses ecoreClass="megamodel.ecore#//CustomMatcher"/>
+    <genClasses ecoreClass="megamodel.ecore#//EcoreToolsDiagram"/>
+    <genClasses ecoreClass="megamodel.ecore#//DsmlRelation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//DsmlRelation/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//DsmlRelation/mandatory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//DsmlRelation/details"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//DsmlRelation/fromDsml"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference megamodel.ecore#//DsmlRelation/toDsml"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="megamodel.ecore#//Diagrammable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Diagrammable/diagramPictureURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Diagrammable/metaModelURI"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference megamodel.ecore#//Diagrammable/diagrams"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute megamodel.ecore#//Diagrammable/notationURI"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

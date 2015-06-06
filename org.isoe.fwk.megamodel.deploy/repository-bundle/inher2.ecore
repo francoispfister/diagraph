@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="inher2"
+    nsURI="http://inher2.v0" nsPrefix="inher2">
+  <eClassifiers xsi:type="ecore:EClass" name="Konzept" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bazbar" eSuperTypes="#//Konzept">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=doc" value=""/>
+      <details key="cont=Kontainr.bazbares" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doc" eType="#//Dok"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Trubaz" eSuperTypes="#//Bazbar">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cont=Kontainr.trubazes" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kontainr">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trubazes" upperBound="-1"
+        eType="#//Trubaz" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doks" upperBound="-1" eType="#//Dok"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bazbares" upperBound="-1"
+        eType="#//Bazbar" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dok">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=tek" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tek" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

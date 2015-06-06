@@ -1,0 +1,228 @@
+<!-- $Id: pom.xml 14801 2011-04-06 13:27:44Z bouhours $ -->
+<!-- License    : EPL                                    -->
+<!-- Project    : org.kermeta.kp.launcher.eclipse        -->
+<!-- Copyright  : IRISA / INRIA / Universite de Rennes 1 --> 
+<!-- Authors : Cédric Bouhours <cedric.bouhours@inria.fr> --> 
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.kermeta.kp</groupId>
+	<artifactId>org.kermeta.kp.launcher.eclipse</artifactId>
+	<packaging>bundle</packaging>
+	<name>kp.launcher.eclipse :: launcher for km2</name>
+
+    <parent>
+		<groupId>org.kermeta.language</groupId>
+		<artifactId>org.kermeta.language.root</artifactId>
+		<version>2.1.1-SNAPSHOT</version>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.core.commands</artifactId>
+			<version>[3.5.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.core.jobs</artifactId>
+			<version>[3.4.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.core.runtime</artifactId>
+			<version>[3.5.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.core.resources</artifactId>
+			<version>[3.5.2.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.debug.core</artifactId>
+			<version>[3.5.2.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.debug.ui</artifactId>
+			<version>[3.5.2.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.equinox.common</artifactId>
+			<version>[3.5.1.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.equinox.registry</artifactId>
+			<version>[3.4.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.swt</artifactId>
+			<version>[3.5.2.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+			<version>[3.5.2.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.eclipse</groupId>
+			<artifactId>org.eclipse.jdt.ui</artifactId>
+			<version>[3.5.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.kp</groupId>
+			<artifactId>org.kermeta.kp.builder.eclipse</artifactId>
+			<version>${kermeta.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.kp</groupId>
+			<artifactId>org.kermeta.kp.builder.api</artifactId>
+			<version>${kermeta.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>${osgi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kermeta.language</groupId>
+			<artifactId>org.kermeta.language.texteditor.eclipse.nature</artifactId>
+			<version>${kermeta.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+    		<resource>
+				<directory>.</directory>
+				<includes>
+					<include>plugin.xml</include>
+					<include>plugin.properties</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>icons</directory>
+				<targetPath>icons</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+			<!-- Creation of the bundle jar and its manifest -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId};singleton:=true</Bundle-SymbolicName>
+						<Bundle-Name>org.kermeta.${project.artifactId}</Bundle-Name>
+						<Bundle-Vendor>${bundle.vendor}</Bundle-Vendor>
+						<Bundle-Version>${bundle.version}</Bundle-Version>
+						<Manifest-Version>1.0</Manifest-Version>
+						<Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>
+						<Bundle-Localization>plugin</Bundle-Localization>
+						<Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+                        <Export-Package>
+                        </Export-Package>
+                        <Require-Bundle>
+							org.eclipse.core.runtime,
+							org.eclipse.core.resources,
+							org.eclipse.core.commands,
+							org.eclipse.equinox.registry,
+							org.eclipse.emf.ecore,
+							org.eclipse.emf.ecore.xmi,
+							org.eclipse.ui,
+							org.eclipse.ui.ide,
+							org.eclipse.ui.views,
+							org.eclipse.jface,
+							org.eclipse.debug.core,
+							org.eclipse.debug.ui,
+							org.kermeta.utils.helpers,
+							org.kermeta.utils.systemservices.api,
+							org.kermeta.utils.systemservices.eclipse,
+							org.kermeta.kp.builder.api,
+							org.kermeta.kp.builder.eclipse,
+							org.kermeta.language.km2bytecode,
+							org.kermeta.language.loader.kmt.scala,
+							org.kermeta.language.loader.kmt.scala.api,
+							org.eclipse.swt,
+							org.eclipse.jdt.ui,
+							org.kermeta.language.texteditor.eclipse.nature
+						</Require-Bundle>
+                        <Import-Package>
+                        	!*,
+                        	org.kermeta.language.structure,
+							org.kermeta.language.behavior
+                        </Import-Package>
+                        <Bundle-ClassPath>.</Bundle-ClassPath>
+                        <Bundle-RequiredExecutionEnvironment>JavaSE-1.6</Bundle-RequiredExecutionEnvironment>
+                    </instructions>
+                </configuration>
+            </plugin>
+			
+			<!-- correctly configure eclipse project accordingly to the pom -->
+            <plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-eclipse-plugin</artifactId>
+			    <version>2.9</version>
+			    <!-- see http://maven.apache.org/plugins/maven-eclipse-plugin/eclipse-mojo.html for more information -->
+			    <configuration>
+			      <downloadSources>true</downloadSources>
+			      <downloadJavadocs>true</downloadJavadocs>
+			      <projectnatures>
+			      	<!-- <projectnature>org.kermeta.language.texteditor.eclipse.nature.KermetaNatureID</projectnature> -->
+			        <!-- <projectnature>org.scala-ide.sdt.core.scalanature</projectnature> -->
+			        <projectnature>org.eclipse.jdt.core.javanature</projectnature>	
+			        <projectnature>org.eclipse.pde.PluginNature</projectnature>		        
+			      </projectnatures>
+			      <buildcommands>
+			        <!-- <buildcommand>org.scala-ide.sdt.core.scalabuilder</buildcommand>-->
+			        <buildcommand>org.eclipse.pde.ManifestBuilder</buildcommand>
+					<buildcommand>org.eclipse.pde.SchemaBuilder</buildcommand>
+			      </buildcommands>
+			      <classpathContainers>
+			        <!-- <classpathContainer>org.scala-ide.sdt.launching.SCALA_CONTAINER</classpathContainer>-->
+			        <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+			      </classpathContainers>
+			      <excludes> 
+			        <exclude>org.scala-lang:scala-library</exclude>
+			        <exclude>org.scala-lang:scala-compiler</exclude>
+			      </excludes>
+			      <sourceIncludes>
+			        <sourceInclude>**/*.scala</sourceInclude>
+			        <sourceInclude>**/*.java</sourceInclude>
+			      </sourceIncludes>
+			      <useProjectReferences>false</useProjectReferences>
+			    </configuration>
+			  </plugin>
+			  <!-- copy the generated manifest to a place where eclipse expects it so it doesn't raise error -->
+			  <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <id>copy-manifest-for-eclipse-ide</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>META-INF</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}/classes/META-INF</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+		</plugins>
+	</build>
+	
+</project>

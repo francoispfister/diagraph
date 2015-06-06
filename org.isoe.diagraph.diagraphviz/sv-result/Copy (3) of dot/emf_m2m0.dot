@@ -1,0 +1,168 @@
+digraph G { rankdir=BT  overlap = "scale" labelfloat = "true" node [fontname="Verdana", fontsize=10, shape=none] edge [fontname="Verdana", fontsize=10];
+subgraph cluster_1 /*start subgraph 3*/{ node [fontname="Verdana",fontsize=10, shape="box" ] label="M0";
+id27477316 [  label= "-:TheWorld" ]
+id1606812 [  label= "AA:Language" ]
+id27939361 [  label= "BB:Language" ]
+id16129904 [  label= "A:Researcher" ]
+id9051293 [  label= "sqdf:Hello" ]
+id22844942 [  label= "B:Researcher" ]
+id25135468 [  label= "sqdf:Authors" ]
+id1525385 [  label= "p2:Publication" ]
+id1573052 [  label= "sqdf:Authors" ]
+id30947254 [  label= "-:Publication" ]
+id3263019 [  label= "sqdf:Authors" ]
+id13627661 [  label= "p1:Publication" ]
+id31114577 [  label= "Intro:Section" ]
+id30430220 [  label= "zeare:Paragraph" ]
+id4065213 [  label= "sdfqdf:Paragraph" ]
+id7216623 [  label= "sqdf:Annotation" ]
+id24065569 [  label= "sqdf:Annotation" ]
+id4902921 [  label= "Conclusion:Section" ]
+id27273229 [  label= "Chapter 1:Section" ]
+id27631239 [  label= "bibliography:Bibliography" ]
+id4896522 [  label= "dsfsd:Entry" ]
+}/*end subgraph*/
+subgraph cluster_2 /*start subgraph 2*/{ label="ecore";
+}/*end subgraph*/
+subgraph cluster_14114126 /*start subgraph 1*/{ 
+label="helloworld";
+id13978943[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid13978943"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Language</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pLanguage_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id18091254[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid18091254"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Hello</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pHello_sentence" align="left">sentence: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id18294794[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid18294794"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Annotation</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pAnnotation_text" align="left">text: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id648928[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid648928"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Paragraph</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pParagraph_text" align="left">text: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id9073930[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid9073930"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Section</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pSection_header" align="left">header: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id6270370[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid6270370"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Entry</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pEntry_reference" align="left">reference: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id21342485[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid21342485"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Bibliography</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pBibliography_title" align="left">title: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id23001706[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid23001706"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Publication</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pPublication_title" align="left">title: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id1356681[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid1356681"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Authors</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pAuthors_submissionDate" align="left">submissionDate: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id29516678[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid29516678"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Researcher</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pResearcher_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id29923710[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid29923710"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>TheWorld</TD></TR>
+<TR><TD></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/
+/*ecoreEdges*/
+
+id29923710:pid29923710 -> id13978943:pid13978943 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="languages"];
+id18091254:pid18091254 -> id29516678:pid29516678 [color=red,arrowhead=vee,headlabel="0..1",label="toAnother"];
+id18091254:pid18091254 -> id29516678:pid29516678 [color=red,arrowhead=vee,headlabel="0..1",label="researcher"];
+id29516678:pid29516678 -> id18091254:pid18091254 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="saysHello"];
+id29516678:pid29516678 -> id13978943:pid13978943 [color=red,arrowhead=vee,headlabel="0..1",label="motherTongue"];
+id29516678:pid29516678 -> id13978943:pid13978943 [color=red,arrowhead=vee,headlabel="0..*",label="speaks"];
+id648928:pid648928 -> id18294794:pid18294794 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="annotations"];
+id9073930:pid9073930 -> id648928:pid648928 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="paragraphs"];
+id23001706:pid23001706 -> id9073930:pid9073930 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="sections"];
+id21342485:pid21342485 -> id6270370:pid6270370 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="entries"];
+id23001706:pid23001706 -> id21342485:pid21342485 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="bibliography"];
+id1356681:pid1356681 -> id23001706:pid23001706 [color=red,arrowhead=vee,headlabel="0..1",label="publication"];
+id1356681:pid1356681 -> id29516678:pid29516678 [color=red,arrowhead=vee,headlabel="0..1",label="researcher"];
+id29516678:pid29516678 -> id1356681:pid1356681 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="authors"];
+id29516678:pid29516678 -> id18294794:pid18294794 [color=red,arrowhead=vee,headlabel="0..*",label="annotates"];
+id29923710:pid29923710 -> id29516678:pid29516678 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="researchers"];
+id29923710:pid29923710 -> id23001706:pid23001706 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="publications"];
+/*m0edges*/
+
+id27477316 -> id1606812 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="languages"];
+id27477316 -> id27939361 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="languages"];
+id27477316 -> id16129904 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researchers"];
+id16129904 -> id9051293 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="saysHello"];
+id9051293 -> id22844942 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="toAnother"];
+id22844942 -> id27939361 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="motherTongue"];
+id22844942 -> id25135468 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="authors"];
+id25135468 -> id1525385 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publication"];
+id25135468 -> id22844942 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researcher"];
+id22844942 -> id1573052 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="authors"];
+id1573052 -> id30947254 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publication"];
+id1573052 -> id22844942 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researcher"];
+id9051293 -> id16129904 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researcher"];
+id16129904 -> id1606812 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="motherTongue"];
+id16129904 -> id3263019 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="authors"];
+id3263019 -> id13627661 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publication"];
+id13627661 -> id31114577 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="sections"];
+id31114577 -> id30430220 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="paragraphs"];
+id31114577 -> id4065213 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="paragraphs"];
+id4065213 -> id7216623 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="annotations"];
+id4065213 -> id24065569 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="annotations"];
+id13627661 -> id4902921 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="sections"];
+id13627661 -> id27273229 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="sections"];
+id13627661 -> id27631239 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="bibliography"];
+id27631239 -> id4896522 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="entries"];
+id3263019 -> id16129904 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researcher"];
+id27477316 -> id22844942 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="researchers"];
+id27477316 -> id13627661 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publications"];
+id27477316 -> id1525385 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publications"];
+id27477316 -> id30947254 [color=brown,arrowhead=dot,arrowsize=0.4 ,label="publications"];
+/*edges*/
+
+id27631239 -> id21342485:pid21342485  [color=gray,arrowhead=none ,label="instance of Bibliography   "];
+id27477316 -> id29923710  [color=gray,arrowhead=none ,label="instance of TheWorld   "];
+id4902921 -> id9073930:pid9073930  [color=gray,arrowhead=none ,label="instance of Section   "];
+id27939361 -> id13978943:pid13978943  [color=gray,arrowhead=none ,label="instance of Language   "];
+id22844942 -> id29516678:pid29516678  [color=gray,arrowhead=none ,label="instance of Researcher   "];
+id24065569 -> id18294794:pid18294794  [color=gray,arrowhead=none ,label="instance of Annotation   "];
+id1525385 -> id23001706:pid23001706  [color=gray,arrowhead=none ,label="instance of Publication   "];
+id1573052 -> id1356681:pid1356681  [color=gray,arrowhead=none ,label="instance of Authors   "];
+id7216623 -> id18294794:pid18294794  [color=gray,arrowhead=none ,label="instance of Annotation   "];
+id1606812 -> id13978943:pid13978943  [color=gray,arrowhead=none ,label="instance of Language   "];
+id27273229 -> id9073930:pid9073930  [color=gray,arrowhead=none ,label="instance of Section   "];
+id4065213 -> id648928:pid648928  [color=gray,arrowhead=none ,label="instance of Paragraph   "];
+id3263019 -> id1356681:pid1356681  [color=gray,arrowhead=none ,label="instance of Authors   "];
+id25135468 -> id1356681:pid1356681  [color=gray,arrowhead=none ,label="instance of Authors   "];
+id30430220 -> id648928:pid648928  [color=gray,arrowhead=none ,label="instance of Paragraph   "];
+id4896522 -> id6270370:pid6270370  [color=gray,arrowhead=none ,label="instance of Entry   "];
+id13627661 -> id23001706:pid23001706  [color=gray,arrowhead=none ,label="instance of Publication   "];
+id30947254 -> id23001706:pid23001706  [color=gray,arrowhead=none ,label="instance of Publication   "];
+id31114577 -> id9073930:pid9073930  [color=gray,arrowhead=none ,label="instance of Section   "];
+id16129904 -> id29516678:pid29516678  [color=gray,arrowhead=none ,label="instance of Researcher   "];
+id9051293 -> id18091254:pid18091254  [color=gray,arrowhead=none ,label="instance of Hello   "];
+}/*end graph*/

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_sterr100:Baz xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_sterr100="http://sterr100">
+  <bar name="bn">
+    <foos xsi:type="_sterr100:Bar" name="xcvb">
+      <foos xsi:type="_sterr100:Bar" name="cvb"/>
+    </foos>
+    <foos xsi:type="_sterr100:Bar" name="cv">
+      <foos xsi:type="_sterr100:Bar" name="cvbvb"/>
+      <foos xsi:type="_sterr100:Bar" name="cxvb"/>
+    </foos>
+  </bar>
+</_sterr100:Baz>

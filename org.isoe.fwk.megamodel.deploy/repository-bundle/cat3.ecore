@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cat3"
+    nsURI="http://cat3" nsPrefix="_cat3">
+  <eClassifiers xsi:type="ecore:EClass" name="ElementSet">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="compare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt">
+      <eParameters name="left" eType="#//Noeud"/>
+      <eParameters name="right" eType="#//Noeud"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="noeuds" upperBound="-1"
+        eType="#//Noeud" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Noeud" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="getOrder" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Affectation" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+    </eAnnotations>
+    <eOperations name="affectation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="libelle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Noeud"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cible" lowerBound="1" eType="#//Noeud"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Personne" eSuperTypes="#//NoeudCible">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="getOrder"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateNaiss" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role" eSuperTypes="#//NoeudSource">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="getOrder"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hierarchie" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AffectationRolePersonne" eSuperTypes="#//Affectation">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=fromElement"/>
+      <details key="ltrg=toElement"/>
+      <details key="cont=Element.relations"/>
+    </eAnnotations>
+    <eOperations name="affectation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cible" lowerBound="1" eType="#//NoeudCible"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//NoeudSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NoeudCible" eSuperTypes="#//Noeud">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="getOrder" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NoeudSource" eSuperTypes="#//Noeud">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eOperations name="getOrder" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Domaine">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="cref=elements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementSet" lowerBound="1"
+        eType="#//ElementSet" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relationSet" lowerBound="1"
+        eType="#//RelationSet" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationSet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relations" upperBound="-1"
+        eType="#//Affectation" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

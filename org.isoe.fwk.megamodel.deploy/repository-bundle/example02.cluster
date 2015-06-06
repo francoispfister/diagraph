@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isoe.example.cluster:Cluster xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:isoe.example.cluster="http:///isoe.example.cluster">
+  <levels name="level1">
+    <concerns name="concern1">
+      <leafs name="leaf1000" connections="//@levels.1/@concerns.0/@leafs.1"/>
+    </concerns>
+    <concerns name="concern2">
+      <leafs name="leaf20047" connections="//@levels.2/@concerns.2/@leafs.0"/>
+      <leafs name="leaf30084" connections="//@levels.2/@concerns.2/@leafs.1"/>
+    </concerns>
+    <concerns name="c3">
+      <leafs name="theleaf" connections="//@levels.1/@concerns.0/@leafs.1"/>
+    </concerns>
+  </levels>
+  <levels name="level2">
+    <concerns name="c10">
+      <leafs name="leaf_a"/>
+      <leafs name="leaf_b"/>
+    </concerns>
+    <concerns name="c20">
+      <leafs name="leaf123"/>
+      <leafs name="leaf456" connections="//@levels.1/@concerns.0/@leafs.1"/>
+      <leafs name="l104"/>
+    </concerns>
+  </levels>
+  <levels name="level0">
+    <concerns name="c100">
+      <leafs name="l99" connections="//@levels.1/@concerns.0/@leafs.0 //@levels.2/@concerns.1/@leafs.0"/>
+    </concerns>
+    <concerns name="c200">
+      <leafs name="l20" connections="//@levels.0/@concerns.1/@leafs.0"/>
+    </concerns>
+    <concerns name="c3000">
+      <leafs name="l10" connections="//@levels.0/@concerns.1/@leafs.1"/>
+      <leafs name="l30"/>
+    </concerns>
+  </levels>
+</isoe.example.cluster:Cluster>

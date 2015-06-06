@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraphviz
+Bundle-SymbolicName: org.isoe.diagraph.diagraphviz;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.diagraph.diagraphviz.Activator
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.ui;bundle-version="1.0.4",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.7.0",
+ fr.lirmm.dotutils;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.fwk.platform.resolver;bundle-version="1.0.4",
+ org.eclipse.emf.workspace;bundle-version="1.5.1",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraphviz.utils;bundle-version="1.0.4",
+ org.isoe.extensionpoint.graphviz;bundle-version="1.0.4",
+ org.isoe.extensionpoint.xmi;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.isoe.diagraph.diagraphviz,
+ org.isoe.diagraph.diagraphviz.dotifiers,
+ org.isoe.diagraph.diagraphviz.dotifiers.styles,
+ org.isoe.diagraph.diagraphviz.dotutils,
+ org.isoe.diagraph.diagraphviz.ecore.export

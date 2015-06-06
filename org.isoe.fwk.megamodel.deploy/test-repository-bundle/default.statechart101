@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart101:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart101="http://statechart101">
+  <substates name="start">
+    <transitions name="go" source="//@substates.0" target="//@substates.1"/>
+  </substates>
+  <substates name="started">
+    <variables name="blabla"/>
+    <transitions name="run" source="//@substates.1" target="//@substates.2"/>
+  </substates>
+  <substates name="running">
+    <substates name="subRunning">
+      <transitions name="ev1" source="//@substates.2/@substates.0" target="//@substates.2/@substates.1"/>
+    </substates>
+    <substates name="subdoing">
+      <variables name="doit"/>
+      <transitions name="ev2" source="//@substates.2/@substates.1" target="//@substates.2/@substates.2"/>
+    </substates>
+    <substates name="subend"/>
+    <variables name="hello"/>
+    <variables name="yeswecan"/>
+    <transitions name="wait" source="//@substates.2" target="//@substates.1"/>
+    <transitions name="stop" source="//@substates.2" target="//@substates.3"/>
+  </substates>
+  <substates name="stopped">
+    <variables name="finished..."/>
+  </substates>
+</_statechart101:State>

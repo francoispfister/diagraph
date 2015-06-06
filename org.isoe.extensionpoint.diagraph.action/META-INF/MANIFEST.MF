@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Action Extension
+Bundle-SymbolicName: org.isoe.extensionpoint.diagraph.action;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.7.0",
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor;bundle-version="1.7.0"
+Export-Package: my.contrib,
+ org.isoe.extensionpoint.diagraph.action

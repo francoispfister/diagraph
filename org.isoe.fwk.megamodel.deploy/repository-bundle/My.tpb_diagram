@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:tpb="http:///recette1-tpb-v0" xmi:id="_lcKT8TJsEeKkk9M-3B9z2Q" type="Tpb" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_liXCkDJsEeKkk9M-3B9z2Q" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_liXCkjJsEeKkk9M-3B9z2Q" type="5001"/>
+    <element xmi:type="tpb:Localisation" href="My.tpb#//@departements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_liXCkTJsEeKkk9M-3B9z2Q" x="305" y="45"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_liXCkzJsEeKkk9M-3B9z2Q" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_liXClTJsEeKkk9M-3B9z2Q" type="5002"/>
+    <element xmi:type="tpb:Recette" href="My.tpb#//@recettes.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_liXClDJsEeKkk9M-3B9z2Q" x="65" y="120"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_pggTIDJsEeKkk9M-3B9z2Q" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pgg6MTJsEeKkk9M-3B9z2Q" type="5003"/>
+    <element xmi:type="tpb:Ingredient" href="My.tpb#//@ingredients.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pgg6MDJsEeKkk9M-3B9z2Q" x="350" y="165" width="121" height="36"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_lcK7ADJsEeKkk9M-3B9z2Q"/>
+  <element xmi:type="tpb:LivreRecettes" href="My.tpb#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_ljjVYDJsEeKkk9M-3B9z2Q" type="4002" source="_liXCkzJsEeKkk9M-3B9z2Q" target="_liXCkDJsEeKkk9M-3B9z2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ljjVYTJsEeKkk9M-3B9z2Q" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ljjVYjJsEeKkk9M-3B9z2Q" points="[0, 0, -225, 35]$[90, -45, -135, -10]$[185, -38, -40, -3]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkJLQDJsEeKkk9M-3B9z2Q" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkJLQTJsEeKkk9M-3B9z2Q" id="(0.49382716049382713,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_rcMjwDJsEeKkk9M-3B9z2Q" type="4001" source="_liXCkzJsEeKkk9M-3B9z2Q" target="_pggTIDJsEeKkk9M-3B9z2Q">
+    <children xmi:type="notation:DecorationNode" xmi:id="_rcMjwzJsEeKkk9M-3B9z2Q" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_rcMjxDJsEeKkk9M-3B9z2Q" x="4" y="25"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rcMjwTJsEeKkk9M-3B9z2Q" fontName="Segoe UI"/>
+    <element xmi:type="tpb:Compose" href="My.tpb#//@recettes.0/@composes.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rcMjwjJsEeKkk9M-3B9z2Q" points="[55, 11, -181, -37]$[230, 49, -6, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rcyZoDJsEeKkk9M-3B9z2Q" id="(0.11764705882352941,0.6388888888888888)"/>
+  </edges>
+</notation:Diagram>

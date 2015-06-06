@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="k2"
+    nsURI="uk2" nsPrefix="nk2">
+  <eAnnotations source="." references="#//C">
+    <details key="ma"/>
+    <details key="gc"/>
+    <details key="mk"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//M">
+    <details key="mc"/>
+    <details key="gc"/>
+    <details key="mp"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//N">
+    <details key="mc"/>
+    <details key="mp"/>
+    <details key="gc"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//P">
+    <details key="mc"/>
+    <details key="gc"/>
+    <details key="mk"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//I">
+    <details key="mc"/>
+    <details key="gc"/>
+    <details key="gk"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//B">
+    <details key="mc"/>
+    <details key="cg"/>
+    <details key="gt"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//G">
+    <details key="ga"/>
+    <details key="ma"/>
+    <details key="mp"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//J">
+    <details key="mc"/>
+    <details key="gh"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//A">
+    <details key="mc"/>
+    <details key="gh"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//Q">
+    <details key="mc"/>
+    <details key="gc"/>
+    <details key="mk"/>
+  </eAnnotations>
+  <eAnnotations source="." references="#//X">
+    <details key="mr"/>
+    <details key="gr"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="X">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" upperBound="-1" eType="#//C"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ps" upperBound="-1" eType="#//P"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="A" eSuperTypes="#//B"/>
+  <eClassifiers xsi:type="ecore:EClass" name="B" eSuperTypes="#//C">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="is" upperBound="-1" eType="#//I"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C" abstract="true" eSuperTypes="#//G">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="G" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="M" eSuperTypes="#//G">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=cs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" upperBound="-1" eType="#//C"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="N" eSuperTypes="#//M">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="J" eSuperTypes="#//A"/>
+  <eClassifiers xsi:type="ecore:EClass" name="P" eSuperTypes="#//N">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="a" eType="#//A"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Q" eSuperTypes="#//P">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="I" eSuperTypes="#//G">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

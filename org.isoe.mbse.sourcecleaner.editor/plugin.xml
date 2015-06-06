@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated sourcecleaner -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.isoe.mbse.sourcecleaner.presentation.SourcecleanerModelWizardID"
+            name="%_UI_SourcecleanerModelWizard_label"
+            class="org.isoe.mbse.sourcecleaner.presentation.SourcecleanerModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SourcecleanerModelFile.gif">
+         <description>%_UI_SourcecleanerModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated sourcecleaner -->
+      <editor
+            id="org.isoe.mbse.sourcecleaner.presentation.SourcecleanerEditorID"
+            name="%_UI_SourcecleanerEditor_label"
+            icon="icons/full/obj16/SourcecleanerModelFile.gif"
+            extensions="sourcecleaner"
+            class="org.isoe.mbse.sourcecleaner.presentation.SourcecleanerEditor"
+            contributorClass="org.isoe.mbse.sourcecleaner.presentation.SourcecleanerActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

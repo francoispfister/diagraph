@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl401:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl401="http://adl401">
+  <subComponents name="A">
+    <requiredInterfaces/>
+    <content>
+      <EReference0/>
+      <EReference0/>
+      <EReference0>
+        <erefs0 EAttribute0="fgd">
+          <erefs0>
+            <erefs0>
+              <erefs0/>
+            </erefs0>
+          </erefs0>
+        </erefs0>
+      </EReference0>
+    </content>
+  </subComponents>
+  <subComponents name="B">
+    <providedInterfaces>
+      <bindings from="//@subComponents.1/@providedInterfaces.0" to="//@subComponents.0/@requiredInterfaces.0"/>
+    </providedInterfaces>
+  </subComponents>
+</_adl401:Component>

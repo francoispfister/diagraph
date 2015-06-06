@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.isoe.extensionpoint.diagraph.action" name="DiagraphAction" schema="schema/org.isoe.extensionpoint.diagraph.action.exsd"/>
+   <extension
+         point="org.isoe.extensionpoint.diagraph.action">
+      <DiagraphAction
+            class="my.contrib.ActionStub">
+      </DiagraphAction>
+   </extension>
+
+</plugin>

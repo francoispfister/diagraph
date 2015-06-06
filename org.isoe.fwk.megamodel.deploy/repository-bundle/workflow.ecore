@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="workflow"
+    nsURI="http://demo.workflow.v0" nsPrefix="demo.workflow">
+  <eClassifiers xsi:type="ecore:EClass" name="Named" abstract="true" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Workflow" eSuperTypes="#//Named #//StateContainer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transition" upperBound="-1"
+        eType="#//StateTransition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractState" abstract="true" eSuperTypes="#//Named">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="associatedClass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FromState" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outboundTransitions" lowerBound="1"
+        upperBound="-1" eType="#//StateTransition" eOpposite="#//StateTransition/from"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ToState" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inboundTransitions" lowerBound="1"
+        upperBound="-1" eType="#//StateTransition" eOpposite="#//StateTransition/to"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StateContainer" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="startState" lowerBound="1"
+        eType="#//Start" containment="true" eOpposite="#//Start/stateContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="states" upperBound="-1"
+        eType="#//IntermediateState" containment="true" eOpposite="#//IntermediateState/stateContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endState" lowerBound="1"
+        eType="#//End" containment="true" eOpposite="#//End/stateContainer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntermediateState" abstract="true" eSuperTypes="#//AbstractState #//FromState #//ToState">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stateContainer" lowerBound="1"
+        eType="#//StateContainer" eOpposite="#//StateContainer/states"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StateTransition" eSuperTypes="#//Named">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="from" lowerBound="1" eType="#//FromState"
+        eOpposite="#//FromState/outboundTransitions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="to" lowerBound="1" eType="#//ToState"
+        eOpposite="#//ToState/inboundTransitions"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Start" eSuperTypes="#//AbstractState #//FromState">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stateContainer" lowerBound="1"
+        eType="#//StateContainer" eOpposite="#//StateContainer/startState"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="End" eSuperTypes="#//AbstractState #//ToState">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stateContainer" lowerBound="1"
+        eType="#//StateContainer" eOpposite="#//StateContainer/endState"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Task" eSuperTypes="#//IntermediateState"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Processing" eSuperTypes="#//IntermediateState"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Decision" eSuperTypes="#//IntermediateState"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Fork" eSuperTypes="#//IntermediateState"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Join" eSuperTypes="#//IntermediateState"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SubProcess" eSuperTypes="#//StateContainer #//IntermediateState"/>
+</ecore:EPackage>

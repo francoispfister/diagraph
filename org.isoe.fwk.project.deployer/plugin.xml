@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="org.isoe.diagraph.kermeta.samples.category"
+            name="Kermeta 2 case study for Diagraph"
+            parentCategory="org.eclipse.ui.Examples"/>
+      <wizard
+            canFinishEarly="true"
+            category="org.eclipse.ui.Examples/org.isoe.diagraph.kermeta.samples.category"
+            class="org.isoe.fwk.project.deployer.wizards.FsmM2Wizard"
+            finalPerspective="org.kermeta.language.texteditor.eclipse.nature.internal.KermetaPerspectiveID"
+            hasPages="false"
+            icon="icons/newkermetafile.png"
+            id="diagraph.kermeta.language.samples.wizard"
+            name="Kermeta 2 FSM Case Study for Diagraph (M2 level)"
+            preferredPerspectives="org.eclipse.ui.resourcePerspective">
+         <description>
+            Creates the projects for a DSL of Finite State Machine language (FSM) - metamodel level
+         </description>
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="org.eclipse.ui.Examples/org.isoe.diagraph.kermeta.samples.category"
+            class="org.isoe.fwk.project.deployer.wizards.FsmM1Wizard"
+            finalPerspective="org.kermeta.language.texteditor.eclipse.nature.internal.KermetaPerspectiveID"
+            hasPages="false"
+            icon="icons/newkermetafile.png"
+            id="diagraph.kermeta.language.launcher.wizard"
+            name="Kermeta 2 FSM Case Study for Diagraph (M1 level)"
+            preferredPerspectives="org.eclipse.ui.resourcePerspective">
+         <description>
+            Creates the projects for a DSL of Finite State Machine language (FSM) - model level
+         </description>
+      </wizard>
+
+      <wizard
+            canFinishEarly="true"
+            category="org.eclipse.ui.Examples/org.isoe.diagraph.kermeta.samples.category"
+            class="org.isoe.fwk.project.deployer.wizards.SimpleworldM2Wizard"
+            finalPerspective="org.kermeta.language.texteditor.eclipse.nature.internal.KermetaPerspectiveID"
+            hasPages="false"
+            icon="icons/newkermetafile.png"
+            id="diagraph.kermeta.language.samples.wizard"
+            name="Kermeta 2 SimpleWorld Case Study for Diagraph (M2 level)"
+            preferredPerspectives="org.eclipse.ui.resourcePerspective">
+         <description>
+            Creates the projects for a DSL of Simple World language (SimpleWorld) - metamodel level
+         </description>
+      </wizard>
+      <wizard
+            canFinishEarly="true"
+            category="org.eclipse.ui.Examples/org.isoe.diagraph.kermeta.samples.category"
+            class="org.isoe.fwk.project.deployer.wizards.SimpleWorldM1Wizard"
+            finalPerspective="org.kermeta.language.texteditor.eclipse.nature.internal.KermetaPerspectiveID"
+            hasPages="false"
+            icon="icons/newkermetafile.png"
+            id="diagraph.kermeta.language.launcher.wizard"
+            name="Kermeta 2 SimpleWorld Case Study for Diagraph (M1 level)"
+            preferredPerspectives="org.eclipse.ui.resourcePerspective">
+         <description>
+            Creates the projects for a DSL of Simple World Machine language (SimpleWorld) - model level
+         </description>
+      </wizard>
+
+
+   </extension>
+
+</plugin>

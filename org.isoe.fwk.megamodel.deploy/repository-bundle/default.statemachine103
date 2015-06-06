@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statemachine103:StateMachine xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_statemachine103="http://statemachine103">
+  <machineObjects xsi:type="_statemachine103:InitialState" label="Initial Submission"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="Second Submission" id="1">
+    <s_actions actionStatement="send email"/>
+  </machineObjects>
+  <machineObjects xsi:type="_statemachine103:FinalState" label="Rejection" id="11"/>
+  <machineObjects xsi:type="_statemachine103:FinalState" label="Acceptance" id="10"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="Primary Review"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="Second Review"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="External Review"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="Additional Review"/>
+  <machineObjects xsi:type="_statemachine103:NormalState" label="Conditional Acceptance"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.0" target="//@machineObjects.2" guardExpression="off topic"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.0" target="//@machineObjects.2" guardExpression="prior submission"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.0" target="//@machineObjects.2" guardExpression="concurrent submission"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.4" target="//@machineObjects.2" guardExpression="under threshold"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.5" target="//@machineObjects.7" guardExpression="under threshold"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.7" target="//@machineObjects.2" guardExpression="under threshold"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.8" target="//@machineObjects.2" guardExpression="no camera ready upload"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.1" target="//@machineObjects.3" guardExpression="required changes ok"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.8" target="//@machineObjects.2" guardExpression="required changes ko"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.1" target="//@machineObjects.3" guardExpression="camera ready ok"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.5" target="//@machineObjects.7" guardExpression="lack of experiment"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.4" target="//@machineObjects.2" guardExpression="minor contribution"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.7" target="//@machineObjects.8" guardExpression="proof to discuss"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.4" target="//@machineObjects.2" guardExpression="plagiarism"/>
+  <machineObjects xsi:type="_statemachine103:Transition" source="//@machineObjects.8" target="//@machineObjects.1" guardExpression="required changes ok"/>
+</_statemachine103:StateMachine>

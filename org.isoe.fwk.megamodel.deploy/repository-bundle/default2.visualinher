@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualinher.vo:S xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:visualinher.vo="http:///visualinher-v0">
+  <as xsi:type="visualinher.vo:B" name="b1">
+    <c/>
+  </as>
+  <as xsi:type="visualinher.vo:E" name="e1"/>
+  <as xsi:type="visualinher.vo:D" name="d1" fromA="//@as.0" toE="//@as.1"/>
+  <as xsi:type="visualinher.vo:I" name="11" r="//@rs.0"/>
+  <as xsi:type="visualinher.vo:E" name="e2"/>
+  <as xsi:type="visualinher.vo:D" name="d2" fromA="//@as.0" toE="//@as.4"/>
+  <as xsi:type="visualinher.vo:D" name="d3" fromA="//@as.0" toE="//@as.4"/>
+  <as xsi:type="visualinher.vo:D" name="le cas tordu" fromA="//@as.5" toE="//@as.1"/>
+  <as xsi:type="visualinher.vo:I" name="i3" r="//@rs.1"/>
+  <rs name="r1"/>
+  <rs name="r2"/>
+</visualinher.vo:S>

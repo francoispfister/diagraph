@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl="http://adl">
+  <requiredInterfaces>
+    <bindings from="//@requiredInterfaces.0" to="//@providedInterfaces.0"/>
+  </requiredInterfaces>
+  <providedInterfaces>
+    <bindings from="//@providedInterfaces.0" to="//@subComponents.0/@subComponents.0/@requiredInterfaces.0"/>
+  </providedInterfaces>
+  <subComponents name="Architecture">
+    <requiredInterfaces/>
+    <subComponents name="Factory">
+      <requiredInterfaces/>
+      <providedInterfaces>
+        <bindings from="//@subComponents.0/@subComponents.0/@providedInterfaces.0" to="//@subComponents.0/@subComponents.1/@requiredInterfaces.0"/>
+      </providedInterfaces>
+      <providedInterfaces>
+        <bindings from="//@subComponents.0/@subComponents.0/@providedInterfaces.1" to="//@subComponents.0/@subComponents.2/@requiredInterfaces.0"/>
+      </providedInterfaces>
+    </subComponents>
+    <subComponents name="Compiler">
+      <requiredInterfaces/>
+    </subComponents>
+    <subComponents name="Scheduler">
+      <requiredInterfaces/>
+    </subComponents>
+  </subComponents>
+</_adl:Component>

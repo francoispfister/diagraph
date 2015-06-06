@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dp4se:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dp4se="http:///dp4se.ecore" modelUnderWork="//@models.5" name="dpse-001">
+  <models name="one"/>
+  <models name="two"/>
+  <models name="three"/>
+  <models name="four"/>
+  <models name="pattern model 7654" version="1.444" priorVersion="//@models.0">
+    <functionalArchitecture>
+      <functions name="patrn do it" description="patrn do it bla bla" type="form">
+        <duration unit="//@units.0" maxi="145.0" mean="95.0" mini="45.0"/>
+        <decomposed name="patrn dot hat">
+          <duration unit="//@units.1" maxi="1000.0" mean="300.0" mini="245.0"/>
+        </decomposed>
+      </functions>
+      <dataFlowConnections targetFunction="//@models.4/@functionalArchitecture/@functions.0/@decomposed.0" sourceFunction="//@models.4/@functionalArchitecture/@functions.0">
+        <carries xsi:type="dp4se:FunctionalItem" description="item zoobar" type="energy" name="it 124" requirements="//@models.5/@requirements.0/@children.0"/>
+        <targetPort/>
+      </dataFlowConnections>
+      <dataFlowConnections>
+        <carries xsi:type="dp4se:FunctionalItem" description="item barzoo" type="data" flowType="discrete" name="it 125"/>
+        <targetPort type="output"/>
+      </dataFlowConnections>
+      <dataFlowConnections>
+        <carries xsi:type="dp4se:FunctionalItem" description="item zorbak" name="it zzzz"/>
+        <targetPort type="output"/>
+      </dataFlowConnections>
+      <controlFlowConnections targets="//@models.4/@functionalArchitecture/@functions.0/@decomposed.0" sources="//@models.4/@functionalArchitecture/@functions.0" annotation="start here"/>
+      <controlFlowConnections targets="//@models.5/@functionalArchitecture/@functions.1" sources="//@models.5/@functionalArchitecture/@functions.0" type="fork" annotation="foo completed"/>
+      <controlFlowConnections type="join" annotation="bar completed"/>
+    </functionalArchitecture>
+    <physicalArchitecture/>
+  </models>
+  <models name="model 856" version="1.2">
+    <requirements name="r 654 84" description="this is a requirement blablabla" allocatedNeeds="//@models.5/@needs.0" nonFunctional="//@catalog/@features.1">
+      <children name="r 654 851" description="this is a requirement 000" allocatedNeeds="//@models.5/@needs.0" items="//@models.4/@functionalArchitecture/@dataFlowConnections.0/@carries"/>
+    </requirements>
+    <requirements name="r 654 85" description="this is a requirement blablablou" allocatedNeeds="//@models.5/@needs.0"/>
+    <needs keywords="//@catalog/@keywords.0 //@catalog/@keywords.4" name="n 254 874" description="this is a need blablabla" requirements="//@models.5/@requirements.0/@children.0 //@models.5/@requirements.0 //@models.5/@requirements.1" allocatedScenarios="//@models.5/@scenario">
+      <children name="n 254 8747" description="this is a need 00000" nonFunctional="//@catalog/@features.2"/>
+    </needs>
+    <needs name="n 254 875" description="this is a need blablablou" allocatedScenarios="//@models.5/@scenario"/>
+    <functionalArchitecture>
+      <functions name="do it"/>
+      <functions name="do that"/>
+    </functionalArchitecture>
+    <physicalArchitecture/>
+    <scenario keywords="//@catalog/@keywords.0" name="scenario 546" description="this is a scenario blablabla" needs="//@models.5/@needs.0 //@models.5/@needs.1"/>
+  </models>
+  <catalog name="catalog-001">
+    <problems keywords="//@catalog/@keywords.0" useCaseBeforePattern="//@models.5" featuresToOptimize="//@catalog/@features.0 //@catalog/@features.1 //@catalog/@features.2">
+      <forces problemType="//@catalog/@problemTypes.1" challenge="have a sunny environment" constraint="not to be overheated"/>
+    </problems>
+    <contexts keywords="//@catalog/@keywords.0" name="cntx foob 1" description="cnt fooob 1 description blabla"/>
+    <contexts keywords="//@catalog/@keywords.4" name="cntx foob" description="cnt fooob description blabla"/>
+    <solutions keywords="//@catalog/@keywords.0" name="solzzz" description="solzzz foo bar blaz bla" patternModel="//@models.0" usecaseAfterPattern="//@models.1">
+      <impacts value="5" scale="10" feature="//@catalog/@features.1"/>
+      <impacts value="3" scale="10" feature="//@catalog/@features.0"/>
+    </solutions>
+    <domains keywords="//@catalog/@keywords.0" name="dmnFoo" description="dmnFoo description bla bla"/>
+    <domains keywords="//@catalog/@keywords.3 //@catalog/@keywords.4" name="dmnFoo 2" description="dmnFoo 2 description foo bar"/>
+    <keywords value="foobar" domain="//@catalog/@domains.0"/>
+    <keywords value="azer"/>
+    <keywords value="tyuiop"/>
+    <keywords value="qwerty" domain="//@catalog/@domains.1"/>
+    <keywords value="barfoo" domain="//@catalog/@domains.1"/>
+    <knownApplications keywords="//@catalog/@keywords.0" date="2013-09-25T16:58:01.104+0200" name="app ok" description="app ok bla bla"/>
+    <knownApplications keywords="//@catalog/@keywords.4" date="2013-09-25T16:58:01.105+0200" name="appzoobar" description="appzoobar bla bla"/>
+    <problemTypes name="type bqr" description="type bar baz bla"/>
+    <problemTypes name="type foo" description="type foo bar baz bla"/>
+    <systemPatterns uniqueId="9999" creationDate="2013-09-25T16:58:01.123+0200" description="pattern oiue odher" context="//@catalog/@contexts.1" problem="//@catalog/@problems.0" solution="//@catalog/@solutions.0" domain="//@catalog/@domains.0" knownUses="//@catalog/@knownApplications.1">
+      <rationale keywords="//@catalog/@keywords.0" description="this is a rationale blablabla"/>
+      <alias>kikipat</alias>
+      <alias>totopat</alias>
+      <alias>tatapat</alias>
+    </systemPatterns>
+    <systemPatterns uniqueId="10000" creationDate="2013-09-25T16:58:01.124+0200" description="pattern oiue oudhar" domain="//@catalog/@domains.1" antiPatterns="//@catalog/@systemPatterns.2 //@catalog/@systemPatterns.6" requestedPatterns="//@catalog/@systemPatterns.4" relatedPatterns="//@catalog/@systemPatterns.5" equivalentPatterns="//@catalog/@systemPatterns.3">
+      <parameters patternRole="//@models.4/@functionalArchitecture/@functions.0" concreteRole="//@models.5/@functionalArchitecture/@functions.0" name="p1"/>
+      <parameters patternRole="//@models.4/@functionalArchitecture/@functions.0/@decomposed.0" concreteRole="//@models.5/@functionalArchitecture/@functions.1" name="p2"/>
+      <rationale keywords="//@catalog/@keywords.4" description="this is a rationale blablablou"/>
+      <alias>pattern coucou</alias>
+    </systemPatterns>
+    <systemPatterns name="p100"/>
+    <systemPatterns name="p101"/>
+    <systemPatterns name="p102"/>
+    <systemPatterns name="p103"/>
+    <systemPatterns name="p104"/>
+    <features name="availability" description="Availability is a feature .... description ...."/>
+    <features name="security" description="Security is a feature .... description ...."/>
+    <features name="modularity" description="Modularity is a feature .... description ...."/>
+  </catalog>
+  <units name="mS">
+    <conversionFactor factor="1000.0" target="//@units.1"/>
+  </units>
+  <units name="S"/>
+</dp4se:Project>

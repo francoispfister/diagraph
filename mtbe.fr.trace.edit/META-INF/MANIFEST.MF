@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Edit
+Bundle-SymbolicName: mtbe.fr.trace.edit;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Activator: mtbe.fr.trace.provider.Tracev101EditPlugin$Implementation
+Bundle-Vendor: Lirmm Marel
+Bundle-Localization: plugin
+Export-Package: mtbe.fr.trace.provider
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ mtbe.fr.trace;visibility:=reexport;bundle-version="1.0.4",
+ org.eclipse.emf.edit;visibility:=reexport;bundle-version="1.0.4"
+Eclipse-LazyStart: true
+Bundle-ActivationPolicy: lazy

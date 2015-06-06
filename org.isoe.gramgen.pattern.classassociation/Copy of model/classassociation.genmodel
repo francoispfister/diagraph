@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.gramgen.pattern.classassociation/src"
+    modelPluginID="org.isoe.gramgen.pattern.classassociation" modelName="Classassociation"
+    importerID="org.eclipse.emf.importer.ecore" copyrightFields="false">
+  <foreignModel>classassociation.ecore</foreignModel>
+  <genPackages prefix="Classassociation" basePackage="org.isoe.gramgen.pattern" disposableProviderFactory="true"
+      ecorePackage="classassociation.ecore#/">
+    <genClasses ecoreClass="classassociation.ecore#//Source">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference classassociation.ecore#//Source/sl"/>
+    </genClasses>
+    <genClasses ecoreClass="classassociation.ecore#//Label">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference classassociation.ecore#//Label/lt"/>
+    </genClasses>
+    <genClasses ecoreClass="classassociation.ecore#//Target"/>
+  </genPackages>
+</genmodel:GenModel>

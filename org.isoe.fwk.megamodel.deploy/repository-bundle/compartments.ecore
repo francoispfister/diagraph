@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="compartments"
+    nsURI="http://compartments/1.0" nsPrefix="compartments">
+  <eClassifiers xsi:type="ecore:EClass" name="Concept" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=description"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Foo" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bars" upperBound="-1" eType="#//Bar"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bar" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nam:BarName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bazs" upperBound="-1" eType="#//Baz"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Baz" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="compartment=Bar.*"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lorems" upperBound="-1"
+        eType="#//Lorem" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lorem" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="compartment=Baz.*"/>
+      <details key="label=nam:LoremName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ipsums" upperBound="-1"
+        eType="#//Ipsum" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ipsum" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="compartment=Lorem.*"/>
+      <details key="label=nam"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="goofies" upperBound="-1"
+        eType="#//Goofy" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Goofy" eSuperTypes="#//Concept">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="compartment=Ipsum.*"/>
+      <details key="label=nam"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

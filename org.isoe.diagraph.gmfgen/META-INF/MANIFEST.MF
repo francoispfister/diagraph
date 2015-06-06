@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Gmfgen Api
+Bundle-SymbolicName: org.isoe.diagraph.gmfgen
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.emf.codegen.ecore;bundle-version="2.7.0"
+Export-Package: org.isoe.diagraph.gmfgen

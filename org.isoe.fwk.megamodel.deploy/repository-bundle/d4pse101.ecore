@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="d4pse101" nsURI="http://d4pse101" nsPrefix="_d4pse101">
+  <eClassifiers xsi:type="ecore:EClass" name="SystemPattern" eSuperTypes="#//Indexable">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A Pattern for Systems Engineering. A System Pattern identifies and documents formally and informally a tested and deemed safe Solution addressing a Problem in a given Context independently from the system of interest which is the target of the system engineering process during which the SystemPattern can be applied. So, a SystemPattern shows, argues and illustrates the steps to follow to get from one Problem to a Solution in a Context. These 3 concepts are the pattern minimal triangle, which represents the core meaning of a SystemPattern. Any missing element of the three will result in a trivial pattern (Gaffar, A. &amp; Moha, N., 2005). A SystemPattern is defined by at least the following characteristics: a unique identifier, a short but evocative name, alternative names as aliases, a creation date, a textual description and an author. The main other relations between a SystemPattern with other concepts from the meta model are: &#xD;&#xA;- A SystemPattern is a  parameterized collaboration: each of  it's parameters associates one of it's own ModelElement to a ModelElement belonging to the model under work. Function, Component, Item, Interface, DataFlowConnection, Need, Scenario, Requirement are ModelElement sub-classes.&#xD;&#xA;- A SystemPattern is legitimated when applied in several well know cases (defined as knownUses). &#xD;&#xA;- A SystemPattern can be characterized by with other SystemPatterns: related, requested, anti patterns. &#xD;&#xA;- A requestedPattern is an element of set of mandatory SystemPattern required when applying a given SystemPattern. All requestedPatterns are also relatedPatterns. &#xD;&#xA;- A relatedPattern is an element of a set of related SystemPattern, composing a pattern ecosystem. These patterns are often present when a given pattern is applied. Within a triangular association Problem Context Solution, related patterns have often the same context, but relatedPatterns exclude antiPatterns. &#xD;&#xA;- An antiPattern is an element of a set of SystemPattern that are considered as in opposition with the SystemPattern of interest in a given case. Within a triangular association Problem Context Solution, anti patterns have the same problem and the same context. &#xD;&#xA;- Equivalent patterns are patterns that have the same problem and the same context. In this case, the textual description may be more formalized in the solution/model/needs/description "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=sp_problem"/>
+      <details key="ref=sp_domain"/>
+      <details key="ref=antiPatterns"/>
+      <details key="ref=requestedPatterns"/>
+      <details key="ref=relatedPatterns"/>
+      <details key="ref=equivalentPatterns"/>
+      <details key="ref=sp_context"/>
+      <details key="kref=sp_patternModel"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" ordered="false"
+        upperBound="-1" eType="#//Parameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uniqueId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="challeng" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sp_context" eType="#//Context"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sp_problem" eType="#//Problem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sp_domain" eType="#//Domain"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="antiPatterns" upperBound="-1"
+        eType="#//SystemPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requestedPatterns" upperBound="-1"
+        eType="#//SystemPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedPatterns" upperBound="-1"
+        eType="#//SystemPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equivalentPatterns" upperBound="-1"
+        eType="#//SystemPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sp_patternModel" ordered="false"
+        eType="#//PatternModel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="impacts" upperBound="-1"
+        eType="#//Impact" containment="true" eOpposite="#//Impact/im_pattern"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="knownApplications" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Associates a ModelElement of a Model under work with a ModelElement of a SystemPattern solution patternModel.&#xD;&#xA;A SystemPattern Solution holds an architectural model including Function(s), Component(s), DataFlowConnection(s), ControlFlowConnection(s), ComponentConnection(s), carried Item(s)  and Interfaces. These ModelElement(s) make up the SystemPattern Solution as well as the actual model on which the SystemPattern applies. That application is reflected by changes in the actual model architecture, to conform to the SystemPattern Solution. The elements that collaborate in the SystemPattern, to compete with its mission, are projected onto the actual model, according to a set of SystemPattern parameters. Therefore, we can say that the ModelElement(s) composing  the SystemPattern Solution are associated with corresponding ModelElement(s) in the actual model, imitating the SystemPattern, to achieve an optimal architecture complying with the SystemPattern's objectives.&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="cont=SystemPattern.parameters"/>
+      <details key="lsrc=concreteRole"/>
+      <details key="ltrg=patternRole"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="patternRole" eType="#//ModelElement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concreteRole" eType="#//ModelElement"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Problem" eSuperTypes="#//Indexable">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A Problem describes formally or informally the design problem motivating the SystemPattern. Each SystemPattern addresses one and only one Problem. However each Problem may be related to many SystemPattern. A Problem is characterized by an informal description, a Feature to optimize, a set of Competing forces, a use case before the SystemPattern application, a use case after the SystemPattern application. A Problem is illustrated by a use case showing a trivial or a poor functional and/or organic architecture. &#xD;&#xA;Implements Indexable (provides keywords based retrieval capabilities)."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=featuresToOptimize"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="useCasesBeforePattern"
+        upperBound="-1" eType="#//PatternModel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="featuresToOptimize" upperBound="-1"
+        eType="#//Feature"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="forces" upperBound="-1"
+        eType="#//Force" containment="true" eOpposite="#//Force/f_problem"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Indexable" abstract="true">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Provides keyword based retrieval capabilities. An indexable object owns a collection of keywords."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="keywords" upperBound="-1"
+        eType="#//Keyword"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Feature">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Non functional feature, also named «-ilities» by (Manola, F., 1999). The purpose of a SystemPattern is to improve such non functional Feature(s) (availability, maintainability, vulnerability, reliability, supportability ...), to leverage a poor or a trivial architecture with the proposed SystemPattern Solution. In other words, any SystemPattern application must have beneficial effects on Feature(s). Last, a Feature to optimize is often gained at the expense of another. For example, security may be improved (in this case the attribute variationSense of the feature F1 is set to ‘increase’) at the expense of manageability (the attribute variationSense of a feature F2 is set to ‘decrease’)."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AbstractModel" abstract="true" eSuperTypes="#//Indexable">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A Model is composed by a FunctionalArchitecture and  a PhysicalArchitecture. A Model is related with Need, Requirement, Scenario, participating then to a mode global systems engineering meta-model (Figure 2). A Model allows to formalize a Solution (the SystemPattern model itself as a parametrized collaboration of Function and/or Component, and a resulting use case), a Problem (described with a use case), and a current Model of system of interest which is under work and in which the problem has been detected and the solution can be applied. &#xD;&#xA;One Model is under work, upon which a designer tries to apply a SystemPattern Solution, depending on a Context. &#xD;&#xA;A Model is identified by a version. A priorVersion links a given version (e.g. a model under work after a SystemPattern application) with it's prior version (original model before a System Pattern application).&#xD;&#xA;Last, a Model may be accompanied by a drawing: even a formal view is not available, such facultative documentary Sketch(es) are provided. A Project holds many actual Model(s). "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=m_functionalArchitecture"/>
+      <details key="kref=m_physicalArchitecture"/>
+      <details key="ref=m_domain"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="m_functionalArchitecture"
+        ordered="false" lowerBound="1" eType="#//FunctionalArchitecture" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="m_physicalArchitecture"
+        ordered="false" lowerBound="1" eType="#//PhysicalArchitecture" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="m_domain" eType="#//Domain"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//AbstractModel"
+        eOpposite="#//AbstractModel/fragments"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fragments" upperBound="-1"
+        eType="#//AbstractModel" eOpposite="#//AbstractModel/parent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalArchitecture" eSuperTypes="#//Architecture">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A graph representing the set of Functions and Flows allowing to describe the system's mission decomposition. By hypothesis, any FunctionalArchitecture will be interpreted as an expression of the waited behavior of the system of interest. This graph is modeled by respecting eFFBD (enhanced Functional Flows Block Diagram) formalism. A FunctionalArchitecture is a function graph describing Item flows between Functions, and a control graph describing sequential, parallel, conditional, and iterative function execution. "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=functions"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functions" ordered="false"
+        upperBound="-1" eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Architecture" abstract="true">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Abstract concept describing how identified objects are structured thanks to a given relation (for example, composed of relation) and represented by a graph (nodes represent the objects and edges represent the relation occurence."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//ModelElement">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Informally, a Function represents what the system must do. More formally, a Function describes a transformation of input flows into output flows considering eventually specific flows which control the function execution (triggers). The nature of the transformation is specified with the attributes: name (e.g.washing, rinsing, heating, refreshing, braking, sending...), description (text), type (FunctionType). A Function can be decomposed anymore into sub-functions. &#xD;&#xA;NB: according to the eFFBD formalism, the flows between the functions are twofold: flows that convey Item(s) from one Function to other one(s) and are then processed by these functions, flows which constitute the control flow model (Long, J., 1995). &#xD;&#xA;&#xD;&#xA;      &#xD;&#xA;      "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=decomposed"/>
+      <details key="ref=parent"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//FunctionType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//Function"
+        eOpposite="#//Function/decomposed"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="decomposed" upperBound="-1"
+        eType="#//Function" eOpposite="#//Function/parent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelElement" abstract="true">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Abstract Class, parent of Scenario, Function, DataFlowConnection, ControlFlowConnection, Item, Component, ComponentConnection, Interface: all the constitutive model elements of an eFFBD representing a system architecture. SystemPatterns are described with the same eFFBD notation. This mechanism allows to link  given elements in a SystemPattern to corresponding elements, parts of actual models impacted by the SystemPattern application (imitation). Those links are represented by a Parameter, they allow the parameterization of a Pattern."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FunctionType">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Describes the type of a Function: a Function achieves a time, space or a form transformation.&#xD;&#xA; "/>
+    </eAnnotations>
+    <eLiterals name="time"/>
+    <eLiterals name="space" value="1"/>
+    <eLiterals name="form" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalArchitecture" eSuperTypes="#//Architecture">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A graph representing the system's physical structure i.e. the Component, Links and Interfaces objects. This graph is modeled by respecting PBD (Physical Block Diagram) formalism."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=pa_components"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pa_components" ordered="false"
+        upperBound="-1" eType="#//Component" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component" eSuperTypes="#//ModelElement">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Is a physical element composing the system of interest. For example, a Component can be a motor, a pump, a filter, an electronic subsystem or an  organizational constituent. A Component implements one or several Function(s) which are allocated to him. A Component has a type (domain): physics, energy, data. Taking into account its inherent complexity, a Component describing a sub-system may be decomposed into a set of Components, Links and Interfaces. By hypothesis, the decomposition is made by suing the SystemBlocLevel concept which indicates the depth in the decomposition tree (subsystem, element, component, part). A component must respect one or several Requirement(s)."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Workbench">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="A container for classifying and cataloging SystemPatterns. "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="problems" ordered="false"
+        upperBound="-1" eType="#//Problem" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domains" ordered="false"
+        upperBound="-1" eType="#//Domain" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="keywords" ordered="false"
+        upperBound="-1" eType="#//Keyword" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1"
+        eType="#//Feature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="w_conditions" upperBound="-1"
+        eType="#//Condition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contexts" upperBound="-1"
+        eType="#//Context" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workingModels" upperBound="-1"
+        eType="#//Model" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="w_catalog" eType="#//Catalog"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Context" eSuperTypes="#//Indexable">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Associated with one Problem and one Solution,a Context expresses the core meaning of SystemPatterns i.e. may be interpreted as a (set) of pre-condition(s). It indicates the situation to which the SystemPattern Solution may be applied, and the required conditions that must be checked before the SystemPattern can be applied (informaly, in the description attribute). Implements Indexable (provides keyword based retrieval capabilities). &#xD;&#xA;      &#xD;&#xA;      &#xD;&#xA;      "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=c_conditions"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="c_conditions" upperBound="-1"
+        eType="#//Condition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Domain" eSuperTypes="#//Indexable">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Identifies a specific aera in which a SystemPattern can be applied or is relevant e.g. mechanics, electronics, software, civil engineering, organization &amp; service, security, pedagogy... "/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Keyword">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Single word used to classify and retrieve Indexable elements. May be associated to one or many Domain.&#xD;&#xA;An Indexable element holds a set of Keyword.&#xD;&#xA;&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=value"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Condition">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Force is a competing constraint in a System: design problems arise from a conflict between different interests or &quot;Forces&quot;. The SystemPattern application decision depends from arbitration between the Forces. [Alexander xxx] proposes for example: a conflict between the need of a sunny environment in a building, but not to be overheating in summer. In this example, the Force is described by a challenge (the need of a sunny environment), a constraint (not to be overheat in summer) and a ProblemType (Fluid, Field, Structure, Security...). &#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Impact">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Influence of a SystemPattern on a model on which it applies.&#xD;&#xA;A SystemPattern application has  impacts on a actual model in term of Feature(s).  These Impact(s) are quantified with a VariationSense and a value on a scale.&#xD;&#xA;Similar to post conditions, after a pattern application."/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=im_pattern"/>
+      <details key="ltrg=im_feature"/>
+      <details key="cont=SystemPattern.impacts"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variation" eType="#//VariationSense"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="im_feature" eType="#//Feature"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="im_pattern" eType="#//SystemPattern"
+        eOpposite="#//SystemPattern/impacts"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="VariationSense">
+    <eAnnotations source="http://www.topcased.org/documentation">
+      <details key="documentation" value="Enumeration used to quantify an Impact: increase, equals, decrease; associated to a value and a scale."/>
+    </eAnnotations>
+    <eLiterals name="increase"/>
+    <eLiterals name="decrease" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternModel" eSuperTypes="#//AbstractModel">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Force">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=f_problem"/>
+      <details key="ltrg=f_condition"/>
+      <details key="cont=Problem.forces"/>
+      <details key="label=description"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="f_problem" eType="#//Problem"
+        eOpposite="#//Problem/forces"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="f_condition" eType="#//Condition"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variation" eType="#//VariationSense"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Model" eSuperTypes="#//AbstractModel">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="versionBeforePattern" eType="#//Model"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Catalog">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=systemPatterns"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemPatterns" upperBound="-1"
+        eType="#//SystemPattern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="org.isoe.extensionpoint.diagraph.generator" name="DiagraphGenerator" schema="schema/org.isoe.extensionpoint.diagraph.generator.exsd"/>
+   <extension
+         point="org.isoe.extensionpoint.diagraph.generator">
+      <GenDiagraphService
+            class="org.isoe.contrib.Zob">
+      </GenDiagraphService>
+   </extension>
+
+</plugin>

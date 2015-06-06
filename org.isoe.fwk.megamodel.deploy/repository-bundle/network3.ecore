@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="network3"
+    nsURI="http://network3" nsPrefix="_network3">
+  <eAnnotations source="diagen">
+    <details key="knownas=network architecture"/>
+    <details key="origin=http://ridene.youssef.free.fr/courses/gmf/"/>
+    <details key="leftparent=nil" value=""/>
+    <details key="rightparent=nil" value=""/>
+    <details key="requires=nil" value=""/>
+    <details key="context=networking"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Serveur">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=connecteA"/>
+      <details key="label=label"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Serveur"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connecteA" lowerBound="1"
+        upperBound="-1" eType="#//Proxy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Proxy">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=clientConnecte"/>
+      <details key="label=label"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clientConnecte" lowerBound="1"
+        eType="#//Client"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="implemente" lowerBound="1"
+        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Proxy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="lsrc=estUtilisePar"/>
+      <details key="ltrg=estImplementePar"/>
+      <details key="label=label"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="estUtilisePar" lowerBound="1"
+        eType="#//Client" eOpposite="#//Client/utilise"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="estImplementePar" lowerBound="1"
+        eType="#//Proxy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Client">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=label"/>
+      <details key="ref=connecteA"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="Client"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="utilise" lowerBound="1"
+        eType="#//Interface" eOpposite="#//Interface/estUtilisePar"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connecteA" lowerBound="1"
+        eType="#//Proxy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Architecture">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servers" lowerBound="1"
+        upperBound="-1" eType="#//Serveur" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="proxy" lowerBound="1" upperBound="-1"
+        eType="#//Proxy" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaces" lowerBound="1"
+        upperBound="-1" eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clients" lowerBound="1"
+        upperBound="-1" eType="#//Client" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

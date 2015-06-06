@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gemos"
+    nsURI="http:////gemos-package-en-minuscule-svp" nsPrefix="gemos">
+  <eClassifiers xsi:type="ecore:EClass" name="GemosDiagram">
+    <eAnnotations source="diagraph">
+      <details key="pov"/>
+      <details key="label=titre"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsGemosObjects" upperBound="-1"
+        eType="#//GemosObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="titre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GemosObject" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="view=default"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=second"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=third"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="helper" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gemosObjectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mode" eSuperTypes="#//GemosObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=second"/>
+      <details key="label=gemosObjectName"/>
+      <details key="nav:third"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="pov"/>
+      <details key="view=third"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actif" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="False"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linksMode" upperBound="-1"
+        eType="#//Mode2Mode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ModeContainsScenarioObjects"
+        upperBound="-1" eType="#//ScenarioObject" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mode2Mode" eSuperTypes="#//GemosObject">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="view=second"/>
+      <details key="label=gemosObjectName"/>
+      <details key="ltrg=targetMode"/>
+      <details key="lsrc=sourceMode"/>
+      <details key="cont=Mode.linksMode"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetMode" lowerBound="1"
+        eType="#//Mode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transitionCondition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceMode" eType="#//Mode"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ScenarioObject" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eAnnotations source="diagraph">
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=third"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=second"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=fifth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scenarioName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario" eSuperTypes="#//ScenarioObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=third"/>
+      <details key="label=scenarioName"/>
+      <details key="nav:fourth"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="pov"/>
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="pov"/>
+      <details key="view=fifth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linksScenario" upperBound="-1"
+        eType="#//Scenario2scenario" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsEFFBDObjects" upperBound="-1"
+        eType="#//EFFBDObject" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="context" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containsEFFBDConnections"
+        upperBound="-1" eType="#//EFFBDConnection" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scenario2scenario" eSuperTypes="#//ScenarioObject">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="view=third"/>
+      <details key="label=scenarioName"/>
+      <details key="lsrc=sourceScenario"/>
+      <details key="ltrg=targetScenario"/>
+      <details key="cont=Scenario.linksScenario"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fifth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetScenario" lowerBound="1"
+        eType="#//Scenario"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceScenario" eType="#//Scenario"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EFFBDObject" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eAnnotations source="diagraph">
+      <details key="view=third"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=effbdObjectName"/>
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fifth"/>
+      <details key="kref=linksEFFBDObject"/>
+      <details key="label=effbdObjectName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="effbdObjectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linksEFFBDObject" upperBound="-1"
+        eType="#//Branch" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Branch" eSuperTypes="#//EFFBDConnection">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="view=fourth"/>
+      <details key="lsrc=sourceEFFBDObject"/>
+      <details key="ltrg=targetEFFBDObject"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fifth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetEFFBDObject" eType="#//EFFBDObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trigger" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="False"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceEFFBDObject" eType="#//EFFBDObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//EFFBDObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fifth"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Flow" eSuperTypes="#//EFFBDObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nature" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operator" eSuperTypes="#//EFFBDObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=fourth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operatorName" eType="#//OperatorList"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OperatorList">
+    <eLiterals name="AND"/>
+    <eLiterals name="OR"/>
+    <eLiterals name="LP"/>
+    <eLiterals name="LE"/>
+    <eLiterals name="IT"/>
+    <eLiterals name="RP"/>
+    <eLiterals name="BEGIN"/>
+    <eLiterals name="END"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operational" eSuperTypes="#//GemosObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=gemosObjectName"/>
+      <details key="nav:second"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="pov"/>
+      <details key="view=second"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationalModes" upperBound="-1"
+        eType="#//Mode" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EFFBDConnection" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="view=fourth"/>
+      <details key="label=effbdConnectionName"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=fifth"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="effbdConnectionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

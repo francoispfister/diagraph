@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2012, LGi2P
+ * 
+ *
+ * Contributors:
+ *    Francois Pfister - initial API and implementation
+ */
+modeltype gmfgen uses "http://www.eclipse.org/gmf/2009/GenModel";
+modeltype genmodel uses "http://www.eclipse.org/emf/2002/GenModel";
+
+library DiagraphUtils;
+
+//FP120704
+helper diagraphCommentOut(link : gmfgen::GenLink) : Boolean {
+	return link.modelFacet.getSourceType().ecoreClass.name = 'DGraph' and link.modelFacet.getTargetType().ecoreClass.name = 'DPointOfView';
+}
+
+//FP120704
+helper GenLink::diagraphCommentOut() : Boolean {
+	return self.modelFacet.getSourceType().ecoreClass.name = 'DGraph' and self.modelFacet.getTargetType().ecoreClass.name = 'DPointOfView';
+}
+

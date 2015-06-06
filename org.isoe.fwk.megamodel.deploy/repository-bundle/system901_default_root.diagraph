@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" pointOfView="//@nodes.1" viewName="default">
+  <nodes name="System" owner="//@nodes.1" navigationLink="functionalView_root">
+    <semanticRole xsi:type="ecore:EClass" href="system901.ecore#//System"/>
+    <eClaz href="system901.ecore#//System"/>
+    <dlabels>
+      <attribute href="system901.ecore#//Named/name"/>
+    </dlabels>
+  </nodes>
+  <nodes xsi:type="diagraph:DPointOfView" name="Workbench">
+    <semanticRole xsi:type="ecore:EClass" href="system901.ecore#//Workbench"/>
+    <eClaz href="system901.ecore#//Workbench"/>
+    <dlabels>
+      <attribute href="system901.ecore#//Named/name"/>
+    </dlabels>
+    <edges xsi:type="diagraph:DImplicitEdge" owner="//@nodes.1" name="systemView" target="//@nodes.0" source="//@nodes.1">
+      <semanticRole xsi:type="ecore:EReference" href="system901.ecore#//Workbench/systemView"/>
+      <targetReference href="system901.ecore#//Workbench/systemView"/>
+    </edges>
+    <edges xsi:type="diagraph:DImplicitEdge" owner="//@nodes.1" name="kinds" target="//@nodes.2" source="//@nodes.1">
+      <semanticRole xsi:type="ecore:EReference" href="system901.ecore#//Workbench/kinds"/>
+      <targetReference href="system901.ecore#//Workbench/kinds"/>
+    </edges>
+  </nodes>
+  <nodes name="FunctionKind" owner="//@nodes.1">
+    <semanticRole xsi:type="ecore:EClass" href="system901.ecore#//FunctionKind"/>
+    <eClaz href="system901.ecore#//FunctionKind"/>
+    <dlabels>
+      <attribute href="system901.ecore#//Named/name"/>
+    </dlabels>
+  </nodes>
+</diagraph:DGraph>

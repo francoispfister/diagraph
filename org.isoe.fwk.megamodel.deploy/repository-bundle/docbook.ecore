@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="docbook"
+    nsURI="doc" nsPrefix="doc">
+  <eClassifiers xsi:type="ecore:EClass" name="DocBook">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="books" upperBound="-1"
+        eType="#//Book" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Book">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cref=articles"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="articles" upperBound="-1"
+        eType="#//Article" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TitledElement" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=title"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Article" eSuperTypes="#//TitledElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=sections_1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sections_1" upperBound="-1"
+        eType="#//Sect1" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Section" abstract="true" eSuperTypes="#//TitledElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=paras"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paras" upperBound="-1"
+        eType="#//Para" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sect1" eSuperTypes="#//Section">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=sections_2"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sections_2" upperBound="-1"
+        eType="#//Sect2" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sect2" eSuperTypes="#//Section">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Para">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

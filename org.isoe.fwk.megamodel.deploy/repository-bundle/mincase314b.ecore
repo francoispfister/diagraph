@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mincase314b" nsURI="http://mincase314b" nsPrefix="_mincase314b">
+  <eAnnotations source="diagen">
+    <details key="knownas=adl"/>
+    <details key="origin=http://foobar"/>
+    <details key="leftparent=adl200" value="delta1=foo&#xD;&#xA;delta2=bar"/>
+    <details key="rightparent=adl103" value="delta1=hello&#xD;&#xA;azerty&#xD;&#xA;role.Content.expression=eprsample"/>
+    <details key="requires=simpleworld,adl203" value="simpleworld&#xD;&#xA;adl203"/>
+    <details key="context=composition"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Root">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="topDs" upperBound="-1"
+        eType="#//Dddd" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="topHs" upperBound="-1"
+        eType="#//Hhhh" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dddd" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="kref=subDs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subDs" upperBound="-1"
+        eType="#//Dddd" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Eeee" eSuperTypes="#//Dddd">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ffff" eSuperTypes="#//Dddd">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gggg" eSuperTypes="#//Dddd">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hhhh">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

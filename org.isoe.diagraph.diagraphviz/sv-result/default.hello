@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello:LeMonde xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:hello="http://hello.example.v0">
+  <pays nom="France"/>
+  <pays nom="Grande-Bretagne"/>
+  <pays nom="Espagne"/>
+  <pays nom="Allemagne"/>
+  <langues nom="Français">
+    <dialectes nom="Alsacien">
+      <expressions texte="Dr Hans im schnokeloch"/>
+      <expressions texte="Nùmme d’tote fisch schwimme met’m strom">
+        <references key="toto,2001"/>
+      </expressions>
+    </dialectes>
+    <dialectes nom="Corse">
+      <expressions texte="A bocca chjusa, nè pani nè bonbucconi">
+        <references key="titi, 2002"/>
+      </expressions>
+      <expressions texte="A chì stughji un perdi tempu">
+        <references key="tata,2003"/>
+      </expressions>
+    </dialectes>
+    <dialectes nom="Breton"/>
+  </langues>
+  <langues nom="Espagnol">
+    <variantes description="catalan"/>
+  </langues>
+  <langues nom="Anglais"/>
+  <langues nom="Allemand">
+    <variantes description="souabe"/>
+    <variantes description="haut-allemand"/>
+  </langues>
+  <langues nom="Belge">
+    <variantes description="bruxellois"/>
+  </langues>
+  <humains parle="//@langues.4 //@langues.0" nom="Pierre" pays="//@pays.1">
+    <dit_bonjour phrase="coucou" a_un_autre="//@humains.5"/>
+    <devises texte="Honni soit qui mal y pense"/>
+    <recettes nom="Steak-frites"/>
+    <animaux nom="Médor"/>
+  </humains>
+  <humains parle="//@langues.1 //@langues.2" nom="Paul" recetteFavorite="//@humains.5/@recettes.0">
+    <dit_bonjour phrase="bonjour" a_un_autre="//@humains.2"/>
+    <dit_bonjour phrase="hi!" a_un_autre="//@humains.0"/>
+    <recettes nom="Choucroute"/>
+  </humains>
+  <humains nom="Jacques" pays="//@pays.2" recetteFavorite="//@humains.2/@recettes.0">
+    <devises texte="La garde meurt mais ne se rend pas"/>
+    <recettes nom="Hamburger"/>
+    <animaux nom="le chat"/>
+  </humains>
+  <humains nom="Jean" pays="//@pays.0"/>
+  <humains nom="Helmut" pays="//@pays.3"/>
+  <humains parle="//@langues.3" nom="Tim" pays="//@pays.0" recetteFavorite="//@humains.0/@recettes.0">
+    <dit_bonjour phrase="hello" a_un_autre="//@humains.1"/>
+    <devises texte="Shame to Him Who Evil Thinks"/>
+    <recettes nom="Bouillabaisse"/>
+    <animaux nom="Mirza"/>
+  </humains>
+</hello:LeMonde>

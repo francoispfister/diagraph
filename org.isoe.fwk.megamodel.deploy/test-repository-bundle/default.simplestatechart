@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_simplestatechart:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_simplestatechart="http://simplestatechart">
+  <substates name="started">
+    <variables name="blabla" type="">
+      <relations name="rel1" toThing="//@substates.1/@variables.0"/>
+    </variables>
+    <transitions name="run" expression="run" source="//@substates.0" target="//@substates.1"/>
+  </substates>
+  <substates name="running">
+    <substates name="subRunning">
+      <transitions name="ev1" source="//@substates.1/@substates.0" target="//@substates.1/@substates.1"/>
+    </substates>
+    <substates name="subdoing">
+      <variables name="doit"/>
+      <transitions name="ev2" source="//@substates.1/@substates.1" target="//@substates.1/@substates.2"/>
+    </substates>
+    <substates name="subend"/>
+    <variables name="hello"/>
+    <variables name="yeswecan">
+      <relations name="rel2" toThing="//@substates.2/@variables.0"/>
+      <relations name="go" toThing="//@substates.1/@substates.1/@variables.0"/>
+    </variables>
+    <transitions name="stop" source="//@substates.1" target="//@substates.2"/>
+    <transitions name="wait" source="//@substates.1" target="//@substates.0"/>
+  </substates>
+  <substates name="stop">
+    <variables name="finished..."/>
+  </substates>
+  <substates name="start">
+    <transitions name="go" source="//@substates.3" target="//@substates.0"/>
+  </substates>
+  <variables name="param1"/>
+  <variables name="var2">
+    <relations name="v2" toThing="//@substates.0/@variables.0"/>
+  </variables>
+</_simplestatechart:State>

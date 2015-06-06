@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:link="http://link.v0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_DhufwatqEeG-36Bqw-aYaA" type="Link" name="link2.link_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_D9w7gKtqEeG-36Bqw-aYaA" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_D9yJoKtqEeG-36Bqw-aYaA" type="4004"/>
+    <children xmi:type="notation:Node" xmi:id="_E-buUKtqEeG-36Bqw-aYaA" type="2001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_E-buVKtqEeG-36Bqw-aYaA" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_E-buUatqEeG-36Bqw-aYaA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_E-buUqtqEeG-36Bqw-aYaA"/>
+      <element xmi:type="link:B" href="link2.link#//@as.0/@bs.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E-buU6tqEeG-36Bqw-aYaA"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_D9w7gatqEeG-36Bqw-aYaA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_D9w7gqtqEeG-36Bqw-aYaA"/>
+    <element xmi:type="link:A" href="link2.link#//@as.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D9w7g6tqEeG-36Bqw-aYaA" x="45" y="60" width="86" height="71"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_IEKJIKtqEeG-36Bqw-aYaA" type="1002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IEKwMKtqEeG-36Bqw-aYaA" type="4005"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_IEKJIatqEeG-36Bqw-aYaA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IEKJIqtqEeG-36Bqw-aYaA"/>
+    <element xmi:type="link:K" href="link2.link#//@ks.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IEKJI6tqEeG-36Bqw-aYaA" x="125" y="175"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_DhufwqtqEeG-36Bqw-aYaA"/>
+  <element xmi:type="link:X" href="link2.link#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_IEPBoKtqEeG-36Bqw-aYaA" type="3001" source="_D9w7gKtqEeG-36Bqw-aYaA" target="_IEKJIKtqEeG-36Bqw-aYaA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_IEPosKtqEeG-36Bqw-aYaA" type="4006">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_IEPosatqEeG-36Bqw-aYaA" x="-28" y="51"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_IEPBoatqEeG-36Bqw-aYaA"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_IEPBoqtqEeG-36Bqw-aYaA"/>
+    <element xmi:type="link:N99" href="link2.link#//@as.0/@ns999.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IEPBo6tqEeG-36Bqw-aYaA" points="[-89, -83, 64, 60]$[-153, -143, 0, 0]"/>
+  </edges>
+</notation:Diagram>

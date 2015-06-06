@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl101:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl101="http://adl101">
+  <subComponents name="A">
+    <requiredInterfaces/>
+  </subComponents>
+  <subComponents name="B">
+    <providedInterfaces>
+      <bindings from="//@subComponents.1/@providedInterfaces.0" to="//@subComponents.0/@requiredInterfaces.0"/>
+    </providedInterfaces>
+  </subComponents>
+</_adl101:Component>

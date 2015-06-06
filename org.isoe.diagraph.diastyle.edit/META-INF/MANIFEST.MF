@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Edit
+Bundle-SymbolicName: org.isoe.diagraph.diastyle.edit;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Activator: org.isoe.diagraph.diastyle.provider.Diastyle5EditPlugin$Implementation
+Bundle-Vendor: LGi2P Isoe
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.diastyle.provider
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.isoe.diagraph.diastyle;visibility:=reexport;bundle-version="1.0.4",
+ org.eclipse.emf.edit;visibility:=reexport;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;visibility:=reexport;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph.edit;visibility:=reexport;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy

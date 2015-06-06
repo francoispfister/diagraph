@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinematic:InterfaceGraphique xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cinematic="http://www.example.org/cinematic">
+  <ecrans id="accueil">
+    <widgets documentation="btn ok"/>
+    <widgets documentation="identifiez vous"/>
+    <widgets documentation="btn annuler"/>
+    <navs uri="http://commandes" from="//@ecrans.0" to="//@ecrans.1"/>
+    <navs uri="http://catalogue" from="//@ecrans.0" to="//@ecrans.2"/>
+  </ecrans>
+  <ecrans id="commande">
+    <widgets documentation="liste articles"/>
+    <widgets documentation="btn commander"/>
+    <widgets documentation="btn annuler"/>
+  </ecrans>
+  <ecrans id="catalogue"/>
+</cinematic:InterfaceGraphique>

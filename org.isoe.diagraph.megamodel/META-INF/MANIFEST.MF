@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Megamodel
+Bundle-SymbolicName: org.isoe.diagraph.megamodel;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: ., bin/
+Bundle-Vendor: LGi2P Isoe
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.megamodel,
+ org.isoe.diagraph.megamodel.impl,
+ org.isoe.diagraph.megamodel.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport;bundle-version="1.0.4"

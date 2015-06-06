@@ -1,0 +1,69 @@
+layout
+revnote free layout
+shape
+deletefromdiagram - line
+
+swimlane
+
+http://code.google.com/p/gmftools/wiki/CustomFiguresAndLayouts
+
+
+
+	/**
+	 * DIAGRAPH modified 4
+	 * @generated
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(0, 0);
+
+/**
+	 * DIAGRAPH modified 18
+	 * @generated
+	 */
+	private TransactionalEditingDomain createEditingDomain() {
+		// TODO: ISOE CHANGE see ITEMIS CHANGE: Use shared editing domain
+		//org.eclipse.emf.transaction.TransactionalEditingDomain editingDomain = de.itemis.gmf.runtime.editingdomain.SharedEditingDomainUtil.getSharedEditingDomain("isoe.samples.revision.diagram.EditingDomain");
+		TransactionalEditingDomain editingDomain = DiagramEditingDomainFactory
+				.getInstance().createEditingDomain();
+		editingDomain.setID("isoe.samples.revision.diagram.EditingDomain"); //$NON-NLS-1$
+
+	/**
+	 * DIAGRAPH modified 2
+	 * @generated
+	 */
+	protected IContentOutlinePage createContentOutlinePage() {
+		/* In case of extension-point mechanism
+		return DiagramOutlineProvider
+				.getOutlineFactory("org.isoe.eval.Revision.outline",
+						"foobarimpl").create(this);*/
+
+		IContentOutlinePage result = new RevisionDiagramOutlinePage(this);
+		System.out.println(result.getClass().getName());
+		System.out.println("Persisted Children:");
+		for (Object object : this.getDiagram().getPersistedChildren()) {
+			System.out.println("changed" + object.toString());
+		}
+
+
+		/**
+		 * DIAGRAPH modified 6
+		 * @generated
+		 */
+		@Override
+		protected AdapterFactory getAdapterFactory() {
+			return isoe.samples.revision.diagram.part.RevisionDiagramEditorPlugin
+					.getInstance().getItemProvidersAdapterFactory();
+
+		}
+
+
+
+
+«DEFINE newDeleteReferenceLinkCommand(GenLink genLink, String destroyReferenceRequest) FOR gmfgen::FeatureLinkModelFacet-»
+new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(«destroyReferenceRequest»)«IF isContains(metaFeature)» {
+	protected org.eclipse.gmf.runtime.common.core.command.CommandResult doExecuteWithResult(org.eclipse.core.runtime.IProgressMonitor progressMonitor, org.eclipse.core.runtime.IAdaptable info) throws org.eclipse.core.commands.ExecutionException {
+		org.eclipse.emf.ecore.EObject referencedObject = getReferencedObject();
+		org.eclipse.emf.ecore.resource.Resource resource = referencedObject.eResource();
+
+
+

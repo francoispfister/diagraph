@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Similarity Action
+Bundle-SymbolicName: org.isoe.diagraph.similarity.action;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.jface;bundle-version="3.7.0",
+ org.isoe.extensionpoint.similarity;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.fwk.pathes;bundle-version="1.0.4",
+ org.isoe.fwk.platform.resolver;bundle-version="1.0.4",
+ org.isoe.extensionpoint.xmi;bundle-version="1.0.4",
+ org.eclipse.emf.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.controler;bundle-version="1.0.4",
+ org.isoe.extensionpoint.diagraph.action;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.similarity.action

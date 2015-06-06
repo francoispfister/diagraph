@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Diagrammable
+Bundle-SymbolicName: org.isoe.diagraph.diagrammable
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4"
+Export-Package: org.isoe.diagraph.diagrammable

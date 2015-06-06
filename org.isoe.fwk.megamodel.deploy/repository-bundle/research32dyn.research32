@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_research32:PublicationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_research32="http://research32">
+  <structuralView name="Conference of Advanced Model Driven SYstems">
+    <researchers name="Douglas" res_position="//@positions.2">
+      <writes paragraph="//@structuralView/@papers.1/@paragraphs.1" timeSpent="1"/>
+      <reviews reviewNote="//@structuralView/@papers.6/@paragraphs.1/@reviews.0"/>
+      <skills description="rca"/>
+      <skills description="testing"/>
+    </researchers>
+    <researchers name="Rivers" res_position="//@positions.5">
+      <writes paragraph="//@structuralView/@papers.5/@paragraphs.0" timeSpent="2"/>
+      <writes paragraph="//@structuralView/@papers.2/@paragraphs.0" timeSpent="5"/>
+      <writes paragraph="//@structuralView/@papers.6/@paragraphs.0" timeSpent="6"/>
+      <skills description="process modeling"/>
+    </researchers>
+    <researchers name="Lollini" res_position="//@positions.1">
+      <writes paragraph="//@structuralView/@papers.5/@paragraphs.1" timeSpent="3"/>
+      <reviews reviewNote="//@structuralView/@papers.6/@paragraphs.2/@reviews.0"/>
+      <skills description="metamodelling"/>
+      <skills description="uml"/>
+    </researchers>
+    <researchers name="Gerstein" res_position="//@positions.0">
+      <reviews reviewNote="//@structuralView/@papers.5/@paragraphs.3/@reviews.0"/>
+      <skills description="dsml"/>
+      <skills description="systems engineering"/>
+      <skills description="requirements"/>
+    </researchers>
+    <papers name="Metamodel based Code Generation for Visual Notations" state="//@structuralView/@status/@pubStates.0">
+      <paragraphs name="definitions">
+        <reviews name="replace x with y"/>
+      </paragraphs>
+      <paragraphs name="use cases">
+        <reviews name="improve style"/>
+      </paragraphs>
+      <paragraphs name="conclusion">
+        <reviews name="justify x"/>
+      </paragraphs>
+    </papers>
+    <papers name="Grammar-based Definition for Graphical Notations" state="//@structuralView/@status/@pubStates.6">
+      <paragraphs name="introduction"/>
+      <paragraphs name="future works"/>
+      <paragraphs name="history"/>
+    </papers>
+    <papers name="Improving the cognitive effectiveness of DSMLs" state="//@structuralView/@status/@pubStates.1">
+      <paragraphs name="abstract"/>
+      <paragraphs name="conclusion"/>
+      <paragraphs name="intro"/>
+      <paragraphs name="description"/>
+    </papers>
+    <papers name="Formalizing Patterns in DSMLs" state="//@structuralView/@status/@pubStates.3">
+      <paragraphs name="introduction"/>
+      <paragraphs name="state of the art"/>
+      <paragraphs name="description"/>
+    </papers>
+    <papers name="A Meta-Model-Based Approach for Diagram Generation" state="//@structuralView/@status/@pubStates.4">
+      <paragraphs name="experiments"/>
+      <paragraphs name="abstract"/>
+      <paragraphs name="proof A"/>
+    </papers>
+    <papers name="A Mapping Language from Models to Diagrams">
+      <paragraphs name="state of the art">
+        <reviews name="should be complete"/>
+      </paragraphs>
+      <paragraphs name="category theory">
+        <reviews name="change y"/>
+      </paragraphs>
+      <paragraphs name="colimit"/>
+      <paragraphs name="bibliography">
+        <reviews name="cite author x"/>
+      </paragraphs>
+    </papers>
+    <papers name="Grammar-based Definition for Graphical Notations">
+      <paragraphs name="sketches"/>
+      <paragraphs name="definitions">
+        <reviews name="incomplete"/>
+      </paragraphs>
+      <paragraphs name="conclusion">
+        <reviews name="cite work xy"/>
+      </paragraphs>
+    </papers>
+    <status label="status">
+      <pubStates name="Initial Submission">
+        <transitions label="conditions ok" source="//@structuralView/@status/@pubStates.0" target="//@structuralView/@status/@pubStates.1"/>
+        <transitions label="plagiarism" source="//@structuralView/@status/@pubStates.0" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="concurrent submission" source="//@structuralView/@status/@pubStates.0" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="prior submission" source="//@structuralView/@status/@pubStates.0" target="//@structuralView/@status/@pubStates.2"/>
+        <s_actions actionLabel="upload"/>
+      </pubStates>
+      <pubStates name="Primary Review">
+        <transitions label="minor contribution" source="//@structuralView/@status/@pubStates.1" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="no proof" source="//@structuralView/@status/@pubStates.1" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="problem already solved" source="//@structuralView/@status/@pubStates.1" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="corrections needed" source="//@structuralView/@status/@pubStates.1" target="//@structuralView/@status/@pubStates.4"/>
+        <transitions label="to be discussed" source="//@structuralView/@status/@pubStates.1" target="//@structuralView/@status/@pubStates.5"/>
+      </pubStates>
+      <pubStates name="Rejected">
+        <s_actions actionLabel="notify authors"/>
+      </pubStates>
+      <pubStates name="Accepted">
+        <transitions label="no camera ready upload" source="//@structuralView/@status/@pubStates.3" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="conditions ok" source="//@structuralView/@status/@pubStates.3" target="//@structuralView/@status/@pubStates.6"/>
+        <s_actions actionLabel="upload camera ready form"/>
+      </pubStates>
+      <pubStates name="Conditional Acceptance">
+        <transitions label="required changes not made" source="//@structuralView/@status/@pubStates.4" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="required changes made" source="//@structuralView/@status/@pubStates.4" target="//@structuralView/@status/@pubStates.3"/>
+        <s_actions actionLabel="require changes"/>
+      </pubStates>
+      <pubStates name="Secondary Review">
+        <transitions label="corrections needed" source="//@structuralView/@status/@pubStates.5" target="//@structuralView/@status/@pubStates.4"/>
+        <transitions label="under threshold" source="//@structuralView/@status/@pubStates.5" target="//@structuralView/@status/@pubStates.2"/>
+        <transitions label="conditions ok" source="//@structuralView/@status/@pubStates.5" target="//@structuralView/@status/@pubStates.3"/>
+      </pubStates>
+      <pubStates name="Published"/>
+    </status>
+  </structuralView>
+  <positions description="phd student"/>
+  <positions description="assistant professor"/>
+  <positions description="chair"/>
+  <positions description="lecturer"/>
+  <positions description="phd"/>
+  <positions description="professor"/>
+</_research32:PublicationSystem>

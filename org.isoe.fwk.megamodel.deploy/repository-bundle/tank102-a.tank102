@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_tank102:LevelRegulation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_tank102="http://tank102">
+  <tank name="cooling tank" level="25.0" maxLevel="45.0">
+    <sensor level="25.0"/>
+  </tank>
+  <source name="milk">
+    <flow name="in_flow" from="//@source" to="//@tank">
+      <history value="141.0"/>
+      <history value="145.0"/>
+      <history value="160.0"/>
+      <history value="130.0"/>
+      <history value="80.0"/>
+    </flow>
+  </source>
+  <sink name="outlet"/>
+  <controler fromSensor="//@tank/@sensor" toValve="//@valve" pGain="1.65" iGain="7.54" dGain="2.64"/>
+  <valve name="valve" from="//@tank" to="//@sink"/>
+</_tank102:LevelRegulation>

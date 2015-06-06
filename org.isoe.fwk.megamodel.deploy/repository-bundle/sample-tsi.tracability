@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_tracability:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_tracability="http://tracability">
+  <equipments ident="Fraiseuse">
+    <ownerships equipment="//@equipments.0" owner="//@owners.0" from="01/05/2005" to="15/06/2007"/>
+    <ownerships equipment="//@equipments.0" since="" owner="//@owners.1" from="16/06/2007" to="03/04/2015"/>
+    <comment/>
+    <subEquipments ident="outils de coupe"/>
+    <subEquipments ident="cnc"/>
+  </equipments>
+  <equipments ident="Oscilloscope">
+    <ownerships equipment="//@equipments.1" owner="//@owners.1" from="01/04/2006" to="01/05/2015"/>
+  </equipments>
+  <equipments ident="Alimentation">
+    <ownerships equipment="//@equipments.2" owner="//@owners.2" from="03/07/2008" to="01/05/2012"/>
+    <ownerships equipment="//@equipments.2" since="" owner="//@owners.5" from="02/05/2012" to="03/04/2015"/>
+    <comment/>
+  </equipments>
+  <equipments ident="Banc de test">
+    <ownerships equipment="//@equipments.3" owner="//@owners.0" from="01/10/2000" to="03/12/2005"/>
+    <ownerships equipment="//@equipments.3" owner="//@owners.4" from="04/12/2005" to="05/01/2006"/>
+    <ownerships equipment="//@equipments.3" owner="//@owners.5" from="06/01/2006" to="14/03/2007"/>
+    <ownerships equipment="//@equipments.3" owner="//@owners.2" from="15/03/2007" to="10/05/2015"/>
+    <comment/>
+  </equipments>
+  <equipments ident="Centrale">
+    <ownerships equipment="//@equipments.4" owner="//@owners.5" from="06/07/2010" to="10/05/2015"/>
+    <comment/>
+    <subEquipments ident="panneau"/>
+    <subEquipments ident="regulateur"/>
+  </equipments>
+  <equipments ident="Baie Stockage">
+    <ownerships equipment="//@equipments.5" owner="//@owners.3" from="05/06/2010" to="15/04/2015"/>
+  </equipments>
+  <equipments ident="véhicule 1">
+    <ownerships equipment="//@equipments.6" owner="//@owners.3" from="01/05/2010" to="04/05/2015"/>
+  </equipments>
+  <owners ident="Jean-Pierre" activity="//@activities.0"/>
+  <owners ident="Jean-Paul" activity="//@activities.0"/>
+  <owners ident="Marie" activity="//@activities.1"/>
+  <owners ident="Cécile" activity="//@activities.4"/>
+  <owners ident="André" activity="//@activities.2"/>
+  <owners ident="Michel" activity="//@activities.3"/>
+  <activities name="Mécanique"/>
+  <activities name="Electronique"/>
+  <activities name="Hydraulique"/>
+  <activities name="Energie"/>
+  <activities name="Organisation"/>
+</_tracability:World>

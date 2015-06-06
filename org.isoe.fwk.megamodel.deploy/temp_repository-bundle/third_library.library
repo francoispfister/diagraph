@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.example.library:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.example.library="http:///org/eclipse/example/library.ecore">
+  <writers name="bill" books="//@books.0">
+    <opinions text="The Best" context="Ok" book="//@books.0"/>
+  </writers>
+  <writers name="boule" books="//@books.1"/>
+  <books title="Me" author="//@writers.0">
+    <reviews title="A good review"/>
+  </books>
+  <books title="You" author="//@writers.1"/>
+</org.eclipse.example.library:Library>

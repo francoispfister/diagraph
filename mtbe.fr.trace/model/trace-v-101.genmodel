@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/mtbe.fr.trace/src"
+    modelPluginID="mtbe.fr.trace" modelName="Trace-v-101" importerID="org.eclipse.emf.importer.ecore"
+    copyrightFields="false">
+  <foreignModel>trace-v-101.ecore</foreignModel>
+  <genPackages prefix="Trace" basePackage="mtbe.fr" disposableProviderFactory="true"
+      ecorePackage="trace-v-101.ecore#/">
+    <genClasses ecoreClass="trace-v-101.ecore#//Trace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trace-v-101.ecore#//Trace/traces"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trace-v-101.ecore#//Trace/sourceModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trace-v-101.ecore#//Trace/targetModel"/>
+      <genOperations ecoreOperation="trace-v-101.ecore#//Trace/getAllMappedObjects"/>
+    </genClasses>
+    <genClasses ecoreClass="trace-v-101.ecore#//TraceLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/similarity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/requiredSimilarity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/rationale"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/similarityMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trace-v-101.ecore#//TraceLink/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trace-v-101.ecore#//TraceLink/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/targetValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute trace-v-101.ecore#//TraceLink/sourceValue"/>
+      <genOperations ecoreOperation="trace-v-101.ecore#//TraceLink/sameAs">
+        <genParameters ecoreParameter="trace-v-101.ecore#//TraceLink/sameAs/tracelink"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

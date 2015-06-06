@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_helloworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_helloworld="http://helloworld">
+  <things name="thing one">
+    <relations name="hello" toThing="//@things.1" since="today"/>
+    <relations name="world" toThing="//@things.2" since="yesterday"/>
+  </things>
+  <things name="thing two"/>
+  <things name="thing three"/>
+</_helloworld:World>

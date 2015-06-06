@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ecommerce104"
+    nsURI="http://ecommerce104" nsPrefix="_ecommerce104">
+  <eAnnotations source="diagen">
+    <details key="knownas=simple world"/>
+    <details key="origin=http://org.isoe.fr"/>
+    <details key="leftparent=nil" value=""/>
+    <details key="rightparent=nil" value=""/>
+    <details key="requires=nil" value=""/>
+    <details key="context=startup"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Panier">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=client"/>
+      <details key="view=vwventes"/>
+      <details key="label=clientNom"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lignes" upperBound="-1"
+        eType="#//Ligne" containment="true" eOpposite="#//Ligne/panier"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientNom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="total" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="port" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tva" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalTTC" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="adresseLivraison" eType="#//Adresse"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="client" eType="#//Client"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ligne">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="view=vwventes"/>
+      <details key="cont=Panier.lignes"/>
+      <details key="ltrg=article"/>
+      <details key="lsrc=panier"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="panier" eType="#//Panier"
+        eOpposite="#//Panier/lignes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="article" eType="#//Article"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quant" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="articleNom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" volatile="true" transient="true" defaultValueLiteral=""
+        derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Article">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=vwventes"/>
+      <details key="label=nom"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="labels=nom:prix"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantStock" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Client">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=vwventes"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="labels=nom:prenom"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="adresses" upperBound="-1"
+        eType="#//Adresse" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prenom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Adresse">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=vwventes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commune" eType="#//Commune"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="voie" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nomCommune" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TypeAdresse"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Commune" eSuperTypes="#//Nommable">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codePostal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TypeAdresse">
+    <eLiterals name="livraison"/>
+    <eLiterals name="facturation" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fournisseur" eSuperTypes="#//Nommable">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=approvisionnes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvisionnes" upperBound="-1"
+        eType="#//Approvisionne" containment="true" eOpposite="#//Approvisionne/fourn"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ventes" eSuperTypes="#//Nommable">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=vwventes"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="nav:vwventes"/>
+      <details key="kref=articles"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paniers" upperBound="-1"
+        eType="#//Panier" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="articles" upperBound="-1"
+        eType="#//Article" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ECommerce" eSuperTypes="#//Nommable">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="communes" upperBound="-1"
+        eType="#//Commune" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fournisseurs" upperBound="-1"
+        eType="#//Fournisseur" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clients" upperBound="-1"
+        eType="#//Client" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ventes" eType="#//Ventes"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Approvisionne">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fourn" eType="#//Fournisseur"
+        eOpposite="#//Fournisseur/approvisionnes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="article" eType="#//Article"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="articleNom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nommable">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=vwventes"/>
+      <details key="label=nom"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/ZERO"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/ONE"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/TWO"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/THREE"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/FOUR"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//Priority/FIVE"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//Priority"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="650" y="570"/>
+  </children>
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="mimap.ecore#//RelationshipType/DEPENDENCY"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//RelationshipType/INCLUDES"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="mimap.ecore#//RelationshipType/EXTENDS"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//RelationshipType"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="515" y="565"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//DocumentRoot/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//DocumentRoot/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//DocumentRoot/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="24" y="628" width="443"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//Map/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Map/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Map/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Map/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//Map/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="24" y="504" width="443"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//Topic/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Topic/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Topic/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Topic/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Topic/%diagraph%/@details.4"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//Topic/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="514" y="404" width="299"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//Thread/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Thread/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Thread/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Thread/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//Thread/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="24" y="341" width="327"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//ThreadItem/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//ThreadItem/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//ThreadItem/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//ThreadItem/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="24" y="211" width="183"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//Resource/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//Resource/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//Resource/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="24" y="51" width="518"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//DependencyRelationship/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//DependencyRelationship/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="834" y="451" width="178"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//DocumentRoot/mixed"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//DocumentRoot"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="614" width="443"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//Map/title"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//Map"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="490" width="443"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//DependencyRelationship"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="830" y="445" width="178"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//Resource/email"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Resource/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//Resource"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="20" width="518"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//Thread/postDate"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Thread/subject"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//Thread"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="310" width="327"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//ThreadItem/body"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//ThreadItem/itemPostDate"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//ThreadItem"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="20" y="180" width="183"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/duration"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/endDate"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/percentComplete"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/priority"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//Topic/startDate"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//Topic"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="510" y="305" width="299"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//IncludeRelationship/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//IncludeRelationship/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="879" y="291" width="168"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//IncludeRelationship"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="875" y="285" width="168" height="43"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//AbstractRelationship/%diagraph%/@details.4"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//AbstractRelationship/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//AbstractRelationship/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//AbstractRelationship/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="mimap.ecore#//AbstractRelationship/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//AbstractRelationship/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="604" y="31" width="423"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="mimap.ecore#//AbstractRelationship/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="mimap.ecore#//AbstractRelationship/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//AbstractRelationship"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="600" width="423"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="mimap.ecore#//ExtendRelationship/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="mimap.ecore#//ExtendRelationship/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="894" y="191" width="143"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="mimap.ecore#//ExtendRelationship"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="890" y="185" width="143"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="mimap.ecore#/"/>
+  <edges type="3002" source="//@children.10" target="//@children.15">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-16" y="2"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="14" y="-5"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Map/rootTopics"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[225, 25, -207, 76]$[248, 25, -184, 76]$[248, -115, -184, -64]$[274, -115, -158, -64]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.49019607843137253,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5321637426900585,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.10" target="//@children.19">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-91" y="3"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="53" y="18"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Map/relations"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[322, 0, -186, 458]$[322, -480, -186, -22]$[472, -480, -36, -22]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.24509803921568626,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.08759124087591241,0.49019607843137253)"/>
+  </edges>
+  <edges type="3002" source="//@children.10" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-37" y="-16"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Map/resources"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[62, 0, -40, 404]$[62, -404, -40, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7450980392156863,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8333333333333334,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.19" target="//@children.15">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-36" y="-14"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//AbstractRelationship/source"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-70, 14, 160, -373]$[-70, 253, 160, -134]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.35766423357664234,0.7906976744186046)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.03508771929824561,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.19" target="//@children.15">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-21" y="2"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//AbstractRelationship/target"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-29, 8, 105, -373]$[-29, 247, 105, -134]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.15328467153284672,0.8837209302325582)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.07017543859649122,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.12" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-13" y="-20"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Resource/comments"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[116, 0, 83, -224]$[116, 224, 83, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.25,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.12" target="//@children.15">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-29" y="8"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="6" y="-9"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Resource/topics"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[161, 0, -207, -219]$[161, 219, -207, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.6666666666666666,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7485380116959064,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.13" target="//@children.14">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Thread/items"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-79, 57, -90, 121]$[-139, 57, -150, 121]$[-139, -85, -150, -21]$[-79, -85, -90, -21]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.2459016393442623,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.13" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-23" y="29"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-53" y="20"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Thread/author"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[83, 0, 116, 224]$[83, -224, 116, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.25,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.14" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="7" y="-11"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//ThreadItem/author"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-90, 10, -62, 104]$[-150, 10, -122, 104]$[-150, -126, -122, -32]$[-90, -126, -62, -32]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.12037037037037036,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.15" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Topic/comments"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 339, 62]$[0, -102, 339, -40]$[-176, -102, 163, -40]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.24561403508771928,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.15" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-34" y="-22"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-14" y="19"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Topic/resources"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-207, 0, 161, 219]$[-207, -219, 161, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7485380116959064,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.6666666666666666,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.15" target="//@children.15">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-36" y="-38"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-6" y="-19"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//Topic/subtopics"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[117, -67, 117, -67]$[117, -107, 117, -107]$[57, -107, 57, -107]$[57, -67, 57, -67]"/>
+  </edges>
+  <edges type="3002" source="//@children.9" target="//@children.10">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="mimap.ecore#//DocumentRoot/map"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-83, 0, -4, 118]$[-153, 0, -74, 118]$[-153, -118, -74, 0]$[-83, -118, -4, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.18961625282167044,0.11764705882352941)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.011286681715575621,0.23529411764705882)"/>
+  </edges>
+  <edges type="3003" source="//@children.17" target="//@children.19">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[17, -16, -2, 247]$[17, -235, -2, 28]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.22549019607843138,0.4107142857142857)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7883211678832117,0.5882352941176471)"/>
+  </edges>
+  <edges type="3003" source="//@children.11" target="//@children.19">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-62, -6, 40, 412]$[-62, -385, 40, 33]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.46987951807228917,0.1568627450980392)"/>
+  </edges>
+  <edges type="3003" source="//@children.21" target="//@children.19">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[53, -12, -2, 125]$[53, -131, -2, 6]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.22900763358778625,0.3023255813953488)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8975903614457831,0.9117647058823529)"/>
+  </edges>
+</notation:Diagram>

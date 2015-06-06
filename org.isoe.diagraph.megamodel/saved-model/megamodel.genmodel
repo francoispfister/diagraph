@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.diagraph.megamodel/src/" editDirectory="/org.isoe.diagraph.megamodel.edit/src/" modelPluginID="org.isoe.diagraph.megamodel" modelName="Megamodel" complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.7">
+  <genPackages prefix="Megamodel" basePackage="org.isoe.diagraph" disposableProviderFactory="true">
+    <ecorePackage href="megamodel.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="megamodel.ecore#//Relation"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="megamodel.ecore#//Relation/required"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="megamodel.ecore#//Relation/related"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="megamodel.ecore#//Relation/variant"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="megamodel.ecore#//Relation/leftParent"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="megamodel.ecore#//Relation/rightParent"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//Megamodel"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Megamodel/dsmls"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Megamodel/name"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//Dsml"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/id"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/notationBridge"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/relations"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/models"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/notations"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/knownAs"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/documentation"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/origin"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/problem"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/context"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/keywords"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/buildIn"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/leftParentDetails"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/rightParentDetails"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/requireDetails"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/relatedDetails"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Dsml/variantDetails"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/rootNotation"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Dsml/ecoreDiagrams"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="megamodel.ecore#//MegamodelElement"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//MegamodelElement/name"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//MegamodelElement/URI"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//RelatedTo"/>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//RelatedTo/from"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//RelatedTo/to"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//RelatedTo/kind"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//Model"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Model/excerpt"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Model/notationDiagrams"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Model/dsml"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//Notation"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Notation/navigations"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Notation/notationBridge"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Notation/dsml"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//NotationDiagram"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//Navigation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Navigation/from"/>
+      </genFeatures>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Navigation/to"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Navigation/id"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="megamodel.ecore#//Diagram"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="megamodel.ecore#//Diagram/diagramPictureURI"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="megamodel.ecore#//EcoreDiagram"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

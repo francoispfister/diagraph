@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Jobs
+Bundle-SymbolicName: org.isoe.fwk.jobs;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Export-Package: org.isoe.fwk.jobs
+Require-Bundle: org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.eclipse.gmf.runtime.diagram.core;bundle-version="1.7.0",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.eclipse.ui;bundle-version="3.106.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

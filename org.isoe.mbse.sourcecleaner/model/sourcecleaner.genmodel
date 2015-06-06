@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.mbse.sourcecleaner/src"
+    modelPluginID="org.isoe.mbse.sourcecleaner" modelName="Sourcecleaner" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>sourcecleaner.ecore</foreignModel>
+  <genPackages prefix="Sourcecleaner" basePackage="org.isoe.mbse" disposableProviderFactory="true"
+      ecorePackage="sourcecleaner.ecore#/">
+    <genClasses ecoreClass="sourcecleaner.ecore#//Cleaner">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sourcecleaner.ecore#//Cleaner/projects"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sourcecleaner.ecore#//Cleaner/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sourcecleaner.ecore#//Cleaner/temp"/>
+    </genClasses>
+    <genClasses ecoreClass="sourcecleaner.ecore#//Project">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sourcecleaner.ecore#//Project/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sourcecleaner.ecore#//Project/sources"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="sourcecleaner.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sourcecleaner.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sourcecleaner.ecore#//Source"/>
+  </genPackages>
+</genmodel:GenModel>

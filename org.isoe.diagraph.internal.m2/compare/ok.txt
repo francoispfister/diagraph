@@ -1,0 +1,686 @@
+DANPRS (default)(Composite.node) node
+DANPRS (default)(Composite.kref) kref=astates
+DANPRS (default)(Composite.kref) kref=erfs
+DANPRS (default)(Component.node) node
+DANPRS (default)(Component.label) label=id
+DANPRS (default)(EClass0.node) node
+DANPRS (default)(Base.pov) pov
+DANPRS (default)(Base.node) node
+DANPRS (default)(Base.cref) cref=composites
+DANPRS (default)(Foo.node) node
+DANPRS (default)(Bar.node) node
+dummy GenModel created for lang.m2.composite106
+point of view: org.isoe.diagraph.internal.m2.DiaPointOfView@6effb9
+initParser for view: default
+parse_2 composite106.default
+point of view = composite106.default
+parsePov
+createDiagraphNode Base not derived depth=0
+-----
+s3= isPov  isAbstractNode directscount=0 inheritedscount=0-----
+
+diagraph node created
+allready contained (Base) Base-composites->Composite default__cref_sc_tc
+1wwww(Base) Base-composites->Composite default_case_cont-_cref_sc_tc
+allready contained (Base) Base-composites->Composite default_case_cont-_cref_sc_tc
+containmentAssociationsConcreteTo: Base->composites
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+createDiagraphNode Composite not derived depth=0
+-----
+s3= isAbstractNode  isTopNode directscount=1 inheritedscount=1-----
+
+diagraph node created
+createDiagraphNode Component not derived depth=0
+target abstract for :(Composite) Composite-astates->Foo default__kref_sc_ta
+target abstract for :(Composite) Composite-astates->Bar default__kref_sc_ta
+allready contained (Composite) Composite-astates->Foo default__kref_sc_ta
+allready contained (Composite) Composite-astates->Bar default__kref_sc_ta
+1wwww(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+1wwww(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+pattern Target Abstract for Composite-astates->Foo
+pattern Target Abstract for Composite-astates->Bar
+createDiagraphNode Foo not derived depth=0
+target abstract for :(Composite) Composite-astates->Foo default__kref_sc_ta
+allready contained (Composite) Composite-astates->Foo default__kref_sc_ta
+1wwww(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+pattern Target Abstract for Composite-astates->Foo
+-----
+s3= isAbstractNode  isContainedThroughInheritance directscount=0 inheritedscount=1-----
+
+diagraph node created
+createDiagraphNode Bar not derived depth=0
+target abstract for :(Composite) Composite-astates->Bar default__kref_sc_ta
+allready contained (Composite) Composite-astates->Bar default__kref_sc_ta
+1wwww(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+pattern Target Abstract for Composite-astates->Bar
+-----
+s3= isAbstractNode  isContainedThroughInheritance directscount=0 inheritedscount=1-----
+
+diagraph node created
+-----
+s3= isAbstractNode directscount=0 inheritedscount=1-----
+
+diagraph node created
+createDiagraphNode EClass0 not derived depth=0
+allready contained (Composite) Composite-erfs->EClass0 default__kref_sc_tc
+1wwww(Composite) Composite-erfs->EClass0 default_case_cont-_kref_sc_tc
+-----
+s3= isAbstractNode directscount=1 inheritedscount=1-----
+
+diagraph node created
+IDiagraphReferenceAssociation added with abstract class: Component
+concrete subclass: Foo
+concrete subclass: Bar
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+containmentAssociationsConcreteTo: Composite->erfs
+(Composite) Composite-erfs->EClass0 default_case_cont-_kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+IDiagraphReferenceAssociation added with abstract class: Component
+concrete subclass: Foo
+concrete subclass: Bar
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+containmentAssociationsConcreteTo: Composite->erfs
+containmentAssociationsConcreteTo: Composite->erfs
+(Composite) Composite-erfs->EClass0 default_case_cont-_kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+IDiagraphReferenceAssociation added with abstract class: Component
+concrete subclass: Foo
+concrete subclass: Bar
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Foo) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Bar) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+(Composite) Composite-astates->Component default__kref_sc_ta
+------
+(a)GN_KREF_2 Composite -> astates (Component) [ npropa  null_label  ok ]
+containmentAssociationsConcreteTo: Composite->erfs
+containmentAssociationsConcreteTo: Composite->erfs
+containmentAssociationsConcreteTo: Composite->erfs
+containmentAssociationsConcreteTo: Composite->erfs
+(Composite) Composite-erfs->EClass0 default_case_cont-_kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc
+------
+(a)GN_KREF_3 Composite -> erfs (EClass0) [ npropa  null_label  ok ]
+containmentAssociationsConcreteTo: Base->composites
+containmentAssociationsConcreteTo: Base->composites
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+(Base) Base-composites->Composite default__cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+containmentAssociationsConcreteTo: Base->composites
+containmentAssociationsConcreteTo: Base->composites
+containmentAssociationsConcreteTo: Base->composites
+containmentAssociationsConcreteTo: Base->composites
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+(Base) Base-composites->Composite default__cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+(Base) Base-composites->Composite default__cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+(Base) Base-composites->Composite default__cref_sc_tc
+------
+(a)GN_KREF_1 Base -> composites (Composite) [ npropa  null_label  ko ]
+___________________
+node
+pov
+cref=composites
+
+------------
+
+------------
+______________________________
+reports
+______view default ______
+______nodes______
+
+___________________________________
+name=Base; depth=0; view=default; ; ; ; ;  pov; ; ;
+___________________________________
+name=Composite; depth=0; view=default;  directTopNode;; ; ; ; ; ; acr(<composites>);con([Base-composites->Composite]);
+___________________________________
+name=Foo; depth=1; view=default; ; ;  selfContainedThroughInheritance ; ; ; ; acr(<astates>);
+___________________________________
+name=Bar; depth=1; view=default; ; ;  selfContainedThroughInheritance ; ; ; ; acr(<astates>);
+___________________________________
+name=Component; depth=1; view=default; ; ; ; ; ; ; ; acr(<astates>);
+___________________________________
+name=EClass0; depth=1; view=default; ; ; ; ; ; ; ; acr(<erfs>);con([Composite-erfs->EClass0]);
+___________________________________
+______ref assocs______
+
+___________________________________
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc  (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta  (type=Component);(Composite)->Component;cazes[;;;;;];siblings[];targ_abstracts[Component];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta  (type=Component);(Composite)->Component;cazes[;;;;;];siblings[];targ_abstracts[Component];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Foo default_case_cont-_kref_sc_ta  (type=Component);(Composite)->Component;cazes[;;;;;];siblings[];targ_abstracts[Foo];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Bar default_case_cont-_kref_sc_ta  (type=Component);(Composite)->Component;cazes[;;;;;];siblings[];targ_abstracts[Bar];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-erfs->EClass0 default_case_cont-_kref_sc_tc  (type=EClass0);(Composite)->EClass0;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-astates->Component default__kref_sc_ta            (type=Component);(Composite)->Component;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ Foo-Bar];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Composite) Composite-erfs->EClass0 default__kref_sc_tc            (type=EClass0);(Composite)->EClass0;cazes[;_k;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+(Base) Base-composites->Composite default__cref_sc_tc            (type=Composite);(Base)->Composite;cazes[;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+___________________________________
+______class assocs______
+_____________________________
+
+parse_1 composite106.default
+Component<-*-Foo
+Component<-*-Bar
+DAP parsing EClass:Composite
+(2)parseElementAnnotations for view default and element Composite
+[Composite]
+   parse-----node=null=null
+DBNT-DAPND-2 - NOT currentcanvas-
+   parse-----kref=astates=null
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc  (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+Composite->astates (Foo)
+Composite->astates (Bar)
+Foo
+Bar
+concrete classes for astates Foo ,Bar ,
+Foo
+getNodeWithKReference typName=Foo Composite-astates.Foo->Component
+createBaseCompartment typname=Foo Composite->Foo
+createBaseContainment Composite
+(b)GN_KREF_3 Composite -> astates (Foo)  [ ypropa typname=Foocompname=astates cont_yes_exists ]
+added Composite astates target=Foo
+Bar
+getNodeWithKReference typName=Bar Composite-astates.Bar->Component
+createBaseCompartment typname=Bar Composite->Bar
+createBaseContainment Composite
+(b)GN_KREF_3 Composite -> astates (Bar)  [ ypropa typname=Barcompname=astates cont_yes_exists ]
+added Composite astates target=Bar
+   parse-----kref=erfs=null
+(Base) Base-composites->Composite default_case_cont-_cref_sc_tc  (type=Composite);(Base)->Composite;cazes[_pov;;;;;];siblings[];targ_abstracts[];simples[];simple2s[];_krefBySupers[];_krefBySubs[];_krefContainmentAlts[];subhierarchy=[ ];
+EClass0
+concrete classes for erfs EClass0 ,
+EClass0
+getNodeWithKReference typName=EClass0 Composite-erfs.EClass0->EClass0
+createBaseCompartment typname=EClass0 Composite->EClass0
+createBaseContainment Composite
+(b)GN_KREF_4 Composite -> erfs (EClass0)  [ npropa typname=EClass0compname=erfs cont_yes_exists ]
+added Composite erfs target=EClass0
+DAP parsing EReference:Composite.astates
+DAP parsing EReference:Composite.erfs
+DAP parsing EClass:Component
+(2)parseElementAnnotations for view default and element Component
+[Component]
+   parse-----node=null=null
+DBNT-DAPND-2 - NOT currentcanvas-
+   parse-----label=id=null
+DAP parsing EClass:EClass0
+(2)parseElementAnnotations for view default and element EClass0
+[EClass0]
+   parse-----node=null=null
+DBNT-DAPND-2 - NOT currentcanvas-
+DAP parsing EClass:Base
+(2)parseElementAnnotations for view default and element Base
+[Base]
+   parse-----node=null=null
+DBNT-DAPND-2 - currentcanvas-
+   parse-----pov=null=null
+DBNT-DAPND-2 - currentcanvas-
+   parse-----cref=composites=null
+concrete classes for composites
+Composite
+createBaseContainmentOnConcrete Base
+(b)GN_KREF_4 Base -> composites (Composite)  [ npropa typname=Basecompname=composites cont_yes_exists ]
+DAP parsing EReference:Base.composites
+DAP parsing EClass:Foo
+(2)parseElementAnnotations for view default and element Foo
+[Foo]
+   parse-----node=null=null
+DBNT-DAPND-2 - NOT currentcanvas-
+DAP parsing EClass:Bar
+(2)parseElementAnnotations for view default and element Bar
+[Bar]
+   parse-----node=null=null
+DBNT-DAPND-2 - NOT currentcanvas-
+pattern Target Abstract for Composite-astates->Foo
+pattern Target Abstract for Composite-astates->Bar
+pattern Target Abstract for Composite-astates->Foo
+pattern Target Abstract for Composite-astates->Bar
+pattern Target Abstract for Composite-astates->Foo
+pattern Target Abstract for Composite-astates->Bar
+node
+i_______[saving C:\workspaces_mars\runtime-kit9\lang.m2.composite106\model\report_composite106_default.csv]
+i_______[saved C:\workspaces_mars\runtime-kit9\lang.m2.composite106\model\report_composite106_default.csv]
+GmfGraphGenerator
+LOGSTA all ----------------------
+LOGSTA [2000]GRAPH_NODE_ - Composite -name Composite  no ref in statement
+LOGSTA [2002]GRAPH_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]GRAPH_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]GRAPH_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2004]GRAPH_NODE_ - Foo -name Foo  no ref in statement
+LOGSTA [2005]GRAPH_NODE_ - Bar -name Bar  no ref in statement
+LOGSTA [2006]GRAPH_NODE_ - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]GRAPH_CREATE - Base -name Base  no ref in statement
+LOGSTA [2010]GRAPH_CONTAIN - Base->Composite -name composites
+LOGSTA [2000]TOOL_NODE - Composite -name Composite  no ref in statement
+LOGSTA [2002]NO_TOOL - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]NO_TOOL - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]NO_TOOL - Composite->EClass0 -name erfs
+LOGSTA [2004]TOOL_NODE - Foo -name Foo  no ref in statement
+LOGSTA [2005]TOOL_NODE - Bar -name Bar  no ref in statement
+LOGSTA [2006]TOOL_NODE - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]TOOL_CREATE - Base -name Base  no ref in statement
+LOGSTA [2010]NO_TOOL - Base->Composite -name composites
+LOGSTA [2000]MAP_NODE_ - Composite -name Composite  no ref in statement
+LOGSTA [2002]MAP_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]MAP_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]MAP_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2004]MAP_NODE_ - Foo -name Foo  no ref in statement
+LOGSTA [2005]MAP_NODE_ - Bar -name Bar  no ref in statement
+LOGSTA [2006]MAP_NODE_ - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]MAP_CREATE_ - Base -name Base  no ref in statement
+LOGSTA [2010]MAP_CONTAIN - Base->Composite -name composites
+end LOGSTA all -------------------
+
+LOGSTA canvas GRAPH_NODE
+LOGSTA [2008]GRAPH_CREATE - Base -name Base  no ref in statement
+LOGSTA nodes GRAPH_NODE
+LOGSTA [2000]GRAPH_NODE_ - Composite -name Composite  no ref in statement
+LOGSTA [2004]GRAPH_NODE_ - Foo -name Foo  no ref in statement
+LOGSTA [2005]GRAPH_NODE_ - Bar -name Bar  no ref in statement
+LOGSTA [2006]GRAPH_NODE_ - EClass0 -name EClass0  no ref in statement
+LOGSTA links GRAPH_LINK
+LOGSTA empty
+LOGSTA links GRAPH_CONTAIN
+LOGSTA [2002]GRAPH_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]GRAPH_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]GRAPH_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2010]GRAPH_CONTAIN - Base->Composite -name composites
+GRAPH_NODE_;Composite; nocont Composite
+GRAPH_CONTAIN;Composite;Fooastates
+GRAPH_CONTAIN;Composite;Barastates
+GRAPH_CONTAIN;Composite;EClass0erfs
+GRAPH_NODE_;Foo; nocont Foo
+GRAPH_NODE_;Bar; nocont Bar
+GRAPH_NODE_;EClass0; nocont EClass0
+GRAPH_CONTAIN_SRC_ABSTRACT;Component; nocont Component
+GRAPH_CREATE;Base; nocont Base
+createCanvasAndFigureGallery[
+createCanvas: BaseCanvas
+createFigureGallery: default
+]createCanvasAndFigureGallery
+GRAPH_CONTAIN;Base;Compositecomposites
+TOOL_NODE;Composite; nocont Composite
+NO_TOOL;Composite;Fooastates
+NO_TOOL;Composite;Barastates
+NO_TOOL;Composite;EClass0erfs
+TOOL_NODE;Foo; nocont Foo
+TOOL_NODE;Bar; nocont Bar
+TOOL_NODE;EClass0; nocont EClass0
+GRAPH_CONTAIN_SRC_ABSTRACT;Component; nocont Component
+TOOL_CREATE;Base; nocont Base
+NO_TOOL;Base;Compositecomposites
+MAP_NODE_;Composite; nocont Composite
+MAP_CONTAIN;Composite;Fooastates
+MAP_CONTAIN;Composite;Barastates
+MAP_CONTAIN;Composite;EClass0erfs
+MAP_NODE_;Foo; nocont Foo
+MAP_NODE_;Bar; nocont Bar
+MAP_NODE_;EClass0; nocont EClass0
+GRAPH_CONTAIN_SRC_ABSTRACT;Component; nocont Component
+MAP_CREATE_;Base; nocont Base
+MAP_CONTAIN;Base;Compositecomposites
+createNodeRoundedRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@583318 (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@d14f76 (value: black)
+]createNodeRoundedRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1edc003 (value: white)
+createNode: Composite
+createFigureDescriptor[
+FigureDescriptor name: CompositeFigure
+]createFigureDescriptor
+createDefaultSizeFacet for: Composite
+createNodeRoundedRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1e24282 (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@6e7625 (value: black)
+]createNodeRoundedRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1aa753c (value: white)
+createNode: Foo
+createFigureDescriptor[
+FigureDescriptor name: FooFigure
+]createFigureDescriptor
+createDefaultSizeFacet for: Foo
+createNodeRoundedRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@138edb (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@621130 (value: black)
+]createNodeRoundedRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@185aeb1 (value: white)
+createNode: Bar
+createFigureDescriptor[
+FigureDescriptor name: BarFigure
+]createFigureDescriptor
+createDefaultSizeFacet for: Bar
+createNodeRoundedRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@f5c7b4 (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@8f057d (value: black)
+]createNodeRoundedRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@d8c3c6 (value: white)
+createNode: EClass0
+createFigureDescriptor[
+FigureDescriptor name: EClass0Figure
+]createFigureDescriptor
+createDefaultSizeFacet for: EClass0
+LOGSTA all ----------------------
+LOGSTA [2000]GRAPH_NODE_ - Composite -name Composite  no ref in statement
+LOGSTA [2002]GRAPH_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]GRAPH_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]GRAPH_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2004]GRAPH_NODE_ - Foo -name Foo  no ref in statement
+LOGSTA [2005]GRAPH_NODE_ - Bar -name Bar  no ref in statement
+LOGSTA [2006]GRAPH_NODE_ - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]GRAPH_CREATE - Base -name Base  no ref in statement
+LOGSTA [2010]GRAPH_CONTAIN - Base->Composite -name composites
+LOGSTA [2000]TOOL_NODE - Composite -name Composite  no ref in statement
+LOGSTA [2002]NO_TOOL - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]NO_TOOL - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]NO_TOOL - Composite->EClass0 -name erfs
+LOGSTA [2004]TOOL_NODE - Foo -name Foo  no ref in statement
+LOGSTA [2005]TOOL_NODE - Bar -name Bar  no ref in statement
+LOGSTA [2006]TOOL_NODE - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]TOOL_CREATE - Base -name Base  no ref in statement
+LOGSTA [2010]NO_TOOL - Base->Composite -name composites
+LOGSTA [2000]MAP_NODE_ - Composite -name Composite  no ref in statement
+LOGSTA [2002]MAP_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]MAP_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]MAP_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2004]MAP_NODE_ - Foo -name Foo  no ref in statement
+LOGSTA [2005]MAP_NODE_ - Bar -name Bar  no ref in statement
+LOGSTA [2006]MAP_NODE_ - EClass0 -name EClass0  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2008]MAP_CREATE_ - Base -name Base  no ref in statement
+LOGSTA [2010]MAP_CONTAIN - Base->Composite -name composites
+end LOGSTA all -------------------
+
+LOGSTA containments
+LOGSTA [2002]GRAPH_CONTAIN - Composite->Foo -name astates  abstract, is a subtarget of: Component
+LOGSTA [2003]GRAPH_CONTAIN - Composite->Bar -name astates  abstract, is a subtarget of: Component
+LOGSTA [2004]GRAPH_CONTAIN - Composite->EClass0 -name erfs
+LOGSTA [2010]GRAPH_CONTAIN - Base->Composite -name composites
+LOGSTA empty
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+LOGSTA [2007]GRAPH_CONTAIN_SRC_ABSTRACT - Component -name Component  no ref in statement
+process labels
+process references
+createCompartment: astates
+createSimpleRectangle[
+]createSimpleRectangle: astatesFigure
+createSimpleRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1834f61 (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1db7d24 (value: black)
+]createSimpleRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1d7e75d (value: white)
+createChildAccess for figure descriptor: CompositeFigure
+createCompartment: erfs
+createSimpleRectangle[
+]createSimpleRectangle: erfsFigure
+createSimpleRectangleWLayout[
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@2f34cb (value: white)
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1f69a68 (value: black)
+]createSimpleRectangleWLayout
+createConstantColor: org.eclipse.gmf.gmfgraph.impl.ConstantColorImpl@1bae0af (value: white)
+createChildAccess for figure descriptor: CompositeFigure
+GmfToolGenerator
+LOGSTA tools-canvas
+LOGSTA [2008]TOOL_CREATE - Base -name Base  no ref in statement
+LOGSTA tools-nodes
+LOGSTA [2000]TOOL_NODE - Composite -name Composite  no ref in statement
+LOGSTA [2004]TOOL_NODE - Foo -name Foo  no ref in statement
+LOGSTA [2005]TOOL_NODE - Bar -name Bar  no ref in statement
+LOGSTA [2006]TOOL_NODE - EClass0 -name EClass0  no ref in statement
+LOGSTA tools-links
+LOGSTA empty
+createToolRegistryAndPalette: default
+createToolGroup: default
+(1) createCreationTool Composite- with image bundle: Composite
+(1) createCreationTool Foo- with image bundle: Foo
+(1) createCreationTool Bar- with image bundle: Bar
+(1) createCreationTool EClass0- with image bundle: EClass0
+process labels
+process references
+GmfMapGenerator
+createMapping: org.eclipse.gmf.mappings.impl.MappingImpl@13c383c
+createCanvasMapping:
+1_createNodeMapping: Composite cont: Base.composites:Composite
+createChildReference: Base.composites:Composite
+process labels
+process references
+DGNH createTopNodeReference: Composite
+createCompartmentMapping: astates
+1_createNodeMapping: Foo cont: Composite.astates:Foo
+createChildReference: Composite.astates:Foo
+createFeatureLabelMapping: FooId[id;] - pattern=
+1_createNodeMapping: Bar cont: Composite.astates:Bar
+createChildReference: Composite.astates:Bar
+createFeatureLabelMapping: BarId[id;] - pattern=
+createCompartmentMapping: erfs
+1_createNodeMapping: EClass0 cont: Composite.erfs:EClass0
+createChildReference: Composite.erfs:EClass0
+composite106.default
+composite106.default

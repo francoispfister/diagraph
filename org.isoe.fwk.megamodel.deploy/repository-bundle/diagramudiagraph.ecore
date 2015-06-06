@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="diagramudiagraph"
+    nsURI="http://diagramudiagraph" nsPrefix="_diagramudiagraph">
+  <eAnnotations source="_refactor">
+    <details key="_dupref" value=""/>
+    <details key="_name" value=""/>
+    <details key="_pooref" value=""/>
+    <details key="annotation.missing" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Edge" eSuperTypes="#//ViewObject">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetReference" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ViewObject" abstract="true" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EModelElement">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="semanticRole" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//ENamedElement"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="icon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" eType="#//EObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Node" eSuperTypes="#//ViewObject #//LabeledElement #//DOwnedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="edges" upperBound="-1"
+        eType="#//Edge" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viewNavigation" eType="#//DViewNavigation"
+        containment="true" eOpposite="#//DViewNavigation/navigationSource"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="diagram" eType="#//Diagram"
+        eOpposite="#//Diagram/nodes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigationTo" eType="#//PointOfView"
+        eOpposite="#//PointOfView/navigationFroms"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LabeledEdge" eSuperTypes="#//DOwnedEdge #//LabeledElement #//DExplicitEdge #//Edge">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=DNode.edges" value=""/>
+      <details key="lsrc=source" value=""/>
+      <details key="ltrg=target" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourceReference" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DReference" eSuperTypes="#//Edge #//DExplicitEdge">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=DNode.edges" value=""/>
+      <details key="lsrc=source" value=""/>
+      <details key="ltrg=target" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DImplicitEdge" eSuperTypes="#//DOwnedEdge">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=DNode.edges" value=""/>
+      <details key="lsrc=source" value=""/>
+      <details key="ltrg=target" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="inherited" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diagram" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EModelElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov" value=""/>
+      <details key="cref=nodes"/>
+      <details key="ref=rootPointOfView"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" upperBound="-1"
+        eType="#//Node" containment="true" eOpposite="#//Node/diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pointOfView" lowerBound="1"
+        eType="#//PointOfView" eOpposite="#//PointOfView/diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="viewName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="graphHandler" eType="#//DGraphHandler"
+        transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LabeledElement" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="eClaz" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labels" upperBound="-1"
+        eType="#//Label" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DOwnedElement" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Node"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DOwnedEdge" abstract="true" eSuperTypes="#//DOwnedElement #//Edge">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DGraphHandler" instanceClassName="org.isoe.diagraph.diagraph.helpers.IGraphHandler"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DCompartmentingEdge" eSuperTypes="#//DImplicitEdge">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="cont=DNode.edges"/>
+      <details key="lsrc=source"/>
+      <details key="ltrg=target"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="partitionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PointOfView" eSuperTypes="#//Node">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=parent"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigationFrom" upperBound="-1"
+        eType="#//Node"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="diagram" lowerBound="1"
+        eType="#//Diagram" eOpposite="#//Diagram/pointOfView"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigationFroms" upperBound="-1"
+        eType="#//Node" eOpposite="#//Node/navigationTo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DViewNavigation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigationTarget" eType="#//Diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="navigationSource" eType="#//Node"
+        eOpposite="#//Node/viewNavigation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DAffixingEdge" eSuperTypes="#//DImplicitEdge"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Label">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DExplicitEdge" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="arrows" upperBound="2"
+        eType="#//DShape"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DShape">
+    <eLiterals name="rectangle" value="4"/>
+    <eLiterals name="vee"/>
+    <eLiterals name="triangle" value="1"/>
+    <eLiterals name="dot" value="2"/>
+    <eLiterals name="circle" value="3"/>
+    <eLiterals name="roundedRect" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DNavigationEdge" eSuperTypes="#//Edge"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContainmentEdge" eSuperTypes="#//Edge">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedTarget" lowerBound="1"
+        eType="#//Node"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Domain">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="views" upperBound="-1"
+        eType="#//Diagram" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="epackage" eType="#//EPackage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EPackage"/>
+</ecore:EPackage>

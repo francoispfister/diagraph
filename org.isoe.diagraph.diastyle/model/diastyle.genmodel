@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.diagraph.diastyle/src"
+    modelPluginID="org.isoe.diagraph.diastyle" modelName="Diastyle5" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="../../org.isoe.diagraph.diagraph/model/diagraph.genmodel#//diagraph">
+  <foreignModel>diastyle.ecore</foreignModel>
+  <genPackages prefix="Diastyle" basePackage="org.isoe.diagraph" disposableProviderFactory="true"
+      ecorePackage="diastyle.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DColor">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/white"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/black"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/lightGray"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/gray"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/darkGray"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/red"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/orange"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/yellow"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/green"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/lightGreen"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/darkGreen"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/cyan"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/lightBlue"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/blue"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DColor/darkBlue"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DLayout">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLayout/none"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLayout/free"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLayout/horizontal"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLayout/vertical"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DLine">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/solid"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/dash"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/dot"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/dashdot"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/dashdotdot"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DLine/custom"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DDirection">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DDirection/none"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DDirection/left"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DDirection/right"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DDirection/bidirectional"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DShape">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/rectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/roundedRectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/ellipse"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/dot"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/custom"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/arrow"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DShape/triangle"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DFontStyle">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontStyle/normal"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontStyle/bold"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontStyle/italic"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DFontName">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontName/arial"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontName/courier"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DFontName/times"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diastyle.ecore#//DAlignment">
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DAlignment/beginning"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DAlignment/center"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DAlignment/end"/>
+      <genEnumLiterals ecoreEnumLiteral="diastyle.ecore#//DAlignment/fill"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="diastyle.ecore#//DStyleHandler"/>
+    <genClasses image="false" ecoreClass="diastyle.ecore#//DNodeEdgeStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/line"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/lineWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/fontName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/fontStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/fontColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/textAlignment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeEdgeStyle/icon"/>
+    </genClasses>
+    <genClasses ecoreClass="diastyle.ecore#//DStyle">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diastyle.ecore#//DStyle/styles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DStyle/styleHandler"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diastyle.ecore#//DStyle/dGraph"/>
+      <genOperations ecoreOperation="diastyle.ecore#//DStyle/getBackgroundColor">
+        <genParameters ecoreParameter="diastyle.ecore#//DStyle/getBackgroundColor/element"/>
+      </genOperations>
+      <genOperations ecoreOperation="diastyle.ecore#//DStyle/getFigure">
+        <genParameters ecoreParameter="diastyle.ecore#//DStyle/getFigure/element"/>
+      </genOperations>
+      <genOperations ecoreOperation="diastyle.ecore#//DStyle/getIcon">
+        <genParameters ecoreParameter="diastyle.ecore#//DStyle/getIcon/element"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="diastyle.ecore#//DTopologicBridge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diastyle.ecore#//DTopologicBridge/dGraphElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DTopologicBridge/name"/>
+    </genClasses>
+    <genClasses ecoreClass="diastyle.ecore#//DNodeStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/sizeX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/radius"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/shape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/sizeY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/figure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/shapeData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DNodeStyle/layout"/>
+    </genClasses>
+    <genClasses ecoreClass="diastyle.ecore#//DEdgeStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DEdgeStyle/arrowDirection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DEdgeStyle/arrowSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DEdgeStyle/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="diastyle.ecore#//DNestingEdgeStyle"/>
+    <genClasses image="false" ecoreClass="diastyle.ecore#//DBaseStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DBaseStyle/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DBaseStyle/color"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diastyle.ecore#//DBaseStyle/topologicBridges"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diastyle.ecore#//DBaseStyle/parent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diastyle.ecore#//DBaseStyle/parentName"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart="http://statechart">
+  <subStates name="start">
+    <transitions from="//@subStates.0" to="//@subStates.1" name="if x"/>
+    <transitions from="//@subStates.0" to="//@subStates.2" name="z=true"/>
+  </subStates>
+  <subStates name="Foo">
+    <transitions from="//@subStates.1" to="//@subStates.3" name="a+b/c=99"/>
+    <subStates name="subfoo1">
+      <transitions from="//@subStates.1/@subStates.0" to="//@subStates.1/@subStates.1" name="azer"/>
+      <transitions from="//@subStates.1/@subStates.0" to="//@subStates.1/@subStates.2" name="qwer"/>
+      <actions expression="action B"/>
+      <subStates name="subsubA">
+        <transitions from="//@subStates.1/@subStates.0/@subStates.0" to="//@subStates.1/@subStates.0/@subStates.1" name="go=false"/>
+      </subStates>
+      <subStates name="subsubB"/>
+    </subStates>
+    <subStates name="subfoo2">
+      <actions expression="actionA"/>
+    </subStates>
+    <subStates name="subfoo3"/>
+  </subStates>
+  <subStates name="Bar">
+    <transitions from="//@subStates.2" to="//@subStates.4" name="end=true"/>
+    <actions expression="dothis"/>
+  </subStates>
+  <subStates name="Zig">
+    <transitions from="//@subStates.3" to="//@subStates.4" name="foo=bar"/>
+    <actions expression="dothat"/>
+  </subStates>
+  <subStates name="final"/>
+</_statechart:State>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp6:PublicationStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp6="http://aigle-tp6.v0">
+  <researchers name="Stivell" forName="A" res_position="//@positions.3">
+    <skills description="rca"/>
+    <skills description="uml"/>
+    <collaborations ratio="10" col_paper="//@papers.0"/>
+    <collaborations ratio="40" col_paper="//@papers.2"/>
+    <collaborations ratio="20" col_paper="//@papers.3"/>
+  </researchers>
+  <researchers name="Hallyday" forName="J" res_position="//@positions.1">
+    <skills description="optimization"/>
+    <skills description="decision"/>
+    <collaborations ratio="20" col_paper="//@papers.1"/>
+    <collaborations ratio="30" col_paper="//@papers.0"/>
+  </researchers>
+  <researchers name="Jordan" forName="F" res_position="//@positions.1">
+    <skills description="image processing"/>
+    <collaborations ratio="40" col_paper="//@papers.4"/>
+  </researchers>
+  <researchers name="Blondo" forName="L" res_position="//@positions.0">
+    <skills description="systems engineering"/>
+    <skills description="requirements"/>
+    <collaborations ratio="40" col_paper="//@papers.0"/>
+  </researchers>
+  <researchers name="Mitchell" forName="E" res_position="//@positions.5">
+    <skills description="testing"/>
+    <skills description="safety"/>
+    <skills description="validation"/>
+    <collaborations ratio="80" col_paper="//@papers.1"/>
+    <collaborations ratio="60" col_paper="//@papers.4"/>
+    <collaborations ratio="20" col_paper="//@papers.0"/>
+  </researchers>
+  <papers name="Grammar-based Definition for Graphical Notations">
+    <paragraphs name="Emof definition" content="EMOF defines a limited amount of modelling constructs, among them classes, attributes, references, packages and operations. "/>
+    <paragraphs name="Obeo Designer" content="Obeo Designer is the product of a french company named Obeo. Obeo is a consulting company which has a strong focus on MDE and MDA. The company is an Eclipse Foundation Strategic Member and a contributor on many Eclipse Modelling projects."/>
+    <paragraphs name="MetaEdit" content="MetaCase MetaEdit+ products are one of the most mature solutions on the market today. The company started out in 1991, having its roots in work from the University of Jyvskyla in Finland."/>
+    <keywords weight="10" keyword="//@knowledgeMan/@allKeywords.0"/>
+    <keywords weight="30" keyword="//@knowledgeMan/@allKeywords.0"/>
+    <keywords weight="80" keyword="//@knowledgeMan/@allKeywords.7"/>
+  </papers>
+  <papers name="Metamodel based Code Generation for Visual Notations">
+    <paragraphs name="Graphical metamodeling" content="Graphical metamodeling is helpful at the early stages of language creation when we want to  design the basic language structure and discuss about it with others. A graphical metamodel is  also useful for getting an overview of the language."/>
+    <paragraphs name="Components" content="Each component type includes  one  or more  attributes. A component type attribute is a reference to a project attribute  from the  Fundamentals category."/>
+    <keywords weight="10" keyword="//@knowledgeMan/@allKeywords.3"/>
+    <keywords weight="20" keyword="//@knowledgeMan/@allKeywords.5"/>
+  </papers>
+  <papers name="A Meta-Model-Based Approach for Diagram Generation">
+    <paragraphs name="Roles" content="Roles are a recurring concept in both object-oriented and agent-oriented methodologies, not to mention data-modeling (Steimann, 2005). In conventional object-oriented methods, roles have figured as a classifier of the relationship between objects."/>
+    <paragraphs name="Entities" content="The separation of organizational roles from the entities that play them allows the definition of abstract"/>
+    <keywords weight="12" keyword="//@knowledgeMan/@allKeywords.2"/>
+    <keywords weight="50" keyword="//@knowledgeMan/@allKeywords.1"/>
+  </papers>
+  <papers name="Improving the cognitive effectiveness of DSMLs">
+    <paragraphs name="Language Workbench" content="The Language Workbench Competition (LWC) which is a part of the Code Generation [31] conference, refers to a language workbench that supports both diagrammatic and textual representation of a model as &quot;the one language workbench to rule them all..."/>
+    <keywords weight="10" keyword="//@knowledgeMan/@allKeywords.2"/>
+    <keywords weight="80" keyword="//@knowledgeMan/@allKeywords.3"/>
+  </papers>
+  <papers name="A modelling language for functional architectures">
+    <paragraphs name="Code generation" content="In language workbenches code generation is very common, as the tool itself usually do not run the DSML which is created."/>
+    <paragraphs name="templating" content="The biggest difference from a simple template engine, is the built-in interpreter that interprets a DSML and provides functionality based on what a Xpand metamodel dictates. In Xpand, the metamodel is the internal mapping from types in the DSML to types that Xpand understands."/>
+    <keywords weight="50" keyword="//@knowledgeMan/@allKeywords.6"/>
+  </papers>
+  <positions name="Professor" description="Professor"/>
+  <positions name="Assistant Professor" description="Assistant Professor" parent="//@positions.0"/>
+  <positions name="Lecturer" description="Lecturer" parent="//@positions.1"/>
+  <positions name="Phd" description="Phd" parent="//@positions.0"/>
+  <positions name="Phd Student" description="Phd Student" parent="//@positions.1"/>
+  <positions name="Chair" description="Chair"/>
+  <knowledgeMan name="Keywords">
+    <allKeywords key="graphical notations"/>
+    <allKeywords key="concrete syntax"/>
+    <allKeywords key="triple graph grammars"/>
+    <allKeywords key="physics of notation"/>
+    <allKeywords key="model matching"/>
+    <allKeywords key="natural language processing" description=""/>
+    <allKeywords key="metamodeling"/>
+    <allKeywords key="ebnf"/>
+    <allKeywords key="model similarity"/>
+  </knowledgeMan>
+</tp6:PublicationStructure>

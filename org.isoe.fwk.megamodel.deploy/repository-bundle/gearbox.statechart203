@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_statechart203:State xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart203="http://statechart203">
+  <nestedStates1 name="park">
+    <transitions from="//@nestedStates1.0" to="//@nestedStates1.1" name="n"/>
+    <transitions from="//@nestedStates1.0" to="//@nestedStates1.2" name="r"/>
+    <actions expression="radar"/>
+  </nestedStates1>
+  <nestedStates1 name="neutral">
+    <transitions from="//@nestedStates1.1" to="//@nestedStates1.0" name="p"/>
+    <transitions from="//@nestedStates1.1" to="//@nestedStates1.3" name="d"/>
+    <actions expression="slow gas"/>
+  </nestedStates1>
+  <nestedStates1 name="reverse">
+    <transitions from="//@nestedStates1.2" to="//@nestedStates1.0" name="p"/>
+    <actions expression="security beep"/>
+  </nestedStates1>
+  <nestedStates1 name="drive">
+    <transitions from="//@nestedStates1.3" to="//@nestedStates1.1" name="n"/>
+    <transitions from="//@nestedStates1.3" to="//@nestedStates1.3" name="halt"/>
+    <actions expression="close doors"/>
+    <nestedStates2 name="1st gear">
+      <transitions from="//@nestedStates1.3/@nestedStates2.0" to="//@nestedStates1.3/@nestedStates2.1" name="up"/>
+    </nestedStates2>
+    <nestedStates2 name="2nd gear">
+      <transitions from="//@nestedStates1.3/@nestedStates2.1" to="//@nestedStates1.3/@nestedStates2.2" name="up"/>
+      <transitions from="//@nestedStates1.3/@nestedStates2.1" to="//@nestedStates1.3/@nestedStates2.0" name="down"/>
+    </nestedStates2>
+    <nestedStates2 name="3rd gear">
+      <transitions from="//@nestedStates1.3/@nestedStates2.2" to="//@nestedStates1.3/@nestedStates2.1" name="down"/>
+      <actions expression="cruise control"/>
+    </nestedStates2>
+    <nestedStates2 name="initial">
+      <transitions from="//@nestedStates1.3/@nestedStates2.3" to="//@nestedStates1.3/@nestedStates2.0"/>
+    </nestedStates2>
+  </nestedStates1>
+  <nestedStates1 name="start">
+    <transitions from="//@nestedStates1.4" to="//@nestedStates1.1"/>
+  </nestedStates1>
+</_statechart203:State>

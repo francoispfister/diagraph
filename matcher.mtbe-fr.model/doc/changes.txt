@@ -1,0 +1,19 @@
+
+2010-03-05
+
+
+text similarity implemented
+set MatchUtils.useLevenshtein = true to switch between word matching && levenshtein matching
+
+added 
+mtbe.model.matcher.LevenshteinCompareMatcherImpl
+mtbe.model.matcher.TextLabelImpl
+
+modified
+mtbe.model.matcher.helpers.MatchUtils.match(List<Instance> sourceObjects,List<Instance> targetObjects, int requiredSimilarity, MatchMethod rule)
+
+added library simmetrics.jar
+http://www.dcs.shef.ac.uk/~sam/simmetrics.html
+
+
+

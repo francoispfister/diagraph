@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_ptn103:Place xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_ptn103="http://ptn103">
+  <subnets name="p1" transitions="//@nodes.0"/>
+  <subnets name="p2" transitions="//@nodes.0"/>
+  <subnets name="p3" transitions="//@nodes.1 //@nodes.2"/>
+  <subnets name="p4"/>
+  <subnets name="p5"/>
+  <nodes xsi:type="_ptn103:Transition" places="//@subnets.2" guard="t1"/>
+  <nodes xsi:type="_ptn103:Transition" places="//@subnets.3 //@subnets.2" guard="t2"/>
+  <nodes xsi:type="_ptn103:Transition" places="//@subnets.4" guard="t3"/>
+</_ptn103:Place>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_Alwzwc-UEd6Nsq0ndOXoRA" type="EcoreTools" name="TuringModel" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ENUwUM-UEd6Nsq0ndOXoRA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_ENnrQM-UEd6Nsq0ndOXoRA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_EN6mMM-UEd6Nsq0ndOXoRA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_EN6mMc-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_EN6mMs-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_EN6mM8-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_EN6mNM-UEd6Nsq0ndOXoRA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_EN6mNc-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_EN6mNs-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_EN6mN8-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_ENUwUc-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="TuringModel.ecore#//TuringMachine"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ENUwUs-UEd6Nsq0ndOXoRA" x="40" y="40" width="171" height="151"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_OfEF4M-UEd6Nsq0ndOXoRA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_OfEF48-UEd6Nsq0ndOXoRA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_OfEF5M-UEd6Nsq0ndOXoRA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_jepRYdBIEd6dULKh-Xwk-Q" type="2001">
+        <element xmi:type="ecore:EAttribute" href="TuringModel.ecore#//State/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_jepRYtBIEd6dULKh-Xwk-Q"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_VGKFsNK1Ed65Jo29BUSzkQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="TuringModel.ecore#//State/isEndState"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_VGKFsdK1Ed65Jo29BUSzkQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_OfEF5c-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OfEF5s-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OfEF58-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_OfEF6M-UEd6Nsq0ndOXoRA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_OfEF6c-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OfEF6s-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OfEF68-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_OfEF4c-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="TuringModel.ecore#//State"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OfEF4s-UEd6Nsq0ndOXoRA" x="360" y="88" width="181" height="86"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_ZeZhQM-UEd6Nsq0ndOXoRA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_ZeZhQ8-UEd6Nsq0ndOXoRA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_ZeZhRM-UEd6Nsq0ndOXoRA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_oTJvAM-UEd6Nsq0ndOXoRA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="TuringModel.ecore#//Transition/condition"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_oTJvAc-UEd6Nsq0ndOXoRA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_DdjQQNK1Ed65Jo29BUSzkQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="TuringModel.ecore#//Transition/write"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DdjQQdK1Ed65Jo29BUSzkQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1KTNENK0Ed65Jo29BUSzkQ" type="2001">
+        <element xmi:type="ecore:EAttribute" href="TuringModel.ecore#//Transition/dir"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1KTNEdK0Ed65Jo29BUSzkQ"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ZeZhRc-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZeZhRs-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZeZhR8-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_ZeZhSM-UEd6Nsq0ndOXoRA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ZeZhSc-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZeZhSs-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZeZhS8-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_ZeZhQc-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="TuringModel.ecore#//Transition"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZeZhQs-UEd6Nsq0ndOXoRA" x="65" y="305" width="141" height="101"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_zIzC4M-UEd6Nsq0ndOXoRA" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_zIzC48-UEd6Nsq0ndOXoRA" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_zI8z4M-UEd6Nsq0ndOXoRA" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_1qx3cM-UEd6Nsq0ndOXoRA" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="TuringModel.ecore#//Direction/HOLD"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1qx3cc-UEd6Nsq0ndOXoRA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_2eoWQM-UEd6Nsq0ndOXoRA" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="TuringModel.ecore#//Direction/LEFT"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2eoWQc-UEd6Nsq0ndOXoRA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_29LTcM-UEd6Nsq0ndOXoRA" type="2006">
+        <element xmi:type="ecore:EEnumLiteral" href="TuringModel.ecore#//Direction/RIGHT"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_29LTcc-UEd6Nsq0ndOXoRA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_zI8z4c-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_zI8z4s-UEd6Nsq0ndOXoRA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_zI8z48-UEd6Nsq0ndOXoRA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_zIzC4c-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="TuringModel.ecore#//Direction"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zIzC4s-UEd6Nsq0ndOXoRA" x="304" y="292" width="141" height="96"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Alwzws-UEd6Nsq0ndOXoRA"/>
+  <element xmi:type="ecore:EPackage" href="TuringModel.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_SDDKAM-UEd6Nsq0ndOXoRA" type="3002" source="_ENUwUM-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_SDMT8M-UEd6Nsq0ndOXoRA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SDMT8c-UEd6Nsq0ndOXoRA" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_SDMT8s-UEd6Nsq0ndOXoRA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SDMT88-UEd6Nsq0ndOXoRA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_SDDKAc-UEd6Nsq0ndOXoRA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SDDKAs-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//TuringMachine/states"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SDDKA8-UEd6Nsq0ndOXoRA" points="[29, -23, -172, -25]$[32, -25, -169, -27]$[80, -53, -121, -55]$[176, -17, -25, -19]$[180, -14, -21, -16]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SFI0sM-UEd6Nsq0ndOXoRA" id="(0.8304093567251462,0.4900662251655629)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SFI0sc-UEd6Nsq0ndOXoRA" id="(0.11764705882352941,0.32558139534883723)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_bHJnwM-UEd6Nsq0ndOXoRA" type="3002" source="_ENUwUM-UEd6Nsq0ndOXoRA" target="_ZeZhQM-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_bHTYwM-UEd6Nsq0ndOXoRA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bHTYwc-UEd6Nsq0ndOXoRA" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bHTYws-UEd6Nsq0ndOXoRA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bHTYw8-UEd6Nsq0ndOXoRA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_bHJnwc-UEd6Nsq0ndOXoRA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bHJnws-UEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//TuringMachine/transitions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bHJnw8-UEd6Nsq0ndOXoRA" points="[0, 75, 1, -80]$[0, 136, 1, -19]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bHTYxM-UEd6Nsq0ndOXoRA" id="(0.45390070921985815,0.19801980198019803)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_pb2tYM-dEd6Nsq0ndOXoRA" type="3002" source="_ZeZhQM-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_pb2tZM-dEd6Nsq0ndOXoRA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pb2tZc-dEd6Nsq0ndOXoRA" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_pb2tZs-dEd6Nsq0ndOXoRA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_pb2tZ8-dEd6Nsq0ndOXoRA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_pb2tYc-dEd6Nsq0ndOXoRA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_pb2tYs-dEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//Transition/source"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pb2tY8-dEd6Nsq0ndOXoRA" points="[30, -37, -141, 175]$[106, -109, -65, 103]$[161, -199, -10, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IRncMNK1Ed65Jo29BUSzkQ" id="(0.7872340425531915,0.6435643564356436)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IRncMdK1Ed65Jo29BUSzkQ" id="(0.2647058823529412,0.8488372093023255)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_q1jrQM-dEd6Nsq0ndOXoRA" type="3002" source="_ZeZhQM-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_q1jrRM-dEd6Nsq0ndOXoRA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_q1jrRc-dEd6Nsq0ndOXoRA" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_q1jrRs-dEd6Nsq0ndOXoRA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_q1jrR8-dEd6Nsq0ndOXoRA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_q1jrQc-dEd6Nsq0ndOXoRA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_q1jrQs-dEd6Nsq0ndOXoRA" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//Transition/target"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_q1jrQ8-dEd6Nsq0ndOXoRA" points="[16, -13, -204, 208]$[228, -185, 8, 36]$[223, -208, 3, 13]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_q1jrSM-dEd6Nsq0ndOXoRA" id="(0.8865248226950354,0.7326732673267327)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_q1jrSc-dEd6Nsq0ndOXoRA" id="(0.5514705882352942,0.8488372093023255)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_tcXRANK0Ed65Jo29BUSzkQ" type="3002" source="_OfEF4M-UEd6Nsq0ndOXoRA" target="_ZeZhQM-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_tcjeQNK0Ed65Jo29BUSzkQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tcjeQdK0Ed65Jo29BUSzkQ" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_tclTcNK0Ed65Jo29BUSzkQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_tclTcdK0Ed65Jo29BUSzkQ" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_tcXRAdK0Ed65Jo29BUSzkQ" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_tcXRAtK0Ed65Jo29BUSzkQ" fontColor="4210752" fontName="Sans" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//State/next"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tcXRA9K0Ed65Jo29BUSzkQ" points="[-10, 13, 161, -199]$[-65, 103, 106, -109]$[-141, 175, 30, -37]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tc1LENK0Ed65Jo29BUSzkQ" id="(0.2647058823529412,0.8488372093023255)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tc1yINK0Ed65Jo29BUSzkQ" id="(0.7872340425531915,0.6435643564356436)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_SGjhANK1Ed65Jo29BUSzkQ" type="3002" source="_ENUwUM-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_SGkvINK1Ed65Jo29BUSzkQ" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SGkvIdK1Ed65Jo29BUSzkQ" x="-8" y="-7"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_SGlWMNK1Ed65Jo29BUSzkQ" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SGlWMdK1Ed65Jo29BUSzkQ" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_SGjhAdK1Ed65Jo29BUSzkQ" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SGjhAtK1Ed65Jo29BUSzkQ" fontColor="4210752" fontName="Sans" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//TuringMachine/startState"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SGjhA9K1Ed65Jo29BUSzkQ" points="[28, 3, -168, 0]$[129, 3, -67, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SGtSANK1Ed65Jo29BUSzkQ" id="(0.8362573099415205,0.5695364238410596)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sR8oENN_Ed678KfXjeGsDg" type="3002" source="_OfEF4M-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_sSGZENN_Ed678KfXjeGsDg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sSGZEdN_Ed678KfXjeGsDg" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sSGZEtN_Ed678KfXjeGsDg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sSGZE9N_Ed678KfXjeGsDg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sR8oEdN_Ed678KfXjeGsDg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sR8oEtN_Ed678KfXjeGsDg" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//State/substates"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sR8oE9N_Ed678KfXjeGsDg" points="[2, 13, 2, 21]$[2, 13, 2, 21]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sSQKENN_Ed678KfXjeGsDg" id="(0.7513812154696132,0.8488372093023255)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sSQKEdN_Ed678KfXjeGsDg" id="(0.7513812154696132,0.7558139534883721)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_yfXMkNN_Ed678KfXjeGsDg" type="3002" source="_OfEF4M-UEd6Nsq0ndOXoRA" target="_OfEF4M-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_yfXMlNN_Ed678KfXjeGsDg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yfXMldN_Ed678KfXjeGsDg" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_yfXMltN_Ed678KfXjeGsDg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_yfXMl9N_Ed678KfXjeGsDg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_yfXMkdN_Ed678KfXjeGsDg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_yfXMktN_Ed678KfXjeGsDg" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//State/startSubstate"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yfXMk9N_Ed678KfXjeGsDg" points="[17, 3, 90, 0]$[113, 23, 186, 20]$[113, 153, 186, 150]$[-57, 153, 16, 150]$[-69, 45, 4, 42]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yfXMmNN_Ed678KfXjeGsDg" id="(0.9060773480662984,0.46511627906976744)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_6fXwENN_Ed678KfXjeGsDg" type="3002" source="_OfEF4M-UEd6Nsq0ndOXoRA" target="_ZeZhQM-UEd6Nsq0ndOXoRA">
+    <children xmi:type="notation:Node" xmi:id="_6fXwFNN_Ed678KfXjeGsDg" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6fXwFdN_Ed678KfXjeGsDg" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_6fXwFtN_Ed678KfXjeGsDg" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_6fXwF9N_Ed678KfXjeGsDg" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_6fXwEdN_Ed678KfXjeGsDg" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_6fXwEtN_Ed678KfXjeGsDg" fontColor="4210752" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="TuringModel.ecore#//State/subtransitions"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6fXwE9N_Ed678KfXjeGsDg" points="[-18, 17, 187, -163]$[-203, 161, 2, -19]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6fXwGNN_Ed678KfXjeGsDg" id="(0.10497237569060773,0.6744186046511628)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6fXwGdN_Ed678KfXjeGsDg" id="(0.7801418439716312,0.19801980198019803)"/>
+  </edges>
+</notation:Diagram>

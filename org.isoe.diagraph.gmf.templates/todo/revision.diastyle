@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diastyle:DStyle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsml" xmlns:diastyle="http://isoe-2012-diastyle-dsml">
+  <styles xsi:type="diastyle:DNodeStyle" name="default" lineWidth="2" fontSize="12" fontColor="black" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="PublicationProcess.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.0"/>
+    </topologicBridges>
+    <topologicBridges name="Rule.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.2"/>
+    </topologicBridges>
+    <topologicBridges name="Paragraph.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.5"/>
+    </topologicBridges>
+    <topologicBridges name="PublicationStructure.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.7"/>
+    </topologicBridges>
+    <topologicBridges name="PublicationSystem.default">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.8"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="default" lineWidth="2" fontSize="12" fontColor="black" arrowDirection="left" arrowSize="5">
+    <topologicBridges name="Write.default">
+      <dGraphElement xsi:type="diagraph:DLink" href="revision.diagraph#//@elements.3/@edges.0"/>
+    </topologicBridges>
+    <topologicBridges name="Progress.default">
+      <dGraphElement xsi:type="diagraph:DLink" href="revision.diagraph#//@elements.4/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="dashedred" color="red" line="dash" lineWidth="2" fontName="courier" fontStyle="italic" fontSize="20" fontColor="green" textAlignment="center" shape="ellipse" shapeData="" sizeX="100" sizeY="100" radius="5">
+    <topologicBridges name="PublicationPhase.dashedred">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.1"/>
+    </topologicBridges>
+    <topologicBridges name="Researcher.dashedred">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.3"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="green" color="green" lineWidth="2" fontSize="12" fontColor="black" parent="//@styles.2" shape="roundedRectangle" shapeData="" sizeX="150" sizeY="150" radius="5">
+    <topologicBridges name="Paper.green">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.4"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="blue" color="darkBlue" lineWidth="2" fontSize="12" fontColor="black" arrowDirection="right" arrowSize="4">
+    <topologicBridges name="Sequence.blue">
+      <dGraphElement xsi:type="diagraph:DLink" href="revision.diagraph#//@elements.1/@edges.0"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DEdgeStyle" name="foobar" lineWidth="2" fontSize="12" fontColor="black" parent="//@styles.4" arrowDirection="left" arrowSize="40">
+    <topologicBridges name="Review.foobar">
+      <dGraphElement xsi:type="diagraph:DLink" href="revision.diagraph#//@elements.3/@edges.1"/>
+    </topologicBridges>
+  </styles>
+  <styles xsi:type="diastyle:DNodeStyle" name="dashedblue" color="blue" lineWidth="2" fontSize="12" fontColor="black" parent="//@styles.2" shape="roundedRectangle" shapeData="" sizeX="20" sizeY="20" radius="5">
+    <topologicBridges name="ReviewNote.dashedblue">
+      <dGraphElement xsi:type="diagraph:DNode" href="revision.diagraph#//@elements.6"/>
+    </topologicBridges>
+  </styles>
+  <dGraph href="revision.diagraph#/"/>
+</diastyle:DStyle>

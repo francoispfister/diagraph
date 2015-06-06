@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iml5:Namespace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iml5="http://www.isoe.lgi2p.ema.fr/diagraph/example/iml5">
+  <types xsi:type="iml5:Entity" name="eA">
+    <references name="r1" type="//@types.1"/>
+  </types>
+  <types xsi:type="iml5:Entity" name="eB"/>
+  <nested name="namespaceA">
+    <types xsi:type="iml5:Entity" name="Ex">
+      <references name="a" type="//@nested.0/@types.2"/>
+      <attributes name="a1" datatype="//@nested.0/@types.3"/>
+    </types>
+    <types xsi:type="iml5:Entity" name="Ex">
+      <references name="b" type="//@nested.0/@types.2"/>
+    </types>
+    <types xsi:type="iml5:Entity" name="Ez"/>
+    <types xsi:type="iml5:Datatype" name="datat1"/>
+    <nested name="namespaceB">
+      <nested name="namespaceD"/>
+    </nested>
+    <nested name="namespaceF"/>
+  </nested>
+</iml5:Namespace>

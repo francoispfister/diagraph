@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dpemf/src"
+    editDirectory="/dpemf2.edit/src" editorDirectory="/dpemf2.editor/src" modelPluginID="dpemf"
+    modelName="Dp4se2" testsDirectory="/dpemf2.tests/src" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>dp4se.ecore</foreignModel>
+  <genPackages prefix="Dp4se" basePackage="dpemf" disposableProviderFactory="true"
+      ecorePackage="dp4se.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//FunctionType"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//ItemType"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//FlowType"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//ConnectionType"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//SystemBlocLevel"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//VariationSense">
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//VariationSense/increase"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//VariationSense/decrease"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//PortType"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dp4se.ecore#//UnitDimension">
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Time"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Weight"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Power"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Work"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Length"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Energy"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Acceleration"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/Temperature"/>
+      <genEnumLiterals ecoreEnumLiteral="dp4se.ecore#//UnitDimension/LuminousIntensity"/>
+    </genEnums>
+    <genClasses ecoreClass="dp4se.ecore#//SystemPattern">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/rationale"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPattern/uniqueId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPattern/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPattern/alias"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPattern/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPattern/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/problem"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/solution"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/domain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/antiPatterns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/requestedPatterns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/relatedPatterns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/equivalentPatterns"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPattern/knownUses"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Parameter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Parameter/patternRole"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Parameter/concreteRole"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Parameter/name"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Problem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Problem/forces"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Problem/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Problem/useCaseBeforePattern"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Problem/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Problem/featuresToOptimize"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dp4se.ecore#//Indexable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Indexable/keywords"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Solution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Solution/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Solution/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Solution/impacts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Solution/patternModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Solution/usecaseAfterPattern"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Feature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Feature/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Feature/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Project">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Project/models"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Project/catalog"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Project/modelUnderWork"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Project/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Project/units"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/requirements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/needs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/functionalArchitecture"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/physicalArchitecture"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/scenario"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/sketches"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Model/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Model/version"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Model/priorVersion"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Requirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Requirement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Requirement/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Requirement/allocatedNeeds"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Need">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Need/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Need/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Need/requirements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Need/allocatedScenarios"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//FunctionalArchitecture">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//FunctionalArchitecture/functions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//FunctionalArchitecture/functionalItems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//FunctionalArchitecture/dataFlowConnections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//FunctionalArchitecture/controlFlowConnections"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Architecture"/>
+    <genClasses ecoreClass="dp4se.ecore#//Function">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Function/duration"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//ModelElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//ModelElement/modelId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//ModelElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Duration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Duration/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Duration/maxi"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Duration/mean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Duration/mini"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//FunctionalItem"/>
+    <genClasses ecoreClass="dp4se.ecore#//Item"/>
+    <genClasses ecoreClass="dp4se.ecore#//DataFlowConnection"/>
+    <genClasses ecoreClass="dp4se.ecore#//ControlFlowConnection"/>
+    <genClasses ecoreClass="dp4se.ecore#//PhysicalArchitecture">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//PhysicalArchitecture/componentConnections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//PhysicalArchitecture/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//PhysicalArchitecture/physicalItems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//PhysicalArchitecture/interfaces"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//ComponentConnection"/>
+    <genClasses ecoreClass="dp4se.ecore#//Component"/>
+    <genClasses ecoreClass="dp4se.ecore#//PhysicalItem"/>
+    <genClasses ecoreClass="dp4se.ecore#//Interface"/>
+    <genClasses ecoreClass="dp4se.ecore#//Scenario">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Scenario/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Scenario/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Scenario/needs"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Sketch">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Sketch/blob"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Sketch/url"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Blob"/>
+    <genClasses ecoreClass="dp4se.ecore#//Url"/>
+    <genClasses ecoreClass="dp4se.ecore#//SystemPatternCatalog">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/problems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/contexts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/solutions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/domains"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/keywords"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/knownApplications"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/problemTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/systemPatterns"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//SystemPatternCatalog/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//SystemPatternCatalog/features"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Context">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Context/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Context/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Domain">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Domain/keywords"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Domain/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Domain/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Keyword">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Keyword/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Keyword/domain"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Application">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Application/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Application/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Application/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//ProblemType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//ProblemType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//ProblemType/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Rationale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Rationale/description"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Force">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Force/problemType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Force/challenge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Force/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Impact">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Impact/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Impact/scale"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Impact/variationSense"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//Impact/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//Port"/>
+    <genClasses ecoreClass="dp4se.ecore#//Unit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Unit/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//Unit/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dp4se.ecore#//Unit/conversionFactor"/>
+    </genClasses>
+    <genClasses ecoreClass="dp4se.ecore#//UnitConversion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dp4se.ecore#//UnitConversion/factor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dp4se.ecore#//UnitConversion/target"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: org.isoe.diagraph.checker
+Require-Bundle: org.eclipse.emf.ecore;bundle-version="2.6.1",
+ org.isoe.diagraph.internal.m2;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.fwk.log;bundle-version="1.0.4",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diagraph.internal.api;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.runner;bundle-version="1.0.4"
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Name: Diagraph Checker
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.isoe.diagraph.checker
+Bundle-Vendor: LGi2P Isoe

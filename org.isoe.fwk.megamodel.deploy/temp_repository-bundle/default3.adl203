@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl203:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl203="http://adl203">
+  <subComponents name="c1">
+    <content language="100"/>
+    <providedInterfaces name="out" simpleBindings="//@subComponents.1/@requiredInterfaces.0 //@subComponents.2/@requiredInterfaces.0"/>
+  </subComponents>
+  <subComponents name="c2">
+    <content language="101"/>
+    <requiredInterfaces name="in"/>
+  </subComponents>
+  <subComponents name="c3">
+    <content language="102"/>
+    <requiredInterfaces name="in"/>
+  </subComponents>
+</_adl203:Component>

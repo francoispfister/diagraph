@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Annotation Helper Implementation
+Bundle-SymbolicName: org.isoe.diagraph.annotationhelper.impl
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.diagraph.annotationhelper.impl.Activator
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.isoe.diagraph.annotationhelper.impl

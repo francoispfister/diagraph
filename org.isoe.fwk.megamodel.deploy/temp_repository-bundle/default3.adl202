@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_adl202:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_adl202="http://adl202">
+  <bindings to="//@subComponents.1/@requiredInterfaces.0" name="bind 1">
+    <attributes name="a00" value="a01"/>
+  </bindings>
+  <bindings to="//@subComponents.2/@requiredInterfaces.0" name="bind 2">
+    <attributes name="x10" value="y10"/>
+  </bindings>
+  <subComponents name="c1">
+    <content language="100"/>
+    <providedInterfaces name="out" bindings="//@bindings.0 //@bindings.1"/>
+  </subComponents>
+  <subComponents name="c2">
+    <content language="101"/>
+    <requiredInterfaces name="in"/>
+  </subComponents>
+  <subComponents name="c3">
+    <content language="102"/>
+    <requiredInterfaces name="in"/>
+  </subComponents>
+</_adl202:Component>

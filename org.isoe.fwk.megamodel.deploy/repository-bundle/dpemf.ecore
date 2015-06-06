@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dpemf"
+    nsURI="http://dpemf" nsPrefix="_dpemf">
+  <eAnnotations source="_refactor">
+    <details key="_dupref" value=""/>
+    <details key="_name" value=""/>
+    <details key="_pooref" value=""/>
+    <details key="version" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Project">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cref=models" value=""/>
+      <details key="cref=physicalArchitectures" value=""/>
+      <details key="cref=functionalArchitectures" value=""/>
+      <details key="cref=catalog" value=""/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="models" upperBound="-1"
+        eType="#//Model" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="catalog" eType="#//SystemPatternCatalog"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physicalArchitectures"
+        upperBound="-1" eType="#//PhysicalArchitecture" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionalArchitectures"
+        upperBound="-1" eType="#//FunctionalArchitecture" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Model" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=functionalArchitecture" value=""/>
+      <details key="ref=physicalArchitecture" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionalArchitecture"
+        eType="#//FunctionalArchitecture"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="physicalArchitecture" eType="#//PhysicalArchitecture"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalArchitecture" eSuperTypes="#//Architecture">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functions" upperBound="-1"
+        eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalArchitecture" eSuperTypes="#//Architecture">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Architecture" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemPatternCatalog" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="ref=models" value=""/>
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="models" upperBound="-1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domains" upperBound="-1"
+        eType="#//Domain" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Domain" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="komp=SystemPatternCatalog.DomainCompartmt" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="komp=FunctionalArchitecture.MyFunctions" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" upperBound="-1"
+        eType="#//FunctionContent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//FunctionType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//FunctionConnection" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FunctionType">
+    <eLiterals name="time"/>
+    <eLiterals name="space" value="1"/>
+    <eLiterals name="form" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionContent" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="komp=Function.ContentCompart" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionConnection">
+    <eAnnotations source="diagraph">
+      <details key="link=connects" value=""/>
+      <details key="cont=Function.connections" value=""/>
+      <details key="lsrc=output" value=""/>
+      <details key="ltrg=input" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="item" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" eType="#//Function"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" upperBound="-1"
+        eType="#//Function"/>
+  </eClassifiers>
+</ecore:EPackage>

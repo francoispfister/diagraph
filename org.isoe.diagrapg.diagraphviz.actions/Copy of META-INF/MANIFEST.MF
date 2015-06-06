@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Graphviz Actions
+Bundle-SymbolicName: org.isoe.diagraph.diagraphviz.actions;singleton:=true
+Bundle-Version: 1.0.1.201405231112
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.resources;bundle-version="3.7.101",
+ org.isoe.fwk.core;bundle-version="1.0.1.20140523",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.jface;bundle-version="3.7.0",
+ org.isoe.fwk.pathes;bundle-version="1.0.1.20140523",
+ org.isoe.fwk.platform.resolver;bundle-version="1.0.1.20140523",
+ org.eclipse.emf.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.diagraphviz;bundle-version="1.0.1.20140523",
+ org.isoe.extensionpoint.graphviz;bundle-version="1.0.1.20140523",
+ org.isoe.extensionpoint.xmi;bundle-version="1.0.1.20140523"
+Export-Package: org.isoe.diagraph.diagraphviz.actions

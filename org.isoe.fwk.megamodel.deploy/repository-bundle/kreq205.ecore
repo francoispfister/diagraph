@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kreq205" nsURI="http://kreq205" nsPrefix="_kreq205">
+  <eClassifiers xsi:type="ecore:EClass" name="Bbbb">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rs" lowerBound="1" upperBound="-1"
+        eType="#//Rrrr" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ts" lowerBound="1" upperBound="-1"
+        eType="#//Tttt" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ccs" lowerBound="1" upperBound="-1"
+        eType="#//Cccc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fs" lowerBound="1" upperBound="-1"
+        eType="#//Ffff" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rrrr">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=d3"/>
+      <details key="cref=rqs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="d3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rqs" upperBound="-1" eType="#//Rqs"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tttt" eSuperTypes="#//SObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="ref=rqs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rqs" upperBound="-1" eType="#//Rqs"
+        eOpposite="#//Rqs/rts"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rqs" eSuperTypes="#//SObject">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=Rrrr.rqs"/>
+      <details key="ref=dReqt"/>
+      <details key="kref=subRqs"/>
+      <details key="ref=specs"/>
+      <details key="ref=spc"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="d2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="a" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rts" upperBound="-1" eType="#//Tttt"
+        eOpposite="#//Tttt/rqs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dReqt" upperBound="-1"
+        eType="#//Rqs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subRqs" upperBound="-1"
+        eType="#//Rqs" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specs" upperBound="-1"
+        eType="#//Ffff" eOpposite="#//Ffff/isBy"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refine" upperBound="-1"
+        eType="#//Rqs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="spc" upperBound="-1" eType="#//Cccc"
+        eOpposite="#//Cccc/specifiedBy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ffff">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=d4"/>
+      <details key="cont=Bbbb.fs"/>
+      <details key="kref=subFs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="d4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isBy" upperBound="-1" eType="#//Rqs"
+        eOpposite="#//Rqs/specs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dmof" upperBound="-1" eType="#//Cccc"
+        eOpposite="#//Cccc/pfrmis"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subFs" upperBound="-1"
+        eType="#//Ffff" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alto" upperBound="-1" eType="#//Cccc"
+        eOpposite="#//Cccc/impf"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cccc">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=de1"/>
+      <details key="cont=Bbbb.ccs"/>
+      <details key="ref=pfrmis"/>
+      <details key="ref=satisfy"/>
+      <details key="kref=subCs"/>
+      <details key="ref=impf"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="de1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfy" lowerBound="1"
+        upperBound="-1" eType="#//Rqs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedBy" lowerBound="1"
+        upperBound="-1" eType="#//Rqs" eOpposite="#//Rqs/spc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pfrmis" upperBound="-1"
+        eType="#//Ffff" eOpposite="#//Ffff/dmof"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subCs" upperBound="-1"
+        eType="#//Cccc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="impf" upperBound="-1" eType="#//Ffff"
+        eOpposite="#//Ffff/alto"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ls" upperBound="-1" eType="#//Llll"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SObject" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Llll">
+    <eAnnotations source="diagraph">
+      <details key="link"/>
+      <details key="cont=Cccc.ls"/>
+      <details key="lsrc=source"/>
+      <details key="ltrg=target"/>
+      <details key="label=d6"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Cccc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Rqs"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="d6" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

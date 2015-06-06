@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_effbd103:Function xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_effbd103="http://effbd103">
+  <decompositions controlFlowEdge="//@sequenceNodes.2" name="Fonction Lavage">
+    <outputPorts id="départ linge lavé" outputflowEdge="//@flows.8"/>
+    <outputPorts id="vidange" outputflowEdge="//@flows.6"/>
+    <inputPorts id="cal"/>
+    <inputPorts id="det"/>
+    <inputPorts id="eau"/>
+    <inputPorts id="arrivée linge"/>
+    <descriptions content="cycle court"/>
+    <descriptions content="cycle long"/>
+    <descriptions content="prélavage"/>
+  </decompositions>
+  <decompositions controlFlowEdge="//@sequenceNodes.2" name="Fonction Chauffe">
+    <outputPorts id="cal" outputflowEdge="//@flows.0"/>
+    <inputPorts id="connecteur"/>
+    <descriptions content="3 Kwh"/>
+  </decompositions>
+  <decompositions controlFlowEdge="//@sequenceNodes.3" name="Adoucisseur">
+    <outputPorts id="sortie eau" outputflowEdge="//@flows.5"/>
+    <inputPorts id="eau"/>
+    <inputPorts id="sel"/>
+  </decompositions>
+  <decompositions controlFlowEdge="//@sequenceNodes.3" name="Rinçage">
+    <outputPorts id="vidange " outputflowEdge="//@flows.6"/>
+    <outputPorts id="sortie linge" outputflowEdge="//@flows.9"/>
+    <inputPorts id="eau"/>
+    <inputPorts id="arrivée linge lavé"/>
+  </decompositions>
+  <sequenceNodes xsi:type="_effbd103:Start" controlFlowEdge="//@sequenceNodes.1" name="départ cycle"/>
+  <sequenceNodes xsi:type="_effbd103:And" controlFlowEdge="//@decompositions.0 //@decompositions.1 //@decompositions.2"/>
+  <sequenceNodes xsi:type="_effbd103:And" controlFlowEdge="//@decompositions.3"/>
+  <sequenceNodes xsi:type="_effbd103:And" controlFlowEdge="//@sequenceNodes.4"/>
+  <sequenceNodes xsi:type="_effbd103:Final"/>
+  <flows label="Energie calorifique" inputflowEdge="//@decompositions.0/@inputPorts.0">
+    <items name="800 kcal/kg"/>
+  </flows>
+  <flows label="Détergent" inputflowEdge="//@decompositions.0/@inputPorts.1">
+    <items name="C12H25NaO4S"/>
+    <items name="10g/kg"/>
+  </flows>
+  <flows label="Eau" inputflowEdge="//@decompositions.2/@inputPorts.0"/>
+  <flows label="Sel" inputflowEdge="//@decompositions.2/@inputPorts.1"/>
+  <flows label="Energie électrique" inputflowEdge="//@decompositions.1/@inputPorts.0">
+    <items name="380 V tri 30 A"/>
+  </flows>
+  <flows label="eau" inputflowEdge="//@decompositions.0/@inputPorts.2 //@decompositions.3/@inputPorts.0">
+    <items name="TH &lt; 10"/>
+  </flows>
+  <flows label="eau chargée" inputflowEdge="//@inputPorts.0"/>
+  <flows label="Vêtements sales" inputflowEdge="//@decompositions.0/@inputPorts.3">
+    <items name="linge couleur"/>
+    <items name="linge blanc"/>
+  </flows>
+  <flows label="linge lavé" inputflowEdge="//@decompositions.3/@inputPorts.1"/>
+  <flows label="linge propre" inputflowEdge="//@inputPorts.1"/>
+  <outputPorts id="conduite détergent" outputflowEdge="//@flows.1"/>
+  <outputPorts id="connecteur électrique" outputflowEdge="//@flows.4"/>
+  <outputPorts id="arrivée eau" outputflowEdge="//@flows.2"/>
+  <outputPorts id="arrivée sel" outputflowEdge="//@flows.3"/>
+  <outputPorts id="stock linge sale" outputflowEdge="//@flows.7"/>
+  <inputPorts id="evacuation"/>
+  <inputPorts id="départ essorrage"/>
+</_effbd103:Function>

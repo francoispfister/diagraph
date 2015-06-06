@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="modelwpoorlink"
+    nsURI="http://org.isoe.diagraph.modelwpoorlink.v0" nsPrefix="modelwpoorlinkp">
+  <eAnnotations source="_refactor">
+    <details key="_dupref" value=""/>
+    <details key="_name" value=""/>
+    <details key="pooref" value=""/>
+    <details key="_version" value=""/>
+  </eAnnotations>
+  <eAnnotations source="montest">
+    <details key="toto" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Foo">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=id" value=""/>
+      <details key="ref=foobars" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foobars" upperBound="-1"
+        eType="#//Bar"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bar">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=id" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PoorRefCase">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=foos" value=""/>
+      <details key="label=casename" value=""/>
+      <details key="kref=bars" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foos" upperBound="-1" eType="#//Foo"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bars" upperBound="-1" eType="#//Bar"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="casename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TestCase">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="pov" value=""/>
+      <details key="cref=poorRefCase" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="poorRefCase" eType="#//PoorRefCase"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagraph:DGraph xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagraph="http://isoe-2012-diagraph-dsmlv4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" viewName="default">
+  <nodes name="Megamodel">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Megamodel"/>
+  </nodes>
+  <nodes name="Dsml">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Dsml"/>
+  </nodes>
+  <nodes name="Model">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Model"/>
+  </nodes>
+  <nodes name="Notation">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Notation"/>
+  </nodes>
+  <nodes name="NotationDiagram">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//NotationDiagram"/>
+  </nodes>
+  <nodes name="Diagram">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//Diagram"/>
+  </nodes>
+  <nodes name="EcoreDiagram">
+    <semanticRole xsi:type="ecore:EClass" href="platform:/resource/org.isoe.diagraph.megamodel/model/megamodel.ecore#//EcoreDiagram"/>
+  </nodes>
+</diagraph:DGraph>

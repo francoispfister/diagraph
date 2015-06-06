@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_syswbeff106prepa:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_syswbeff106prepa="http://syswbeff106prepa">
+  <systemView id="sys">
+    <functionalArchitecture name="fa">
+      <fdecompositions name="f1">
+        <outputports name="O"/>
+        <flows from="//@systemView/@functionalArchitecture/@fdecompositions.0/@outputports.0" to="//@systemView/@functionalArchitecture/@fdecompositions.1/@inputports.0"/>
+        <flows from="//@systemView/@functionalArchitecture/@fdecompositions.0/@outputports.0" to="//@systemView/@functionalArchitecture/@fdecompositions.0/@fdecompositions.0/@inputports.0"/>
+        <fdecompositions name="fx">
+          <inputports name="i"/>
+        </fdecompositions>
+      </fdecompositions>
+      <fdecompositions name="f2">
+        <inputports name="I"/>
+      </fdecompositions>
+    </functionalArchitecture>
+  </systemView>
+  <catalog id="cat1">
+    <patterns name="pa" equivalent="//@catalog.0/@patterns.1"/>
+    <patterns name="pb"/>
+  </catalog>
+  <catalog id="cat2"/>
+</_syswbeff106prepa:Workbench>

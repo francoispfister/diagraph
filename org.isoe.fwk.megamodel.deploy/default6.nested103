@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_nested103:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_nested103="http://nested103">
+  <things name="plateforme">
+    <relations toThing="//@things.1"/>
+    <EReference0 name="processeur">
+      <ecl1 name="alu">
+        <ecl2 name="registre">
+          <ecl3 name="tampon">
+            <ecl4 name="accumulateur"/>
+          </ecl3>
+        </ecl2>
+        <ecl2 name="pile">
+          <ecl3 name="compteur"/>
+          <ecl3 name="liste">
+            <ecl4 name="index">
+              <ecl5 name="tag">
+                <relations name="clé" toThing="//@things.0/@EReference0.0/@ecl1.0/@ecl2.1/@ecl3.1/@ecl4.1/@ecl5.0" since="200"/>
+              </ecl5>
+            </ecl4>
+            <ecl4 name="sommet">
+              <ecl5 name="file"/>
+            </ecl4>
+          </ecl3>
+        </ecl2>
+        <ecl2 name="x">
+          <ecl3 name="y"/>
+        </ecl2>
+      </ecl1>
+      <ecl1 name="e11">
+        <ecl2 name="e203">
+          <ecl3 name="e303">
+            <ecl4 name="e401"/>
+          </ecl3>
+        </ecl2>
+      </ecl1>
+    </EReference0>
+  </things>
+  <things name="stockage">
+    <EReference0 name="e0">
+      <ecl1 name="e1"/>
+    </EReference0>
+  </things>
+  <eef0 name="alimentation">
+    <ecl13/>
+  </eef0>
+  <eef0 name="sauvegarde">
+    <ecl13/>
+  </eef0>
+</_nested103:World>

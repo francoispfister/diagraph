@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//PhysicalArchitecture/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="795" y="345" width="171"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="dpemf.ecore#//SystemPatternCatalog/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="dpemf.ecore#//SystemPatternCatalog/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//SystemPatternCatalog/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="302" y="455" width="183"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//Model/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="575" y="460" width="194"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//FunctionalArchitecture/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="529" y="350" width="184"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//FunctionContent/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="354" y="365" width="231"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//Architecture/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="625" y="225" width="231"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//Function/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="408" y="265" width="286"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//FunctionConnection/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="120" y="265" width="197"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//NamedElement/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="139" y="60" width="717"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//Domain/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="-5" y="500" width="323"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//Project/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="140" y="735" width="732"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//Project"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="140" y="730" width="732"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//Model"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="575" y="453" width="194"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//FunctionalArchitecture"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="529" y="343" width="184"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//PhysicalArchitecture"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="795" y="335" width="171"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//Architecture"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="625" y="215" width="231"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//SystemPatternCatalog"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="302" y="450" width="183"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//Domain"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="-5" y="494" width="323"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="dpemf.ecore#//NamedElement/name"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//NamedElement"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="139" y="49" width="717"/>
+  </children>
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="dpemf.ecore#//FunctionType/time"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="dpemf.ecore#//FunctionType/form"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="dpemf.ecore#//FunctionType/space"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//FunctionType"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="756" y="609"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//FunctionContent"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="354" y="358" width="231"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="dpemf.ecore#//FunctionConnection/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="dpemf.ecore#//FunctionConnection/item"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//FunctionConnection"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="120" y="219" width="197" height="83"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="dpemf.ecore#//Function/description"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="dpemf.ecore#//Function/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="dpemf.ecore#//Function"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="408" y="235" width="286"/>
+  </children>
+  <children type="1003">
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="dpemf.ecore#//%_refactor%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="-150" y="180"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="dpemf.ecore#/"/>
+  <edges type="3002" source="//@children.11" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="20" y="-13"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="20" y="26"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Project/models"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[214, -6, 13, 257]$[214, -243, 13, 20]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.39015151515151514,0.16666666666666666)"/>
+  </edges>
+  <edges type="3002" source="//@children.11" target="//@children.16">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="13" y="52"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="13" y="15"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Project/catalog"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[224, -14, 72, 272]$[224, -254, 72, 32]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.07196969696969698,0.35714285714285715)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.2905405405405405,0.21428571428571427)"/>
+  </edges>
+  <edges type="3003" source="//@children.17" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[2, -7, -106, 422]$[2, -405, -106, 24]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5098039215686274,0.19047619047619047)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.1694915254237288,0.5102040816326531)"/>
+  </edges>
+  <edges type="3003" source="//@children.16" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-8, -20, -165, 312]$[-8, -308, -165, 24]"/>
+  </edges>
+  <edges type="3003" source="//@children.12" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-5, -10, -114, 369]$[-5, -351, -114, 28]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.24509803921568626,0.2619047619047619)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7966101694915254,0.40816326530612246)"/>
+  </edges>
+  <edges type="3003" source="//@children.15" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[5, -20, -25, 120]$[5, -123, -25, 17]"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8813559322033898,0.6530612244897959)"/>
+  </edges>
+  <edges type="3003" source="//@children.13" target="//@children.15">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[10, -7, -161, 107]$[10, -95, -161, 19]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.6148648648648649,0.19047619047619047)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7843137254901961,0.5476190476190477)"/>
+  </edges>
+  <edges type="3003" source="//@children.14" target="//@children.15">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[7, -20, -28, 81]$[7, -90, -28, 11]"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8627450980392157,0.7380952380952381)"/>
+  </edges>
+  <edges type="3002" source="//@children.11" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="7" y="-57"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="28" y="-6"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Project/functionalArchitectures"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-102, -6, 4, 360]$[-102, -353, 4, 13]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7171052631578947,0.16666666666666666)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.16891891891891891,0.6904761904761905)"/>
+  </edges>
+  <edges type="3002" source="//@children.11" target="//@children.14">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-83" y="96"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-52" y="6"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Project/physicalArchitectures"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[124, -34, 49, 385]$[124, -399, 49, 20]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7845394736842105,0.8571428571428571)"/>
+  </edges>
+  <edges type="3002" source="//@children.12" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-30" y="30"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-9" y="26"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Model/functionalArchitecture"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-24, -9, 64, 104]$[-24, -92, 64, 21]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7843137254901961,0.23809523809523808)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.21621621621621623,0.47619047619047616)"/>
+  </edges>
+  <edges type="3002" source="//@children.12" target="//@children.14">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-36" y="-23"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-16" y="1"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Model/physicalArchitecture"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[17, 4, -53, 131]$[105, 4, 35, 131]$[105, -107, 35, 20]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8333333333333334,0.47619047619047616)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.05925925925925926,0.5)"/>
+  </edges>
+  <edges type="3002" source="//@children.16" target="//@children.12">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-23" y="-13"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-30" y="8"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//SystemPatternCatalog/models"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[73, 3, -66, 1]$[140, -15, 1, -17]"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.029411764705882353,0.42857142857142855)"/>
+  </edges>
+  <edges type="3003" source="//@children.22" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[52, -28, -236, 137]$[52, -151, -236, 14]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.23529411764705882,0.4523809523809524)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8273809523809523,0.7142857142857143)"/>
+  </edges>
+  <edges type="3002" source="//@children.13" target="//@children.22">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-8" y="-6"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-27" y="7"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//FunctionalArchitecture/functions"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-10, 5, 78, 90]$[-80, 5, 8, 90]$[-80, -52, 8, 33]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.07432432432432433,0.5238095238095238)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.803921568627451,0.47619047619047616)"/>
+  </edges>
+  <edges type="3003" source="//@children.20" target="//@children.18">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[6, -6, -107, 270]$[6, -252, -107, 24]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.2631578947368421,0.16666666666666666)"/>
+  </edges>
+  <edges type="3002" source="//@children.22" target="//@children.20">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-27" y="3"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-5"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Function/content"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-8, 20, 23, -80]$[-8, 80, 23, -20]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.22950819672131148,0.6938775510204082)"/>
+  </edges>
+  <edges type="3002" source="//@children.22" target="//@children.21">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-34" y="-25"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-4" y="-10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//Function/connections"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-34, 32, 153, 31]$[-156, 32, 31, 31]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.23648648648648649,0.2)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8169934640522876,0.36065573770491804)"/>
+  </edges>
+  <edges type="3002" source="//@children.21" target="//@children.22">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-32" y="-9"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="3" y="-10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//FunctionConnection/input"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[47, 26, -140, 2]$[169, 26, -18, 2]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7189542483660131,0.21311475409836064)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.12837837837837837,0.4)"/>
+  </edges>
+  <edges type="3002" source="//@children.21" target="//@children.22">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-31" y="-11"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="9" y="-12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//FunctionConnection/output"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[36, 7, -154, -15]$[158, 7, -32, -15]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7843137254901961,0.16393442622950818)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.22297297297297297,0.3076923076923077)"/>
+  </edges>
+  <edges type="3002" source="//@children.16" target="//@children.17">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontHeight="10"/>
+    <element href="dpemf.ecore#//SystemPatternCatalog/domains"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-16, 8, 111, -48]$[-125, 40, 2, -16]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.11486486486486487,0.5238095238095238)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.8921568627450981,0.40476190476190477)"/>
+  </edges>
+</notation:Diagram>

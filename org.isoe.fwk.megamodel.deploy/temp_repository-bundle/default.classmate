@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classmate:ClassmateSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:classmate="http:///classmate.sample">
+  <school name="Ema">
+    <classrooms name="L1">
+      <students name="Jean"/>
+      <students name="Paul"/>
+      <students name="Sophie"/>
+      <students name="Paul"/>
+    </classrooms>
+    <classrooms name="M2">
+      <students name="Pierre"/>
+      <students name="Nathalie"/>
+    </classrooms>
+    <classrooms name="M3">
+      <students name="Stephanie"/>
+    </classrooms>
+  </school>
+  <friends fromDate="1996" toDate="2002" fromStudent="//@school/@classrooms.1/@students.1" toStudent="//@school/@classrooms.2/@students.0"/>
+  <friends fromDate="2001" toDate="2006" fromStudent="//@school/@classrooms.0/@students.0" toStudent="//@school/@classrooms.1/@students.0"/>
+  <friends fromDate="2004" toDate="2009" fromStudent="//@school/@classrooms.1/@students.0" toStudent="//@school/@classrooms.0/@students.2"/>
+  <friends fromDate="1995" toDate="2000" fromStudent="//@school/@classrooms.0/@students.0" toStudent="//@school/@classrooms.2/@students.0"/>
+  <friends fromDate="2004" toDate="2008" fromStudent="//@school/@classrooms.0/@students.2" toStudent="//@school/@classrooms.0/@students.1"/>
+  <friends fromDate="2003" toDate="2005" fromStudent="//@school/@classrooms.0/@students.3" toStudent="//@school/@classrooms.1/@students.1"/>
+</classmate:ClassmateSystem>

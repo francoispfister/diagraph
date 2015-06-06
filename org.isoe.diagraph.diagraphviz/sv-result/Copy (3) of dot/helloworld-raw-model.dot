@@ -1,0 +1,46 @@
+digraph G { rankdir=LR    node [fontname="Verdana",fontsize=10,shape=box] edge [fontname="Verdana",fontsize=10];
+id1866828[label="default:TheWorld" fontname="Verdana",fontsize=10, shape = box, style = "rounded,filled", fillcolor="aquamarine"];
+id30673998p1 [label="AA:Language", shape = box, style = "rounded,filled", fillcolor="blanchedalmond"];
+id29336693p1 [label="BB:Language", shape = box, style = "rounded,filled", fillcolor="blanchedalmond"];
+id12980399p1 [label="A:Researcher", shape = box, style = "rounded,filled", fillcolor="cadetblue1"];
+id1698171p1 [label="B:Researcher", shape = box, style = "rounded,filled", fillcolor="cadetblue1"];
+id19903052p1 [label="p1:Publication", shape = box, style = "rounded,filled", fillcolor="darkorange"];
+id12979938p1 [label="bibliography:Bibliography", shape = box, style = "rounded,filled", fillcolor="brown1"];
+id20354915p1 [label="dsfsd:Entry", shape = box, style = "rounded,filled", fillcolor="darkturquoise"];
+id7525605p1 [label="Intro:Section", shape = box, style = "rounded,filled", fillcolor="cadetblue"];
+id24410903p1 [label="zeare:Paragraph", shape = box, style = "rounded,filled", fillcolor="chartreuse"];
+id25779704p1 [label="sdfqdf:Paragraph", shape = box, style = "rounded,filled", fillcolor="chartreuse"];
+id24675364p1 [label="sqdf:Annotation", shape = box, style = "rounded,filled", fillcolor="chocolate"];
+id3379945p1 [label="sqdf:Annotation", shape = box, style = "rounded,filled", fillcolor="chocolate"];
+id32638273p1 [label="Conclusion:Section", shape = box, style = "rounded,filled", fillcolor="cadetblue"];
+id3601806p1 [label="Chapter 1:Section", shape = box, style = "rounded,filled", fillcolor="cadetblue"];
+id3359717p1 [label="p2:Publication", shape = box, style = "rounded,filled", fillcolor="darkorange"];
+id28223202p1 [label="null:Publication", shape = box, style = "rounded,filled", fillcolor="darkorange"];
+
+id12979938p1 -> id20354915p1 [dir=both arrowtail=diamond];
+id19903052p1 -> id12979938p1 [dir=both arrowtail=diamond];
+id7525605p1 -> id24410903p1 [dir=both arrowtail=diamond];
+id25779704p1 -> id24675364p1 [dir=both arrowtail=diamond];
+id25779704p1 -> id3379945p1 [dir=both arrowtail=diamond];
+id7525605p1 -> id25779704p1 [dir=both arrowtail=diamond];
+id19903052p1 -> id7525605p1 [dir=both arrowtail=diamond];
+id19903052p1 -> id32638273p1 [dir=both arrowtail=diamond];
+id19903052p1 -> id3601806p1 [dir=both arrowtail=diamond];
+
+id1866828 -> id30673998p1 [dir=both arrowtail=diamond];
+id1866828 -> id29336693p1 [dir=both arrowtail=diamond];
+id1866828 -> id12980399p1 [dir=both arrowtail=diamond];
+id1866828 -> id1698171p1 [dir=both arrowtail=diamond];
+id1866828 -> id19903052p1 [dir=both arrowtail=diamond];
+id1866828 -> id3359717p1 [dir=both arrowtail=diamond];
+id1866828 -> id28223202p1 [dir=both arrowtail=diamond];
+
+id12980399p1 -> id30673998p1 [color=blue];
+id1698171p1 -> id29336693p1 [color=blue];
+
+id12980399p1 -> id1698171p1 [label= "sqdf", color=red];
+id12980399p1 -> id19903052p1 [label= "sqdf", color=red];
+id1698171p1 -> id3359717p1 [label= "sqdf", color=red];
+id1698171p1 -> id28223202p1 [label= "sqdf", color=red];
+
+}/*end graph*/

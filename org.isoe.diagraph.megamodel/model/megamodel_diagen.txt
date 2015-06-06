@@ -1,0 +1,63 @@
+1	dsml{
+2	  name = megamodel
+3	  left-parent = simpleworld
+4	  right-parent = nil
+5	  required{
+6	    context=pattern container
+7	  }
+8	  related{ nil }
+9	  origin = http://org.isoe.fr
+10	  known-as = [megamodel]
+11	  context{
+12	    :pattern container
+13	  }
+14	  diagram_1 = /model/megamodel.ecorediag
+15	  notation_1{
+16	    name = default_root
+17	    nodes (7){
+18	      p1  = Megamodel={ cref_dsmls }
+19	      n2  = Dsml={ link_RelatedTo , kref_models , kref_notations , kref_ecoreDiagrams }
+20	      n3  = Model={ kref_notationDiagrams }
+21	      n4  = Notation={ link_Navigation }
+22	      n5  = NotationDiagram={ nil }
+23	      n6  = Diagram={ nil } nra,abstr,ndc ra={ NotationDiagram , EcoreDiagram }
+24	      n7  = EcoreDiagram={ nil }
+25	    }
+26	    edges (7){
+27	      e1  = Megamodel.cref_dsmls -> Dsml  gen={ Megamodel.Dsml }
+28	      e2  = Dsml.link_RelatedTo -> Dsml  gen={ Dsml.Dsml }
+29	      e3  = Dsml.kref_models -> Model  gen={ Dsml.Model }
+30	      e4  = Dsml.kref_notations -> Notation  gen={ Dsml.Notation }
+31	      e5  = Dsml.kref_ecoreDiagrams -> EcoreDiagram  gen={ Dsml.EcoreDiagram }
+32	      e6  = Model.kref_notationDiagrams -> NotationDiagram  gen={ Model.NotationDiagram }
+33	      e7  = Notation.link_Navigation -> Notation  gen={ Notation.Notation }
+34	    }
+35	  }
+36	  Associations{
+37	    1 dsmls  Megamodel -> Dsml
+38	    2 RelatedTo  Dsml -> Dsml
+39	    3 models  Dsml -> Model
+40	    4 notations  Dsml -> Notation
+41	    5 ecoreDiagrams  Dsml -> EcoreDiagram
+42	    6 notationDiagrams  Model -> NotationDiagram
+43	    7 Navigation  Notation -> Notation
+44	  }
+45	  models (0){nil}
+46	}
+47	
+48	keywords{abstr,afx,cont,context,cref,diagram,dsml,dsmls,e,edges,
+49	  excerpt,her,known-as,kref,left-parent,link,megamodel,model,models,n,
+50	  name,nav,ndc,nec,nil,nodes,not-root,notation,notices,nra,
+51	  origin,p,ra,recursive,ref,related,required,right-parent,root,src,
+52	  trg
+53	}
+54	
+55	status[
+56	  abstr: abstract,
+57	  her: inherited,
+58	  ndc: not diagraph contained,
+59	  nec: not ecore contained,
+60	  nra: not representable,
+61	  ra: representable,
+62	]
+63	

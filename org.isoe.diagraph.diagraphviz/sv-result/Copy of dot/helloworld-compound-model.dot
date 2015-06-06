@@ -1,0 +1,249 @@
+digraph G { rankdir=LR    node [fontname="Verdana",fontsize=10,shape=none] edge [fontname="Verdana",fontsize=10];
+label="default:TheWorld";
+   /*start top node*/
+   idaaNNLanguage[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idaaNNLanguagep0">
+      <TABLE bgcolor="blanchedalmond" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idaaNNLanguagep1" align="left">AA:Language</TD></TR>
+         <TR><!-- row --><TD port="idaaNNLanguagep2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idbbNNLanguage[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idbbNNLanguagep0">
+      <TABLE bgcolor="blanchedalmond" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idbbNNLanguagep1" align="left">BB:Language</TD></TR>
+         <TR><!-- row --><TD port="idbbNNLanguagep2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idaNNResearcher[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idaNNResearcherp0">
+      <TABLE bgcolor="cadetblue1" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idaNNResearcherp1" align="left">A:Researcher</TD></TR>
+         <TR><!-- row --><TD port="idaNNResearcherp2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idbNNResearcher[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idbNNResearcherp0">
+      <TABLE bgcolor="cadetblue1" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idbNNResearcherp1" align="left">B:Researcher</TD></TR>
+         <TR><!-- row --><TD port="idbNNResearcherp2" align="left">Type:obj</TD></TR>
+         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idp1NNPublication[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idp1NNPublicationp0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idp1NNPublicationp1" align="left">p1:Publication</TD></TR>
+         <TR><!-- row --><TD port="idp1NNPublicationp2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=1-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+            <!-- start child node -->
+            <TR><TD port="idbibliograpNNBibliographyp0">
+               <TABLE bgcolor="brown1" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="idbibliograpNNBibliographyp1" align="left">bibliography:Bibliography</TD></TR>
+                  <TR><!-- row --><TD port="idbibliograpNNBibliographyp2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=2-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Entry</TD></TR>
+                     <!-- start child node -->
+                     <TR><TD port="iddsfsdNNEntryp0">
+                        <TABLE bgcolor="darkturquoise" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="iddsfsdNNEntryp1" align="left">dsfsd:Entry</TD></TR>
+                           <TR><!-- row --><TD port="iddsfsdNNEntryp2" align="left">Type:obj</TD></TR>
+                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=3-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+            <!-- start child node -->
+            <TR><TD port="idintroNNSectionp0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="idintroNNSectionp1" align="left">Intro:Section</TD></TR>
+                  <TR><!-- row --><TD port="idintroNNSectionp2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=4-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+                     <!-- start child node -->
+                     <TR><TD port="idzeareNNParagraphp0">
+                        <TABLE bgcolor="chartreuse" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="idzeareNNParagraphp1" align="left">zeare:Paragraph</TD></TR>
+                           <TR><!-- row --><TD port="idzeareNNParagraphp2" align="left">Type:obj</TD></TR>
+
+                              <!-- start compartment -->
+                              <TR><TD><!--k=5-->
+                              <TABLE   bgcolor="yellow"  border="0"><TR><TD>Annotation</TD></TR>
+
+                              <TR><TD></TD></TR>
+                              </TABLE></TD></TR>
+                              <!-- end compartment -->                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+                     <!-- start child node -->
+                     <TR><TD port="idsdfqdfNNParagraphp0">
+                        <TABLE bgcolor="chartreuse" cellspacing="-1" border="1">
+                           <TR><TD><TABLE  border="0" cellspacing="-1" >
+                           <TR><!-- row --><TD port="idsdfqdfNNParagraphp1" align="left">sdfqdf:Paragraph</TD></TR>
+                           <TR><!-- row --><TD port="idsdfqdfNNParagraphp2" align="left">Type:obj</TD></TR>
+
+                              <!-- start compartment -->
+                              <TR><TD><!--k=6-->
+                              <TABLE   bgcolor="yellow"  border="0"><TR><TD>Annotation</TD></TR>
+                              <!-- start child node -->
+                              <TR><TD port="idsqdfNNAnnotationp0">
+                                 <TABLE bgcolor="chocolate" cellspacing="-1" border="1">
+                                    <TR><TD><TABLE  border="0" cellspacing="-1" >
+                                    <TR><!-- row --><TD port="idsqdfNNAnnotationp1" align="left">sqdf:Annotation</TD></TR>
+                                    <TR><!-- row --><TD port="idsqdfNNAnnotationp2" align="left">Type:obj</TD></TR>
+                                    </TABLE></TD></TR>
+                                 </TABLE>
+                              </TD></TR>
+                              <!-- end child node -->
+                              <!-- start child node -->
+                              <TR><TD port="idsqdfNNAnnotationp0">
+                                 <TABLE bgcolor="chocolate" cellspacing="-1" border="1">
+                                    <TR><TD><TABLE  border="0" cellspacing="-1" >
+                                    <TR><!-- row --><TD port="idsqdfNNAnnotationp1" align="left">sqdf:Annotation</TD></TR>
+                                    <TR><!-- row --><TD port="idsqdfNNAnnotationp2" align="left">Type:obj</TD></TR>
+                                    </TABLE></TD></TR>
+                                 </TABLE>
+                              </TD></TR>
+                              <!-- end child node -->
+
+                              </TABLE></TD></TR>
+                              <!-- end compartment -->                           </TABLE></TD></TR>
+                        </TABLE>
+                     </TD></TR>
+                     <!-- end child node -->
+
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+            <!-- start child node -->
+            <TR><TD port="idconclusionNNSectionp0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="idconclusionNNSectionp1" align="left">Conclusion:Section</TD></TR>
+                  <TR><!-- row --><TD port="idconclusionNNSectionp2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=7-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+
+                     <TR><TD></TD></TR>
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+            <!-- start child node -->
+            <TR><TD port="idchapterx1NNSectionp0">
+               <TABLE bgcolor="cadetblue" cellspacing="-1" border="1">
+                  <TR><TD><TABLE  border="0" cellspacing="-1" >
+                  <TR><!-- row --><TD port="idchapterx1NNSectionp1" align="left">Chapter 1:Section</TD></TR>
+                  <TR><!-- row --><TD port="idchapterx1NNSectionp2" align="left">Type:obj</TD></TR>
+
+                     <!-- start compartment -->
+                     <TR><TD><!--k=8-->
+                     <TABLE   bgcolor="yellow"  border="0"><TR><TD>Paragraph</TD></TR>
+
+                     <TR><TD></TD></TR>
+                     </TABLE></TD></TR>
+                     <!-- end compartment -->                  </TABLE></TD></TR>
+               </TABLE>
+            </TD></TR>
+            <!-- end child node -->
+
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idp2NNPublication[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idp2NNPublicationp0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idp2NNPublicationp1" align="left">p2:Publication</TD></TR>
+         <TR><!-- row --><TD port="idp2NNPublicationp2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=9-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=10-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+   /*start top node*/
+   idemptyxNNPublication[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <TR><TD port="idemptyxNNPublicationp0">
+      <TABLE bgcolor="darkorange" cellspacing="-1" border="1">
+         <TR><TD><TABLE  border="0" cellspacing="-1" >
+         <TR><!-- row --><TD port="idemptyxNNPublicationp1" align="left">null:Publication</TD></TR>
+         <TR><!-- row --><TD port="idemptyxNNPublicationp2" align="left">Type:obj</TD></TR>
+
+            <!-- start compartment -->
+            <TR><TD><!--k=11-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Bibliography</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->
+            <!-- start compartment -->
+            <TR><TD><!--k=12-->
+            <TABLE   bgcolor="yellow"  border="0"><TR><TD>Section</TD></TR>
+
+            <TR><TD></TD></TR>
+            </TABLE></TD></TR>
+            <!-- end compartment -->         </TABLE></TD></TR>
+      </TABLE>
+   </TD></TR></TABLE>>];
+   /*end top node*/
+
+idaNNResearcher:idaNNResearcherp0 -> idaaNNLanguage:idaaNNLanguagep1 [color=blue];
+idbNNResearcher:idbNNResearcherp0 -> idbbNNLanguage:idbbNNLanguagep1 [color=blue];
+idaNNResearcher:idaNNResearcherp0 -> idbNNResearcher:idbNNResearcherp1 [label= "sqdf", color=red];
+idaNNResearcher:idaNNResearcherp0 -> idp1NNPublication:idp1NNPublicationp1 [label= "sqdf", color=red];
+idbNNResearcher:idbNNResearcherp0 -> idp2NNPublication:idp2NNPublicationp1 [label= "sqdf", color=red];
+idbNNResearcher:idbNNResearcherp0 -> idemptyxNNPublication:idemptyxNNPublicationp1 [label= "sqdf", color=red];
+}/*end graph*/

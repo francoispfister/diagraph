@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_system901="http://system901" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <notation:Diagram xmi:id="_ZqxB4TD2EeO99KCFMIEbNw" type="System901_default_root" name="system901_2.system901_default_root_diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_bE9vADD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bE9vBTD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bE9vATD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bE9vAjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_bE9vAzD2EeO99KCFMIEbNw" diagramLink="_creZ0DD2EeO99KCFMIEbNw" hint="System901_functionalView_root"/>
+      <element xmi:type="_system901:System" href="system901_2.system901#//@systemView"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bE9vBDD2EeO99KCFMIEbNw" x="115" y="75" width="156" height="81"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bvmncDD2EeO99KCFMIEbNw" type="1002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bvmndDD2EeO99KCFMIEbNw" type="4002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_bvmncTD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_bvmncjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <element xmi:type="_system901:FunctionKind" href="system901_2.system901#//@kinds.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bvmnczD2EeO99KCFMIEbNw" x="313" y="102"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_cKHZMDD2EeO99KCFMIEbNw" type="1002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_cKHZNDD2EeO99KCFMIEbNw" type="4002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_cKHZMTD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_cKHZMjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <element xmi:type="_system901:FunctionKind" href="system901_2.system901#//@kinds.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cKHZMzD2EeO99KCFMIEbNw" x="321" y="165"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ZqxB4jD2EeO99KCFMIEbNw"/>
+    <element xmi:type="_system901:Workbench" href="system901_2.system901#/"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_creZ0DD2EeO99KCFMIEbNw" type="System901_functionalView_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_dGNOADD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_dGTUoDD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_dGNOATD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_dGNOAjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_dGNOAzD2EeO99KCFMIEbNw" hint="System901_functionDecomposition_root"/>
+      <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dGNOBDD2EeO99KCFMIEbNw" x="134" y="104"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_dkY-0DD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_dkfFcDD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_dkY-0TD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_dkY-0jD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_dkY-0zD2EeO99KCFMIEbNw" diagramLink="_eA0cIDD2EeO99KCFMIEbNw" hint="System901_functionDecomposition_root"/>
+      <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dkY-1DD2EeO99KCFMIEbNw" x="208" y="166"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_creZ0TD2EeO99KCFMIEbNw"/>
+    <element xmi:type="_system901:System" href="system901_2.system901#//@systemView"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_eA0cIDD2EeO99KCFMIEbNw" type="System901_functionDecomposition_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_eYnREDD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eYnRFTD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_eYnRETD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_eYnREjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_eYnREzD2EeO99KCFMIEbNw"/>
+      <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1/@decompositions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eYnRFDD2EeO99KCFMIEbNw" x="120" y="95" width="106" height="5"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_fhyfoDD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fhyfpTD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_fhyfoTD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_fhyfojD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_fhyfozD2EeO99KCFMIEbNw" diagramLink="_gn06oDD2EeO99KCFMIEbNw"/>
+      <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1/@decompositions.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fhyfpDD2EeO99KCFMIEbNw" x="125" y="160" width="91" height="36"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_eA0cITD2EeO99KCFMIEbNw"/>
+    <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_gn06oDD2EeO99KCFMIEbNw" type="System901_functionDecomposition_root" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_g1kbsDD2EeO99KCFMIEbNw" type="1001">
+      <children xmi:type="notation:DecorationNode" xmi:id="_g1kbtTD2EeO99KCFMIEbNw" type="4001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_g1kbsTD2EeO99KCFMIEbNw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_g1kbsjD2EeO99KCFMIEbNw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_g1kbszD2EeO99KCFMIEbNw"/>
+      <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1/@decompositions.1/@decompositions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g1kbtDD2EeO99KCFMIEbNw" x="129" y="149"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_gn06oTD2EeO99KCFMIEbNw"/>
+    <element xmi:type="_system901:Function" href="system901_2.system901#//@systemView/@functionalArchitecture.1/@decompositions.1"/>
+  </notation:Diagram>
+</xmi:XMI>

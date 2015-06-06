@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Layer Helper Implementation
+Bundle-SymbolicName: org.isoe.diagraph.layerhelper.impl
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.diagraph.layerhelper.impl.Activator
+Bundle-Vendor: LGi2P Isoe
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.isoe.diagraph.layerhelper;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: org.isoe.diagraph.layerhelper.impl

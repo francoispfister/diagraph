@@ -1,0 +1,179 @@
++++  concreteSyntax.getNodes
+ ********* TheWorld + Language + Researcher + Publication + Section + Paragraph + Annotation + Bibliography + Entry ********* 
+***  domainMetaModel
+    TheWorld | id7216623:pid7216623 > Language | id24065569:pid24065569
+    Hello | id27273229:pid27273229 > Researcher | id4902921:pid4902921
+    Hello | id27273229:pid27273229 > Researcher | id4902921:pid4902921
+    Researcher | id4902921:pid4902921 > Hello | id27273229:pid27273229
+    Researcher | id4902921:pid4902921 > Language | id24065569:pid24065569
+    Researcher | id4902921:pid4902921 > Language | id24065569:pid24065569
+    Paragraph | id20383017:pid20383017 > Annotation | id23386952:pid23386952
+    Section | id4896522:pid4896522 > Paragraph | id20383017:pid20383017
+    Publication | id27631239:pid27631239 > Section | id4896522:pid4896522
+    Bibliography | id7898079:pid7898079 > Entry | id1681873:pid1681873
+    Publication | id27631239:pid27631239 > Bibliography | id7898079:pid7898079
+    Authors | id20185559:pid20185559 > Publication | id27631239:pid27631239
+    Authors | id20185559:pid20185559 > Researcher | id4902921:pid4902921
+    Researcher | id4902921:pid4902921 > Authors | id20185559:pid20185559
+    Researcher | id4902921:pid4902921 > Annotation | id23386952:pid23386952
+    TheWorld | id7216623:pid7216623 > Researcher | id4902921:pid4902921
+    TheWorld | id7216623:pid7216623 > Publication | id27631239:pid27631239
+1-------------
+***  diagraphMetamodel
+    DNode | id18697845:pid18697845 > DEdge | id28432383:pid28432383
+    DGraph | id10567874:pid10567874 > DNode | id18697845:pid18697845
+    DGraph | id10567874:pid10567874 > DPointOfView | id5191203:pid5191203
+    DNode | id18697845:pid18697845 > DGraph | id10567874:pid10567874
+ ++ DGraphElement | id14397555:pid14397555 > ENamedElement | id2898188:pid2898188
+ ++ EClass | id18130695:pid18130695 > EClass | id18130695:pid18130695
+ ++ ETypedElement | id15297016:pid15297016 > EClassifier | id14797428:pid14797428
+ ++ EStructuralFeature | id14375391:pid14375391 > EClass | id18130695:pid18130695
+ ++ EClass | id18130695:pid18130695 > EStructuralFeature | id14375391:pid14375391
+ ++ DTypedElement | id17436673:pid17436673 > EClass | id18130695:pid18130695
+ ++ DTypedElement | id17436673:pid17436673 > EAttribute | id20947669:pid20947669
+    DOwnedElement | id27317520:pid27317520 > DNode | id18697845:pid18697845
+    DEdge | id28432383:pid28432383 > DNode | id18697845:pid18697845
+    DEdge | id28432383:pid28432383 > DNode | id18697845:pid18697845
+ ++ EReference | id10371010:pid10371010 > EReference | id10371010:pid10371010
+ ++ EReference | id10371010:pid10371010 > EAttribute | id20947669:pid20947669
+ ++ DEdge | id28432383:pid28432383 > EReference | id10371010:pid10371010
+ ++ DLink | id268686:pid268686 > EReference | id10371010:pid10371010
+2-------------
+***  domainModel
+    - | id20098275 > AA | id32805286
+    - | id20098275 > BB | id25583785
+    - | id20098275 > A | id20183572
+    A | id20183572 > sqdf | id23549027
+    sqdf | id23549027 > B | id13971795
+    B | id13971795 > BB | id25583785
+    B | id13971795 > sqdf | id10058769
+    sqdf | id10058769 > p2 | id10513800
+    sqdf | id10058769 > B | id13971795
+    B | id13971795 > sqdf | id7806699
+    sqdf | id7806699 > - | id9361034
+    sqdf | id7806699 > B | id13971795
+    sqdf | id23549027 > A | id20183572
+    A | id20183572 > AA | id32805286
+    A | id20183572 > sqdf | id27722870
+    sqdf | id27722870 > p1 | id1448786
+    p1 | id1448786 > Intro | id22788365
+    Intro | id22788365 > zeare | id13772551
+    Intro | id22788365 > sdfqdf | id16800444
+    sdfqdf | id16800444 > sqdf | id4524775
+    sdfqdf | id16800444 > sqdf | id13553174
+    p1 | id1448786 > Conclusion | id20719511
+    p1 | id1448786 > Chapter 1 | id4935697
+    p1 | id1448786 > bibliography | id7705189
+    bibliography | id7705189 > dsfsd | id14563222
+    sqdf | id27722870 > A | id20183572
+    - | id20098275 > B | id13971795
+    - | id20098275 > p1 | id1448786
+    - | id20098275 > p2 | id10513800
+    - | id20098275 > - | id9361034
+4-------------
+***  concreteSyntaxGraph
+    default | id21694431 > TheWorld;default_root | id15847288
+    TheWorld;default_root | id15847288 > - | id4650736
+    TheWorld;default_root | id15847288 > - | id16664142
+    TheWorld;default_root | id15847288 > languages | id28948141
+    languages | id28948141 > TheWorld;default_root | id15847288
+    TheWorld;default_root | id15847288 > researchers | id25698283
+    researchers | id25698283 > TheWorld;default_root | id15847288
+    TheWorld;default_root | id15847288 > publications | id31961965
+    publications | id31961965 > TheWorld;default_root | id15847288
+    TheWorld;default_root | id15847288 > default | id21694431
+    default | id21694431 > Language | id11857510
+    Language | id11857510 > - | id9402691
+    Language | id11857510 > - | id23212937
+    Language | id11857510 > - | id2457779
+    Language | id11857510 > TheWorld;default_root | id15847288
+    Language | id11857510 > default | id21694431
+    default | id21694431 > Researcher | id2390869
+    Researcher | id2390869 > - | id18693853
+    Researcher | id2390869 > - | id17447266
+    Researcher | id2390869 > - | id4027479
+    Researcher | id2390869 > TheWorld;default_root | id15847288
+    Researcher | id2390869 > Hello | id10554704
+    Hello | id10554704 > Researcher | id2390869
+    Researcher | id2390869 > Authors | id24197364
+    Authors | id24197364 > Researcher | id2390869
+    Researcher | id2390869 > speaks | id5393177
+    speaks | id5393177 > - | id12611877
+    speaks | id5393177 > Language | id11857510
+    speaks | id5393177 > Researcher | id2390869
+    Researcher | id2390869 > motherTongue | id4470681
+    Researcher | id2390869 > default | id21694431
+    speaks | id5393177 > - | id10371282
+    Authors | id24197364 > - | id28428664
+    Authors | id24197364 > Publication | id19008539
+    Publication | id19008539 > - | id4768574
+    Publication | id19008539 > - | id17456183
+    Publication | id19008539 > - | id19680659
+    Publication | id19008539 > TheWorld;default_root | id15847288
+    Publication | id19008539 > bibliography | id26800268
+    bibliography | id26800268 > Publication | id19008539
+    Publication | id19008539 > sections | id30967688
+    Publication | id19008539 > default | id21694431
+    bibliography | id26800268 > - | id11152412
+    bibliography | id26800268 > Bibliography | id3539560
+    Bibliography | id3539560 > - | id30934332
+    Bibliography | id3539560 > - | id20955323
+    Bibliography | id3539560 > - | id8801067
+    Bibliography | id3539560 > Publication | id19008539
+    Bibliography | id3539560 > entries | id11610274
+    Bibliography | id3539560 > default | id21694431
+    bibliography | id26800268 > - | id14869148
+    Authors | id24197364 > - | id25915973
+    Authors | id24197364 > - | id33240770
+    Authors | id24197364 > - | id29889322
+    Authors | id24197364 > - | id6436242
+    Hello | id10554704 > - | id27985270
+    Hello | id10554704 > - | id15976046
+    Hello | id10554704 > - | id6853776
+    Hello | id10554704 > - | id32604499
+    Hello | id10554704 > - | id6400924
+    default | id21694431 > Publication | id19008539
+    default | id21694431 > Section | id4835957
+    Section | id4835957 > - | id9102385
+    Section | id4835957 > - | id9144509
+    Section | id4835957 > - | id12473991
+    Section | id4835957 > Publication | id19008539
+    Section | id4835957 > paragraphs | id2277536
+    paragraphs | id2277536 > Section | id4835957
+    Section | id4835957 > default | id21694431
+    default | id21694431 > Paragraph | id26510058
+    Paragraph | id26510058 > - | id18806108
+    Paragraph | id26510058 > - | id25075688
+    Paragraph | id26510058 > - | id3426694
+    Paragraph | id26510058 > Section | id4835957
+    Paragraph | id26510058 > annotations | id13040772
+    annotations | id13040772 > Paragraph | id26510058
+    Paragraph | id26510058 > default | id21694431
+    annotations | id13040772 > - | id32273369
+    annotations | id13040772 > Annotation | id11132098
+    Annotation | id11132098 > - | id31216449
+    Annotation | id11132098 > - | id31325034
+    Annotation | id11132098 > - | id10813330
+    Annotation | id11132098 > Paragraph | id26510058
+    Annotation | id11132098 > default | id21694431
+    annotations | id13040772 > - | id8835783
+    default | id21694431 > Annotation | id11132098
+    default | id21694431 > Bibliography | id3539560
+    default | id21694431 > Entry | id24651753
+    Entry | id24651753 > - | id25451726
+    Entry | id24651753 > - | id15275176
+    Entry | id24651753 > - | id4932848
+    Entry | id24651753 > Bibliography | id3539560
+    Entry | id24651753 > default | id21694431
+    paragraphs | id2277536 > - | id26933798
+    paragraphs | id2277536 > Paragraph | id26510058
+    paragraphs | id2277536 > - | id27071535
+    publications | id31961965 > - | id26761488
+    publications | id31961965 > Publication | id19008539
+    publications | id31961965 > - | id16723022
+    researchers | id25698283 > - | id11919482
+    researchers | id25698283 > Researcher | id2390869
+    researchers | id25698283 > - | id10782905
+    languages | id28948141 > - | id806641
+    languages | id28948141 > Language | id11857510
+    languages | id28948141 > - | id1230280

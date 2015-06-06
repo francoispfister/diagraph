@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_syswb103:Workbench xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_syswb103="http://syswb103">
+  <things name="th1"/>
+  <things name="th2">
+    <relations name="t" toThing="//@things.0"/>
+  </things>
+  <thoughts name="to1"/>
+  <thoughts name="to2" relatedTo="//@things.1"/>
+  <systemView name="sys">
+    <functionalArchitecture name="func_arch" property="//@functionProperties.0">
+      <decompositions name="f1"/>
+      <decompositions name="f2" associations="//@systemView/@functionalArchitecture/@decompositions.0">
+        <decompositions name="fz"/>
+        <decompositions name="fx" associations="//@systemView/@functionalArchitecture/@decompositions.1/@decompositions.0"/>
+      </decompositions>
+    </functionalArchitecture>
+    <physicalArchitecture name="phys_arch"/>
+  </systemView>
+  <functionProperties name="fp1"/>
+  <functionProperties name="fp2"/>
+  <catalog id="cat1">
+    <patterns name="f99">
+      <decompositions name="f100"/>
+    </patterns>
+    <patterns name="f98"/>
+    <patterns/>
+  </catalog>
+  <catalog id="cat2"/>
+</_syswb103:Workbench>

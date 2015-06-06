@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recette1:LivreRecettes xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:recette1="http:///aigle.tp.recette1.v0">
+  <recettes name="Oeufs Mimosa" cout="moyen" description="1. Faire durcir les oeufs 10 mn, puis les mettre dans l'eau froide&#xA;2. Monter une mayonnaise avec les ingrédients&#xA;3. Les oeufs écalés, les couper dans le sens de la longueur, séparer les blancs des jaunes&#xA;4. Emietter les jaunes à la fourchette, mélanger la moitié de ces jaunes émiettés avec la mayonnaise et réserver le reste&#xA;5. Remplir les demi-blancs de cette préparation, puis saupoudrer chaque demi-oeuf du reste de jaunes émiettés&#xA;6. Disposer les oeufs sur des feuilles de laitue, mettre sur chaque oeuf un peu de persil et une olive noire&#xA;7. Servir frais">
+    <r_ingredients _ingredient="//@ingredients.1" quantite="6" unite=""/>
+    <r_ingredients _ingredient="//@ingredients.5" quantite="10" unite="cuillerées"/>
+  </recettes>
+  <recettes name="Steak Frites" cout="eleve" description="1. Faire chauffer l'huile (friteuse sur 190C)&#xA;2. Couper les frites&#xA;3. Essuyer les frites avec un torchon propre&#xA;4. Mettre les frites dans la friteuse pour 13 à 14 minutes&#xA;5. Relever le panier et attendre que la température de l'huile remonte sur 180C&#xA;6. Replonger les frites pour 4 minutes environ&#xA;7. Sortir les frites de la friteuse&#xA;8. Bien égoutter; mettre dans un plat tapissé de papier absorbant pour enlever l'excédent d'huile, saler&#xA;9. En attendant le deuxième bain des frites, faire fondre le beurre dans une poêle à feu fort&#xA;10. Saler et poivrer les steaks&#xA;11. Mettre les steaks dans la poêle&#xA;12. Faire dorer de chaque coté environ 3 minutes pour un steak saignant&#xA;13. Retirer les steaks de la poêle et déglacer la poêle avec le muscadet&#xA;14. Servir avec les frites et la sauce au muscadet">
+    <r_ingredients _ingredient="//@ingredients.3" quantite="2" unite=""/>
+    <r_ingredients _ingredient="//@ingredients.4" quantite="500" unite="grammes"/>
+    <r_ingredients _ingredient="//@ingredients.2" quantite="7" unite="grammes"/>
+  </recettes>
+  <recettes name="Soupe aux choux" description="1. Dans une cocotte minute faire revenir les lardons et l'oignon coupé en rondelles&#xA;2. Ajouter les ingrédients&#xA;3. Faire cuire 2 heures&#xA;4. Servir chaud">
+    <r_ingredients _ingredient="//@ingredients.0" quantite="1" unite="kilo"/>
+    <r_ingredients _ingredient="//@ingredients.7" quantite="500" unite="grammes"/>
+    <r_ingredients _ingredient="//@ingredients.2" quantite="12" unite="grammes"/>
+  </recettes>
+  <ingredients name="Chou" categorieIngredient="//@categories.0">
+    <i_nutriments quantite="10" _nutriment="//@nutriments.0"/>
+    <i_nutriments quantite="15" _nutriment="//@nutriments.4"/>
+    <i_nutriments quantite="10" _nutriment="//@nutriments.6"/>
+  </ingredients>
+  <ingredients name="Oeuf" categorieIngredient="//@categories.6">
+    <i_nutriments quantite="5" _nutriment="//@nutriments.0"/>
+    <i_nutriments quantite="10" _nutriment="//@nutriments.7"/>
+  </ingredients>
+  <ingredients name="Sel" categorieIngredient="//@categories.5">
+    <i_nutriments quantite="100" _nutriment="//@nutriments.0"/>
+  </ingredients>
+  <ingredients name="Steak" categorieIngredient="//@categories.1">
+    <i_nutriments quantite="15" _nutriment="//@nutriments.1"/>
+    <i_nutriments quantite="80" _nutriment="//@nutriments.2"/>
+  </ingredients>
+  <ingredients name="Frites" categorieIngredient="//@categories.0">
+    <i_nutriments quantite="60" _nutriment="//@nutriments.1"/>
+    <i_nutriments quantite="5" _nutriment="//@nutriments.2"/>
+  </ingredients>
+  <ingredients name="Mayonnaise" categorieIngredient="//@categories.5">
+    <i_nutriments quantite="95" _nutriment="//@nutriments.1"/>
+    <i_nutriments quantite="5" _nutriment="//@nutriments.2"/>
+  </ingredients>
+  <ingredients name="Huile" categorieIngredient="//@categories.5">
+    <i_nutriments quantite="98" _nutriment="//@nutriments.1"/>
+  </ingredients>
+  <ingredients name="Eau" categorieIngredient="//@categories.5"/>
+  <ingredients name="Farine" categorieIngredient="//@categories.3">
+    <i_nutriments quantite="98" _nutriment="//@nutriments.3"/>
+  </ingredients>
+  <nutriments name="mineraux" valeurCalorique="1"/>
+  <nutriments name="lipides" valeurCalorique="50"/>
+  <nutriments name="protides" valeurCalorique="20"/>
+  <nutriments name="glucides" valeurCalorique="30"/>
+  <nutriments name="vitamines A"/>
+  <nutriments name="vitamines B"/>
+  <nutriments name="vitamines C"/>
+  <nutriments name="vitamines D"/>
+  <nutriments name="vitamines E"/>
+  <categories name="légume"/>
+  <categories name="viande"/>
+  <categories name="poisson"/>
+  <categories name="féculent"/>
+  <categories name="matière grasse"/>
+  <categories name="condiment"/>
+  <categories name="oeufs"/>
+</recette1:LivreRecettes>

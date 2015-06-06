@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Diastyle
+Bundle-SymbolicName: org.isoe.diagraph.diastyle;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Vendor: LGi2P Isoe
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.isoe.diagraph.diastyle,
+ org.isoe.diagraph.diastyle.helpers,
+ org.isoe.diagraph.diastyle.impl,
+ org.isoe.diagraph.diastyle.util
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.eclipse.emf.ecore;visibility:=reexport;bundle-version="1.0.4",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4"
+Bundle-ActivationPolicy: lazy

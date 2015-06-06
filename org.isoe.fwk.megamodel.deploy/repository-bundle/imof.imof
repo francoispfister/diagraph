@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_imof:IPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_imof="http://imof">
+  <contents xsi:type="_imof:IClass" name="World" superType="//@contents.2">
+    <attributes name="name" type="//@contents.3"/>
+  </contents>
+  <contents xsi:type="_imof:IClass" name="Thing" superType="//@contents.2">
+    <attributes name="id" type="//@contents.4"/>
+    <operations name="Doit" type="//@contents.2"/>
+  </contents>
+  <contents xsi:type="_imof:IClass" name="Concept" subTypes="//@contents.0 //@contents.1"/>
+  <contents xsi:type="_imof:IDatatype" name="String"/>
+  <contents xsi:type="_imof:IDatatype" name="Integer"/>
+</_imof:IPackage>

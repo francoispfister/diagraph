@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="se"
+    nsURI="http://org.isoe.systems-engineering-ontology/2012" nsPrefix="se">
+  <eClassifiers xsi:type="ecore:EClass" name="System"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemOfInterest" eSuperTypes="#//System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="realizedBy" lowerBound="1"
+        eType="#//Project"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="respondsTo" lowerBound="1"
+        eType="#//Needs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="benefitsFrom" lowerBound="1"
+        eType="#//SystemsEngineering"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Project" eSuperTypes="#//System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tooledBy" lowerBound="1"
+        eType="#//SystemsEngineering"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Needs">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="induces" lowerBound="1"
+        eType="#//Project"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemsEngineering" eSuperTypes="#//Engineering">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interactsWith" lowerBound="1"
+        eType="#//DomainEngineering"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" lowerBound="1" upperBound="-1"
+        eType="#//Method"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelDrivenEngineering" eSuperTypes="#//Engineering">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" lowerBound="1" eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" eType="#//FormalLanguage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelBasedSystemsEngineering" eSuperTypes="#//SystemsEngineering #//ModelDrivenEngineering"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainEngineering" eSuperTypes="#//Engineering"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Engineering">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" lowerBound="1" upperBound="-1"
+        eType="#//Language"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="composes" upperBound="-1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conformsTo" eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="imitates" lowerBound="1"
+        upperBound="-1" eType="#//Pattern"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FormalLanguage" eSuperTypes="#//Language">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conformsTo" lowerBound="1"
+        eType="#//Grammar"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphicalLanguage" eSuperTypes="#//FormalLanguage #//Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Mechanics" eSuperTypes="#//DomainEngineering"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Software" eSuperTypes="#//DomainEngineering">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="creates" lowerBound="1"
+        upperBound="-1" eType="#//FormalLanguage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Electronics" eSuperTypes="#//DomainEngineering"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Organization" eSuperTypes="#//DomainEngineering"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pattern" eSuperTypes="#//Model"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Graph"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Transformation" eSuperTypes="#//Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Model"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternBasedSystemsEngineering" eSuperTypes="#//ModelBasedSystemsEngineering">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uses" lowerBound="1" upperBound="-1"
+        eType="#//Pattern"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Process">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="formalizedBy" lowerBound="1"
+        upperBound="-1" eType="#//Model"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Grammar">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="abstractSyntax" lowerBound="1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="textualConcreteSyntax"
+        lowerBound="1" eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="graphicalConcreteSyntax"
+        lowerBound="1" eType="#//Model"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EFFBD" eSuperTypes="#//GraphicalLanguage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PBD" eSuperTypes="#//GraphicalLanguage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StateChart" eSuperTypes="#//GraphicalLanguage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Language"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Method">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conformsTo" lowerBound="1"
+        upperBound="-1" eType="#//Standard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="follows" lowerBound="1"
+        upperBound="-1" eType="#//Process"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Standard"/>
+</ecore:EPackage>

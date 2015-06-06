@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Generator Extension
+Bundle-SymbolicName: org.isoe.extensionpoint.diagraph.generator;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.isoe.diagraph.workbench.api;bundle-version="1.0.4",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.7.0"
+Export-Package: org.isoe.contrib,
+ org.isoe.extensionpoint.diagraph.generator

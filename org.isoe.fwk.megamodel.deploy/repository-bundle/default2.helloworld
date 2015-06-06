@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_helloworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_helloworld="http://helloworld">
+  <things name="A">
+    <relations name="ab" toThing="//@things.1">
+      <aliases id="titi"/>
+      <aliases id="qwerty"/>
+    </relations>
+    <relations name="ac" toThing="//@things.2">
+      <aliases id="tata"/>
+      <aliases id="toto"/>
+    </relations>
+  </things>
+  <things name="B"/>
+  <things name="C"/>
+</_helloworld:World>

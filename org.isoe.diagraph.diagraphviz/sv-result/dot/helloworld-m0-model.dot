@@ -1,0 +1,53 @@
+digraph helloworld {    rankdir=BT  node [shape=box, color=black] 
+id25457790 [  shape="box"  label= "-:TheWorld" ]
+id31775739 [  shape="box"  label= "AA:Language" ]
+id16594303 [  shape="box"  label= "BB:Language" ]
+id29567874 [  shape="box"  label= "A:Researcher" ]
+id21549984 [  shape="box"  label= "sqdf:Hello" ]
+id2963539 [  shape="box"  label= "B:Researcher" ]
+id8003100 [  shape="box"  label= "sqdf:Authors" ]
+id10946652 [  shape="box"  label= "p2:Publication" ]
+id21943296 [  shape="box"  label= "sqdf:Authors" ]
+id1433270 [  shape="box"  label= "-:Publication" ]
+id4043299 [  shape="box"  label= "sqdf:Authors" ]
+id13424221 [  shape="box"  label= "p1:Publication" ]
+id25108427 [  shape="box"  label= "Intro:Section" ]
+id14660139 [  shape="box"  label= "zeare:Paragraph" ]
+id5493951 [  shape="box"  label= "sdfqdf:Paragraph" ]
+id28596532 [  shape="box"  label= "sqdf:Annotation" ]
+id7916459 [  shape="box"  label= "sqdf:Annotation" ]
+id8611210 [  shape="box"  label= "Conclusion:Section" ]
+id8351825 [  shape="box"  label= "Chapter 1:Section" ]
+id20055805 [  shape="box"  label= "bibliography:Bibliography" ]
+id25749752 [  shape="box"  label= "dsfsd:Entry" ]
+id25457790 -> id31775739 [color=brown,arrowhead="vee",arrowsize="1" ,label="languages"];
+id25457790 -> id16594303 [color=brown,arrowhead="vee",arrowsize="1" ,label="languages"];
+id25457790 -> id29567874 [color=brown,arrowhead="vee",arrowsize="1" ,label="researchers"];
+id29567874 -> id21549984 [color=brown,arrowhead="vee",arrowsize="1" ,label="saysHello"];
+id21549984 -> id2963539 [color=brown,arrowhead="vee",arrowsize="1" ,label="toAnother"];
+id2963539 -> id16594303 [color=brown,arrowhead="vee",arrowsize="1" ,label="motherTongue"];
+id2963539 -> id8003100 [color=brown,arrowhead="vee",arrowsize="1" ,label="authors"];
+id8003100 -> id10946652 [color=brown,arrowhead="vee",arrowsize="1" ,label="publication"];
+id8003100 -> id2963539 [color=brown,arrowhead="vee",arrowsize="1" ,label="researcher"];
+id2963539 -> id21943296 [color=brown,arrowhead="vee",arrowsize="1" ,label="authors"];
+id21943296 -> id1433270 [color=brown,arrowhead="vee",arrowsize="1" ,label="publication"];
+id21943296 -> id2963539 [color=brown,arrowhead="vee",arrowsize="1" ,label="researcher"];
+id21549984 -> id29567874 [color=brown,arrowhead="vee",arrowsize="1" ,label="researcher"];
+id29567874 -> id31775739 [color=brown,arrowhead="vee",arrowsize="1" ,label="motherTongue"];
+id29567874 -> id4043299 [color=brown,arrowhead="vee",arrowsize="1" ,label="authors"];
+id4043299 -> id13424221 [color=brown,arrowhead="vee",arrowsize="1" ,label="publication"];
+id13424221 -> id25108427 [color=brown,arrowhead="vee",arrowsize="1" ,label="sections"];
+id25108427 -> id14660139 [color=brown,arrowhead="vee",arrowsize="1" ,label="paragraphs"];
+id25108427 -> id5493951 [color=brown,arrowhead="vee",arrowsize="1" ,label="paragraphs"];
+id5493951 -> id28596532 [color=brown,arrowhead="vee",arrowsize="1" ,label="annotations"];
+id5493951 -> id7916459 [color=brown,arrowhead="vee",arrowsize="1" ,label="annotations"];
+id13424221 -> id8611210 [color=brown,arrowhead="vee",arrowsize="1" ,label="sections"];
+id13424221 -> id8351825 [color=brown,arrowhead="vee",arrowsize="1" ,label="sections"];
+id13424221 -> id20055805 [color=brown,arrowhead="vee",arrowsize="1" ,label="bibliography"];
+id20055805 -> id25749752 [color=brown,arrowhead="vee",arrowsize="1" ,label="entries"];
+id4043299 -> id29567874 [color=brown,arrowhead="vee",arrowsize="1" ,label="researcher"];
+id25457790 -> id2963539 [color=brown,arrowhead="vee",arrowsize="1" ,label="researchers"];
+id25457790 -> id13424221 [color=brown,arrowhead="vee",arrowsize="1" ,label="publications"];
+id25457790 -> id10946652 [color=brown,arrowhead="vee",arrowsize="1" ,label="publications"];
+id25457790 -> id1433270 [color=brown,arrowhead="vee",arrowsize="1" ,label="publications"];
+}

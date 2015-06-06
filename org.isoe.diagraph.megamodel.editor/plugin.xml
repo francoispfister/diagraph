@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated megamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.isoe.diagraph.megamodel.presentation.MegamodelModelWizardID"
+            name="%_UI_MegamodelModelWizard_label"
+            class="org.isoe.diagraph.megamodel.presentation.MegamodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MegamodelModelFile.gif">
+         <description>%_UI_MegamodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated megamodel -->
+      <editor
+            id="org.isoe.diagraph.megamodel.presentation.MegamodelEditorID"
+            name="%_UI_MegamodelEditor_label"
+            icon="icons/full/obj16/MegamodelModelFile.gif"
+            extensions="megamodel"
+            class="org.isoe.diagraph.megamodel.presentation.MegamodelEditor"
+            contributorClass="org.isoe.diagraph.megamodel.presentation.MegamodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

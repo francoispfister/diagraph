@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_tank201:LevelRegulation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_tank201="http://tank201">
+  <tank name="Cooling Tank" level="25.0" maxLevel="50.0">
+    <sensor level="25.0"/>
+  </tank>
+  <source name="Raw input">
+    <flow name="20" from="//@source" to="//@tank">
+      <history value="18.0"/>
+      <history time="1" value="16.0"/>
+      <history time="2" value="19.0"/>
+      <history time="3" value="17.0"/>
+      <history time="4" value="15.0"/>
+    </flow>
+  </source>
+  <sink name="Outlet"/>
+  <controler name="PID regulator" fromSensor="//@tank/@sensor" toValve="//@valve" pGain="0.48" iGain="0.65" dGain="0.45"/>
+  <valve name="valve" from="//@tank" to="//@sink">
+    <history value="20.0"/>
+    <history time="1" value="12.0"/>
+    <history time="2" value="2.0"/>
+    <history time="4" value="12.0"/>
+  </valve>
+</_tank201:LevelRegulation>

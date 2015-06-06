@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette title="default">
+    <tools xsi:type="gmftool:ToolGroup" title="default">
+      <tools xsi:type="gmftool:PaletteSeparator" title="Nodes" description="Nodes"/>
+      <tools xsi:type="gmftool:CreationTool" title="Dsml" description="Model Element: Dsml">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Dsml.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="Compartmented nodes" description="Compartmented nodes"/>
+      <tools xsi:type="gmftool:CreationTool" title="Model" description="Model Element: Model">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Model.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="Notation" description="Model Element: Notation">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Notation.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="NotationDiagram" description="Model Element: NotationDiagram">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/NotationDiagram.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="EcoreDiagram" description="Model Element: EcoreDiagram">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/EcoreDiagram.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="Links" description="Links"/>
+      <tools xsi:type="gmftool:CreationTool" title="RelatedTo" description="Dsml->Dsml">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/RelatedTo.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:CreationTool" title="Navigation" description="Notation->Notation">
+        <smallIcon xsi:type="gmftool:BundleImage" path="/icons/Navigation.gif" bundle="org.isoe.diagraph.megamodel"/>
+        <largeIcon xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools xsi:type="gmftool:PaletteSeparator" title="References" description="References"/>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

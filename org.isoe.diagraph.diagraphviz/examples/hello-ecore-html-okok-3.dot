@@ -1,0 +1,79 @@
+digraph G { rankdir=BT node [fontsize=8,shape=none] edge [fontsize=8];
+subgraph cluster_15081425 /*start subgraph*/{ 
+label="hello";
+
+Reference [
+label=< 
+<!-- main_Reference -->
+<TABLE  cellspacing="-1" cellpadding="-1" border="0" >
+<TR><TD port="Reference">
+  <!-- classifier_Reference -->
+  <TABLE  cellspacing="-1" border="1" >
+    <TR><TD>Reference</TD> </TR> 
+    <TR><TD>
+      <!-- container_Reference -->
+      <TABLE border="0">
+        <TR><TD  port="Reference_key" align="left">key: EString</TD> </TR> 
+        <TR><TD  port="Reference_description" align="left">description: EString</TD> </TR> 
+      </TABLE><!-- /container_Reference -->
+    </TD></TR>
+  </TABLE><!-- /classifier_Reference -->
+</TD></TR>
+</TABLE><!-- /main_Reference -->
+>
+];
+
+Expression [
+label=< 
+<!-- main_Expression -->
+<TABLE  cellspacing="-1" cellpadding="-1" border="0" >
+  <TR><TD port="Expression">
+    <!-- classifier_Expression -->
+    <TABLE cellspacing="-1" cellpadding="5" border="1" >
+      <TR><TD>Expression</TD> </TR> 
+      <TR><TD>
+        <!-- container_Expression -->
+        <TABLE cellspacing="-1" border="0">
+          <TR><TD align="left">texte[0..1]: EString</TD> </TR> 
+          <TR><TD port="Expression_SubExpression">
+            <!-- classifier_SubExpression -->
+            <TABLE border="1" cellspacing="-1"  cellpadding="5" > 
+               <TR><TD port="SubExpression">SubExpression</TD> </TR> 
+               <TR><TD>
+                 <!-- container_SubExpression -->
+                 <TABLE  border="0"  cellspacing="-1">
+                   <TR><TD align="left">attr1[0..1]: Typ1</TD> </TR> 
+                   <TR><TD align="left">attr2[0..*]: Typ2</TD> </TR> 
+                   <TR><TD port="SubExpression_foo" align="left">foo: EString</TD> </TR> 
+                 </TABLE><!-- /container_SubExpression -->
+               </TD></TR>
+            </TABLE><!-- /classifier_SubExpression -->
+        </TD></TR> 
+        <TR><TD port="100" align="left"  >bar: EString</TD> </TR> 
+      </TABLE><!-- /container_Expression -->
+    </TD></TR>
+  </TABLE><!-- classifier_Expression -->
+</TD></TR>
+</TABLE><!-- /main_Expression -->
+>
+];
+
+Dialecte [shape=record,style=filled,	fillcolor=".0 .0 1.0",/*start label*/label="{Dialecte|nom[0..1]: EString\nexemple[0..1]: EString\n}"/*end label*/];
+Langue [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Langue|nom[0..1]: EString\n}"/*end label*/];
+Bonjour [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Bonjour|phrase[0..1]: EString\n}"/*end label*/];
+Humain [shape=record,style=filled,fillcolor=".0 .0 1.0",/*start label*/label="{Humain|nom[0..1]: EString\n}"/*end label*/];
+}/*end subgraph*/
+
+
+Expression:Expression -> Reference:Reference [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="references"];
+Dialecte -> Expression:Expression [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="expressions"];
+Langue -> Dialecte [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="dialectes"];
+Bonjour -> Humain [color=red,arrowhead=vee,headlabel="0..1",label="a_un_autre"];
+Bonjour -> Humain [color=red,arrowhead=vee,headlabel="0..1",label="humain"];
+Humain -> Bonjour [color=red,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="dit_bonjour"];
+Humain -> Langue [color=red,arrowhead=vee,headlabel="0..*",label="parle"];
+Expression:100 -> Bonjour [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="998",label="lab1"];
+Expression:SubExpression_foo -> Langue [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="997",label="lab2"];
+Expression:100 -> Reference:Reference_description [color=blue,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="998",label="lab1"];
+Humain -> Expression:Expression_SubExpression [color=black,dir=both,arrowtail=box,arrowhead=obox,headlabel="199",label="lab100"];
+}/*end graph*/

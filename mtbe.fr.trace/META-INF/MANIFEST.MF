@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Trace
+Bundle-SymbolicName: mtbe.fr.trace;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-ClassPath: .
+Bundle-Vendor: Lirmm Marel
+Bundle-Localization: plugin
+Export-Package: mtbe.fr.trace,
+ mtbe.fr.trace.facade,
+ mtbe.fr.trace.impl,
+ mtbe.fr.trace.util
+Require-Bundle: org.eclipse.emf.ecore.xmi;bundle-version="2.7.0"

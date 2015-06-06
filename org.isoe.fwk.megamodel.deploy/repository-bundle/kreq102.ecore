@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kreq102" nsURI="http://kreq102" nsPrefix="_kreq102">
+  <eClassifiers xsi:type="ecore:EClass" name="Bbbb">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fs" upperBound="-1" eType="#//Ffff"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ffff">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=id"/>
+      <details key="cont=Bbbb.fs"/>
+      <details key="kref=subFs"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subFs" upperBound="-1"
+        eType="#//Ffff" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="BasicFlowTransformationType">
+    <eLiterals name="EEnumLiteral0"/>
+    <eLiterals name="Transiform" value="1"/>
+    <eLiterals name="Check_Verify_Validate" value="2"/>
+    <eLiterals name="Control" value="3"/>
+    <eLiterals name="Decide" value="4"/>
+    <eLiterals name="Measure" value="5"/>
+    <eLiterals name="Store" value="6"/>
+    <eLiterals name="Wait" value="7"/>
+  </eClassifiers>
+</ecore:EPackage>

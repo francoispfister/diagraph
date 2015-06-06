@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfmap:Mapping xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gmfmap="http://www.eclipse.org/gmf/2008/mappings" xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <nodes>
+    <containmentFeature href="megamodel.ecore#//Megamodel/dsmls"/>
+    <ownedChild>
+      <domainMetaElement href="megamodel.ecore#//Dsml"/>
+      <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel href="megamodel_default_root.gmfgraph#DsmlName"/>
+        <features href="megamodel.ecore#//MegamodelElement/name"/>
+      </labelMappings>
+      <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.1"/>
+      <diagramNode href="megamodel_default_root.gmfgraph#Dsml"/>
+      <children compartment="//@nodes.0/@ownedChild/@compartments.0">
+        <containmentFeature href="megamodel.ecore#//Dsml/models"/>
+        <ownedChild>
+          <domainMetaElement href="megamodel.ecore#//Model"/>
+          <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel href="megamodel_default_root.gmfgraph#ModelName"/>
+            <features href="megamodel.ecore#//MegamodelElement/name"/>
+          </labelMappings>
+          <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel href="megamodel_default_root.gmfgraph#ModelExcerpt"/>
+            <features href="megamodel.ecore#//Model/excerpt"/>
+          </labelMappings>
+          <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.3"/>
+          <diagramNode href="megamodel_default_root.gmfgraph#Model"/>
+          <children compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@compartments.0">
+            <containmentFeature href="megamodel.ecore#//Model/notationDiagrams"/>
+            <ownedChild>
+              <domainMetaElement href="megamodel.ecore#//NotationDiagram"/>
+              <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+                <diagramLabel href="megamodel_default_root.gmfgraph#NotationDiagramURI"/>
+                <features href="megamodel.ecore#//MegamodelElement/URI"/>
+              </labelMappings>
+              <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.5"/>
+              <diagramNode href="megamodel_default_root.gmfgraph#NotationDiagram"/>
+            </ownedChild>
+          </children>
+          <compartments children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0">
+            <compartment href="megamodel_default_root.gmfgraph#notationDiagrams"/>
+          </compartments>
+        </ownedChild>
+      </children>
+      <children compartment="//@nodes.0/@ownedChild/@compartments.1">
+        <containmentFeature href="megamodel.ecore#//Dsml/notations"/>
+        <ownedChild>
+          <domainMetaElement href="megamodel.ecore#//Notation"/>
+          <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel href="megamodel_default_root.gmfgraph#NotationName"/>
+            <features href="megamodel.ecore#//MegamodelElement/name"/>
+          </labelMappings>
+          <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.4"/>
+          <diagramNode href="megamodel_default_root.gmfgraph#Notation"/>
+        </ownedChild>
+      </children>
+      <children compartment="//@nodes.0/@ownedChild/@compartments.2">
+        <containmentFeature href="megamodel.ecore#//Dsml/ecoreDiagrams"/>
+        <ownedChild>
+          <domainMetaElement href="megamodel.ecore#//EcoreDiagram"/>
+          <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel href="megamodel_default_root.gmfgraph#EcoreDiagramName"/>
+            <features href="megamodel.ecore#//MegamodelElement/name"/>
+          </labelMappings>
+          <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.6"/>
+          <diagramNode href="megamodel_default_root.gmfgraph#EcoreDiagram"/>
+        </ownedChild>
+      </children>
+      <compartments children="//@nodes.0/@ownedChild/@children.0">
+        <compartment href="megamodel_default_root.gmfgraph#models"/>
+      </compartments>
+      <compartments children="//@nodes.0/@ownedChild/@children.1">
+        <compartment href="megamodel_default_root.gmfgraph#notations"/>
+      </compartments>
+      <compartments children="//@nodes.0/@ownedChild/@children.2">
+        <compartment href="megamodel_default_root.gmfgraph#ecoreDiagrams"/>
+      </compartments>
+    </ownedChild>
+  </nodes>
+  <links>
+    <domainMetaElement href="megamodel.ecore#//RelatedTo"/>
+    <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel href="megamodel_default_root.gmfgraph#RelatedToKind"/>
+      <features href="megamodel.ecore#//RelatedTo/kind"/>
+    </labelMappings>
+    <containmentFeature href="megamodel.ecore#//Dsml/relations"/>
+    <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.8"/>
+    <diagramLink href="megamodel_default_root.gmfgraph#RelatedTo"/>
+    <sourceMetaFeature xsi:type="ecore:EReference" href="megamodel.ecore#//RelatedTo/from"/>
+    <linkMetaFeature xsi:type="ecore:EReference" href="megamodel.ecore#//RelatedTo/to"/>
+  </links>
+  <links>
+    <domainMetaElement href="megamodel.ecore#//Navigation"/>
+    <labelMappings xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel href="megamodel_default_root.gmfgraph#NavigationId"/>
+      <features href="megamodel.ecore#//Navigation/id"/>
+    </labelMappings>
+    <containmentFeature href="megamodel.ecore#//Notation/navigations"/>
+    <tool xsi:type="gmftool:CreationTool" href="megamodel_default_root.gmftool#//@palette/@tools.0/@tools.9"/>
+    <diagramLink href="megamodel_default_root.gmfgraph#Navigation"/>
+    <sourceMetaFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Navigation/from"/>
+    <linkMetaFeature xsi:type="ecore:EReference" href="megamodel.ecore#//Navigation/to"/>
+  </links>
+  <diagram>
+    <diagramCanvas href="megamodel_default_root.gmfgraph#MegamodelCanvas"/>
+    <domainModel href="megamodel.ecore#/"/>
+    <domainMetaElement href="megamodel.ecore#//Megamodel"/>
+    <palette href="megamodel_default_root.gmftool#//@palette"/>
+  </diagram>
+</gmfmap:Mapping>

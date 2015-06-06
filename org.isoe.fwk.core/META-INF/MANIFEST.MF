@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Framework Core Constants
+Bundle-SymbolicName: org.isoe.fwk.core
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.isoe.diagraph.lang;bundle-version="1.0.4",
+ org.isoe.diagraph.generic;bundle-version="1.0.4",
+ org.isoe.diagraph.views;bundle-version="1.0.4",
+ org.isoe.diastyle.lang;bundle-version="1.0.4",
+ org.eclipse.emf.ecoretools.legacy.diagram;bundle-version="1.0.0",
+ org.eclipse.emf.codegen.ecore;bundle-version="2.7.0",
+ org.isoe.diagraph.diagraph;bundle-version="1.0.5",
+ org.eclipse.jdt.core;bundle-version="3.7.3",
+ org.isoe.diagraph.diastyle;bundle-version="1.0.4",
+ org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",
+ org.isoe.extensionpoint.ecoreutils;bundle-version="1.0.4",
+ org.isoe.diagraph.megamodel;bundle-version="1.0.4"
+Export-Package: org.isoe.fwk.core

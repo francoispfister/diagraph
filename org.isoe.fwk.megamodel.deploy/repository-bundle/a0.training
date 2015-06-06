@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<training:TrainingOrganization xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:training="http://www.obeo.fr/training/training/1.0">
+  <people xsi:type="training:Trainee" firstname="Pierre"/>
+  <people xsi:type="training:Trainee" firstname="Paul"/>
+  <people xsi:type="training:Trainer" firstname="Jean le Formateur" canProvide="//@training.0 //@training.4 //@training.5"/>
+  <people xsi:type="training:Trainer" firstname="Albert le Formateur" canProvide="//@training.1 //@training.2 //@training.3"/>
+  <people xsi:type="training:Trainee" firstname="Zoé"/>
+  <sessions training="//@training.5" name="Formation Diagraph" date="2014-07-14T00:00:00.000+0200" trainer="//@people.2" Trainees="//@people.2 //@people.0"/>
+  <sessions training="//@training.4" name="Formation Obeo" date="2014-06-30T00:00:00.000+0200" trainer="//@people.2" Trainees="//@people.1 //@people.0"/>
+  <training title="COURS" canBeProvidedBy="//@people.2"/>
+  <training title="TP" canBeProvidedBy="//@people.3"/>
+  <training title="TP" canBeProvidedBy="//@people.3"/>
+  <training title="TD" canBeProvidedBy="//@people.3"/>
+  <training title="COURS" canBeProvidedBy="//@people.2" session="//@sessions.1"/>
+  <training title="TP" canBeProvidedBy="//@people.2" session="//@sessions.0"/>
+</training:TrainingOrganization>

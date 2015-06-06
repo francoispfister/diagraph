@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+
+      <actionSet
+            id="org.isoe.diagraph.menu.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <menu
+               id="sampleMenu"
+               label="Sample &amp;Menu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="Show text"
+               icon="icons/b_txt.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="Show text"
+
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.txt">
+         </action>
+
+          <action
+               label="Delete Annotation"
+               icon="icons/b_delannot.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="Delete Annotation"
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.btndelannot">
+         </action>
+
+         <action
+               label="Clear"
+               icon="icons/b_clear.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="Clear"
+
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.clear">
+         </action>
+         
+         <action
+               label="Drop"
+               icon="icons/b_drop.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="Drop"
+
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.drop">
+         </action>
+
+        <action
+               label="AddView"
+               icon="icons/b_addview.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="AddView"
+
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.addview">
+         </action>
+
+          <action
+               label="Auto"
+               icon="icons/b_auto.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="Auto"
+
+               toolbarPath="sampleGroup"
+               id="org.isoe.diagraph.menu.cmd.auto">
+         </action>
+      </actionSet>
+
+
+
+
+
+      <actionSet
+            description="diagraph actions 2"
+            id="org.isoe.diagraph.menu.actions.2"
+            label="Diagraph Actions 2"
+            visible="true">
+         <menu
+               icon="icons/NotationDiagram.gif"
+               id="diagraphMenu"
+               label="Diagraph">
+            <separator
+                  name="diagraphGroup2">
+            </separator>
+         </menu>
+
+         <action
+               label="icon"
+               icon="icons/b_icon.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="icon"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.icon">
+         </action>
+
+
+          <action
+               label="shape"
+               icon="icons/b_shape.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="shape"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.shape">
+         </action>
+
+        <action
+               label="lnk"
+               icon="icons/b_lnk.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="lnk"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.lnk">
+         </action>
+
+
+
+          <action
+               label="nav"
+               icon="icons/b_nav.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="nav"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.nav">
+         </action>
+
+
+         <action
+               label="view"
+               icon="icons/b_view.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="view"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.view">
+         </action>
+
+
+          <action
+               label="pov"
+               icon="icons/b_pov.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="pov"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.pov">
+         </action>
+
+          <action
+               label="ltrg"
+               icon="icons/b_ltrg.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="ltrg"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.ltrg">
+         </action>
+
+          <action
+               label="lsrc"
+               icon="icons/b_lsrc.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="lsrc"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.lsrc">
+         </action>
+
+      </actionSet>
+
+
+
+  <actionSet
+            description="diagraph actions 3"
+            id="org.isoe.diagraph.menu.actions.3"
+            label="Diagraph Actions 3"
+            visible="true">
+         <menu
+               icon="icons/NotationDiagram.gif"
+               id="diagraphMenu"
+               label="Diagraph">
+            <separator
+                  name="diagraphGroup3">
+            </separator>
+         </menu>
+
+
+       <action
+               label="label"
+               icon="icons/b_label.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="label"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.label">
+         </action>
+
+         <action
+               label="cont"
+               icon="icons/b_cont.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="cont"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.cont">
+         </action>
+
+
+         <action
+               label="link"
+               icon="icons/b_link.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="link"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.link">
+         </action>
+
+         <action
+               label="afx"
+               icon="icons/b_afx.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="afx"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.afx">
+         </action>
+
+         <action
+               label="kref"
+               icon="icons/b_kref.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="kref"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.kref">
+         </action>
+
+
+
+         <action
+               label="ref"
+               icon="icons/b_ref.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="ref"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.ref">
+         </action>
+
+
+
+         <action
+               label="cref"
+               icon="icons/b_cref.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="cref"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.cref">
+         </action>
+
+
+          <action
+               label="node"
+               icon="icons/b_node.gif"
+               class="org.isoe.diagraph.menu.handlers.DiagraphWorkbenchAction"
+               tooltip="node"
+               menubarPath="diagraphMenu/diagraphGroup2"
+               toolbarPath="diagraphGroup2"
+               id="org.isoe.diagraph.menu.add.node">
+         </action>
+
+
+      </actionSet>
+
+
+
+
+   </extension>
+
+</plugin>

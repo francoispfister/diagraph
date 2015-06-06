@@ -1,0 +1,59 @@
+digraph G { rankdir=BT    node [shape=plaintext] ;
+subgraph cluster_15081425 /*start subgraph*/{ 
+label="hello";
+
+12245160 [
+label=< 
+<TABLE cellspacing="-1" border="1" >
+<TR><TD>Reference</TD> </TR> 
+<TR><TD>
+<TABLE border="0">
+<TR><TD align="left">key: EString</TD> </TR> 
+<TR><TD port="there" align="left"  >description: EString</TD> </TR> 
+</TABLE>
+</TD></TR>
+</TABLE>
+>
+];
+6251267 [
+label=< 
+<TABLE cellspacing="-1" border="1" >
+<TR><TD>Expression</TD> </TR> 
+<TR><TD>
+<TABLE border="0">
+<TR><TD align="left">texte: EString</TD> </TR> 
+<TR><TD port="p100" align="left">content: EString</TD> </TR> 
+</TABLE>
+</TD></TR>
+</TABLE>
+];
+18346782 [shape=record,style=filled,	fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Dialecte|nom[0..1]: EString\nexemple[0..1]: EString\n}"/*end label*/];
+6131844 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Variante|description[0..1]: EString\n}"/*end label*/];
+31817359 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Langue|nom[0..1]: EString\n}"/*end label*/];
+8949356 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Pays|nom[0..1]: EString\n}"/*end label*/];
+14688457 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Bonjour|phrase[0..1]: EString\n}"/*end label*/];
+20863188 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Devise|texte[0..1]: EString\n}"/*end label*/];
+3794357 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Recette|nom[0..1]: EString\ndescription[0..1]: EString\n}"/*end label*/];
+22700073 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Animal|nom[0..1]: EString\n}"/*end label*/];
+30931963 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{Humain|nom[0..1]: EString\n}"/*end label*/];
+14927396 [shape=record,style=filled,fillcolor=".0 .0 1.0",fontname="Verdana",/*start label*/label="{LeMonde|name[0..1]: EString\n}"/*end label*/];
+}/*end subgraph*/
+6251267 -> 12245160 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="references"];
+18346782 -> 6251267 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="expressions"];
+31817359 -> 18346782 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="dialectes"];
+31817359 -> 6131844 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="variantes"];
+8949356 -> 31817359 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="langues"];
+14927396 -> 8949356 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="pays"];
+14927396 -> 31817359 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="langues"];
+14688457 -> 30931963 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="a_un_autre"];
+14688457 -> 30931963 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="humain"];
+30931963 -> 14688457 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="dit_bonjour"];
+30931963 -> 31817359 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="parle"];
+30931963 -> 8949356 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="pays"];
+30931963 -> 20863188 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="devises"];
+30931963 -> 3794357 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="recettes"];
+30931963 -> 3794357 [color=red,arrowhead=vee,fontname="Verdana",headlabel="0..1",label="recetteFavorite"];
+30931963 -> 22700073 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="animaux"];
+14927396 -> 30931963 [color=red,dir=both,arrowtail=diamond,arrowhead=vee,fontname="Verdana",headlabel="0..*",label="humains"];
+14927396 -> 12245160:there [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="999",label="toto"];
+}/*end graph*/

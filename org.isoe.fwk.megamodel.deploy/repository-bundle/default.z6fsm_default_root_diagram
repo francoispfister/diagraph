@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_z6fsm="http://z6fsm" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_mEpNYAYeEeW2yvaPvzPrhg" type="Z6fsm_default_root" name="default.z6fsm_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ntQJ8AYeEeW2yvaPvzPrhg" type="1002">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ntQJ9AYeEeW2yvaPvzPrhg" type="4016"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ntQJ9QYeEeW2yvaPvzPrhg" type="5008">
+      <children xmi:type="notation:Node" xmi:id="_pxFp8AYeEeW2yvaPvzPrhg" type="2008">
+        <children xmi:type="notation:DecorationNode" xmi:id="_pxFp9AYeEeW2yvaPvzPrhg" type="4015"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_pxFp9QYeEeW2yvaPvzPrhg" type="5009"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_pxFp8QYeEeW2yvaPvzPrhg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_pxFp8gYeEeW2yvaPvzPrhg" fontName="Segoe UI"/>
+        <element xmi:type="_z6fsm:Foo" href="default.z6fsm#//@astates.0/@subElements.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pxFp8wYeEeW2yvaPvzPrhg" x="43" y="-1"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ntQJ8QYeEeW2yvaPvzPrhg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ntQJ8gYeEeW2yvaPvzPrhg" fontName="Segoe UI"/>
+    <element xmi:type="_z6fsm:Foo" href="default.z6fsm#//@astates.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ntQJ8wYeEeW2yvaPvzPrhg" x="45" y="75" width="81" height="76"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_oaCXcAYeEeW2yvaPvzPrhg" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_oaCXdAYeEeW2yvaPvzPrhg" type="4008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_oaCXdQYeEeW2yvaPvzPrhg" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_qQLZsAYeEeW2yvaPvzPrhg" type="2001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_qQLZtAYeEeW2yvaPvzPrhg" type="4007"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_qQLZtQYeEeW2yvaPvzPrhg" type="5002"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_qQLZsQYeEeW2yvaPvzPrhg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_qQLZsgYeEeW2yvaPvzPrhg" fontName="Segoe UI"/>
+        <element xmi:type="_z6fsm:State" href="default.z6fsm#//@astates.1/@subElements.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qQLZswYeEeW2yvaPvzPrhg" x="41"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_oaCXcQYeEeW2yvaPvzPrhg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_oaCXcgYeEeW2yvaPvzPrhg" fontName="Segoe UI"/>
+    <element xmi:type="_z6fsm:State" href="default.z6fsm#//@astates.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oaCXcwYeEeW2yvaPvzPrhg" x="55" y="205" width="141" height="71"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_mEpNYQYeEeW2yvaPvzPrhg"/>
+  <element xmi:type="_z6fsm:Region" href="default.z6fsm#/"/>
+</notation:Diagram>

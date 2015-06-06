@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iml4:Namespace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iml4="http://www.isoe.lgi2p.ema.fr/diagraph/example/iml4">
+  <nested name="myns">
+    <types xsi:type="iml4:Entity" name="Foo">
+      <references name="bars" type="//@nested.0/@types.1"/>
+      <attributes name="name" datatype="//@nested.0/@types.2"/>
+    </types>
+    <types xsi:type="iml4:Entity" name="Bar">
+      <attributes name="id" datatype="//@nested.0/@types.3"/>
+    </types>
+    <types xsi:type="iml4:Datatype" name="String"/>
+    <types xsi:type="iml4:Datatype" name="Integer"/>
+  </nested>
+</iml4:Namespace>

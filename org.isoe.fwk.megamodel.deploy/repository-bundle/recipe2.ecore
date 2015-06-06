@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="recipe2"
+    nsURI="http:///recipe2-v0" nsPrefix="recipe2">
+  <eAnnotations source="diastyle.node.n3">
+    <details key="parent=n2" value=""/>
+    <details key="background=lightgreen" value=""/>
+    <details key="shape=ellipse"/>
+    <details key="size=80,80"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.partition.p1">
+    <details key="background=lightblue" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n2">
+    <details key="background=red" value=""/>
+    <details key="font=arial" value=""/>
+    <details key="size=0,0"/>
+    <details key="layout=vertical"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n6">
+    <details key="background=yellow" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.edge.e1">
+    <details key="background=darkgreen" value=""/>
+    <details key="arrowsize=5" value=""/>
+    <details key="linewidth=3" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n1">
+    <details key="background=orange" value=""/>
+    <details key="size=60,60"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n5">
+    <details key="background=yellow"/>
+    <details key="shape=custom"/>
+    <details key="font=arial"/>
+    <details key="data=0,0;40,0;40,30;30,30;30,40;40,30;30,40;0,40"/>
+    <details key="size=40,40"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n4">
+    <details key="shape=custom"/>
+    <details key="data=20,0;40,40;0,40;20,0"/>
+    <details key="size=40,40"/>
+    <details key="background=lightblue"/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.n7">
+    <details key="parent=n2"/>
+    <details key="background=red"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="LivreRecettes">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov" value=""/>
+      <details key="cref=ingredients"/>
+      <details key="cref=carteVins"/>
+      <details key="cref=recettes"/>
+      <details key="cref=departements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="recettes" upperBound="-1"
+        eType="#//Recette" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ingredients" upperBound="-1"
+        eType="#//Ingredient" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departements" upperBound="-1"
+        eType="#//Localisation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="carteVins" eType="#//CarteVins"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Recette">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="style=n1" value=""/>
+      <details key="nav:v_ingredient"/>
+      <details key="label=nom" value=""/>
+      <details key="lnk=composes" value=""/>
+      <details key="kref=vins" value=""/>
+      <details key="style.kref.vins=p1" value=""/>
+      <details key="ref=origineRegionale"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=v_ingredient"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cout" eType="#//Cout"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="composes" upperBound="-1"
+        eType="#//Compose" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="origineRegionale" eType="#//Localisation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vins" upperBound="2" eType="#//Bouteille"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ingredient">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+      <details key="style=n5" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nature" eType="#//Nature"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Cout">
+    <eLiterals name="faible"/>
+    <eLiterals name="moyen" value="1"/>
+    <eLiterals name="eleve" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Nature">
+    <eLiterals name="legume"/>
+    <eLiterals name="viande" value="1"/>
+    <eLiterals name="poisson" value="2"/>
+    <eLiterals name="condiment" value="3"/>
+    <eLiterals name="fruit" value="4"/>
+    <eLiterals name="feculent" value="5"/>
+    <eLiterals name="oeuf" value="6"/>
+    <eLiterals name="matiereGrasse" value="7"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Appellation">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=v_vins"/>
+      <details key="label=name"/>
+      <details key="style=n4"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="origine" upperBound="-1"
+        eType="#//Localisation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vin">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+      <details key="view=v_vins"/>
+      <details key="cref=caracteres"/>
+      <details key="ref=cru"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cru" eType="#//Appellation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="caracteres" upperBound="-1"
+        eType="#//Caractere" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Compose">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="label=quantite" value=""/>
+      <details key="style=e1" value=""/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=v_ingredient"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantite" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ingredient" eType="#//Ingredient"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Localisation">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="label=name" value=""/>
+      <details key="style=n3" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Caractere">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=v_vins"/>
+      <details key="label=description"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CarteVins">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="view=v_vins"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="nav:v_vins"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vins" upperBound="-1" eType="#//Vin"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="appellations" upperBound="-1"
+        eType="#//Appellation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bouteille">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="label=nom"/>
+      <details key="style=n7"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="_vin" eType="#//Vin"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prix" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+</ecore:EPackage>

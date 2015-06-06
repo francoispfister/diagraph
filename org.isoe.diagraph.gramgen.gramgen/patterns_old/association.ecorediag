@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_ow3NMKgQEeKj79NTaKcGvA" type="EcoreTools" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_pmMSsKgQEeKj79NTaKcGvA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_pmMSs6gQEeKj79NTaKcGvA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_pmSZUKgQEeKj79NTaKcGvA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_pmSZUagQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_pmSZUqgQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_pmSZU6gQEeKj79NTaKcGvA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_pmSZVKgQEeKj79NTaKcGvA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_pmSZVagQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_pmSZVqgQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_pmSZV6gQEeKj79NTaKcGvA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_pmMSsagQEeKj79NTaKcGvA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="association.ecore#//Source"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pmMSsqgQEeKj79NTaKcGvA" x="70" y="155" width="86" height="53"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_qrVV0KgQEeKj79NTaKcGvA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_qrbccKgQEeKj79NTaKcGvA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_qrbccagQEeKj79NTaKcGvA" type="5001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_qrbccqgQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qrbcc6gQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qrbcdKgQEeKj79NTaKcGvA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_qrbcdagQEeKj79NTaKcGvA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_qrbcdqgQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qrbcd6gQEeKj79NTaKcGvA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qrbceKgQEeKj79NTaKcGvA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_qrVV0agQEeKj79NTaKcGvA" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="association.ecore#//Target"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qrVV0qgQEeKj79NTaKcGvA" x="225" y="150" width="96" height="63"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ow3NMagQEeKj79NTaKcGvA"/>
+  <element xmi:type="ecore:EPackage" href="association.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_sadKEKgQEeKj79NTaKcGvA" type="3002" source="_pmMSsKgQEeKj79NTaKcGvA" target="_qrVV0KgQEeKj79NTaKcGvA">
+    <children xmi:type="notation:Node" xmi:id="_sadKFKgQEeKj79NTaKcGvA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sadKFagQEeKj79NTaKcGvA" x="-9" y="-12"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_sadKFqgQEeKj79NTaKcGvA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_sadKF6gQEeKj79NTaKcGvA" x="-8" y="13"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_sadKEagQEeKj79NTaKcGvA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sadKEqgQEeKj79NTaKcGvA" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="association.ecore#//Source/ref"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sadKE6gQEeKj79NTaKcGvA" points="[23, 1, -230, 14]$[272, 37, 19, 50]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sapXUKgQEeKj79NTaKcGvA" id="(0.9803921568627451,0.53125)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simple:TheWorld xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:simple="http://simple.helloworld.example.v0">
+  <languages name="Corsican"/>
+  <languages name="German"/>
+  <languages name="Italian"/>
+  <languages name="English"/>
+  <languages name="French"/>
+  <languages name="Spanish"/>
+  <persons name="Bartolumeu" motherTongue="//@languages.0"/>
+  <persons name="Sami" motherTongue="//@languages.4">
+    <saysHello sentence="¿Cómo estás?" toAnother="//@persons.8"/>
+  </persons>
+  <persons name="Helmut" motherTongue="//@languages.1">
+    <saysHello sentence="Have a nice day!" toAnother="//@persons.20"/>
+  </persons>
+  <persons name="Marie" motherTongue="//@languages.4" speaks="//@languages.0">
+    <saysHello sentence="à un di sti ghjorni !" toAnother="//@persons.26"/>
+  </persons>
+  <persons name="Angela" motherTongue="//@languages.1">
+    <saysHello sentence="Good evening" toAnother="//@persons.18"/>
+  </persons>
+  <persons name="Angelita" motherTongue="//@languages.5"/>
+  <persons name="Antonia" motherTongue="//@languages.5"/>
+  <persons name="Asunción" motherTongue="//@languages.5">
+    <saysHello sentence="Salut" toAnother="//@persons.24"/>
+  </persons>
+  <persons name="Araceli" motherTongue="//@languages.5"/>
+  <persons name="Anke" motherTongue="//@languages.1">
+    <saysHello sentence="Good morning" toAnother="//@persons.17"/>
+  </persons>
+  <persons name="Annelie" motherTongue="//@languages.1">
+    <saysHello sentence="See you soon" toAnother="//@persons.19"/>
+  </persons>
+  <persons name="Barbara" motherTongue="//@languages.1">
+    <saysHello sentence="Buenas tardes" toAnother="//@persons.6"/>
+  </persons>
+  <persons name="Beatriz" motherTongue="//@languages.1"/>
+  <persons name="Eugenia" motherTongue="//@languages.2">
+    <saysHello sentence="và bè ?" toAnother="//@persons.0"/>
+    <saysHello sentence="¿Qué hay de nuevo?" toAnother="//@persons.5"/>
+  </persons>
+  <persons name="Evelina" motherTongue="//@languages.2">
+    <saysHello sentence="Comment vas tu ?" toAnother="//@persons.1"/>
+  </persons>
+  <persons name="Fabiana" motherTongue="//@languages.2">
+    <saysHello sentence="salute" toAnother="//@persons.27"/>
+  </persons>
+  <persons name="Faustina" motherTongue="//@languages.2">
+    <saysHello sentence="cumu và ?" toAnother="//@persons.0"/>
+  </persons>
+  <persons name="Kate" motherTongue="//@languages.3">
+    <saysHello sentence="Qhoi de neuf ?" toAnother="//@persons.28"/>
+  </persons>
+  <persons name="Kathryn" motherTongue="//@languages.3"/>
+  <persons name="Keaton" motherTongue="//@languages.3">
+    <saysHello sentence="Welcome" toAnother="//@persons.20"/>
+  </persons>
+  <persons name="Kimball" motherTongue="//@languages.3">
+    <saysHello sentence="Buenos días" toAnother="//@persons.8"/>
+  </persons>
+  <persons name="Kymber" motherTongue="//@languages.3"/>
+  <persons name="Jérémie" motherTongue="//@languages.4">
+    <saysHello sentence="hola" toAnother="//@persons.7"/>
+  </persons>
+  <persons name="Julien" motherTongue="//@languages.4"/>
+  <persons name="Jacques" motherTongue="//@languages.4">
+    <saysHello sentence="buenos días" toAnother="//@persons.6"/>
+  </persons>
+  <persons name="Jérôme" motherTongue="//@languages.4"/>
+  <persons name="Anghjulu" motherTongue="//@languages.0">
+    <saysHello sentence="How are you ?" toAnother="//@persons.19"/>
+  </persons>
+  <persons name="Amanza" motherTongue="//@languages.0">
+    <saysHello sentence="bonghjornu" toAnother="//@persons.26"/>
+    <saysHello sentence="See you then" toAnother="//@persons.21"/>
+    <saysHello sentence="Bonjour" toAnother="//@persons.22"/>
+  </persons>
+  <persons name="Alfonsu" motherTongue="//@languages.0" speaks="//@languages.2">
+    <saysHello sentence="bonghjornu" toAnother="//@persons.14"/>
+  </persons>
+</simple:TheWorld>

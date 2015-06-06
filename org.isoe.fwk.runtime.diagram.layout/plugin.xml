@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.gmf.runtime.diagram.ui.layoutProviders">
+      <layoutProvider
+            class="org.isoe.fwk.runtime.diagram.layout.DiagraphLayoutProvider">
+         <Priority
+               name="High">
+         </Priority>
+      </layoutProvider>
+   </extension>
+   <extension
+         point="org.isoe.diagraph.layout">
+      <DiagraphLayout
+            class="org.isoe.fwk.runtime.diagram.layout.LayoutAction">
+      </DiagraphLayout>
+   </extension>
+</plugin>

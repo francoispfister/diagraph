@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Borrowed
+Bundle-SymbolicName: org.isoe.fwk.utils.borrowed
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: org.isoe.fwk.utils.borrowed.Activator
+Require-Bundle: org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.7.0",
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.jdt.apt.core;bundle-version="3.3.500",
+ org.eclipse.jdt.core;bundle-version="3.7.1",
+ org.eclipse.jdt.launching;bundle-version="3.6.1",
+ com.ibm.icu;bundle-version="4.4.2",
+ org.eclipse.emf.edit;bundle-version="2.7.1",
+ org.eclipse.pde.core;bundle-version="3.7.1",
+ org.apache.commons.logging;bundle-version="1.0.4",
+ org.isoe.fwk.utils.debug;bundle-version="1.0.4"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: gary.lewandowski,
+ org.eclipse.gmt.mod.infra.common.core.internal;x-internal:=true,
+ org.eclipse.gmt.mod.infra.common.core.internal.utils;x-internal:=true,
+ org.isoe.fwk,
+ org.isoe.fwk.utils.borrowed,
+ org.isoe.fwk.utils.borrowed.mod
+Bundle-Vendor: LGi2P Isoe

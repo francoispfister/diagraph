@@ -1,0 +1,85 @@
+digraph G { rankdir=BT  overlap = "scale" labelfloat = "true" node [fontname="Verdana", fontsize=10, shape=none] edge [fontname="Verdana", fontsize=10];
+subgraph cluster_1 /*start subgraph 2*/{ label="ecore";
+}/*end subgraph*/subgraph cluster_26066667 /*start subgraph 1*/{ label="helloworld";
+id15585524[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid15585524"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Language</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pLanguage_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id14009391[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid14009391"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Hello</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pHello_sentence" align="left">sentence: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id15463854[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid15463854"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Annotation</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pAnnotation_text" align="left">text: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id20123764[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid20123764"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Paragraph</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pParagraph_text" align="left">text: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id31437389[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid31437389"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Section</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pSection_header" align="left">header: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id14244[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid14244"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Entry</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pEntry_reference" align="left">reference: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id21921085[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid21921085"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Bibliography</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pBibliography_title" align="left">title: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id4396069[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid4396069"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Publication</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pPublication_title" align="left">title: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id24996546[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid24996546"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Authors</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pAuthors_submissionDate" align="left">submissionDate: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id20021291[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid20021291"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>Researcher</TD></TR>
+<TR><TD><TABLE border="0">
+<!-- attr 4  --><TR><TD port="pResearcher_name" align="left">name: EString</TD></TR></TABLE></TD></TR>
+</TABLE>
+</TD></TR></TABLE>>];
+
+id1092988[label=<<TABLE  cellspacing="-1" cellpadding="0" border="0" > <!-- top  --> <TR><TD port="pid1092988"><TABLE bgcolor=".0 .0 1.0" cellspacing="-1" border="1" ><TR><TD>TheWorld</TD></TR>
+<TR><TD></TD></TR></TABLE>
+</TD></TR></TABLE>>];
+
+}/*end subgraph*/id1092988:pid1092988 -> id15585524:pid15585524 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="languages"];
+id14009391:pid14009391 -> id20021291:pid20021291 [color=green,arrowhead=vee,headlabel="0..1",label="toAnother"];
+id14009391:pid14009391 -> id20021291:pid20021291 [color=green,arrowhead=vee,headlabel="0..1",label="researcher"];
+id20021291:pid20021291 -> id14009391:pid14009391 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="saysHello"];
+id20021291:pid20021291 -> id15585524:pid15585524 [color=green,arrowhead=vee,headlabel="0..1",label="motherTongue"];
+id20021291:pid20021291 -> id15585524:pid15585524 [color=green,arrowhead=vee,headlabel="0..*",label="speaks"];
+id20123764:pid20123764 -> id15463854:pid15463854 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="annotations"];
+id31437389:pid31437389 -> id20123764:pid20123764 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="paragraphs"];
+id4396069:pid4396069 -> id31437389:pid31437389 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="sections"];
+id21921085:pid21921085 -> id14244:pid14244 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="entries"];
+id4396069:pid4396069 -> id21921085:pid21921085 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..1",label="bibliography"];
+id24996546:pid24996546 -> id4396069:pid4396069 [color=green,arrowhead=vee,headlabel="0..1",label="publication"];
+id24996546:pid24996546 -> id20021291:pid20021291 [color=green,arrowhead=vee,headlabel="0..1",label="researcher"];
+id20021291:pid20021291 -> id24996546:pid24996546 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="authors"];
+id20021291:pid20021291 -> id15463854:pid15463854 [color=green,arrowhead=vee,headlabel="0..*",label="annotates"];
+id1092988:pid1092988 -> id20021291:pid20021291 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="researchers"];
+id1092988:pid1092988 -> id4396069:pid4396069 [color=green,dir=both,arrowtail=diamond,arrowhead=vee,headlabel="0..*",label="publications"];
+}/*end graph*/

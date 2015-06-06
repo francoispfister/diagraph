@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odsml_simpleworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:odsml_simpleworld="http://opendsml.org/master/basic/simpleworld.v0">
+  <things name="a">
+    <relations name="ab" toThing="//@things.1"/>
+    <relations name="ac" toThing="//@things.2"/>
+    <relations name="ad" toThing="//@things.3"/>
+    <relations name="x" toThing="//@things.0" since=""/>
+  </things>
+  <things name="b"/>
+  <things name="c"/>
+  <things name="d"/>
+</odsml_simpleworld:World>

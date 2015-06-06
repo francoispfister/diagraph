@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Megamodel Manager
+Bundle-SymbolicName: org.isoe.fwk.megamodel.manager;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.isoe.fwk.core;bundle-version="1.0.4",
+ org.eclipse.emf.common;bundle-version="2.7.0",
+ org.isoe.fwk.pathes;bundle-version="1.0.4",
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.isoe.fwk.utils;bundle-version="1.0.4",
+ org.isoe.extensionpoint.megamodel;bundle-version="1.0.4",
+ org.isoe.diagraph.controler;bundle-version="1.0.4"
+Export-Package: org.isoe.fwk.megamodel.manager

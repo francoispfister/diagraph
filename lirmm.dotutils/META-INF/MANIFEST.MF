@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Dotutils
+Bundle-SymbolicName: fr.lirmm.dotutils;singleton:=true
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Activator: lirmm.dotutils.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui;bundle-version="1.0.4",
+ org.eclipse.core.runtime;bundle-version="1.0.4",
+ org.eclipse.core.resources;bundle-version="1.0.4",
+ org.eclipse.ui;bundle-version="1.0.4"
+Bundle-ActivationPolicy: lazy
+Export-Package: lirmm.dotutils
+Bundle-Vendor: Lirmm Marel
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

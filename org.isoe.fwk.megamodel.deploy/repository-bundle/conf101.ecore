@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="conf101"
+    nsURI="http://conf101" nsPrefix="_conf101">
+  <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="admin" eType="#//Admin"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="laboratories" upperBound="-1"
+        eType="#//Laboratory" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conferences" upperBound="-1"
+        eType="#//Conference" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="revisionProcess" eType="#//RevisionProcess"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Session" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" eType="#//Location"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="progcomit" eType="#//ProgramComitee"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steercomit" eType="#//SteeringComitee"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contributions" eType="#//Contribution"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Location" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Admin" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="locations" upperBound="-1"
+        eType="#//Location" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Conference" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sessions" upperBound="-1"
+        eType="#//Session" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Laboratory" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=researchers"/>
+      <details key="kref=publications"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="researchers" upperBound="-1"
+        eType="#//Researcher" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publications" upperBound="-1"
+        eType="#//Publication" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Researcher" eSuperTypes="#//Person">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="nav:vwresearcher"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="pov"/>
+      <details key="kref=publications"/>
+      <details key="view=vwresearcher"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="evaluations" eType="#//Evaluation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="writes" eType="#//Chapter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reviews" eType="#//RevisionNote"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publications" upperBound="-1"
+        eType="#//Publication" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Publication" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="cont=Laboratory.publications"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=chapters"/>
+      <details key="view=vwresearcher"/>
+      <details key="cont=Researcher.publications"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="chapters" upperBound="-1"
+        eType="#//Chapter" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Person" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=vwresearcher"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Chapter" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="kref=revisonNotes"/>
+      <details key="view=vwresearcher"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="revisonNotes" upperBound="-1"
+        eType="#//RevisionNote" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RevisionNote">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="view=vwresearcher"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SteeringComitee" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scPerson" eType="#//Person"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProgramComitee" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pcPerson" eType="#//Person"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contribution" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="publication" eType="#//Publication"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Evaluation" eSuperTypes="#//NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="evPubli" eType="#//Publication"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RevisionProcess">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement">
+    <eAnnotations source="diagraph">
+      <details key="label=name"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="view=vwresearcher"/>
+      <details key="label=name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

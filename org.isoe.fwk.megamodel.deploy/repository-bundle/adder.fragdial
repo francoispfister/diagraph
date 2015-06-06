@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_fragdial:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_fragdial="http://fragdial">
+  <nestedComponents1 name="Adder">
+    <requiredInterfaces name="Bn" signature="">
+      <bindings from="//@nestedComponents1.0/@requiredInterfaces.0" to="//@nestedComponents1.0/@nestedComponents2.0/@requiredInterfaces.1"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="An">
+      <bindings from="//@nestedComponents1.0/@requiredInterfaces.1" to="//@nestedComponents1.0/@nestedComponents2.0/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <requiredInterfaces name="Rn">
+      <bindings from="//@nestedComponents1.0/@requiredInterfaces.2" to="//@nestedComponents1.0/@nestedComponents2.1/@requiredInterfaces.0"/>
+    </requiredInterfaces>
+    <providedInterfaces name="C"/>
+    <providedInterfaces name="S" signature=""/>
+    <nestedComponents2 name="HA2">
+      <requiredInterfaces name="A" signature=""/>
+      <requiredInterfaces name="B"/>
+      <providedInterfaces name="R">
+        <bindings from="//@nestedComponents1.0/@nestedComponents2.0/@providedInterfaces.0" to="//@nestedComponents1.0/@nestedComponents2.2/@requiredInterfaces.0"/>
+      </providedInterfaces>
+      <providedInterfaces name="S" signature="">
+        <bindings from="//@nestedComponents1.0/@nestedComponents2.0/@providedInterfaces.1" to="//@nestedComponents1.0/@nestedComponents2.1/@requiredInterfaces.1"/>
+      </providedInterfaces>
+    </nestedComponents2>
+    <nestedComponents2 name="HA1">
+      <requiredInterfaces name="R"/>
+      <requiredInterfaces name="S" signature=""/>
+      <providedInterfaces name="R">
+        <bindings from="//@nestedComponents1.0/@nestedComponents2.1/@providedInterfaces.0" to="//@nestedComponents1.0/@nestedComponents2.2/@requiredInterfaces.1"/>
+      </providedInterfaces>
+      <providedInterfaces name="S">
+        <bindings from="//@nestedComponents1.0/@nestedComponents2.1/@providedInterfaces.1" to="//@nestedComponents1.0/@providedInterfaces.1"/>
+      </providedInterfaces>
+    </nestedComponents2>
+    <nestedComponents2 name="OR">
+      <requiredInterfaces name="Ca"/>
+      <requiredInterfaces name="Cb" signature=""/>
+      <providedInterfaces name="R">
+        <bindings from="//@nestedComponents1.0/@nestedComponents2.2/@providedInterfaces.0" to="//@nestedComponents1.0/@providedInterfaces.0"/>
+      </providedInterfaces>
+    </nestedComponents2>
+  </nestedComponents1>
+</_fragdial:Component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpletest:X xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:simpletest="http://simpletest">
+  <as name="aa">
+    <bs name="bb"/>
+    <bs name="sdqdf"/>
+    <ls name="fsdf" a="//@as.0" b="//@as.0/@bs.0"/>
+    <ls name="sqdf" a="//@as.0" b="//@as.0/@bs.1"/>
+  </as>
+</simpletest:X>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.isoe.diagraph.parsers">
+      <RuntimeDiagraphParser class="org.isoe.diagraph.notationparser.DiagramParser"> </RuntimeDiagraphParser>
+   </extension>
+   
+   <extension
+         point="org.isoe.extensionpoint.languagehandler">
+      <LanguageHandler
+            class="org.isoe.diagraph.notationparser.LanguageUtils">
+      </LanguageHandler>
+   </extension>
+
+</plugin>

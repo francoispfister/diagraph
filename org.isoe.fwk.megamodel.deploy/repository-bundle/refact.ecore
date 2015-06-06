@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="refact" nsURI="http:///refact.ecore" nsPrefix="refact">
+  <eAnnotations source="_refactor">
+    <details key="_dupref" value=""/>
+    <details key="_name" value=""/>
+    <details key="_pooref" value=""/>
+    <details key="version" value=""/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="A">
+    <eAnnotations source="diagraph">
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Bs" upperBound="-1" eType="//B" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="es" upperBound="-1" eType="//E" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="B" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="lnk=ds" value=""/>
+      <details key="ref=es" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ds" upperBound="-1" eType="//D" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="es" upperBound="-1" eType="//E"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" upperBound="-1" eType="//C" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="link=connects" value=""/>
+      <details key="cont=B.cs" value=""/>
+      <details key="lsrc=c_outputs" value=""/>
+      <details key="ltrg=c_input" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="c_input" eType="//B"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="c_outputs" upperBound="-1" eType="//B"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="D" eSuperTypes="//Named">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="e" eType="//E"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

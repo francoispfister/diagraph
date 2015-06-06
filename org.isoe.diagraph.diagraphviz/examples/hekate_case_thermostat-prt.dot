@@ -1,0 +1,416 @@
+digraph G{  
+node [shape=record, fontsize=9, height=0.1, width=0.05]; 
+edge [style=dashed, arrowsize=0.5, len=0.1]; rankdir=LR 
+
+subgraph "cluster_A" {
+"foobar"
+}
+subgraph "cluster_B" {
+"foobar"
+}
+subgraph "cluster_A" {
+"barfoo"
+}
+subgraph "cluster_B" {
+"barfoo"
+}
+subgraph "cluster_G" {
+"barfoo"
+}
+subgraph "cluster_A" {
+"azerty"
+}
+subgraph "cluster_B" {
+"azerty"
+}
+subgraph "cluster_A" {
+"qwerty"
+}
+subgraph "cluster_A" {
+label="Gerard cl_a1"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_B" {
+label="Robert cl_b"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard cl_a2"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_E" {
+label="Tony cl_e"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_G" {
+label="Taratata"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_season" {
+label="season"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_operation" {
+label="operation"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_A" {
+label="Gerard"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_A_settings" {
+label="thermostat_settings"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_G" {
+label="Taratata"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_season" {
+label="season"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_B" {
+label="Robert"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_operation" {
+label="operation"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_E" {
+label="Tony"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_A_settings" {
+label="thermostat_settings"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_G" {
+label="Taratata"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_month" {
+label="month"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_G" {
+label="Taratata"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_day" {
+label="day"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_G" {
+label="Taratata"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_today" {
+label="today"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+subgraph "cluster_Hour" {
+label="Hour"
+color=blue
+fontcolor=blue
+fontsize=8
+fontname=sans
+labeljust=l
+subgraph "cluster_hour" {
+label="hour"
+color=blue
+fontcolor=blue
+fontsize=10
+fontname=sans
+labeljust=l
+}
+}
+"foobar"->"qwerty"
+"barfoo"->"azerty"
+"azerty"->"qwerty"
+}

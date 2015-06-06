@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Isoe Framework Pathes
+Bundle-SymbolicName: org.isoe.fwk.pathes
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.isoe.fwk.core;bundle-version="1.0.4",
+ org.isoe.diagraph.preferences;bundle-version="1.0.4",
+ org.eclipse.jface;bundle-version="3.9.1"
+Export-Package: org.isoe.fwk.pathes

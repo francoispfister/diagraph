@@ -1,0 +1,56 @@
+
+1-getLog-----------------------------------------
+[Generating Editor for org.isoe.diagraph.megamodel]
+2-getGenLog--------------------------------------
+
+checksum error
+---- APPEND_LOG ----
+building the whole megamodel
+Diagraph valid tokens{
+     pov
+     nav
+     node
+     unknown
+     label
+     view
+     host
+     komp
+     cont
+     ref
+     kref
+     lnk
+     cref
+     pref
+     afx
+     link
+     lsrc
+     ltrg
+     style*
+     style.lnk*
+     style.kref*
+     style.cref*
+     style.ref*
+}
+
+Diagraph tokens arguments{
+     figureEmbedded
+     figureOwn
+     host
+}
+Diagraph style tokens{
+     style
+     style.lnk
+     style.kref
+     style.cref
+}
+
+model = megamodel.ecore{
+ mapToGenEditorGenerator ok for org.isoe.diagraph.megamodel.diagram - point of view=default_root
+
+}
+exporting icons to edit plugin
+generating emf and gmf plugins
+
+3-getLogDiagraph---------------------------------
+[building the whole megamodel, Diagraph valid tokens{,      pov,      nav,      node,      unknown,      label,      view,      host,      komp,      cont,      ref,      kref,      lnk,      cref,      pref,      afx,      link,      lsrc,      ltrg,      style*,      style.lnk*,      style.kref*,      style.cref*,      style.ref*, }, , Diagraph tokens arguments{,      figureEmbedded,      figureOwn,      host, }, Diagraph style tokens{,      style,      style.lnk,      style.kref,      style.cref, }, , model = megamodel.ecore{,  mapToGenEditorGenerator ok for org.isoe.diagraph.megamodel.diagram - point of view=default_root
+, }]

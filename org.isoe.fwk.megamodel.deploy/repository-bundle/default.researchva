@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_researchva:PublicationStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_researchva="http://researchva">
+  <researchers name="Pierre" res_papers="//@papers.0 //@papers.1">
+    <writes lname="" paragraph="//@papers.0/@paragraphs.0"/>
+    <writes lname="2" paragraph="//@papers.1/@paragraphs.0"/>
+    <writes paragraph="//@papers.1/@paragraphs.1"/>
+    <reviews lname="" reviewNote="//@papers.0/@paragraphs.0/@reviews.1"/>
+    <reviews reviewNote="//@papers.1/@paragraphs.0/@reviews.0"/>
+    <skills description="smalltalk"/>
+    <skills description="uml"/>
+  </researchers>
+  <researchers name="Paul" res_papers="//@papers.0">
+    <reviews reviewNote="//@papers.0/@paragraphs.0/@reviews.0"/>
+    <reviews reviewNote="//@papers.1/@paragraphs.1/@reviews.0"/>
+    <skills description="rca"/>
+    <skills description="dsml"/>
+  </researchers>
+  <papers name="papier 1" authors="//@researchers.0 //@researchers.1" citedBy="//@papers.1">
+    <paragraphs name="introduction">
+      <reviews name="note1"/>
+      <reviews name="note2"/>
+    </paragraphs>
+    <paragraphs name="partie 1"/>
+  </papers>
+  <papers name="papier 2" authors="//@researchers.0">
+    <paragraphs name="introduction">
+      <reviews name="remarque 1"/>
+      <reviews name="remarque 2"/>
+    </paragraphs>
+    <paragraphs name="conclusion">
+      <reviews name="remarque 3"/>
+    </paragraphs>
+  </papers>
+</_researchva:PublicationStructure>

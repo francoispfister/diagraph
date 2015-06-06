@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<food:Food xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:food="http://food.v0">
+  <references id="References">
+    <teatypes name="black tea"/>
+  </references>
+  <domain id="Domain">
+    <teas name="breakfast tea" type="//@references/@teatypes.0"/>
+  </domain>
+</food:Food>

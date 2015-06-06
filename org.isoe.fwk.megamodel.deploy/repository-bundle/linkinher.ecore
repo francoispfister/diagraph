@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="linkinher" nsURI="http://linkinher" nsPrefix="linkinher">
+  <eClassifiers xsi:type="ecore:EClass" name="E" abstract="true" eSuperTypes="//Named">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="net" eType="//N"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nes" eType="//N"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="N" eSuperTypes="//Named //T //S">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="es" upperBound="-1" eType="//E" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="L" eSuperTypes="//C //T">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=N.es" value=""/>
+      <details key="lsrc=ns" value=""/>
+      <details key="ltrg=nes" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="M" eSuperTypes="//E">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=N.es" value=""/>
+      <details key="lsrc=nes" value=""/>
+      <details key="ltrg=net" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="K" eSuperTypes="//C">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=N.es" value=""/>
+      <details key="lsrc=nes" value=""/>
+      <details key="ltrg=net" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="X">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cref=nameds" value=""/>
+      <details key="pov" value=""/>
+      <details key="ref=nx" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nameds" upperBound="-1" eType="//Named" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nx" lowerBound="1" eType="//N"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="T" abstract="true">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="S" abstract="true" eSuperTypes="//Named">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ns" eType="//N"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C" abstract="true" eSuperTypes="//S //E">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+</ecore:EPackage>

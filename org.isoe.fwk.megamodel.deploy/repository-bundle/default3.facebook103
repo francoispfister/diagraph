@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_facebook103:Facebook xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_facebook103="http://facebook103">
+  <countries name="France">
+    <members name="Marcel" communities="//@communities.2 //@communities.0 //@communities.6">
+      <relations to="//@countries.1/@members.0" since="2012"/>
+      <relations to="//@countries.2/@members.0" since="2004"/>
+      <posts name="Nested proxy port" content="If I use the new Proxy port and want to specify a nested proxy port"/>
+      <posts name="Maecenas nec odio !"/>
+      <posts name="Voyez le brick géant" content="Voyez le brick géant que j'examine près du wharf"/>
+      <comments from="//@countries.0/@members.0" to="//@countries.0/@members.1/@posts.0" content="go on !"/>
+      <comments from="//@countries.0/@members.0" to="//@countries.1/@members.0/@posts.0" content="as you want !"/>
+    </members>
+    <members name="Delphine" communities="//@communities.1 //@communities.0">
+      <posts name="SysML modeling" content="I am trying to develop error model in SysML"/>
+      <comments from="//@countries.0/@members.1" to="//@countries.0/@members.0/@posts.0" content="bad strategy!"/>
+    </members>
+    <members name="Alain" communities="//@communities.0 //@communities.2">
+      <comments from="//@countries.0/@members.2" to="//@countries.0/@members.1/@posts.0" content="Like !"/>
+    </members>
+  </countries>
+  <countries name="Germany">
+    <members name="Heidi" communities="//@communities.3 //@communities.0 //@communities.6">
+      <relations to="//@countries.2/@members.0" since="2008"/>
+      <posts name="Lorem Ipsum" content=""/>
+      <comments from="//@countries.1/@members.0" to="//@countries.2/@members.0/@posts.0" content="Like !"/>
+      <comments from="//@countries.1/@members.0" to="//@countries.0/@members.0/@posts.2" content="Dislike !"/>
+    </members>
+    <members name="Hildebrand" communities="//@communities.1">
+      <comments from="//@countries.1/@members.1" to="//@countries.0/@members.1/@posts.0" content="Like !"/>
+      <comments from="//@countries.1/@members.1" to="//@countries.3/@members.0/@posts.0" content="Dislike"/>
+    </members>
+  </countries>
+  <countries name="US">
+    <members name="Barrack" communities="//@communities.0 //@communities.4 //@communities.6">
+      <posts name="Yes we can"/>
+    </members>
+  </countries>
+  <countries name="Italy">
+    <members name="Marcello" communities="//@communities.5 //@communities.0 //@communities.6">
+      <posts name="Bravissimo"/>
+    </members>
+  </countries>
+  <communities name="Engineers"/>
+  <communities name="Systems Engineers"/>
+  <communities name="Modeling Experts"/>
+  <communities name="Mechatronics"/>
+  <communities name="Electronic Engineering"/>
+  <communities name="Hardware"/>
+  <communities name="Researchers"/>
+</_facebook103:Facebook>

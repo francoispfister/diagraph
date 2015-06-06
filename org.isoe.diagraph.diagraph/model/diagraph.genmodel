@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.diagraph.diagraph/src" modelPluginID="org.isoe.diagraph.diagraph"
+    modelName="Diagraph" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>diagraph.ecore</foreignModel>
+  <genPackages prefix="Diagraph" basePackage="org.isoe.diagraph" disposableProviderFactory="true"
+      ecorePackage="diagraph.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="diagraph.ecore#//DShape">
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/rectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/vee"/>
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/triangle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/dot"/>
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/circle"/>
+      <genEnumLiterals ecoreEnumLiteral="diagraph.ecore#//DShape/roundedRect"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="diagraph.ecore#//DGraphHandler"/>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DEdge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DEdge/target"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DEdge/targetReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DEdge/source"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DGraphElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DGraphElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DGraphElement/semanticRole"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DGraphElement/icon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference diagraph.ecore#//DGraphElement/graph"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagraph.ecore#//DNode/viewNavigation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DNode/shape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DNode/layout"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DNode/navigationLink"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagraph.ecore#//DNode/containments"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DLabeledEdge">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DLabeledEdge/sourceReference"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DReference"/>
+    <genClasses ecoreClass="diagraph.ecore#//DImplicitEdge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DImplicitEdge/inherited"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DGraph">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagraph.ecore#//DGraph/elements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DGraph/pointOfView"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DGraph/viewName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DGraph/facade1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DGraph/facade2"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DLabeledElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DLabeledElement/eClaz"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference diagraph.ecore#//DLabeledElement/dlabels"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DLabeledElement/labls"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DLabeledElement/expression"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DOwnedElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DOwnedElement/owner"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DOwnedEdge"/>
+    <genClasses ecoreClass="diagraph.ecore#//DCompartmentingEdge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DCompartmentingEdge/partitionName"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DPointOfView"/>
+    <genClasses ecoreClass="diagraph.ecore#//DViewNavigation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DViewNavigation/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DViewNavigation/navigationTarget"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference diagraph.ecore#//DViewNavigation/navigationSource"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DAffixingEdge"/>
+    <genClasses ecoreClass="diagraph.ecore#//DLabel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DLabel/attribute"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="diagraph.ecore#//DExplicitEdge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DExplicitEdge/arrows"/>
+    </genClasses>
+    <genClasses ecoreClass="diagraph.ecore#//DNavigationEdge"/>
+    <genClasses ecoreClass="diagraph.ecore#//DGeneric"/>
+    <genClasses ecoreClass="diagraph.ecore#//DContainment">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference diagraph.ecore#//DContainment/node"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute diagraph.ecore#//DContainment/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference diagraph.ecore#//DContainment/edge"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

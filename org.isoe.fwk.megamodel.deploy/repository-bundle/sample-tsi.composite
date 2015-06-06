@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_composite:Base xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_composite="http://composite">
+  <composites id="unité centrale">
+    <astates xsi:type="_composite:Composite" id="boitier">
+      <astates xsi:type="_composite:Composite" id="carte-mère">
+        <astates xsi:type="_composite:Leaf1" id="mémoire"/>
+        <astates xsi:type="_composite:Leaf1" id="processeur"/>
+        <astates xsi:type="_composite:Composite" id="bus">
+          <astates xsi:type="_composite:Leaf1" id="slot1"/>
+          <astates xsi:type="_composite:Leaf1" id="slot2"/>
+          <astates xsi:type="_composite:Leaf1" id="slot3"/>
+        </astates>
+      </astates>
+      <astates xsi:type="_composite:Leaf1" id="alimentation"/>
+    </astates>
+    <astates xsi:type="_composite:Composite" id="périphériques">
+      <astates xsi:type="_composite:Leaf1" id="clavier"/>
+      <astates xsi:type="_composite:Leaf1" id="souris"/>
+    </astates>
+  </composites>
+</_composite:Base>

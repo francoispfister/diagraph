@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_statechart="http://statechart" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_UT5CcPHvEeSxyLwfBARJ-g" type="Statechart_default_root" name="default.statechart_default_root_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_V22qAPHvEeSxyLwfBARJ-g" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_V234IPHvEeSxyLwfBARJ-g" type="4017"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_V234IfHvEeSxyLwfBARJ-g" type="5001"/>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_V22qAfHvEeSxyLwfBARJ-g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_V22qAvHvEeSxyLwfBARJ-g" fontName="Segoe UI"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_V22qA_HvEeSxyLwfBARJ-g"/>
+    <element xmi:type="_statechart:State" href="default.statechart#//@subStates.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V23REPHvEeSxyLwfBARJ-g" x="30" y="120" width="91" height="71"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_W52_IPHvEeSxyLwfBARJ-g" type="1001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_W53mMPHvEeSxyLwfBARJ-g" type="4017"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_W53mMfHvEeSxyLwfBARJ-g" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_ZI63sPHvEeSxyLwfBARJ-g" type="2001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZI63tPHvEeSxyLwfBARJ-g" type="4015"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_ZI63tfHvEeSxyLwfBARJ-g" type="5002"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_ZI63sfHvEeSxyLwfBARJ-g"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_ZI63svHvEeSxyLwfBARJ-g" fontName="Segoe UI"/>
+        <element xmi:type="_statechart:State" href="default.statechart#//@subStates.1/@subStates.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZI63s_HvEeSxyLwfBARJ-g" x="34" y="22"/>
+      </children>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_YTNXsPHvEeSxyLwfBARJ-g" type="2016">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YTNXtPHvEeSxyLwfBARJ-g" type="4016"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_YTNXsfHvEeSxyLwfBARJ-g"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YTNXsvHvEeSxyLwfBARJ-g" fontName="Segoe UI"/>
+      <element xmi:type="_statechart:Action" href="default.statechart#//@subStates.1/@actions.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YTNXs_HvEeSxyLwfBARJ-g"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_W52_IfHvEeSxyLwfBARJ-g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_W52_IvHvEeSxyLwfBARJ-g" fontName="Segoe UI"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_W52_I_HvEeSxyLwfBARJ-g"/>
+    <element xmi:type="_statechart:State" href="default.statechart#//@subStates.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W52_JPHvEeSxyLwfBARJ-g" x="65" y="260" width="136" height="201"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_UT5CcfHvEeSxyLwfBARJ-g"/>
+  <element xmi:type="_statechart:State" href="default.statechart#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_bsbWQPHvEeSxyLwfBARJ-g" type="3001" source="_V22qAPHvEeSxyLwfBARJ-g" target="_ZI63sPHvEeSxyLwfBARJ-g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bsb9UPHvEeSxyLwfBARJ-g" type="4019">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bsb9UfHvEeSxyLwfBARJ-g" y="40"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bsbWQfHvEeSxyLwfBARJ-g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bsbWQvHvEeSxyLwfBARJ-g" fontName="Segoe UI"/>
+    <element xmi:type="_statechart:Transition" href="default.statechart#//@subStates.0/@transitions.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bsbWQ_HvEeSxyLwfBARJ-g" points="[11, 65, -32, -139]$[35, 184, -8, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_buS-gPHvEeSxyLwfBARJ-g" id="(0.6593406593406593,0.08450704225352113)"/>
+  </edges>
+</notation:Diagram>

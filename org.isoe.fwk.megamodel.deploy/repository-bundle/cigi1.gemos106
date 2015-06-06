@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_gemos106:Gemos xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_gemos106="http://gemos106">
+  <phases name="Développement">
+    <families name="">
+      <modes name="C: Conception">
+        <linkMode name="T1" msrc="//@phases.0/@families.0/@modes.0" mtrg="//@phases.0/@families.0/@modes.1"/>
+        <configurations name="cfg"/>
+      </modes>
+      <modes name="R1: Production / intégration/V&amp;Test...">
+        <linkMode name="T2" msrc="//@phases.0/@families.0/@modes.1" mtrg="//@phases.0/@families.0/@modes.0"/>
+        <linkMode name="T3" msrc="//@phases.0/@families.0/@modes.1" mtrg="//@phases.2/@families.0/@modes.2"/>
+      </modes>
+    </families>
+  </phases>
+  <phases name="Fin de vie">
+    <families>
+      <modes name="F1: Retrait définitif">
+        <linkMode name="T23" msrc="//@phases.1/@families.0/@modes.0" mtrg="//@phases.1/@families.0/@modes.1"/>
+        <in name="A3"/>
+      </modes>
+      <modes name="Démantèlement"/>
+    </families>
+  </phases>
+  <phases name="Déploiement">
+    <families>
+      <modes name="D3: Fonctionm. essais">
+        <linkMode name="T6" msrc="//@phases.2/@families.0/@modes.0" mtrg="//@phases.2/@families.0/@modes.2"/>
+        <out name="DMi"/>
+      </modes>
+      <modes name="D2: Retrait opérationnel">
+        <linkMode name="T4" msrc="//@phases.2/@families.0/@modes.1" mtrg="//@phases.2/@families.0/@modes.2"/>
+        <in name="A2"/>
+      </modes>
+      <modes name="D1: Syst. prêt déploiement">
+        <linkMode name="T5" msrc="//@phases.2/@families.0/@modes.2" mtrg="//@phases.2/@families.0/@modes.0"/>
+        <out name="FM2"/>
+        <out name="DMi" toModes="//@phases.3/@families.0/@modes.1/@in.0 //@phases.3/@families.0/@modes.0/@in.0"/>
+      </modes>
+    </families>
+  </phases>
+  <phases name="Exploitation">
+    <families name="Maintien en conditions opérationnelles">
+      <modes name="M3: Diagnostic et maintenance ad." type="DS3">
+        <in name="DM3" fromMode="//@phases.2/@families.0/@modes.2/@out.1"/>
+        <out name="FM2"/>
+        <out name="FM1"/>
+      </modes>
+      <modes name="M1: Diagnostic et maintenance cor.">
+        <in name="DM1" fromMode="//@phases.2/@families.0/@modes.2/@out.1"/>
+        <out name="FM1"/>
+        <out name="FM2"/>
+      </modes>
+      <modes name="M4: Diagnostic et maintenance ev."/>
+      <modes name="M2: Diagnostic et maintenance prev."/>
+    </families>
+    <families name="Defaut">
+      <modes name="DS2: Détection et diag.">
+        <linkMode name="T22" msrc="//@phases.3/@families.1/@modes.0" mtrg="//@phases.3/@families.0/@modes.2"/>
+        <linkMode name="T21" msrc="//@phases.3/@families.1/@modes.0" mtrg="//@phases.3/@families.0/@modes.0"/>
+        <linkMode name="T19" msrc="//@phases.3/@families.1/@modes.0" mtrg="//@phases.3/@families.0/@modes.1"/>
+        <linkMode name="T20" msrc="//@phases.3/@families.1/@modes.0" mtrg="//@phases.3/@families.0/@modes.3"/>
+      </modes>
+      <modes name="DS1: Arrêt sur défaut">
+        <linkMode name="T18" msrc="//@phases.3/@families.1/@modes.1" mtrg="//@phases.3/@families.1/@modes.0"/>
+      </modes>
+      <modes name="DS3: Fonctionnement dégradé">
+        <linkMode name="T17" msrc="//@phases.3/@families.1/@modes.2" mtrg="//@phases.3/@families.1/@modes.1"/>
+        <in name="DDS"/>
+      </modes>
+    </families>
+    <families name="Opérationnel"/>
+  </phases>
+</_gemos106:Gemos>

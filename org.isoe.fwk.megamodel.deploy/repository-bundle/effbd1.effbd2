@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<effbd2:Function xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:effbd2="http://org.isoe.effbd.2013.v2">
+  <outputPort/>
+  <dataEdges xsi:type="effbd2:DataFlowOutputEdge" outputFrom="//@outputPort" ouputTo="//@effbdNodes.3"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" inputFrom="//@effbdNodes.3" inputTo="//@decompositions.1/@resourcePorts.0"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" inputFrom="//@effbdNodes.4" inputTo="//@decompositions.0/@inputPorts.0"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" inputFrom="//@effbdNodes.5" inputTo="//@decompositions.0/@inputPorts.1"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" name="10g/kg" inputFrom="//@effbdNodes.8" inputTo="//@decompositions.0/@inputPorts.2"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" inputFrom="//@effbdNodes.6" inputTo="//@decompositions.2/@inputPorts.0"/>
+  <dataEdges xsi:type="effbd2:DataFlowInputEdge" inputFrom="//@effbdNodes.11" inputTo="//@decompositions.0/@inputPorts.3"/>
+  <effbdNodes xsi:type="effbd2:Start" name="start"/>
+  <effbdNodes xsi:type="effbd2:Fork"/>
+  <effbdNodes xsi:type="effbd2:Join"/>
+  <effbdNodes xsi:type="effbd2:ContinuousFlowItem" name="electrical energy">
+    <content id="380 tri 30A"/>
+  </effbdNodes>
+  <effbdNodes xsi:type="effbd2:ContinuousFlowItem" name="calorifical energy"/>
+  <effbdNodes xsi:type="effbd2:TriggerItem" name="dirty clothes">
+    <content id="my trousers"/>
+    <content id="my socks"/>
+    <content id="dirty laundry"/>
+  </effbdNodes>
+  <effbdNodes xsi:type="effbd2:TriggerItem" name="clean clothes"/>
+  <effbdNodes xsi:type="effbd2:TriggerItem" name="soapened water"/>
+  <effbdNodes xsi:type="effbd2:ContinuousFlowItem" name="detergent">
+    <content id="C12H25NaO4S"/>
+  </effbdNodes>
+  <effbdNodes xsi:type="effbd2:Final" name="end"/>
+  <effbdNodes xsi:type="effbd2:TriggerItem" name="clean rinced cloth"/>
+  <effbdNodes xsi:type="effbd2:ContinuousFlowItem" name="water"/>
+  <controlEdges from="//@effbdNodes.0" to="//@effbdNodes.1"/>
+  <controlEdges from="//@effbdNodes.1" to="//@decompositions.0"/>
+  <controlEdges from="//@effbdNodes.1" to="//@decompositions.1"/>
+  <controlEdges from="//@effbdNodes.2" to="//@decompositions.2"/>
+  <decompositions name="wash function">
+    <inputPorts/>
+    <inputPorts/>
+    <inputPorts id="detergent"/>
+    <inputPorts/>
+    <outputPort id="out"/>
+    <dataEdges xsi:type="effbd2:DataFlowOutputEdge" outputFrom="//@decompositions.0/@outputPort" ouputTo="//@effbdNodes.6"/>
+    <dataEdges xsi:type="effbd2:DataFlowOutputEdge" outputFrom="//@decompositions.0/@outputPort" ouputTo="//@effbdNodes.7"/>
+    <controlEdges from="//@decompositions.0" to="//@effbdNodes.2"/>
+  </decompositions>
+  <decompositions name="heat function">
+    <resourcePorts/>
+    <outputPort/>
+    <definitions transformationDefinition="3kwh"/>
+    <dataEdges xsi:type="effbd2:DataFlowOutputEdge" outputFrom="//@decompositions.1/@outputPort" ouputTo="//@effbdNodes.4"/>
+    <controlEdges from="//@decompositions.1" to="//@effbdNodes.2"/>
+  </decompositions>
+  <decompositions name="rince function">
+    <inputPorts/>
+    <outputPort/>
+    <dataEdges xsi:type="effbd2:DataFlowOutputEdge" outputFrom="//@decompositions.2/@outputPort" ouputTo="//@effbdNodes.10"/>
+    <controlEdges from="//@decompositions.2" to="//@effbdNodes.9"/>
+  </decompositions>
+</effbd2:Function>

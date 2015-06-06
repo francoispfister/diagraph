@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="refinher" nsURI="http://refinher.v0" nsPrefix="refinher">
+  <eClassifiers xsi:type="ecore:EClass" name="A">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="pov" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bs" upperBound="-1" eType="//B" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ks" upperBound="-1" eType="//K" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nameds" upperBound="-1" eType="//Named" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="B" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=cs" value=""/>
+      <details key="cont=A.bs" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cs" upperBound="-1" eType="//C"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="D" eSuperTypes="//B">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=es" value=""/>
+      <details key="cont=A.bs" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="es" upperBound="-1" eType="//E"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="F" eSuperTypes="//D">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=gs" value=""/>
+      <details key="ref=hs" value=""/>
+      <details key="cont=A.bs" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gs" upperBound="-1" eType="//G"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hs" upperBound="-1" eType="//H"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="G" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="I" eSuperTypes="//F //K">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="cont=A.bs" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="H" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="K" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="ref=ls" value=""/>
+      <details key="cont=A.ks" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ls" upperBound="-1" eType="//L"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="L" eSuperTypes="//Named">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

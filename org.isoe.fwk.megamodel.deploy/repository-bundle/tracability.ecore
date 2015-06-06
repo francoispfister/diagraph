@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="tracability" nsURI="http://tracability" nsPrefix="_tracability">
+  <eAnnotations source="diagen">
+    <details key="knownas=simple world"/>
+    <details key="origin=http://org.isoe.fr"/>
+    <details key="leftparent=nil" value=""/>
+    <details key="rightparent=nil" value=""/>
+    <details key="requires=nil" value=""/>
+    <details key="context=startup"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="World">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="pov" value="_"/>
+      <details key="cref=owners" value="_"/>
+      <details key="cref=equipments" value="_"/>
+      <details key="cref=activities" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipments" upperBound="-1"
+        eType="#//Equipment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owners" upperBound="-1"
+        eType="#//Owner" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activities" upperBound="-1"
+        eType="#//Activities" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Equipment" eSuperTypes="#//ModelElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="label=ident" value="_"/>
+      <details key="kref=subEquipments" value="_"/>
+      <details key="nav:vwequipment" value="_"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="pov" value="_"/>
+      <details key="view=vwequipment" value="_"/>
+      <details key="cref=ownerships" value="_"/>
+      <details key="cref=comment" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownerships" upperBound="-1"
+        eType="#//Ownership" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comment" eType="#//Comment"
+        containment="true" eOpposite="#//Comment/equipement"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subEquipments" upperBound="-1"
+        eType="#//Equipment" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelElement" abstract="true">
+    <eAnnotations source="diagraph"/>
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="view=vwequipment" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ident" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ownership" eSuperTypes="#//ModelElement">
+    <eAnnotations source="diagraph">
+      <details key="link=owner" value="_"/>
+      <details key="lsrc=equipment" value="_"/>
+      <details key="cont=Equipment.ownerships" value="_"/>
+      <details key="label=from" value="_"/>
+    </eAnnotations>
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="view=vwequipment" value="_"/>
+      <details key="label=ownerLabel" value="_"/>
+      <details key="label=from" value="_"/>
+      <details key="label=to" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipment" eType="#//Equipment"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="since" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Owner"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ownerLabel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral="" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comment">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="view=vwequipment" value="_"/>
+      <details key="label=commentLabel" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="commentLabel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipement" eType="#//Equipment"
+        eOpposite="#//Equipment/comment"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Owner" eSuperTypes="#//ModelElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="label=ident" value="_"/>
+      <details key="ref=activity" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="forName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activity" eType="#//Activities"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Activities">
+    <eAnnotations source="diagraph">
+      <details key="node" value="_"/>
+      <details key="label=name" value="_"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

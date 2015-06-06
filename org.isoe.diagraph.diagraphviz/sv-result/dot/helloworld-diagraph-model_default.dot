@@ -1,0 +1,423 @@
+digraph diagraph {    rankdir=BT  node [shape=box, color=black] 
+id23141412 [  shape="box"  label= "default:DGraph" ]
+id8302170 [  shape="box"  label= "TheWorld:DPointOfView" ]
+id19945951 [  shape="box"  label= "TheWorld:EClass" ]
+id5213859 [  shape="box"  label= "diagraph:EAnnotation" ]
+id18709978 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id20023635 [  shape="box"  label= "pov:EStringToStringMapEntry" ]
+id6575534 [  shape="box"  label= "helloworld;http://helloworld.example.v1:EPackage" ]
+id19838750 [  shape="box"  label= "-:EFactory" ]
+id19316843 [  shape="box"  label= "languages;-1:EReference" ]
+id25420041 [  shape="box"  label= "Language:EClass" ]
+id33038992 [  shape="box"  label= "diagraph:EAnnotation" ]
+id27604631 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id27469994 [  shape="box"  label= "label=name:EStringToStringMapEntry" ]
+id19065033 [  shape="box"  label= "name:EAttribute" ]
+id12761323 [  shape="box"  label= "-:EGenericType" ]
+id19607627 [  shape="box"  label= "Researcher:EClass" ]
+id33185050 [  shape="box"  label= "diagraph:EAnnotation" ]
+id32931579 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id700549 [  shape="box"  label= "label=name:EStringToStringMapEntry" ]
+id30076111 [  shape="box"  label= "ref=speaks:EStringToStringMapEntry" ]
+id25235477 [  shape="box"  label= "ref=motherTongue:EStringToStringMapEntry" ]
+id7313359 [  shape="box"  label= "Hello:EClass" ]
+id4648746 [  shape="box"  label= "diagraph:EAnnotation" ]
+id16772381 [  shape="box"  label= "link:EStringToStringMapEntry" ]
+id2633557 [  shape="box"  label= "lsrc=researcher:EStringToStringMapEntry" ]
+id3906690 [  shape="box"  label= "label=sentence:EStringToStringMapEntry" ]
+id5742980 [  shape="box"  label= "Publication:EClass" ]
+id27282736 [  shape="box"  label= "diagraph:EAnnotation" ]
+id19637975 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id14069108 [  shape="box"  label= "label=title:EStringToStringMapEntry" ]
+id1423840 [  shape="box"  label= "kref=bibliography:EStringToStringMapEntry" ]
+id6175440 [  shape="box"  label= "kref=sections:EStringToStringMapEntry" ]
+id19723987 [  shape="box"  label= "Section:EClass" ]
+id6768254 [  shape="box"  label= "diagraph:EAnnotation" ]
+id4536570 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id10464884 [  shape="box"  label= "label=header:EStringToStringMapEntry" ]
+id24543902 [  shape="box"  label= "kref=paragraphs:EStringToStringMapEntry" ]
+id16828278 [  shape="box"  label= "Paragraph:EClass" ]
+id24733257 [  shape="box"  label= "diagraph:EAnnotation" ]
+id19547764 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id7832554 [  shape="box"  label= "label=text:EStringToStringMapEntry" ]
+id7702079 [  shape="box"  label= "kref=annotations:EStringToStringMapEntry" ]
+id2561149 [  shape="box"  label= "Authors:EClass" ]
+id29411507 [  shape="box"  label= "diagraph:EAnnotation" ]
+id28870041 [  shape="box"  label= "link:EStringToStringMapEntry" ]
+id21694431 [  shape="box"  label= "label=submissionDate:EStringToStringMapEntry" ]
+id28461256 [  shape="box"  label= "Annotation:EClass" ]
+id15847288 [  shape="box"  label= "diagraph:EAnnotation" ]
+id23854573 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id15462414 [  shape="box"  label= "label=text:EStringToStringMapEntry" ]
+id29909270 [  shape="box"  label= "Bibliography:EClass" ]
+id31283416 [  shape="box"  label= "diagraph:EAnnotation" ]
+id15982150 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id8776731 [  shape="box"  label= "label=title:EStringToStringMapEntry" ]
+id5245418 [  shape="box"  label= "kref=entries:EStringToStringMapEntry" ]
+id6162159 [  shape="box"  label= "Entry:EClass" ]
+id12248553 [  shape="box"  label= "diagraph:EAnnotation" ]
+id4998187 [  shape="box"  label= "node:EStringToStringMapEntry" ]
+id17798257 [  shape="box"  label= "label=reference:EStringToStringMapEntry" ]
+id644373 [  shape="box"  label= "reference:EAttribute" ]
+id31104730 [  shape="box"  label= "-:EGenericType" ]
+id6675333 [  shape="box"  label= "title:EAttribute" ]
+id32706215 [  shape="box"  label= "-:EGenericType" ]
+id32847724 [  shape="box"  label= "entries:EReference" ]
+id4650736 [  shape="box"  label= "-:EGenericType" ]
+id31649197 [  shape="box"  label= "text:EAttribute" ]
+id16664142 [  shape="box"  label= "-:EGenericType" ]
+id29458266 [  shape="box"  label= "submissionDate:EAttribute" ]
+id28948141 [  shape="box"  label= "-:EGenericType" ]
+id24667963 [  shape="box"  label= "publication:EReference" ]
+id28309169 [  shape="box"  label= "title:EAttribute" ]
+id25698283 [  shape="box"  label= "-:EGenericType" ]
+id23919367 [  shape="box"  label= "sections;-1:EReference" ]
+id30705996 [  shape="box"  label= "header:EAttribute" ]
+id31961965 [  shape="box"  label= "-:EGenericType" ]
+id8514003 [  shape="box"  label= "paragraphs;-1:EReference" ]
+id18760944 [  shape="box"  label= "text:EAttribute" ]
+id11857510 [  shape="box"  label= "-:EGenericType" ]
+id4188450 [  shape="box"  label= "annotations;-1:EReference" ]
+id9402691 [  shape="box"  label= "-:EGenericType" ]
+id23212937 [  shape="box"  label= "-:EGenericType" ]
+id2457779 [  shape="box"  label= "-:EGenericType" ]
+id23199213 [  shape="box"  label= "bibliography:EReference" ]
+id18693853 [  shape="box"  label= "-:EGenericType" ]
+id17447266 [  shape="box"  label= "-:EGenericType" ]
+id4027479 [  shape="box"  label= "researcher:EReference" ]
+id32352163 [  shape="box"  label= "name:EAttribute" ]
+id10554704 [  shape="box"  label= "-:EGenericType" ]
+id4641925 [  shape="box"  label= "saysHello;-1:EReference" ]
+id2790403 [  shape="box"  label= "sentence:EAttribute" ]
+id24197364 [  shape="box"  label= "-:EGenericType" ]
+id22770667 [  shape="box"  label= "toAnother:EReference" ]
+id26795807 [  shape="box"  label= "motherTongue:EReference" ]
+id5393177 [  shape="box"  label= "-:EGenericType" ]
+id12611877 [  shape="box"  label= "speaks;-1:EReference" ]
+id4470681 [  shape="box"  label= "-:EGenericType" ]
+id6851307 [  shape="box"  label= "authors;-1:EReference" ]
+id10371282 [  shape="box"  label= "-:EGenericType" ]
+id28428664 [  shape="box"  label= "annotates;-1:EReference" ]
+id19008539 [  shape="box"  label= "-:EGenericType" ]
+id4768574 [  shape="box"  label= "-:EGenericType" ]
+id17456183 [  shape="box"  label= "-:EGenericType" ]
+id19680659 [  shape="box"  label= "researcher:EReference" ]
+id26800268 [  shape="box"  label= "-:EGenericType" ]
+id30967688 [  shape="box"  label= "-:EGenericType" ]
+id11152412 [  shape="box"  label= "-:EGenericType" ]
+id8023684 [  shape="box"  label= "researchers;-1:EReference" ]
+id3539560 [  shape="box"  label= "-:EGenericType" ]
+id9436934 [  shape="box"  label= "publications;-1:EReference" ]
+id30934332 [  shape="box"  label= "-:EGenericType" ]
+id20955323 [  shape="box"  label= "languages:DNestingEdge" ]
+id8801067 [  shape="box"  label= "researchers:DNestingEdge" ]
+id11610274 [  shape="box"  label= "publications:DNestingEdge" ]
+id2508535 [  shape="box"  label= "Language:DNode" ]
+id6129295 [  shape="box"  label= "Researcher:DNode" ]
+id14869148 [  shape="box"  label= "Hello:DLink" ]
+id25915973 [  shape="box"  label= "Authors:DLink" ]
+id33240770 [  shape="box"  label= "speaks:DReference" ]
+id29889322 [  shape="box"  label= "motherTongue:DReference" ]
+id885623 [  shape="box"  label= "Publication:DNode" ]
+id6436242 [  shape="box"  label= "bibliography:DPartitioningNestingEdge" ]
+id27985270 [  shape="box"  label= "sections:DPartitioningNestingEdge" ]
+id16803043 [  shape="box"  label= "Section:DNode" ]
+id15976046 [  shape="box"  label= "paragraphs:DPartitioningNestingEdge" ]
+id2773403 [  shape="box"  label= "Paragraph:DNode" ]
+id6853776 [  shape="box"  label= "annotations:DPartitioningNestingEdge" ]
+id21789789 [  shape="box"  label= "Annotation:DNode" ]
+id23659532 [  shape="box"  label= "Bibliography:DNode" ]
+id32604499 [  shape="box"  label= "entries:DPartitioningNestingEdge" ]
+id24583853 [  shape="box"  label= "Entry:DNode" ]
+id23141412 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id8302170 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id19945951 -> id5213859 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id5213859 -> id18709978 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id5213859 -> id20023635 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id5213859 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id19945951 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id19838750 [color=brown,arrowhead="vee",arrowsize="1" ,label="eFactoryInstance"];
+id19838750 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id19945951 -> id19316843 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id19316843 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id25420041 -> id33038992 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id33038992 -> id27604631 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33038992 -> id27469994 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33038992 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id25420041 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id25420041 -> id19065033 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id19065033 -> id12761323 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id19065033 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id6575534 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id19607627 -> id33185050 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id33185050 -> id32931579 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33185050 -> id700549 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33185050 -> id30076111 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33185050 -> id25235477 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id33185050 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id19607627 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id7313359 -> id4648746 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id4648746 -> id16772381 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id4648746 -> id2633557 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id4648746 -> id3906690 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id4648746 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id7313359 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id5742980 -> id27282736 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id27282736 -> id19637975 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id27282736 -> id14069108 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id27282736 -> id1423840 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id27282736 -> id6175440 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id27282736 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id5742980 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id19723987 -> id6768254 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id6768254 -> id4536570 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id6768254 -> id10464884 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id6768254 -> id24543902 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id6768254 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id19723987 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id16828278 -> id24733257 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id24733257 -> id19547764 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id24733257 -> id7832554 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id24733257 -> id7702079 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id24733257 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id16828278 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id2561149 -> id29411507 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id29411507 -> id28870041 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id29411507 -> id21694431 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id29411507 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id2561149 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id28461256 -> id15847288 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id15847288 -> id23854573 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id15847288 -> id15462414 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id15847288 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id28461256 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id29909270 -> id31283416 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id31283416 -> id15982150 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id31283416 -> id8776731 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id31283416 -> id5245418 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id31283416 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id29909270 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6575534 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="eClassifiers"];
+id6162159 -> id12248553 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAnnotations"];
+id12248553 -> id4998187 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id12248553 -> id17798257 [color=brown,arrowhead="vee",arrowsize="1" ,label="details"];
+id12248553 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="eModelElement"];
+id6162159 -> id6575534 [color=brown,arrowhead="vee",arrowsize="1" ,label="ePackage"];
+id6162159 -> id644373 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id644373 -> id31104730 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id644373 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id29909270 -> id6675333 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id6675333 -> id32706215 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id6675333 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id29909270 -> id32847724 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id32847724 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id32847724 -> id4650736 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id4650736 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id32847724 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id28461256 -> id31649197 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id31649197 -> id16664142 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id31649197 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id2561149 -> id29458266 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id29458266 -> id28948141 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id29458266 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id2561149 -> id24667963 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id24667963 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id5742980 -> id28309169 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id28309169 -> id25698283 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id28309169 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id5742980 -> id23919367 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id23919367 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id19723987 -> id30705996 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id30705996 -> id31961965 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id30705996 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19723987 -> id8514003 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id8514003 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id16828278 -> id18760944 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id18760944 -> id11857510 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id18760944 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id16828278 -> id4188450 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id4188450 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id4188450 -> id9402691 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id9402691 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id4188450 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id8514003 -> id23212937 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id23212937 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id8514003 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id23919367 -> id2457779 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id2457779 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id23919367 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id5742980 -> id23199213 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id23199213 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id23199213 -> id18693853 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id18693853 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id23199213 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id24667963 -> id17447266 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id17447266 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id24667963 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id2561149 -> id4027479 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id4027479 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id19607627 -> id32352163 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id32352163 -> id10554704 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id32352163 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19607627 -> id4641925 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id4641925 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id7313359 -> id2790403 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllAttributes"];
+id2790403 -> id24197364 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id2790403 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id7313359 -> id22770667 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id22770667 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id19607627 -> id26795807 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id26795807 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id26795807 -> id5393177 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id5393177 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id26795807 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19607627 -> id12611877 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id12611877 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id12611877 -> id4470681 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id4470681 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id12611877 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19607627 -> id6851307 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id6851307 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id6851307 -> id10371282 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id10371282 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id6851307 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19607627 -> id28428664 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id28428664 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id28428664 -> id19008539 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id19008539 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id28428664 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id6851307 -> id4027479 [color=brown,arrowhead="vee",arrowsize="1" ,label="eOpposite"];
+id4027479 -> id4768574 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id4768574 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id4027479 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id4027479 -> id6851307 [color=brown,arrowhead="vee",arrowsize="1" ,label="eOpposite"];
+id22770667 -> id17456183 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id17456183 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id22770667 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id7313359 -> id19680659 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id19680659 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id19680659 -> id26800268 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id26800268 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id19680659 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19680659 -> id4641925 [color=brown,arrowhead="vee",arrowsize="1" ,label="eOpposite"];
+id4641925 -> id30967688 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id30967688 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id4641925 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id4641925 -> id19680659 [color=brown,arrowhead="vee",arrowsize="1" ,label="eOpposite"];
+id19316843 -> id11152412 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id11152412 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id19316843 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19945951 -> id8023684 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id8023684 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id8023684 -> id3539560 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id3539560 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id8023684 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id19945951 -> id9436934 [color=brown,arrowhead="vee",arrowsize="1" ,label="eAllReferences"];
+id9436934 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eType"];
+id9436934 -> id30934332 [color=brown,arrowhead="vee",arrowsize="1" ,label="eGenericType"];
+id30934332 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="eRawType"];
+id9436934 -> id19945951 [color=brown,arrowhead="vee",arrowsize="1" ,label="eContainingClass"];
+id8302170 -> id20955323 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id20955323 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id8302170 -> id8801067 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id8801067 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id8302170 -> id11610274 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id11610274 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id8302170 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id2508535 -> id25420041 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id2508535 -> id19065033 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id2508535 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id2508535 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id6129295 -> id19607627 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id6129295 -> id32352163 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id6129295 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id14869148 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id14869148 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id25915973 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id25915973 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id6129295 -> id33240770 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id33240770 -> id12611877 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id33240770 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id33240770 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="source"];
+id6129295 -> id29889322 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id29889322 -> id26795807 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id29889322 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id29889322 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="source"];
+id6129295 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id885623 -> id5742980 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id885623 -> id28309169 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id885623 -> id8302170 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id885623 -> id6436242 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id6436242 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id885623 -> id27985270 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id27985270 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id885623 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id16803043 -> id19723987 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id16803043 -> id30705996 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id16803043 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id16803043 -> id15976046 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id15976046 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id16803043 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id2773403 -> id16828278 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id2773403 -> id18760944 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id2773403 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id2773403 -> id6853776 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id6853776 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id2773403 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id21789789 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id21789789 -> id28461256 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id21789789 -> id31649197 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id21789789 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id21789789 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id23659532 -> id29909270 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id23659532 -> id6675333 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id23659532 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id23659532 -> id32604499 [color=brown,arrowhead="vee",arrowsize="1" ,label="edges"];
+id32604499 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id23659532 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id23141412 -> id24583853 [color=brown,arrowhead="vee",arrowsize="1" ,label="nodes"];
+id24583853 -> id6162159 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id24583853 -> id644373 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id24583853 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="owner"];
+id24583853 -> id23141412 [color=brown,arrowhead="vee",arrowsize="1" ,label="graph"];
+id32604499 -> id32847724 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id32604499 -> id24583853 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id6853776 -> id4188450 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id6853776 -> id21789789 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id15976046 -> id8514003 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id15976046 -> id2773403 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id27985270 -> id23919367 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id27985270 -> id16803043 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id6436242 -> id23199213 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id6436242 -> id23659532 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id25915973 -> id2561149 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id25915973 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id25915973 -> id24667963 [color=brown,arrowhead="vee",arrowsize="1" ,label="targetReference"];
+id25915973 -> id29458266 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id25915973 -> id4027479 [color=brown,arrowhead="vee",arrowsize="1" ,label="sourceReference"];
+id14869148 -> id7313359 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id14869148 -> id22770667 [color=brown,arrowhead="vee",arrowsize="1" ,label="targetReference"];
+id14869148 -> id2790403 [color=brown,arrowhead="vee",arrowsize="1" ,label="labelAttributes"];
+id14869148 -> id19680659 [color=brown,arrowhead="vee",arrowsize="1" ,label="sourceReference"];
+id11610274 -> id9436934 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id11610274 -> id885623 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id8801067 -> id8023684 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id8801067 -> id6129295 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+id20955323 -> id19316843 [color=brown,arrowhead="vee",arrowsize="1" ,label="roleInCsGraph"];
+id20955323 -> id2508535 [color=brown,arrowhead="vee",arrowsize="1" ,label="target"];
+}

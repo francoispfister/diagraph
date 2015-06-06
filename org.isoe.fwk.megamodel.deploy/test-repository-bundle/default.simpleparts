@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_simpleparts:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_simpleparts="http://simpleparts">
+  <things name="a">
+    <relations name="kind of" toThing="//@things.1"/>
+    <parts name="pa"/>
+    <parts name="pb"/>
+    <elements name="el1"/>
+    <elements name="el2"/>
+    <pieces name="p1"/>
+    <pieces name="p2"/>
+  </things>
+  <things name="b">
+    <parts name="p1"/>
+    <parts name="p2"/>
+    <elements name="l3"/>
+    <elements name="l4"/>
+    <pieces name="pa"/>
+    <pieces name="pb"/>
+    <pieces name="pc"/>
+  </things>
+</_simpleparts:World>

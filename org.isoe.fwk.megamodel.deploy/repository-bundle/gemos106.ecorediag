@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="ASCII"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" type="EcoreTools" measurementUnit="Pixel">
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="gemos106.ecore#//FamillyType/None"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//FamillyType/Operational"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//FamillyType/Default"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//FamillyType/Maintenance"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//FamillyType"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="870" y="30"/>
+  </children>
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/UD_UserDefined"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/C_Design"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/RI_PIVVQ"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/D1_ReadyForDeployment"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/D2_OperationalRetract"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/D3_OffSiteFunctionning"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/O1_ReadyAndDeployed"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/O2_OperationalPreparation"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/O3_Operational"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/O4_EndOfNormalFunctionning"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/O5_OnSiteFunctionning"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/DS1_Stop"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/DS2_NonNominalFunctionning"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/DS3_WaitForDetectionAndDiagnosis"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/M1_CorrectiveMaintenance"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/M2_PreventiveMaintenance"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/M3_AdaptativeMaintenance"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/M4_EvolutiveMaintenance"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/F1_DefinitiveRetract"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//ModeType/F2_Dismantling"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//ModeType"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="1083"/>
+  </children>
+  <children type="1005">
+    <children type="4010"/>
+    <children type="5008">
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/None"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/Design"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/IVVQ"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/Deployment"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/Exploitation"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2006">
+        <element href="gemos106.ecore#//PhaseType/EndOfLife"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//PhaseType"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="1382"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//Scenario/modelledIn"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Scenario"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="680" y="870"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Gemos/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="743" y="1051" width="419"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Gemos"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="739" y="1045" width="419"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Phase/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="949" y="948" width="213"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <children type="2007">
+        <element href="gemos106.ecore#//OperationalMode/%diagraph%/@details.0"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="gemos106.ecore#//OperationalMode/%diagraph%/@details.1"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="gemos106.ecore#//OperationalMode/%diagraph%/@details.2"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2007">
+        <element href="gemos106.ecore#//OperationalMode/%diagraph%/@details.3"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//OperationalMode/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="759" y="664" width="403"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//M2M/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="504" y="631"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//Phase/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Phase"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="945" y="934" width="213"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//M2M"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="500" y="570" height="98"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Configuration/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="724" y="369" width="218"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//C2C/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="504" y="396"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//Configuration/initialConfiguration"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Configuration"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="720" y="320" width="218" height="86"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//C2C"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="500" y="330" height="103"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Out/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="804" y="476"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//In/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="1024" y="481"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Out"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="800" y="470"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//In"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="1020" y="475"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Family/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="938" y="837" width="224"/>
+  </children>
+  <children type="1003">
+    <eAnnotations source="Shortcut">
+      <details key="modelID" value="EcoreTools"/>
+    </eAnnotations>
+    <children type="4007"/>
+    <children type="5007">
+      <styles xsi:type="notation:DrawerStyle" collapsed="true"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="14668776" lineColor="4210752"/>
+    <element href="gemos106.ecore#//Transition/%diagraph%"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="413" y="235" width="204"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//Family/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Family"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="934" y="823" width="224"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//Transition/transitionCondition"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="gemos106.ecore#//Transition/guard"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="gemos106.ecore#//Transition/firingCondition"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <children type="2001">
+        <element href="gemos106.ecore#//Transition/fromAnySource"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//Transition"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="409" y="170" width="204"/>
+  </children>
+  <children type="1001">
+    <children type="4001"/>
+    <children type="5001">
+      <children type="2001">
+        <element href="gemos106.ecore#//OperationalMode/type"/>
+        <layoutConstraint xsi:type="notation:Location"/>
+      </children>
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <children type="5002">
+      <styles xsi:type="notation:DrawerStyle"/>
+      <styles xsi:type="notation:SortingStyle"/>
+      <styles xsi:type="notation:FilteringStyle"/>
+    </children>
+    <styles xsi:type="notation:ShapeStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element href="gemos106.ecore#//OperationalMode"/>
+    <layoutConstraint xsi:type="notation:Bounds" x="755" y="575" width="403" height="126"/>
+  </children>
+  <styles xsi:type="notation:DiagramStyle"/>
+  <element href="gemos106.ecore#/"/>
+  <edges type="3002" source="//@children.5" target="//@children.9">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//Gemos/phases"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[102, 0, 0, 62]$[102, -62, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.49612403100775193,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.9" target="//@children.21">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//Phase/families"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[48, 0, 0, 62]$[48, -62, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.24806201550387597,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.23" target="//@children.10">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//OperationalMode/linkMode"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-130, -69, 275, 60]$[-355, -69, 50, 60]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.23" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//OperationalMode/configurations"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-34, 0, -58, 171]$[-34, -171, -58, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.18461538461538463,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.616504854368932,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.23" target="//@children.18">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//OperationalMode/in"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[28, 0, -9, 114]$[28, -114, -9, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7538461538461538,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7450980392156863,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.23" target="//@children.17">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-17" y="-20"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-17" y="19"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//OperationalMode/out"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-130, 0, 0, 119]$[-130, -119, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5615384615384615,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.23" target="//@children.3">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="4" y="-43"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="5" y="39"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//OperationalMode/validScenarios"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-128, 124, 25, -165]$[-128, 240, 25, -49]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.3769230769230769,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.10" target="//@children.23">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//M2M/msrc"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[50, 80, -355, -49]$[275, 80, -130, -49]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.10" target="//@children.23">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//M2M/mtrg"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[50, 35, -355, -94]$[275, 35, -130, -94]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.10" target="//@children.22">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-36, 0, -12, 355]$[-36, -355, -12, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.6666666666666666,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.6632124352331606,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.13" target="//@children.14">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-3"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//Configuration/linkConfig"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-94, -4, 206, 70]$[-279, -4, 21, 70]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.46116504854368934,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7941176470588235,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.14" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//C2C/csrc"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[41, 25, -215, -49]$[226, 25, -30, -49]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5980392156862745,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.15048543689320387,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.14" target="//@children.13">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//C2C/ctrg"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[31, 40, -247, -34]$[216, 40, -62, -34]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.696078431372549,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.3058252427184466,1.0)"/>
+  </edges>
+  <edges type="3003" source="//@children.14" target="//@children.22">
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontName="Segoe UI"/>
+    <element xsi:nil="true"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[-19, 0, 95, 60]$[-19, -60, 95, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.8921568627450981,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.3316062176165803,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.17" target="//@children.18">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-11" y="-18"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="-3" y="12"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//Out/toModes"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, 182, 119]$[-161, -61, 21, 58]$[-182, -119, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.7450980392156863,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.18" target="//@children.17">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-18" y="-12"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="3" y="23"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//In/fromMode"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[0, 0, -182, -119]$[21, 58, -161, -61]$[182, 119, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.5,1.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7450980392156863,0.0)"/>
+  </edges>
+  <edges type="3002" source="//@children.21" target="//@children.23">
+    <children type="4011">
+      <layoutConstraint xsi:type="notation:Location" x="-10" y="-10"/>
+    </children>
+    <children type="4012">
+      <layoutConstraint xsi:type="notation:Location" x="10" y="10"/>
+    </children>
+    <styles xsi:type="notation:ConnectorStyle" routing="Rectilinear" lineColor="4210752"/>
+    <styles xsi:type="notation:FontStyle" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element href="gemos106.ecore#//Family/modes"/>
+    <bendpoints xsi:type="notation:RelativeBendpoints" points="[66, 0, 0, 69]$[66, -69, 0, 0]"/>
+    <sourceAnchor xsi:type="notation:IdentityAnchor" id="(0.2462686567164179,0.0)"/>
+    <targetAnchor xsi:type="notation:IdentityAnchor" id="(0.7461538461538462,1.0)"/>
+  </edges>
+</notation:Diagram>

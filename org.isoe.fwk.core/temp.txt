@@ -1,0 +1,139 @@
+B  C  A
+ layer=default resourcepath=org.isoe.mbse.ktest101/model/ktest101.ecore
+GNWCR createNodeContainment B-B-cs-cs
+canvas is A
+canvas is A
+GNWCR createNodeContainment A-A-subs-subs
+------- postParse -----------
+propagate Ecore Inheritance for All Contained Elements
+ContainedElement Tree  (generic):
+End (ContainedElement Tree)
+ContainedElement Tree  (all):
+B
+   A
+C
+End (ContainedElement Tree)
+setNodeDepth
+[Containment] name:cs  SourceNode= B - containment= null ??? no TargetNode  figureEmbedded=  fig own propagated= not propagated TargetName= cs 
+cloneInheritedContainments  node: A -> B
+n: A d: 1
+GNWCR createNodeContainment B-A-cs-csA
+ containment propagated 
+propagateContainment: csA(node A)
+checking All Nodes
+!!! check your annotations
+true
+
+
+
+resolveTargetNode for containment:B.cs
+resolveTargetNode:DiaContainment: B->cs->C
+resolveTargetNode for containment:A.subs
+resolveTargetNode:DiaContainment: A->subs->A
+resolveTargetNode for containment:A.csA
+resolveTargetNode:DiaContainment: A->csA->C
+sortContainments
+>>>to sort: B -- cs - order: -1
+>>>sorted: B -- cs - order: -1
+>>>to sort: A -- subs - order: -1
+>>>to sort: A -- csA - order: -1
+>>>sorted: A -- subs - order: -1
+>>>sorted: A -- csA - order: -1
+logContainments
+>>>[Containment] name:cs  SourceNode= B - containment= null TargetNode= C - containment=cs figureEmbedded=  fig own propagated= not propagated TargetName= cs TargetReference= cs
+>>>[Containment] name:subs  SourceNode= A - containment=subs TargetNode= A - containment=subs figureEmbedded=  fig own propagated= not propagated TargetName= subs TargetReference= subs
+>>>[Containment] name:csA  SourceNode= A - containment=subs TargetNode= C - containment=cs figureEmbedded=  fig own propagated= propagated TargetName= cs TargetReference= cs
+logContainments -2-
+>>containment: [Containment] name:cs  SourceNode= B - containment= null TargetNode= C - containment=cs figureEmbedded=  fig own propagated= not propagated TargetName= cs TargetReference= cs
+>>containment: [Containment] name:subs  SourceNode= A - containment=subs TargetNode= A - containment=subs figureEmbedded=  fig own propagated= not propagated TargetName= subs TargetReference= subs
+>>containment: [Containment] name:csA  SourceNode= A - containment=subs TargetNode= C - containment=cs figureEmbedded=  fig own propagated= propagated TargetName= cs TargetReference= cs
+B
+C
+A
+reparseLinkWithSuperClasses
+B
+C
+A
+ --- propagateInheritedLabelsIfNoLabel --- 
+ --- propagateAllInheritedLabelss --- 
+ --- inferMissingLabels --- 
+CPVC B
+CPVC C
+CPVC A
+-->cs:C
+-->subs:A
+point of view A is consistent
+DACNT node B is abstract and has no container 
+cloneInheritedContainments  node: A -> B
+n: A d: 1
+GNWCR createNodeContainment B-A-cs-csA
+ containment propagated 
+propagateContainment: csA(node A)
+~~~~~ GmfGraphGenerator processDomainModel - CANVAS
+GmfGraphGenerator
+pass2
+DBGNPR GmfGraphGenerator processReferences for B
+DBGNPR GmfGraphGenerator processReferences for C
+DBGNPR GmfGraphGenerator processReferences for A
+pass3
+pass4
+end pass
+no file C:\workspaces\inforsid06\org.isoe.mbse.ktest101\model\palette.txt
+no file C:\workspaces\inforsid06\org.isoe.mbse.ktest101\model\palette.txt
+~~~~~ GmfToolGenerator processDomainModel - TOOL
+GmfToolGenerator
+TPC GmfToolGenerator processCanvas - [2003]TOOL_CREATE - A - A
+TPN GmfToolGenerator processNode - [2002]TOOL_NODE - C - C
+TPN GmfToolGenerator processNode - [2004]TOOL_NODE - A - A
+Id for Node A = 1
+pass2
+DBGNPR GmfToolGenerator processReferences for B
+DBGNPR GmfToolGenerator processReferences for C
+DBGNPR GmfToolGenerator processReferences for A
+pass3
+pass4
+end pass
+~~~~~ GmfMapGenerator processDomainModel - MAP
+GmfMapGenerator
+~~~~~ GmfMapGenerator processCanvas - [2003]MAP_CREATE - A - A
+MAP_NODE;C;C
+MAP_NODE;A;A
+
+ before sorting:
+C 0
+A 1
+sort nodes by depth
+ after sorting:
+A 1
+C 0
+top nodes:
+tn=A
+tn=C
+process canvas inheritance
+PCINH csA
+PCINH C
+CNM---TOP------- prepareNodeMapping: C
+C
+org.eclipse.emf.ecore.impl.EPackageImpl
+validating Containment feature [cs:C] -> C
+validating Containment feature [cs:C] -> C
+7438892-C is mapped
+PCINH csA
+parse error in diagraph:  (in view default) target node is null for containment propagated on canvas: csA
+updateLanguageToTransform
+parseConcreteSyntaxOldGen
+*************************    ** B;A;
++++++++++++++++++++++++++   B;A; ++ B;A;
+ROGDM B
+ROGDM C
+ROGDM A
+diagraph parsing start
+done
+diagraph parsing end
+current diagraph:null->A
+setViews (1) DiagraphGenerator - default; current=default
+current diagram:ktest101->ktest101
+parseConcreteSyntaxNewGen
+concrete syntax parsed - current:A
+concrete syntax parsed with new parser:A
+ktest101 handled in 1 seconds (parse error in diagraph:  (in view default) target node is null for containment propagated on canvas: csA)

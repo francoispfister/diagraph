@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ecmfa_2013.lang.ebnf101/src/" editDirectory="/ecmfa_2013.lang.ebnf101.edit/src/" modelPluginID="ecmfa_2013.lang.ebnf101" modelName="Ebnf101" complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.7">
+  <genPackages prefix="Ebnf101" basePackage="ecmfa_2013.lang" disposableProviderFactory="true">
+    <ecorePackage href="ebnf101.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//EBNFDescription"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//EBNFDescription/rules"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//NonTerminal"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ebnf101.ecore#//NonTerminal/id"/>
+      </genFeatures>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//NonTerminal/definitionList"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ebnf101.ecore#//Symbol"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ebnf101.ecore#//Symbol/factor"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//Symbol/containingNonTerminal"/>
+      </genFeatures>
+      <genFeatures property="None" notify="false" createChild="false">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//Symbol/containingControl"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Terminal"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ebnf101.ecore#//Terminal/terminalString"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses image="false">
+      <ecoreClass href="ebnf101.ecore#//Control"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//Control/definitionList"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Option"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Repetition"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//NonTerminalReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//NonTerminalReference/nonTerminal"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Group"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//SpecialSequence"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="ebnf101.ecore#//SpecialSequence/text"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Except"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="ebnf101.ecore#//Except/except"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="ebnf101.ecore#//Choose"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

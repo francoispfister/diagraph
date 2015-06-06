@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simple:TheWorld xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:simple="http://simple.helloworld.example.v0">
+  <languages name="French"/>
+  <languages name="English"/>
+  <languages name="Spanish"/>
+  <persons name="Peter" motherTongue="//@languages.1">
+    <saysHello sentence="Hello !" toAnother="//@persons.1"/>
+  </persons>
+  <persons name="Jacques" motherTongue="//@languages.0" speaks="//@languages.1">
+    <saysHello sentence="Hi !" toAnother="//@persons.0"/>
+    <saysHello sentence="Hola guapa, ¿qué tal?" toAnother="//@persons.2"/>
+  </persons>
+  <persons name="Yenis" motherTongue="//@languages.2" speaks="//@languages.0">
+    <saysHello sentence="How are you ?" toAnother="//@persons.0"/>
+  </persons>
+</simple:TheWorld>

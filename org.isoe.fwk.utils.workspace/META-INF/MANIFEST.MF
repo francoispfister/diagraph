@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Diagraph Other Utils
+Bundle-SymbolicName: org.isoe.fwk.utils.workspace
+Bundle-Version: 1.0.4.2014121712009
+Bundle-Vendor: LGi2P Isoe
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.jdt.core;bundle-version="3.7.1",
+ org.eclipse.gef;bundle-version="3.7.1",
+ org.eclipse.gmf.runtime.common.ui;bundle-version="1.5.0",
+ org.eclipse.gmf.runtime.emf.core;bundle-version="1.4.1",
+ org.eclipse.gmf.codegen;bundle-version="2.9.0.201306121424",
+ org.isoe.fwk.core;bundle-version="1.0.4"
+Export-Package: org.isoe.fwk.utils.workspace

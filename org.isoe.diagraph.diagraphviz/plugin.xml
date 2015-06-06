@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="fr.lirmm.ecorevis.exportmenuobject"
+            nameFilter="*.ecore"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="fr.lirmm.ecorevis.exportmenu"
+               label="Dot Ecore Export"
+               path="additions">
+            <separator
+                  name="actions">
+            </separator>
+         </menu>
+         <action
+               class="org.isoe.diagraph.diagraphviz.ecore.export.FullModelExport"
+               enablesFor="1"
+               id="fr.lirmm.ecorevis.fullmodelexport"
+               label="Full Model"
+               menubarPath="fr.lirmm.ecorevis.exportmenu/actions">
+         </action>
+         <action
+               class="org.isoe.diagraph.diagraphviz.ecore.export.HierarchyExport"
+               enablesFor="1"
+               id="fr.lirmm.ecorevis.classhierarchieexport"
+               label="Class Hierarchy"
+               menubarPath="fr.lirmm.ecorevis.exportmenu/actions">
+         </action>
+         <action
+               class="org.isoe.diagraph.diagraphviz.ecore.export.ExtendedHierarchyExport"
+               enablesFor="1"
+               id="fr.lirmm.ecorevis.extendedclasshierarchyexport"
+               label="Extended Class Hierarchy"
+               menubarPath="fr.lirmm.ecorevis.exportmenu/actions">
+         </action>
+         <action
+               class="org.isoe.diagraph.diagraphviz.ecore.export.StandardModelExport"
+               enablesFor="1"
+               id="fr.lirmm.ecorevis.standardmodel"
+               label="Standard Model"
+               menubarPath="fr.lirmm.ecorevis.exportmenu/actions">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

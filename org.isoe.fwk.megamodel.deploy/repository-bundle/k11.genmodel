@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.isoe.mbse.k11/src/"
+    modelPluginID="org.isoe.mbse.k11" modelName="K11" copyrightFields="false">
+  <genPackages prefix="K11" disposableProviderFactory="true" ecorePackage="k11.ecore#/">
+    <genClasses ecoreClass="k11.ecore#//X">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference k11.ecore#//X/e5s"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="k11.ecore#//G">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute k11.ecore#//G/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="k11.ecore#//E0"/>
+    <genClasses ecoreClass="k11.ecore#//E1"/>
+    <genClasses ecoreClass="k11.ecore#//E2"/>
+    <genClasses ecoreClass="k11.ecore#//E5">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference k11.ecore#//E5/e0s"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

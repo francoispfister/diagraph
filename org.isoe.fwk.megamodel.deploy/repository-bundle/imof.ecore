@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="imof"
+    nsURI="http://imof" nsPrefix="_imof">
+  <eAnnotations source="diastyle.edge.inher">
+    <details key="shape=triangle" value=""/>
+    <details key="background=black" value=""/>
+    <details key="arrowsize=2" value=""/>
+  </eAnnotations>
+  <eAnnotations source="diastyle.node.vertical">
+    <details key="layout=vertical"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="IClass" eSuperTypes="#//IClassifier">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="kref=attributes"/>
+      <details key="kref=operations"/>
+      <details key="ref=superType"/>
+      <details key="style.ref.superType=inher"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="references" upperBound="-1"
+        eType="#//IReference" containment="true" eOpposite="#//IReference/icontainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//IAttribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superType" eType="#//IClass"
+        eOpposite="#//IClass/subTypes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operations" upperBound="-1"
+        eType="#//IOperation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subTypes" upperBound="-1"
+        eType="#//IClass" eOpposite="#//IClass/superType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDatatype" eSuperTypes="#//IClassifier">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="INamedElement" abstract="true">
+    <eAnnotations source="diagraph">
+      <details key="label=name" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IPackage" eSuperTypes="#//INamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="pov" value=""/>
+      <details key="cont=IPackage.subPackages" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contents" upperBound="-1"
+        eType="#//IClassifier" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subPackages" upperBound="-1"
+        eType="#//IPackage" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IReference" eSuperTypes="#//IStructuralFeature">
+    <eAnnotations source="diagraph">
+      <details key="link" value=""/>
+      <details key="cont=IClass.references" value=""/>
+      <details key="lsrc=icontainer" value=""/>
+      <details key="ltrg=type" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="icontainer" eType="#//IClass"
+        eOpposite="#//IClass/references"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IClassifier" abstract="true" eSuperTypes="#//INamedElement">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IAttribute" eSuperTypes="#//IStructuralFeature">
+    <eAnnotations source="diagraph">
+      <details key="node" value=""/>
+      <details key="style=vertical"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IOperation" eSuperTypes="#//ITypedElement">
+    <eAnnotations source="diagraph">
+      <details key="node"/>
+      <details key="style=vertical"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ITypedElement" abstract="true" eSuperTypes="#//INamedElement">
+    <eAnnotations source="diagraph"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//IClassifier"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IStructuralFeature" abstract="true"
+      eSuperTypes="#//ITypedElement">
+    <eAnnotations source="diagraph"/>
+  </eClassifiers>
+</ecore:EPackage>

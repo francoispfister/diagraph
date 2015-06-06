@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Diagraph"
+            id="org.isoe.diagraph.workbench">
+      </category>
+      <view
+            name="Diagraph Operations"
+            icon="icons/sample.gif"
+            category="org.isoe.diagraph.workbench"
+            class="org.isoe.diagraph.operations.views.SandboxView"
+            id="org.isoe.diagraph.operations.views.SandboxView">
+      </view>
+   </extension>
+</plugin>

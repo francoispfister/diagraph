@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_helloworld:World xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:_helloworld="http://helloworld">
+  <things name="ma voiture">
+    <things name="chassis">
+      <things name="roue ArD"/>
+      <things name="roue ArG"/>
+      <things name="groupe moteur">
+        <things name="moteur" relations="//@things.0/@things.0/@things.2/@things.1"/>
+        <things name="boite de vitesses" relations="//@things.0/@things.0/@things.0 //@things.0/@things.0/@things.1"/>
+      </things>
+      <things name="train avant">
+        <things name="roue AvG"/>
+        <things name="roue AvD"/>
+      </things>
+    </things>
+    <things name="habitacle">
+      <things name="climatisation">
+        <things name="réfrigération" relations="//@things.0/@things.1/@things.0/@things.1"/>
+        <things name="chauffage"/>
+      </things>
+      <things name="poste de conduite">
+        <things name="volant" relations="//@things.0/@things.0/@things.3"/>
+        <things name="pédalier" relations="//@things.0/@things.0/@things.3 //@things.0/@things.0/@things.2/@things.0"/>
+      </things>
+    </things>
+  </things>
+</_helloworld:World>
