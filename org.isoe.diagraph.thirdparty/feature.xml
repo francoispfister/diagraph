@@ -1,97 +1,658 @@
-<?xml version="1.0" encoding="UTF-8"?><feature id="org.isoe.diagraph.thirdparty" label="Diagraph ThirdParty Feature" provider-name="Eclipse" version="1.0.20141217">
-    <description> Diagraph is an environment for designing graphical concrete syntaxes</description>
-    <copyright>      Copyright (c) 2014 Laboratoire de Genie Informatique et Ingenierie de Production - Ecole des Mines d&amp;apos;Ales and others.
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.isoe.diagraph.thirdparty"
+      label="Diagraph ThirdParty Feature"
+      version="1.0.4.201506071821"
+      provider-name="Eclipse">
+
+   <description>
+      Diagraph is an environment for designing graphical concrete syntaxes
+   </description>
+
+   <copyright>
+      Copyright (c) 2014 Laboratoire de Genie Informatique et Ingenierie de Production - Ecole des Mines d&amp;apos;Ales and others.
 All rights reserved. This program and the accompanying materials
 are made available under the terms of the Eclipse Public License v1.0
 which accompanies this distribution, and is available at
 http://www.eclipse.org/legal/epl-v10.html
-</copyright>
-    <license url="http://www.eclipse.org/legal/epl-v10.html">   Distributed under the Eclipse Public License.
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      Distributed under the Eclipse Public License.
    Third Party dependencies: GMF, ATL, QVTO
-</license>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.trace" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.ui.dashboard" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.ui.dashboard.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.bridge.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen.edit" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen.edit.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.codegen.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.common" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.common.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.doc" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.doc.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.codegen" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.codegen.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.codegen.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.codegen.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.edit" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.edit.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.graphdef.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.map" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.map.edit" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.map.edit.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.map.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.sdk" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooldef" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooldef.edit" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooldef.edit.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooldef.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooling" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooling.runtime" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.tooling.runtime.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.validate" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.validate.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand.editor" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand.editor.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand.qvtlibrary" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand.qvtlibrary.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.gmf.xpand.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.atl" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.common" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.common.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.common.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.common.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.cst.parser" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.cst.parser.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.debug.core" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.debug.core.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.debug.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.debug.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.doc" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.editor.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.editor.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.emf.util" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.emf.util.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.emf.util.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.emf.util.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.ocl" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.ocl.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.project" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.project.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.runtime" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.runtime.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.runtime.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.runtime.ui.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.samples" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.trace.edit" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.trace.edit.source" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.m2m.qvt.oml.ui" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy.diagram" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy.diagram.ui.outline" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy.filters" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy.properties" install-size="0" unpack="false" version="0.0.0"/>
-    <plugin download-size="0" id="org.eclipse.emf.ecoretools.legacy.tabbedproperties" install-size="0" unpack="false" version="0.0.0"/>
+   </license>
+
+   <plugin
+         id="org.eclipse.gmf"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.trace"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.ui.dashboard"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.ui.dashboard.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.bridge.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.codegen.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.common.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.doc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.gmf.doc.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.codegen"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.codegen.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.codegen.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.codegen.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.graphdef.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.map"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.map.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.map.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.map.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.sdk"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooldef"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooldef.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooldef.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooldef.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooling"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooling.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.tooling.runtime.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.validate"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.validate.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand.editor.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand.qvtlibrary"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand.qvtlibrary.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.gmf.xpand.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.common.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.common.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.common.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.cst.parser"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.cst.parser.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.debug.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.debug.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.debug.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.debug.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.doc"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.editor.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.editor.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.emf.util"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.emf.util.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.emf.util.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.emf.util.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.ocl"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.ocl.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.project"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.project.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.runtime.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.runtime.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.runtime.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.samples"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.trace.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.trace.edit.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.m2m.qvt.oml.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.diagram"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.diagram.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.diagram.ui.outline"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.diagram.ui.outline.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.filters"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.filters.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.properties"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.properties.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.tabbedproperties"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecoretools.legacy.tabbedproperties.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
 </feature>
