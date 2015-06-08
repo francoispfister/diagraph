@@ -29,11 +29,11 @@ import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.*;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.SWT;
-import swing2swt.layout.FlowLayout;
+//import swing2swt.layout.FlowLayout;
 import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.layout.FillLayout;
-import swing2swt.layout.BorderLayout;
+//import swing2swt.layout.BorderLayout;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.isoe.fwk.utils.ResourceUtils;
@@ -72,11 +72,11 @@ public class CheckRelease extends ViewPart {
 
 	@Override
 	public void createPartControl(Composite parent) {
-		parent.setLayout(new BorderLayout(0, 0));
+		//parent.setLayout(new BorderLayout(0, 0));
 
 		Composite panel = new Composite(parent, SWT.NONE);
 		panel.setBackground(SWTResourceManager.getColor(255, 240, 245));
-		panel.setLayoutData(BorderLayout.NORTH);
+		//panel.setLayoutData(BorderLayout.NORTH);
 
 		Composite toolbar = new Composite(panel, SWT.NONE);
 		toolbar.setBackground(SWTResourceManager.getColor(255, 240, 245));
