@@ -3,7 +3,9 @@ diagraph
 
 
 Diagraph is an open and distributed framework for designing Domain Specific Graphical Modeling Languages 
+
 Diagraph is available - delivered by  Laboratoire de Génie Informatique et d’Ingénierie de Production
+
 http://lgi2p.mines-ales.fr/
 New in version 4 : The legacy Ecore Tools has been patched to coexist with the Sirius version
 Full source code is moved to github. https://github.com/francoispfister 
