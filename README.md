@@ -1,4 +1,4 @@
-diagraph
+Diagraph
 ========
 
 
