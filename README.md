@@ -7,13 +7,21 @@ Diagraph is an open and distributed framework for designing Domain Specific Grap
 Diagraph is available - delivered by  Laboratoire de Génie Informatique et d’Ingénierie de Production
 
 http://lgi2p.mines-ales.fr/
+
 New in version 4 : The legacy Ecore Tools has been patched to coexist with the Sirius version
+
 Full source code is moved to github. https://github.com/francoispfister 
+
 Update site: Run an Eclipse Luna Modeling and install the plugin from the update site: http://diagraph.googlecode.com/svn/trunk/org.isoe.diagraph.updatesite 
+
 Installation and Quick start: installation (in french)  https://drive.google.com/file/d/0B94eFp7F72p5V1J5THQ4M3ZJSWs/edit?usp=sharing
+
 A complete Luna 32 bit bundle is also available. https://drive.google.com/file/d/0B94eFp7F72p5MFNnOVg3ZDJMNVE/view?usp=sharing
+
 My thesis (in french) https://drive.google.com/file/d/0B94eFp7F72p5Y0ZOMkt4ODE2VkU/view?pref=2&pli=1
+
 The Diagraph meta-tool has been presented during the demo and poster track at ECMFA 2013 http://www.lirmm.fr/ecmfa13/index.php/satellite-eventsd729.html?id=164 
+
 Abstract: 
 A light-weight annotation-based solution to design Domain Specific Graphical Modeling Languages 
 Francois Pfister, Vincent Chapurlat, Marianne Huchard, Clémentine Nebut 
