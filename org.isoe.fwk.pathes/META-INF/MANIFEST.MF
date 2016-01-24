@@ -7,5 +7,6 @@ Bundle-Vendor: LGi2P Isoe
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Require-Bundle: org.isoe.fwk.core;bundle-version="1.0.4",
  org.isoe.diagraph.preferences;bundle-version="1.0.4",
- org.eclipse.jface;bundle-version="3.9.1"
+ org.eclipse.jface;bundle-version="3.9.1",
+ org.eclipse.ui;bundle-version="3.106.1"
 Export-Package: org.isoe.fwk.pathes
